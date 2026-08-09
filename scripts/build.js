@@ -152,7 +152,7 @@ function buildFooter() {
     <div class="footer-grid">
       <div class="footer-brand">
         <div class="footer-brand-name">⚡ PALWORLDBASE</div>
-        <p>Independent Palworld database — peer-ranked Pal stats, skill builds, and breeding paths. Updated for ${BUILD_DATE}.</p>
+        <p>PalworldBase.com is an independent Palworld database — peer-ranked Pal stats, skill builds, and breeding paths. Updated for ${BUILD_DATE}.</p>
       </div>
       <div class="footer-menu">
         <div class="footer-menu-label">TOOLS</div>
@@ -654,7 +654,7 @@ function renderHomepage() {
     schema: websiteSchema(),
   });
 
-  // Top 8 hot Pals (S-tier, sorted by score)
+  // Top 4 hot Pals (S-tier, sorted by stat total)
   const hotPals = allPals
     .filter(p => palTiers[p.slug] === 'S')
     .sort((a, b) => {
@@ -662,7 +662,7 @@ function renderHomepage() {
       const scoreB = statsBySlug[b.slug] ? statsBySlug[b.slug].statTotal : 0;
       return scoreB - scoreA;
     })
-    .slice(0, 8);
+    .slice(0, 4);
 
   const hotCardsHTML = hotPals.map(pal => {
     const el = pal.classification.elements[0].toLowerCase();
@@ -681,12 +681,10 @@ function renderHomepage() {
     </div>`;
   }).join('\n        ');
 
-  // Popular Pal chips (horizontal scroll, 20 Pals covering all use cases)
+  // Popular Pal chips (10 iconic Pals, no scroll)
   const popularSlugs = [
     'anubis', 'jormuntide_ignis', 'blazamut', 'jetragon', 'frostallion',
-    'shadowbeak', 'paladius', 'necromus', 'lunaris', 'bellanoir',
-    'orserk', 'lyleen_noct', 'suzaku', 'chikipi', 'lamball',
-    'cattiva', 'foxparks', 'penking', 'bushi', 'astral_lupus',
+    'shadowbeak', 'orserk', 'bellanoir', 'lunaris', 'suzaku',
   ];
   const popularChipsHTML = popularSlugs.map(slug => {
     const p = palBySlug[slug];
@@ -707,48 +705,35 @@ function renderHomepage() {
 
   const bodyHTML = `<section class="hero">
   <div class="container">
-    <div class="hero-logo">⚡ PALWORLDBASE</div>
-    <p class="hero-tagline">Breed smarter. Start with what you need.</p>
+    <h1 class="hero-title">Your Complete Palworld Database — Stats, Breeding &amp; Guides</h1>
+    <p class="hero-subtitle">Every Pal has a breeding path. Find yours.</p>
+    <p class="hero-description">Built around what players actually look for: a breeding calculator with 51K+ combinations, peer-ranked Pal comparisons, skill builds, and strategy guides. Start with search, explore when you need detail.</p>
 
-    <!-- Intent Cards (3×2) -->
-    <div class="hero-intents">
-      <a href="/pal-finder/?work=mining,kindling,planting,gathering&sort=total" class="intent-card">
-        <div class="intent-card-icon">🔨</div>
-        <div class="intent-card-title">Build My Base</div>
-        <div class="intent-card-desc">Best workers for mining, kindling, planting & more</div>
-      </a>
-      <a href="/pal-finder/?sort=attack" class="intent-card">
-        <div class="intent-card-icon">🛡️</div>
-        <div class="intent-card-title">Fight Better</div>
-        <div class="intent-card-desc">Top DPS Pals ranked by attack, element builds</div>
-      </a>
-      <a href="/guides/best-flying-mounts/" class="intent-card">
-        <div class="intent-card-icon">⚡</div>
-        <div class="intent-card-title">Travel Faster</div>
-        <div class="intent-card-desc">Fastest flying & ground mounts compared</div>
-      </a>
-      <a href="/breeding-calculator/" class="intent-card">
-        <div class="intent-card-icon">🧬</div>
-        <div class="intent-card-title">Breed My Pals</div>
-        <div class="intent-card-desc">Shortest path from your Pals to any target</div>
-      </a>
-      <a href="/pal-finder/" class="intent-card">
-        <div class="intent-card-icon">🔍</div>
-        <div class="intent-card-title">Browse All Pals</div>
-        <div class="intent-card-desc">Filter 323 Pals by element, work, rarity</div>
-      </a>
-      <a href="/guides/" class="intent-card">
-        <div class="intent-card-icon">📖</div>
-        <div class="intent-card-title">Learn Strategy</div>
-        <div class="intent-card-desc">Breeding chains, skill builds, base layouts</div>
-      </a>
+    <!-- Credibility Stats -->
+    <div class="hero-stats">
+      <div class="hero-stat">
+        <div class="hero-stat-value">${allPals.length}</div>
+        <div class="hero-stat-label">Pals</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-value">51K+</div>
+        <div class="hero-stat-label">Breeding Combos</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-value">12</div>
+        <div class="hero-stat-label">Work Types</div>
+      </div>
+      <div class="hero-stat">
+        <div class="hero-stat-value">9</div>
+        <div class="hero-stat-label">Elements</div>
+      </div>
     </div>
 
-    <!-- Search Pill -->
+    <!-- Search Pill (primary interaction) -->
     <div class="hero-search">
       <form action="/breeding-calculator/" method="GET" id="hero-search-form">
         <input type="text" id="hero-search-input" name="q"
-               class="hero-search-pill" placeholder="🔍  Or type a Pal name or number…"
+               class="hero-search-pill" placeholder="Search any Pal by name or number…"
                autocomplete="off">
         <!-- Hidden select for SEO: all Pal name references stay in DOM -->
         <select id="hero-search-select" name="target" class="sr-only" aria-hidden="true">
@@ -758,48 +743,81 @@ function renderHomepage() {
       </form>
     </div>
 
-    <!-- Popular Pal Chips (horizontal scroll) -->
+    <!-- Intent Pills (lightweight shortcuts, 6 across) -->
+    <div class="hero-intents">
+      <a href="/pal-finder/?work=mining,kindling,planting,gathering&sort=total" class="intent-pill">
+        <span class="intent-pill-icon">🔨</span>
+        <span class="intent-pill-label">Base</span>
+      </a>
+      <a href="/pal-finder/?sort=attack" class="intent-pill">
+        <span class="intent-pill-icon">🛡️</span>
+        <span class="intent-pill-label">Combat</span>
+      </a>
+      <a href="/breeding-calculator/" class="intent-pill">
+        <span class="intent-pill-icon">🧬</span>
+        <span class="intent-pill-label">Breed</span>
+      </a>
+      <a href="/guides/best-flying-mounts/" class="intent-pill">
+        <span class="intent-pill-icon">⚡</span>
+        <span class="intent-pill-label">Mounts</span>
+      </a>
+      <a href="/pal-finder/" class="intent-pill">
+        <span class="intent-pill-icon">🔍</span>
+        <span class="intent-pill-label">Browse</span>
+      </a>
+      <a href="/guides/" class="intent-pill">
+        <span class="intent-pill-icon">📖</span>
+        <span class="intent-pill-label">Guides</span>
+      </a>
+    </div>
+
+    <!-- Popular Pal Chips (10, no scroll) -->
     <div class="hero-popular">
       <div class="hero-popular-label">Popular targets</div>
-      <div class="hero-popular-scroll">
+      <div class="hero-popular-row">
         ${popularChipsHTML}
       </div>
     </div>
   </div>
 </section>
 
-<section class="section">
+<section class="section section-showcase">
   <div class="container">
-    <h2 style="text-align:center;margin-bottom:var(--space-8)">🔥 Top Pals</h2>
+    <div class="section-intro">
+      <div class="section-label">PAL SHOWCASE</div>
+      <h2>Top-tier Pals</h2>
+      <p class="section-desc">Highest-rated by peer comparison across all ${allPals.length} Pals.</p>
+    </div>
     <div class="pal-grid">
       ${hotCardsHTML}
     </div>
     <div style="text-align:center;margin-top:var(--space-6)">
-      <a href="/pals/" class="cta-button cta-button-secondary">Browse All ${allPals.length} Pals →</a>
+      <a href="/pals/" class="cta-button cta-button-secondary">Compare all ${allPals.length} Pals →</a>
     </div>
   </div>
 </section>
 
-<section class="section section-alt">
+<section class="section section-alt section-guides">
   <div class="container">
-    <h2 style="text-align:center;margin-bottom:var(--space-8)">📖 Strategy Guides</h2>
+    <h2 style="text-align:center;margin-bottom:var(--space-2)">📖 Strategy Guides</h2>
+    <p style="text-align:center;margin-bottom:var(--space-8);font-size:0.875rem;color:var(--color-text-secondary)">Not just stats — learn how to build, breed, and battle.</p>
     <div class="grid grid-2" style="gap:var(--space-4)">
-      <a href="/guides/best-base-workers/" class="guide-card">
+      <a href="/guides/best-base-workers/" class="guide-card guide-card-accent" style="--guide-accent:var(--color-element-fire)">
         <div class="guide-card-icon">🏭</div>
         <h3>Best Base Workers</h3>
         <p>Mining, Kindling & every role — ranked by work level across all Pals.</p>
       </a>
-      <a href="/guides/best-flying-mounts/" class="guide-card">
+      <a href="/guides/best-flying-mounts/" class="guide-card guide-card-accent" style="--guide-accent:var(--color-element-electric)">
         <div class="guide-card-icon">🦅</div>
         <h3>Fastest Flying Mounts</h3>
         <p>Speed ranking for every ridable flying Pal — with stamina comparison.</p>
       </a>
-      <a href="/guides/best-combat-pals/" class="guide-card">
+      <a href="/guides/best-combat-pals/" class="guide-card guide-card-accent" style="--guide-accent:var(--color-element-dragon)">
         <div class="guide-card-icon">⚔️</div>
         <h3>Best Combat Pals</h3>
         <p>DPS ranking by element — including skill builds and type matchups.</p>
       </a>
-      <a href="/guides/breeding-explained/" class="guide-card">
+      <a href="/guides/breeding-explained/" class="guide-card guide-card-accent" style="--guide-accent:var(--color-accent)">
         <div class="guide-card-icon">🧬</div>
         <h3>Breeding Explained</h3>
         <p>How the breeding formula works, step-by-step — with examples and calculator.</p>
@@ -808,10 +826,11 @@ function renderHomepage() {
   </div>
 </section>
 
-<section class="section">
+<section class="section section-about">
   <div class="container container-narrow">
-    <h2>About PalworldBase</h2>
-    <p>PalworldBase is an independent Palworld database — we don't just list raw stats. Every Pal is peer-ranked against others of the same element: you see not just its HP and Attack, but <em>how it compares</em> to every other Pal of its type.</p>
+    <div class="section-separator" aria-hidden="true">·  ·  ·</div>
+    <h2>About PalworldBase.com</h2>
+    <p>PalworldBase.com is an independent Palworld database — we don't just list raw stats. Every Pal is peer-ranked against others of the same element: you see not just its HP and Attack, but <em>how it compares</em> to every other Pal of its type.</p>
     <p>Our data comes from game files, verified against the Palworld community wiki, and cross-referenced for accuracy. We provide:</p>
     <ul style="list-style:disc;padding-left:20px;margin-bottom:var(--space-4);color:var(--color-text-secondary)">
       <li><strong>Breeding Calculator</strong> — 51K+ parent combinations, special combos, and best-path recommendations</li>
@@ -819,7 +838,7 @@ function renderHomepage() {
       <li><strong>Skill Builds</strong> — Three builds per Pal: Burst (max damage), Sustain (best DPS), and STAB (same-type bonus)</li>
       <li><strong>Guides</strong> — Data-driven rankings for base workers, flying mounts, and combat Pals</li>
     </ul>
-    <p>Updated for ${BUILD_DATE}. PalworldBase is not affiliated with Pocketpair, Inc. Palworld is a trademark of Pocketpair.</p>
+    <p>Updated for ${BUILD_DATE}. PalworldBase.com is not affiliated with Pocketpair, Inc. Palworld is a trademark of Pocketpair.</p>
   </div>
 </section>
 
@@ -1491,7 +1510,7 @@ function renderPalFinder() {
 // ---- Render static pages ----
 console.log('Rendering static pages...');
 const staticPages = [
-  { slug: 'about', title: `About ${SITE_NAME} — Independent Palworld Database`, h1: 'About PalworldBase' },
+  { slug: 'about', title: `About ${SITE_NAME} — Independent Palworld Database`, h1: 'About PalworldBase.com' },
   { slug: 'privacy', title: 'Privacy Policy — PalworldBase', h1: 'Privacy Policy' },
   { slug: 'terms', title: 'Terms of Service — PalworldBase', h1: 'Terms of Service' },
   { slug: 'cookie-policy', title: 'Cookie Policy — PalworldBase', h1: 'Cookie Policy' },
@@ -1507,13 +1526,13 @@ for (const page of staticPages) {
 function renderStaticPage(page) {
   const headHTML = renderHead(config, {
     title: page.title,
-    description: `${page.h1} — PalworldBase, independent Palworld stats and breeding database.`,
+    description: `${page.h1} — PalworldBase.com, independent Palworld stats and breeding database.`,
     canonical: `${DOMAIN}/${page.slug}/`,
   });
 
   let content = '';
   if (page.slug === 'about') {
-    content = `<p>PalworldBase is an independent database for Palworld players. We provide peer-ranked Pal stats, skill builds, breeding paths, and strategy guides — all generated from game data, cross-referenced against the community wiki.</p>
+    content = `<p>PalworldBase.com is an independent database for Palworld players. We provide peer-ranked Pal stats, skill builds, breeding paths, and strategy guides — all generated from game data, cross-referenced against the community wiki.</p>
     <p>We're not affiliated with Pocketpair, Inc. Palworld is a trademark of Pocketpair.</p>
     <p>Questions or corrections? Email <a href="mailto:support@palworldbase.net">support@palworldbase.net</a>.</p>`;
   } else if (page.slug === 'privacy') {

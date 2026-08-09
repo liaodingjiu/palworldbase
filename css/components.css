@@ -61,7 +61,7 @@
   align-items: center;
   padding: var(--space-2) var(--space-3);
   font-size: 0.875rem;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--color-text-secondary);
   text-decoration: none;
   border-bottom: 2px solid transparent;
@@ -345,7 +345,7 @@
   border-top: 3px solid var(--color-element-neutral);
   border-radius: var(--radius-lg);
   padding: var(--space-4);
-  transition: border-color var(--transition-base), transform var(--transition-fast);
+  transition: border-color var(--transition-base), transform var(--transition-fast), box-shadow var(--transition-base);
   text-decoration: none;
   display: block;
   color: var(--color-text);
@@ -353,7 +353,8 @@
 
 .pal-card:hover {
   border-color: var(--color-border-hover);
-  transform: translateY(-2px);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-elevated);
   text-decoration: none;
   color: var(--color-text);
 }
@@ -441,10 +442,10 @@
 
 .cta-button:hover {
   background: #00b8e0;
-  box-shadow: 0 0 30px rgba(0, 212, 255, 0.4);
+  box-shadow: 0 0 36px rgba(0, 212, 255, 0.5);
   text-decoration: none;
   color: var(--color-text-inverse);
-  transform: translateY(-1px);
+  transform: translateY(-2px);
 }
 
 .cta-button-secondary {
@@ -850,101 +851,91 @@
 }
 
 /* ============================================================
-   Hero Section v2 — Intent-route cards + search pill + popular chips
+   Hero Section v3 — Search-first: large search pill, intent pills, popular chips
    ============================================================ */
 
 .hero {
-  padding: var(--space-12) 0 var(--space-8);
+  padding: var(--space-16) 0 var(--space-10);
   text-align: center;
 }
 
-.hero-logo {
+/* H1: descriptive title */
+.hero-title {
   font-family: var(--font-display);
-  font-size: clamp(1.75rem, 4vw, 2.5rem);
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.04em;
   color: var(--color-accent);
-  text-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
-  margin-bottom: var(--space-2);
+  text-shadow: 0 0 24px rgba(0, 212, 255, 0.3);
+  max-width: 800px;
+  margin: 0 auto var(--space-3);
+  line-height: 1.25;
 }
 
-.hero-tagline {
-  font-size: 1rem;
+/* Emotional tagline */
+.hero-subtitle {
+  font-size: clamp(1.125rem, 2.5vw, 1.35rem);
+  color: var(--color-text);
+  font-weight: 500;
+  margin-bottom: var(--space-4);
+}
+
+/* Welcome description */
+.hero-description {
+  font-size: 0.9375rem;
   color: var(--color-text-secondary);
+  max-width: 620px;
+  margin: 0 auto var(--space-6);
+  line-height: 1.6;
+}
+
+/* Credibility stats row */
+.hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-10);
   margin-bottom: var(--space-8);
 }
 
-/* ---- Intent Cards Grid (3×2) ---- */
-.hero-intents {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-3);
-  max-width: 680px;
-  margin: 0 auto var(--space-6);
-}
-
-.intent-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: var(--space-2);
-  padding: var(--space-5) var(--space-3);
-  background: var(--color-bg-glass);
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 14px;
-  text-decoration: none;
-  color: var(--color-text);
-  transition: border-color var(--transition-fast), transform var(--transition-fast), box-shadow var(--transition-fast);
+.hero-stat {
   text-align: center;
-  min-height: 130px;
 }
 
-.intent-card:hover {
-  border-color: rgba(0, 212, 255, 0.3);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-  text-decoration: none;
-  color: var(--color-text);
+.hero-stat-value {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-weight: 700;
+  color: var(--color-accent);
+  line-height: 1.1;
+  text-shadow: 0 0 12px rgba(0, 212, 255, 0.2);
 }
 
-.intent-card-icon {
-  font-size: 1.75rem;
-  line-height: 1;
-  margin-bottom: 2px;
-}
-
-.intent-card-title {
-  font-size: 0.9375rem;
-  font-weight: 600;
-  color: var(--color-text);
-}
-
-.intent-card-desc {
+.hero-stat-label {
   font-size: 0.75rem;
   color: var(--color-text-muted);
-  line-height: 1.35;
-  max-width: 180px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-top: 2px;
 }
 
-/* ---- Search Pill ---- */
+/* ---- Search Pill (HERO MAIN ELEMENT) ---- */
 .hero-search {
-  max-width: 520px;
-  margin: 0 auto var(--space-4);
+  max-width: 580px;
+  margin: 0 auto var(--space-5);
 }
 
 .hero-search-pill {
   width: 100%;
-  height: 44px;
-  padding: 0 var(--space-5);
-  font-size: 0.875rem;
+  height: 56px;
+  padding: 0 var(--space-6);
+  font-size: 1rem;
   font-family: inherit;
   color: var(--color-text);
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 28px;
   outline: none;
-  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast), background var(--transition-fast);
   box-sizing: border-box;
 }
 
@@ -952,17 +943,63 @@
   color: var(--color-text-muted);
 }
 
-.hero-search-pill:focus {
-  border-color: var(--color-accent);
-  box-shadow: 0 0 0 3px rgba(0, 212, 255, 0.12);
+.hero-search-pill:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.06);
 }
 
-/* ---- Popular Pal Chips (horizontal scroll) ---- */
+.hero-search-pill:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 4px rgba(0, 212, 255, 0.15), 0 0 32px rgba(0, 212, 255, 0.1);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+/* ---- Intent Pills (lightweight horizontal row) ---- */
+.hero-intents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-2);
+  max-width: 580px;
+  margin: 0 auto var(--space-6);
+}
+
+.intent-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 999px;
+  text-decoration: none;
+  color: var(--color-text-secondary);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  transition: all var(--transition-fast);
+}
+
+.intent-pill:hover {
+  border-color: rgba(0, 212, 255, 0.3);
+  background: rgba(0, 212, 255, 0.08);
+  color: var(--color-accent);
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.intent-pill-icon {
+  font-size: 0.9375rem;
+  line-height: 1;
+}
+
+.intent-pill-label {
+  line-height: 1;
+}
+
+/* ---- Popular Pal Chips (10, no scroll, flex-wrap) ---- */
 .hero-popular {
   max-width: 640px;
-  margin: 0 auto var(--space-6);
-  overflow: hidden;
-  position: relative;
+  margin: 0 auto;
 }
 
 .hero-popular-label {
@@ -973,21 +1010,11 @@
   margin-bottom: var(--space-2);
 }
 
-.hero-popular-scroll {
+.hero-popular-row {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: var(--space-2);
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-  padding: 4px 0 8px;
-  /* Fade edges */
-  mask-image: linear-gradient(to right, transparent, black 3%, black 97%, transparent);
-  -webkit-mask-image: linear-gradient(to right, transparent, black 3%, black 97%, transparent);
-}
-
-.hero-popular-scroll::-webkit-scrollbar {
-  display: none;
 }
 
 .hero-pal-chip {
@@ -998,21 +1025,19 @@
   padding: 6px 10px;
   text-decoration: none;
   color: var(--color-text);
-  scroll-snap-align: start;
-  flex-shrink: 0;
   transition: transform var(--transition-fast);
-  min-width: 56px;
+  flex-shrink: 0;
 }
 
 .hero-pal-chip:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px);
   text-decoration: none;
   color: var(--color-accent);
 }
 
 .hero-pal-chip-circle {
-  width: 48px;
-  height: 48px;
+  width: 52px;
+  height: 52px;
   border-radius: 50%;
   overflow: hidden;
   border: 2px solid var(--color-border);
@@ -1022,7 +1047,7 @@
 
 .hero-pal-chip:hover .hero-pal-chip-circle {
   border-color: var(--color-accent);
-  box-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.45);
 }
 
 .hero-pal-chip-circle img {
@@ -1036,48 +1061,75 @@
   font-size: 0.6875rem;
   color: var(--color-text-secondary);
   white-space: nowrap;
-  max-width: 60px;
+  max-width: 64px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 /* ---- Mobile ---- */
 @media (max-width: 768px) {
-  .hero-intents {
-    grid-template-columns: repeat(2, 1fr);
+  .hero {
+    padding: var(--space-10) 0 var(--space-8);
+  }
+
+  .hero-title {
+    font-size: 1.5rem;
+  }
+
+  .hero-description {
+    font-size: 0.875rem;
+  }
+
+  .hero-stats {
+    gap: var(--space-6);
+  }
+
+  .hero-stat-value {
+    font-size: 1.5rem;
+  }
+
+  .hero-search-pill {
+    height: 48px;
+    font-size: 0.9375rem;
+    border-radius: 24px;
   }
 }
 
 @media (max-width: 480px) {
+  .hero-stats {
+    gap: var(--space-4);
+    flex-wrap: wrap;
+  }
+
+  .hero-stat {
+    flex: 0 0 auto;
+    min-width: 60px;
+  }
+
+  .hero-stat-value {
+    font-size: 1.25rem;
+  }
   .hero-intents {
-    grid-template-columns: 1fr 1fr;
-    gap: var(--space-2);
+    gap: 6px;
   }
 
-  .intent-card {
-    padding: var(--space-3) var(--space-2);
-    min-height: 108px;
+  .intent-pill {
+    padding: 5px 10px;
+    font-size: 0.75rem;
   }
 
-  .intent-card-icon {
-    font-size: 1.5rem;
-  }
-
-  .intent-card-title {
+  .intent-pill-icon {
     font-size: 0.8125rem;
   }
 
-  .intent-card-desc {
-    font-size: 0.6875rem;
-  }
-
   .hero-pal-chip-circle {
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
   }
 
   .hero-pal-chip-name {
     font-size: 0.625rem;
+    max-width: 52px;
   }
 }
 
@@ -1094,12 +1146,13 @@
   padding: var(--space-5);
   text-decoration: none;
   color: var(--color-text);
-  transition: border-color var(--transition-base), transform var(--transition-fast);
+  transition: border-color var(--transition-base), transform var(--transition-fast), box-shadow var(--transition-base);
 }
 
 .guide-card:hover {
-  border-color: rgba(0, 212, 255, 0.25);
-  transform: translateY(-2px);
+  border-color: rgba(0, 212, 255, 0.35);
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-elevated);
   text-decoration: none;
   color: var(--color-text);
 }
@@ -1118,6 +1171,28 @@
   font-size: 0.8125rem;
   color: var(--color-text-secondary);
   margin: 0;
+}
+
+/* Accent variant: left colored bar for visual differentiation */
+.guide-card-accent {
+  position: relative;
+  overflow: hidden;
+}
+
+.guide-card-accent::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 12px;
+  bottom: 12px;
+  width: 4px;
+  border-radius: 0 2px 2px 0;
+  background: var(--guide-accent, var(--color-accent));
+  transition: width var(--transition-fast);
+}
+
+.guide-card-accent:hover::before {
+  width: 6px;
 }
 
 /* ============================================================

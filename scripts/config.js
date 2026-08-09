@@ -10,7 +10,7 @@ const BUILD_YEAR = new Date().getFullYear();
 
 // ---- Navigation ----
 const NAV = [
-  { label: 'Calculator', href: '/breeding-calculator/', title: 'Palworld Breeding Calculator' },
+  { label: 'Breeding Calculator', href: '/breeding-calculator/', title: 'Palworld Breeding Calculator' },
   { label: 'Pal Finder', href: '/pal-finder/', title: 'Filter Pals by Element, Work & Role' },
   { label: 'All Pals', href: '/pals/', title: 'Browse All 319 Pals' },
   { label: 'Guides', href: '/guides/', title: 'Palworld Strategy Guides' },
