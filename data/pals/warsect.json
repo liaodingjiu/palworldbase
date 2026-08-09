@@ -1,0 +1,140 @@
+{
+  "id": "warsect",
+  "gameId": "palworld",
+  "number": 102,
+  "name": {
+    "zh": "甲虫王",
+    "en": "Warsect"
+  },
+  "slug": "warsect",
+  "image": "/images/pals/warsect.png",
+  "classification": {
+    "elements": [
+      "Grass",
+      "Ground"
+    ],
+    "rarity": "Epic",
+    "role": [
+      "Combat",
+      "Mount"
+    ],
+    "size": "Large",
+    "isRideable": true,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 160,
+    "attack": 145,
+    "defense": 150,
+    "rangedAttack": 0,
+    "speed": 60,
+    "stamina": 180
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 1,
+    "gathering": 0,
+    "lumbering": 2,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 3,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Iron Wall",
+    "descriptionEn": "Greatly increases defense of all base Pals while Warsect is assigned."
+  },
+  "acquisition": {
+    "habitats": [
+      "desert",
+      "forest"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": true,
+    "bossLevel": 45,
+    "bossLocation": "Warsect's Domain"
+  },
+  "breeding": {
+    "breedingPower": 240
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "lumbering",
+      "transport",
+      "combat"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": true
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 30,
+      "gathering": 0,
+      "lumbering": 55,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 80,
+      "farming": 0,
+      "combat": 80,
+      "mount-flying": 0,
+      "mount-ground": 45
+    },
+    "reasons": {
+      "lumbering": [
+        "Reliable lumbering output for mid-game progression",
+        "145 Attack — strong combat presence"
+      ],
+      "transport": [
+        "145 Attack — strong combat presence"
+      ],
+      "combat": [
+        "145 Attack — strong combat presence"
+      ]
+    }
+  },
+  "tier": "A"
+}

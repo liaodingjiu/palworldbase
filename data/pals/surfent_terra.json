@@ -1,0 +1,130 @@
+{
+  "id": "surfent_terra",
+  "gameId": "palworld",
+  "number": 65,
+  "name": {
+    "zh": "地蛇",
+    "en": "Surfent Terra"
+  },
+  "slug": "surfent_terra",
+  "image": "/images/pals/surfent_terra.png",
+  "classification": {
+    "elements": [
+      "Ground"
+    ],
+    "rarity": "Rare",
+    "role": [
+      "Worker"
+    ],
+    "size": "Medium",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 100,
+    "attack": 95,
+    "defense": 85,
+    "rangedAttack": 0,
+    "speed": 100,
+    "stamina": 120
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 2,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Burrowing Serpent",
+    "descriptionEn": "Can burrow underground and emerge to strike enemies from below."
+  },
+  "acquisition": {
+    "habitats": [
+      "desert",
+      "cave"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 475
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "mining"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": false
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 55,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 40,
+      "mount-flying": 0,
+      "mount-ground": 0
+    },
+    "reasons": {
+      "mining": [
+        "Reliable mining output for mid-game progression",
+        "Obtainable mid-game"
+      ]
+    }
+  },
+  "tier": "B"
+}

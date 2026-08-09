@@ -1,0 +1,134 @@
+{
+  "id": "beakon_noct",
+  "gameId": "palworld",
+  "number": 148,
+  "name": {
+    "zh": "暗雷鹰",
+    "en": "Beakon Noct"
+  },
+  "slug": "beakon_noct",
+  "image": "/images/pals/beakon_noct.png",
+  "classification": {
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "Epic",
+    "role": [
+      "Combat",
+      "Mount"
+    ],
+    "size": "Large",
+    "isRideable": false,
+    "isFlyable": true
+  },
+  "stats": {
+    "hp": 110,
+    "attack": 125,
+    "defense": 85,
+    "rangedAttack": 0,
+    "speed": 150,
+    "stamina": 140
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Dark Thunder",
+    "descriptionEn": "Dark variant. Electric+Dark hybrid flying mount."
+  },
+  "acquisition": {
+    "habitats": [
+      "night",
+      "mountain"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": true,
+    "bossLevel": 45,
+    "bossLocation": "Beakon Noct's Domain"
+  },
+  "breeding": {
+    "breedingPower": 335
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "mount-flying",
+      "combat"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": true
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 65,
+      "mount-flying": 90,
+      "mount-ground": 0
+    },
+    "reasons": {
+      "mount-flying": [
+        "150 Speed — fast and efficient"
+      ],
+      "combat": [
+        "150 Speed — fast and efficient"
+      ]
+    }
+  },
+  "tier": "A"
+}

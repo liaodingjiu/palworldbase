@@ -1,0 +1,141 @@
+{
+  "id": "astegon",
+  "gameId": "palworld",
+  "number": 109,
+  "name": {
+    "zh": "黑骑龙",
+    "en": "Astegon"
+  },
+  "slug": "astegon",
+  "image": "/images/pals/astegon.png",
+  "classification": {
+    "elements": [
+      "Dark",
+      "Dragon"
+    ],
+    "rarity": "Legendary",
+    "role": [
+      "Combat",
+      "Mount"
+    ],
+    "size": "Huge",
+    "isRideable": false,
+    "isFlyable": true
+  },
+  "stats": {
+    "hp": 180,
+    "attack": 150,
+    "defense": 160,
+    "rangedAttack": 0,
+    "speed": 80,
+    "stamina": 200
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 4,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Dark Oblivion",
+    "descriptionEn": "Can be ridden as a flying mount. Fires a concentrated beam of dark energy."
+  },
+  "acquisition": {
+    "habitats": [
+      "volcano",
+      "cave"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": true,
+    "bossLevel": 50,
+    "bossLocation": "Astegon's Domain"
+  },
+  "breeding": {
+    "breedingPower": 140
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "mining",
+      "mount-flying",
+      "combat"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": true
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 95,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 80,
+      "mount-flying": 50,
+      "mount-ground": 0
+    },
+    "reasons": {
+      "mining": [
+        "Mining Lv 4 — top-tier efficiency",
+        "Reliable mining output for mid-game progression",
+        "150 Attack — strong combat presence"
+      ],
+      "mount-flying": [
+        "150 Attack — strong combat presence"
+      ],
+      "combat": [
+        "150 Attack — strong combat presence"
+      ]
+    }
+  },
+  "tier": "S"
+}

@@ -1,0 +1,98 @@
+{
+  "id": "menasting_terra",
+  "gameId": "palworld",
+  "number": "099B",
+  "name": {
+    "zh": "Menasting Terra",
+    "en": "Menasting Terra"
+  },
+  "slug": "menasting_terra",
+  "image": "/images/pals/menasting_terra.webp",
+  "classification": {
+    "elements": [
+      "Ground"
+    ],
+    "rarity": "Epic",
+    "role": [
+      "Combat"
+    ],
+    "size": "Large",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 100,
+    "attack": 105,
+    "defense": 130,
+    "rangedAttack": 0,
+    "speed": 70,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 2,
+    "mining": 3,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Sand Attack",
+      "element": "Ground",
+      "power": 45,
+      "cooldown": 3,
+      "level": 1
+    },
+    {
+      "name": "Rock Slide",
+      "element": "Ground",
+      "power": 90,
+      "cooldown": 12,
+      "level": 12
+    },
+    {
+      "name": "Earthquake",
+      "element": "Ground",
+      "power": 140,
+      "cooldown": 30,
+      "level": 30
+    }
+  ],
+  "partnerSkill": {
+    "name": "Steel Scorpion",
+    "descriptionEn": "While fighting together, increases the player's defense and Electric Pals drop more items when defeated."
+  },
+  "acquisition": {
+    "habitats": [
+      "various"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": true
+  },
+  "breeding": {
+    "breedingPower": 250
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [
+      "mining",
+      "lumbering"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": true
+    },
+    "scores": {},
+    "reasons": {}
+  },
+  "tier": "A"
+}

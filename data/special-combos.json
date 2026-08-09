@@ -1,0 +1,267 @@
+[
+  {
+    "c": "azurobe_cryst",
+    "a": "azurobe",
+    "b": "frostplume"
+  },
+  {
+    "c": "blazehowl_noct",
+    "a": "blazehowl",
+    "b": "felbat"
+  },
+  {
+    "c": "broncherry_aqua",
+    "a": "broncherry",
+    "b": "fuack"
+  },
+  {
+    "c": "bushi_noct",
+    "a": "bushi",
+    "b": "sootseer"
+  },
+  {
+    "c": "caprity_noct",
+    "a": "caprity",
+    "b": "tarantriss"
+  },
+  {
+    "c": "chillet_ignis",
+    "a": "chillet",
+    "b": "arsox"
+  },
+  {
+    "c": "croajiro_noct",
+    "a": "croajiro",
+    "b": "bushi_noct"
+  },
+  {
+    "c": "cryolinx_terra",
+    "a": "cryolinx",
+    "b": "dazemu"
+  },
+  {
+    "c": "dazzi_noct",
+    "a": "dazzi",
+    "b": "omascul"
+  },
+  {
+    "c": "dinossom_lux",
+    "a": "dinossom",
+    "b": "rayhound"
+  },
+  {
+    "c": "dumud_gild",
+    "a": "dumud",
+    "b": "eikthyrdeer_terra"
+  },
+  {
+    "c": "eikthyrdeer_terra",
+    "a": "eikthyrdeer",
+    "b": "hangyu"
+  },
+  {
+    "c": "elphidran_aqua",
+    "a": "elphidran",
+    "b": "surfent"
+  },
+  {
+    "c": "faleris_aqua",
+    "a": "faleris",
+    "b": "jormuntide"
+  },
+  {
+    "c": "fenglope_lux",
+    "a": "fenglope",
+    "b": "azurmane"
+  },
+  {
+    "c": "finsider_ignis",
+    "a": "finsider",
+    "b": "gobfin_ignis"
+  },
+  {
+    "c": "foxparks_cryst",
+    "a": "foxparks",
+    "b": "foxcicle"
+  },
+  {
+    "c": "frostallion_noct",
+    "a": "frostallion",
+    "b": "helzephyr"
+  },
+  {
+    "c": "fuack_ignis",
+    "a": "fuack",
+    "b": "flambelle"
+  },
+  {
+    "c": "ghangler_ignis",
+    "a": "ghangler",
+    "b": "sootseer"
+  },
+  {
+    "c": "gobfin_ignis",
+    "a": "gobfin",
+    "b": "rooby"
+  },
+  {
+    "c": "gorirat_terra",
+    "a": "gorirat",
+    "b": "kikit"
+  },
+  {
+    "c": "hangyu_cryst",
+    "a": "hangyu",
+    "b": "swee"
+  },
+  {
+    "c": "helzephyr_lux",
+    "a": "helzephyr",
+    "b": "beakon"
+  },
+  {
+    "c": "incineram_noct",
+    "a": "incineram",
+    "b": "maraith"
+  },
+  {
+    "c": "jolthog_cryst",
+    "a": "jolthog",
+    "b": "pengullet"
+  },
+  {
+    "c": "jormuntide_ignis",
+    "a": "jormuntide",
+    "b": "blazehowl"
+  },
+  {
+    "c": "katress_ignis",
+    "a": "wixen",
+    "b": "katress"
+  },
+  {
+    "c": "killamari_primo",
+    "a": "killamari",
+    "b": "ribbuny"
+  },
+  {
+    "c": "kingpaca_cryst",
+    "a": "kingpaca",
+    "b": "reindrix"
+  },
+  {
+    "c": "kitsun_noct",
+    "a": "kitsun",
+    "b": "nyafia"
+  },
+  {
+    "c": "leezpunk_ignis",
+    "a": "leezpunk",
+    "b": "flambelle"
+  },
+  {
+    "c": "loupmoon_cryst",
+    "a": "loupmoon",
+    "b": "sweepa"
+  },
+  {
+    "c": "lyleen_noct",
+    "a": "lyleen",
+    "b": "menasting"
+  },
+  {
+    "c": "mammorest_cryst",
+    "a": "mammorest",
+    "b": "wumpo"
+  },
+  {
+    "c": "mau_cryst",
+    "a": "mau",
+    "b": "pengullet"
+  },
+  {
+    "c": "menasting_terra",
+    "a": "menasting",
+    "b": "knocklem"
+  },
+  {
+    "c": "mossanda_lux",
+    "a": "mossanda",
+    "b": "grizzbolt"
+  },
+  {
+    "c": "pengullet_lux",
+    "a": "pengullet",
+    "b": "sparkit"
+  },
+  {
+    "c": "penking_lux",
+    "a": "penking",
+    "b": "rayhound"
+  },
+  {
+    "c": "pyrin_noct",
+    "a": "pyrin",
+    "b": "katress"
+  },
+  {
+    "c": "quivern_botan",
+    "a": "quivern",
+    "b": "lullu"
+  },
+  {
+    "c": "relaxaurus_lux",
+    "a": "relaxaurus",
+    "b": "sparkit"
+  },
+  {
+    "c": "reptyro_cryst",
+    "a": "reptyro",
+    "b": "foxcicle"
+  },
+  {
+    "c": "ribbuny_botan",
+    "a": "ribbuny",
+    "b": "bristla"
+  },
+  {
+    "c": "robinquill_terra",
+    "a": "robinquill",
+    "b": "fuddler"
+  },
+  {
+    "c": "surfent_terra",
+    "a": "surfent",
+    "b": "dumud"
+  },
+  {
+    "c": "suzaku_aqua",
+    "a": "suzaku",
+    "b": "jormuntide"
+  },
+  {
+    "c": "turtacle_terra",
+    "a": "turtacle",
+    "b": "digtoise"
+  },
+  {
+    "c": "vanwyrm_cryst",
+    "a": "vanwyrm",
+    "b": "foxcicle"
+  },
+  {
+    "c": "whalaska_ignis",
+    "a": "whalaska",
+    "b": "chillet_ignis"
+  },
+  {
+    "c": "warsect_terra",
+    "a": "warsect",
+    "b": "digtoise"
+  },
+  {
+    "c": "wixen_noct",
+    "a": "katress",
+    "b": "wixen"
+  }
+]

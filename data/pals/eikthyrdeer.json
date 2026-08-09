@@ -1,0 +1,97 @@
+{
+  "id": "eikthyrdeer",
+  "gameId": "palworld",
+  "number": "037",
+  "name": {
+    "zh": "Eikthyrdeer",
+    "en": "Eikthyrdeer"
+  },
+  "slug": "eikthyrdeer",
+  "image": "/images/pals/eikthyrdeer.webp",
+  "classification": {
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "Uncommon",
+    "role": [
+      "Worker"
+    ],
+    "size": "Medium",
+    "isRideable": true,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 95,
+    "attack": 80,
+    "defense": 80,
+    "rangedAttack": 0,
+    "speed": 70,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 2,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Guardian of the Forest",
+    "descriptionEn": "Can be [[ridden]]. Can perform a double jump while mounted. Increases efficiency of cutting trees."
+  },
+  "acquisition": {
+    "habitats": [
+      "various"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false
+  },
+  "breeding": {
+    "breedingPower": 920
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [
+      "lumbering"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": false
+    },
+    "scores": {},
+    "reasons": {}
+  },
+  "tier": "B"
+}

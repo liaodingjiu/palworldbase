@@ -1,0 +1,154 @@
+{
+  "id": "hoodle",
+  "gameId": "palworld",
+  "number": 166,
+  "name": {
+    "zh": "",
+    "en": "Hoodle"
+  },
+  "slug": "hoodle",
+  "image": "/images/pals/hoodle.webp",
+  "_source": "wiki.gg auto-generated",
+  "_needsReview": [
+    "stats.scale",
+    "drops",
+    "acquisition.habitats",
+    "decision"
+  ],
+  "classification": {
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "Common",
+    "role": [
+      "Combat"
+    ],
+    "size": "Medium",
+    "isRideable": true,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 70,
+    "attack": 85,
+    "defense": 80,
+    "rangedAttack": 0,
+    "speed": 400,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 1,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 1,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Dark Ball",
+      "element": "Dark",
+      "power": 40,
+      "cooldown": 2,
+      "level": 1
+    },
+    {
+      "name": "Dark Cannon",
+      "element": "Dark",
+      "power": 80,
+      "cooldown": 10,
+      "level": 7
+    },
+    {
+      "name": "Shadow Burst",
+      "element": "Dark",
+      "power": 75,
+      "cooldown": 8,
+      "level": 15
+    },
+    {
+      "name": "Spirit Flame",
+      "element": "Fire",
+      "power": 90,
+      "cooldown": 12,
+      "level": 22
+    },
+    {
+      "name": "Nightmare Ball",
+      "element": "Dark",
+      "power": 80,
+      "cooldown": 10,
+      "level": 30
+    },
+    {
+      "name": "Apocalypse",
+      "element": "Dark",
+      "power": 125,
+      "cooldown": 24,
+      "level": 40
+    },
+    {
+      "name": "Dark Laser",
+      "element": "Dark",
+      "power": 80,
+      "cooldown": 10,
+      "level": 50
+    },
+    {
+      "name": "Dark Whisp",
+      "element": "Dark",
+      "power": 80,
+      "cooldown": 10,
+      "level": 70
+    }
+  ],
+  "partnerSkill": {
+    "name": "Void-Dweller",
+    "descriptionEn": "While in party, increases the player's damage dealt to enemies that are not in combat. (Does not stack)"
+  },
+  "acquisition": {
+    "habitats": [],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": true,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 1770
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": false
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 0,
+      "mount-flying": 0,
+      "mount-ground": 0
+    },
+    "reasons": {}
+  },
+  "_rawDrops": "Small Pal Soul*1-2@100; Horn*1-2@100",
+  "tier": "B"
+}

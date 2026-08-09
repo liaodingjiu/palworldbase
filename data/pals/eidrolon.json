@@ -1,0 +1,156 @@
+{
+  "id": "eidrolon",
+  "gameId": "palworld",
+  "number": 171,
+  "name": {
+    "zh": "",
+    "en": "Eidrolon"
+  },
+  "slug": "eidrolon",
+  "image": "/images/pals/eidrolon.webp",
+  "_source": "wiki.gg auto-generated",
+  "_needsReview": [
+    "stats.scale",
+    "drops",
+    "acquisition.habitats",
+    "decision"
+  ],
+  "classification": {
+    "elements": [
+      "Dragon",
+      "Dark"
+    ],
+    "rarity": "Epic",
+    "role": [
+      "Base Worker",
+      "Combat"
+    ],
+    "size": "Large",
+    "isRideable": true,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 115,
+    "attack": 125,
+    "defense": 120,
+    "rangedAttack": 0,
+    "speed": 1400,
+    "stamina": 130
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 6,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Dragon Burst",
+      "element": "Dragon",
+      "power": 40,
+      "cooldown": 2,
+      "level": 1
+    },
+    {
+      "name": "Dragon Breath",
+      "element": "Dragon",
+      "power": 70,
+      "cooldown": 6,
+      "level": 7
+    },
+    {
+      "name": "Beam Slicer",
+      "element": "Ice",
+      "power": 75,
+      "cooldown": 8,
+      "level": 15
+    },
+    {
+      "name": "Comet Barrage",
+      "element": "Neutral",
+      "power": 90,
+      "cooldown": 12,
+      "level": 22
+    },
+    {
+      "name": "Tail Slash",
+      "element": "Neutral",
+      "power": 110,
+      "cooldown": 18,
+      "level": 30
+    },
+    {
+      "name": "Dragon Meteor",
+      "element": "Dragon",
+      "power": 150,
+      "cooldown": 30,
+      "level": 40
+    },
+    {
+      "name": "Blazing Beam",
+      "element": "Neutral",
+      "power": 140,
+      "cooldown": 30,
+      "level": 50
+    },
+    {
+      "name": "Meteorain",
+      "element": "Neutral",
+      "power": 150,
+      "cooldown": 40,
+      "level": 70
+    }
+  ],
+  "partnerSkill": {
+    "name": "Liberated Pterosaur",
+    "descriptionEn": "Can be ridden as a flying mount. This Pal's Attack and Movement Speed increase for each other {{i|Dragon}} or {{i|Dark}} Pal in your party."
+  },
+  "acquisition": {
+    "habitats": [],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": true,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 300
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": false
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 0,
+      "mount-flying": 0,
+      "mount-ground": 0
+    },
+    "reasons": {}
+  },
+  "_rawDrops": "Leather*4-5@100; High Quality Pal Oil*5-6@100",
+  "tier": "S"
+}

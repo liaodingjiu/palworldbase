@@ -1,0 +1,139 @@
+{
+  "id": "fenglope",
+  "gameId": "palworld",
+  "number": 103,
+  "name": {
+    "zh": "风角鹿",
+    "en": "Fenglope"
+  },
+  "slug": "fenglope",
+  "image": "/images/pals/fenglope.png",
+  "classification": {
+    "elements": [
+      "Neutral",
+      "Ice"
+    ],
+    "rarity": "Rare",
+    "role": [
+      "Combat",
+      "Mount"
+    ],
+    "size": "Large",
+    "isRideable": true,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 120,
+    "attack": 110,
+    "defense": 100,
+    "rangedAttack": 0,
+    "speed": 160,
+    "stamina": 150
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 2,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 1,
+    "transporting": 1,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Blizzard Dash",
+    "descriptionEn": "Can be ridden. Fastest ground mount. Leaves a trail of ice."
+  },
+  "acquisition": {
+    "habitats": [
+      "snow_region"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 310
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "mount-ground",
+      "lumbering",
+      "cooling"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": true
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 55,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 30,
+      "transporting": 30,
+      "farming": 0,
+      "combat": 65,
+      "mount-flying": 0,
+      "mount-ground": 85
+    },
+    "reasons": {
+      "mount-ground": [
+        "160 Speed — fast and efficient"
+      ],
+      "lumbering": [
+        "Reliable lumbering output for mid-game progression",
+        "160 Speed — fast and efficient"
+      ],
+      "cooling": [
+        "160 Speed — fast and efficient"
+      ]
+    }
+  },
+  "tier": "B"
+}

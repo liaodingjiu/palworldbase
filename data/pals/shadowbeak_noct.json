@@ -1,0 +1,136 @@
+{
+  "id": "shadowbeak_noct",
+  "gameId": "palworld",
+  "number": 149,
+  "name": {
+    "zh": "夜雕",
+    "en": "Shadowbeak Noct"
+  },
+  "slug": "shadowbeak_noct",
+  "image": "/images/pals/shadowbeak_noct.png",
+  "classification": {
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "Legendary",
+    "role": [
+      "Combat",
+      "Mount"
+    ],
+    "size": "Large",
+    "isRideable": false,
+    "isFlyable": true
+  },
+  "stats": {
+    "hp": 165,
+    "attack": 185,
+    "defense": 105,
+    "rangedAttack": 0,
+    "speed": 185,
+    "stamina": 180
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Void Arrow",
+    "descriptionEn": "Pure dark variant. Becomes invisible during flight."
+  },
+  "acquisition": {
+    "habitats": [
+      "night",
+      "sky"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": true,
+    "bossLevel": 50,
+    "bossLocation": "Shadowbeak Noct's Domain"
+  },
+  "breeding": {
+    "breedingPower": 125
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "mount-flying",
+      "combat"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": true
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 95,
+      "mount-flying": 90,
+      "mount-ground": 0
+    },
+    "reasons": {
+      "mount-flying": [
+        "185 Attack — strong combat presence",
+        "185 Speed — fast and efficient"
+      ],
+      "combat": [
+        "185 Attack — strong combat presence",
+        "185 Speed — fast and efficient"
+      ]
+    }
+  },
+  "tier": "S"
+}

@@ -1,0 +1,99 @@
+{
+  "id": "palumba",
+  "gameId": "palworld",
+  "number": "144",
+  "name": {
+    "zh": "Palumba",
+    "en": "Palumba"
+  },
+  "slug": "palumba",
+  "image": "/images/pals/palumba.webp",
+  "classification": {
+    "elements": [
+      "Grass"
+    ],
+    "rarity": "Common",
+    "role": [
+      "Combat"
+    ],
+    "size": "Medium",
+    "isRideable": true,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 105,
+    "attack": 110,
+    "defense": 115,
+    "rangedAttack": 0,
+    "speed": 70,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 2,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 2,
+    "lumbering": 0,
+    "mining": 3,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Wind Cutter",
+      "element": "Grass",
+      "power": 55,
+      "cooldown": 4,
+      "level": 1
+    },
+    {
+      "name": "Seed Bomb",
+      "element": "Grass",
+      "power": 90,
+      "cooldown": 10,
+      "level": 10
+    },
+    {
+      "name": "Grass Tornado",
+      "element": "Grass",
+      "power": 100,
+      "cooldown": 18,
+      "level": 22
+    }
+  ],
+  "partnerSkill": {
+    "name": "Samba Step",
+    "descriptionEn": "Can be ridden. Runs faster over grass."
+  },
+  "acquisition": {
+    "habitats": [
+      "various"
+    ],
+    "isBreedable": false,
+    "isCatchable": true,
+    "isBossEncounter": false
+  },
+  "breeding": {
+    "breedingPower": 1000
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [
+      "mining",
+      "planting",
+      "gathering"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": false
+    },
+    "scores": {},
+    "reasons": {}
+  },
+  "tier": "A"
+}

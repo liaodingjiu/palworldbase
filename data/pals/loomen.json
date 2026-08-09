@@ -1,0 +1,156 @@
+{
+  "id": "loomen",
+  "gameId": "palworld",
+  "number": 180,
+  "name": {
+    "zh": "",
+    "en": "Loomen"
+  },
+  "slug": "loomen",
+  "image": "/images/pals/loomen.webp",
+  "_source": "wiki.gg auto-generated",
+  "_needsReview": [
+    "stats.scale",
+    "drops",
+    "acquisition.habitats",
+    "decision"
+  ],
+  "classification": {
+    "elements": [
+      "Dark",
+      "Fire"
+    ],
+    "rarity": "Rare",
+    "role": [
+      "Combat",
+      "Base Worker"
+    ],
+    "size": "Medium",
+    "isRideable": true,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 90,
+    "attack": 100,
+    "defense": 95,
+    "rangedAttack": 0,
+    "speed": 300,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 4,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 4,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 4,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Dark Ball",
+      "element": "Dark",
+      "power": 40,
+      "cooldown": 2,
+      "level": 1
+    },
+    {
+      "name": "Spirit Fire",
+      "element": "Fire",
+      "power": 55,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Spirit Flame",
+      "element": "Fire",
+      "power": 75,
+      "cooldown": 8,
+      "level": 15
+    },
+    {
+      "name": "Nightmare Ball",
+      "element": "Dark",
+      "power": 80,
+      "cooldown": 10,
+      "level": 22
+    },
+    {
+      "name": "Flame Funnel",
+      "element": "Fire",
+      "power": 110,
+      "cooldown": 18,
+      "level": 30
+    },
+    {
+      "name": "Volcanic Rain",
+      "element": "Fire",
+      "power": 125,
+      "cooldown": 24,
+      "level": 40
+    },
+    {
+      "name": "Dark Whisp",
+      "element": "Dark",
+      "power": 80,
+      "cooldown": 10,
+      "level": 50
+    },
+    {
+      "name": "Lantern Flame",
+      "element": "Fire",
+      "power": 150,
+      "cooldown": 40,
+      "level": 70
+    }
+  ],
+  "partnerSkill": {
+    "name": "Lantern Enchantment",
+    "descriptionEn": "While in party, the player's arrows explode on contact, dealing additional damage equal to a percent of the player's attack damage. (Does not stack)"
+  },
+  "acquisition": {
+    "habitats": [],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": true,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 890
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": false
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 0,
+      "mount-flying": 0,
+      "mount-ground": 0
+    },
+    "reasons": {}
+  },
+  "_rawDrops": "High Quality Pal Oil*2-3@100; Leather*2-3@100; Venom Gland*2@100",
+  "tier": "A"
+}

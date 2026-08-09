@@ -1,0 +1,154 @@
+{
+  "id": "muffly",
+  "gameId": "palworld",
+  "number": 59,
+  "name": {
+    "zh": "",
+    "en": "Muffly"
+  },
+  "slug": "muffly",
+  "image": "/images/pals/muffly.webp",
+  "_source": "wiki.gg auto-generated",
+  "_needsReview": [
+    "stats.scale",
+    "drops",
+    "acquisition.habitats",
+    "decision"
+  ],
+  "classification": {
+    "elements": [
+      "Ice"
+    ],
+    "rarity": "Common",
+    "role": [
+      "Base Worker"
+    ],
+    "size": "Medium",
+    "isRideable": true,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 60,
+    "attack": 80,
+    "defense": 55,
+    "rangedAttack": 0,
+    "speed": 300,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 2,
+    "transporting": 1,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 1
+    },
+    {
+      "name": "Icicle Cutter",
+      "element": "Ice",
+      "power": 55,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Air Blade",
+      "element": "Dark",
+      "power": 80,
+      "cooldown": 10,
+      "level": 15
+    },
+    {
+      "name": "Crystal Breath",
+      "element": "Ice",
+      "power": 90,
+      "cooldown": 12,
+      "level": 22
+    },
+    {
+      "name": "Icicle Bullet",
+      "element": "Ice",
+      "power": 110,
+      "cooldown": 18,
+      "level": 30
+    },
+    {
+      "name": "Icicle Line",
+      "element": "Ice",
+      "power": 125,
+      "cooldown": 24,
+      "level": 40
+    },
+    {
+      "name": "Blizzard Spike",
+      "element": "Ice",
+      "power": 140,
+      "cooldown": 30,
+      "level": 50
+    },
+    {
+      "name": "Diamond Rain",
+      "element": "Ice",
+      "power": 150,
+      "cooldown": 40,
+      "level": 70
+    }
+  ],
+  "partnerSkill": {
+    "name": "Fluffy Flutterer",
+    "descriptionEn": "While in party, increases the capture rate of Pals afflicted with Freeze. (Does not stack)"
+  },
+  "acquisition": {
+    "habitats": [],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": true,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 2480
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": false
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 0,
+      "mount-flying": 0,
+      "mount-ground": 0
+    },
+    "reasons": {}
+  },
+  "_rawDrops": "Ice Organ*1@100",
+  "tier": "B"
+}

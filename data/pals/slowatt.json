@@ -1,0 +1,154 @@
+{
+  "id": "slowatt",
+  "gameId": "palworld",
+  "number": 167,
+  "name": {
+    "zh": "",
+    "en": "Slowatt"
+  },
+  "slug": "slowatt",
+  "image": "/images/pals/slowatt.webp",
+  "_source": "wiki.gg auto-generated",
+  "_needsReview": [
+    "stats.scale",
+    "drops",
+    "acquisition.habitats",
+    "decision"
+  ],
+  "classification": {
+    "elements": [
+      "Electric"
+    ],
+    "rarity": "Common",
+    "role": [
+      "Base Worker"
+    ],
+    "size": "Small",
+    "isRideable": true,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 80,
+    "attack": 75,
+    "defense": 70,
+    "rangedAttack": 0,
+    "speed": 300,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 3,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Thunder Spear",
+      "element": "Electric",
+      "power": 40,
+      "cooldown": 2,
+      "level": 1
+    },
+    {
+      "name": "Shockwave",
+      "element": "Electric",
+      "power": 55,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Plasma Funnel",
+      "element": "Electric",
+      "power": 75,
+      "cooldown": 8,
+      "level": 15
+    },
+    {
+      "name": "Lightning Streak",
+      "element": "Electric",
+      "power": 90,
+      "cooldown": 12,
+      "level": 22
+    },
+    {
+      "name": "TriSpark",
+      "element": "Electric",
+      "power": 110,
+      "cooldown": 18,
+      "level": 30
+    },
+    {
+      "name": "Lightning Bolt",
+      "element": "Electric",
+      "power": 125,
+      "cooldown": 24,
+      "level": 40
+    },
+    {
+      "name": "All Range Thunder",
+      "element": "Electric",
+      "power": 140,
+      "cooldown": 30,
+      "level": 50
+    },
+    {
+      "name": "Thunder Rail",
+      "element": "Electric",
+      "power": 150,
+      "cooldown": 40,
+      "level": 70
+    }
+  ],
+  "partnerSkill": {
+    "name": "Chillswitch",
+    "descriptionEn": "While in party, when the player attacks an enemy afflicted with Electrify, the enemy discharges electricity, dealing damage equal to a percent of the player's attack damage to nearby enemies. (Does not stack.)"
+  },
+  "acquisition": {
+    "habitats": [],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": true,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 1750
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": false
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 0,
+      "mount-flying": 0,
+      "mount-ground": 0
+    },
+    "reasons": {}
+  },
+  "_rawDrops": "Aquatic Pal Fluids*1@100; Electric Organ*1-2@100",
+  "tier": "B"
+}

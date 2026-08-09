@@ -1,0 +1,99 @@
+{
+  "id": "icelyn",
+  "gameId": "palworld",
+  "number": "142",
+  "name": {
+    "zh": "Icelyn",
+    "en": "Icelyn"
+  },
+  "slug": "icelyn",
+  "image": "/images/pals/icelyn.webp",
+  "classification": {
+    "elements": [
+      "Ice"
+    ],
+    "rarity": "Common",
+    "role": [
+      "Combat"
+    ],
+    "size": "Medium",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 95,
+    "attack": 115,
+    "defense": 105,
+    "rangedAttack": 0,
+    "speed": 70,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 2,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 2,
+    "cooling": 3,
+    "transporting": 1,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Ice Shard",
+      "element": "Ice",
+      "power": 55,
+      "cooldown": 4,
+      "level": 1
+    },
+    {
+      "name": "Ice Beam",
+      "element": "Ice",
+      "power": 100,
+      "cooldown": 14,
+      "level": 15
+    },
+    {
+      "name": "Blizzard",
+      "element": "Ice",
+      "power": 140,
+      "cooldown": 24,
+      "level": 30
+    }
+  ],
+  "partnerSkill": {
+    "name": "Witch's Icy Veil",
+    "descriptionEn": "While fighting together, changes the player's attack type to Ice."
+  },
+  "acquisition": {
+    "habitats": [
+      "various"
+    ],
+    "isBreedable": false,
+    "isCatchable": true,
+    "isBossEncounter": false
+  },
+  "breeding": {
+    "breedingPower": 1000
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [
+      "cooling",
+      "handiwork",
+      "medicine"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": false
+    },
+    "scores": {},
+    "reasons": {}
+  },
+  "tier": "A"
+}

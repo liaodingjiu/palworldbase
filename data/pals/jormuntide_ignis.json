@@ -1,0 +1,139 @@
+{
+  "id": "jormuntide_ignis",
+  "gameId": "palworld",
+  "number": 113,
+  "name": {
+    "zh": "炎皇蛇",
+    "en": "Jormuntide Ignis"
+  },
+  "slug": "jormuntide_ignis",
+  "image": "/images/pals/jormuntide_ignis.png",
+  "classification": {
+    "elements": [
+      "Fire",
+      "Dragon"
+    ],
+    "rarity": "Legendary",
+    "role": [
+      "Combat"
+    ],
+    "size": "Huge",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 200,
+    "attack": 130,
+    "defense": 125,
+    "rangedAttack": 0,
+    "speed": 80,
+    "stamina": 200
+  },
+  "workSuitability": {
+    "kindling": 4,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 2,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Flame Emperor",
+    "descriptionEn": "Fire variant. Breathes an enormous stream of fire that melts everything."
+  },
+  "acquisition": {
+    "habitats": [
+      "volcano"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": true,
+    "bossLevel": 50,
+    "bossLocation": "Jormuntide Ignis's Domain"
+  },
+  "breeding": {
+    "breedingPower": 115
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "kindling",
+      "transport",
+      "combat"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": true
+    },
+    "scores": {
+      "kindling": 95,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 55,
+      "farming": 0,
+      "combat": 80,
+      "mount-flying": 0,
+      "mount-ground": 0
+    },
+    "reasons": {
+      "kindling": [
+        "Kindling Lv 4 — top-tier efficiency",
+        "Reliable kindling output for mid-game progression",
+        "130 Attack — strong combat presence"
+      ],
+      "transport": [
+        "130 Attack — strong combat presence"
+      ],
+      "combat": [
+        "130 Attack — strong combat presence"
+      ]
+    }
+  },
+  "tier": "S"
+}

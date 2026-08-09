@@ -1,0 +1,78 @@
+{
+  "id": "dualith_noct",
+  "gameId": "palworld",
+  "number": "138B",
+  "name": {
+    "zh": "Dualith Noct",
+    "en": "Dualith Noct"
+  },
+  "slug": "dualith_noct",
+  "image": "/images/pals/dualith_noct.webp",
+  "classification": {
+    "elements": [
+      "Ground",
+      "Dark"
+    ],
+    "rarity": "Rare",
+    "role": [
+      "Worker"
+    ],
+    "size": "Medium",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 80,
+    "attack": 80,
+    "defense": 80,
+    "rangedAttack": 0,
+    "speed": 70,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 1,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 3,
+    "farming": 0
+  },
+  "skills": [],
+  "partnerSkill": {
+    "name": "Corruption Laser",
+    "descriptionEn": "Can be ridden.<br>"
+  },
+  "acquisition": {
+    "habitats": [
+      "various"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false
+  },
+  "breeding": {
+    "breedingPower": 520
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [
+      "transporting",
+      "gathering"
+    ],
+    "gameStage": {
+      "early": true,
+      "mid": false,
+      "late": false
+    },
+    "scores": {},
+    "reasons": {}
+  },
+  "_dataQuality": "estimated",
+  "tier": "B"
+}

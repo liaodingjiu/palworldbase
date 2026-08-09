@@ -1,0 +1,8 @@
+{
+  "id": "palworld",
+  "name": "Palworld",
+  "version": "1.0",
+  "platform": ["PC", "Xbox", "PS5", "Mac"],
+  "lastUpdated": "2026-07-27",
+  "locale": ["en", "zh-CN"]
+}

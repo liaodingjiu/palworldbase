@@ -1,0 +1,144 @@
+{
+  "id": "mammorest",
+  "gameId": "palworld",
+  "number": 98,
+  "name": {
+    "zh": "猛犸象",
+    "en": "Mammorest"
+  },
+  "slug": "mammorest",
+  "image": "/images/pals/mammorest.png",
+  "classification": {
+    "elements": [
+      "Grass"
+    ],
+    "rarity": "Epic",
+    "role": [
+      "Combat",
+      "Mount"
+    ],
+    "size": "Huge",
+    "isRideable": true,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 180,
+    "attack": 120,
+    "defense": 160,
+    "rangedAttack": 0,
+    "speed": 40,
+    "stamina": 200
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 3,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 3,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 2,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Ancient Power",
+    "descriptionEn": "Can be ridden. Stomps the ground, causing massive tremors."
+  },
+  "acquisition": {
+    "habitats": [
+      "forest",
+      "snow_region"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": true,
+    "bossLevel": 45,
+    "bossLocation": "Mammorest's Domain"
+  },
+  "breeding": {
+    "breedingPower": 220
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "planting",
+      "lumbering",
+      "transport",
+      "mount-ground"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": true
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 80,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 80,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 55,
+      "farming": 0,
+      "combat": 65,
+      "mount-flying": 0,
+      "mount-ground": 45
+    },
+    "reasons": {
+      "planting": [
+        "Planting Lv 3 — top-tier efficiency",
+        "Reliable planting output for mid-game progression"
+      ],
+      "lumbering": [
+        "Lumbering Lv 3 — top-tier efficiency",
+        "Reliable lumbering output for mid-game progression"
+      ],
+      "transport": [
+        "Versatile Pal with balanced stats"
+      ],
+      "mount-ground": [
+        "Versatile Pal with balanced stats"
+      ]
+    }
+  },
+  "tier": "A"
+}

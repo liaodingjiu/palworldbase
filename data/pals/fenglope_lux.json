@@ -1,0 +1,98 @@
+{
+  "id": "fenglope_lux",
+  "gameId": "palworld",
+  "number": "093B",
+  "name": {
+    "zh": "Fenglope Lux",
+    "en": "Fenglope Lux"
+  },
+  "slug": "fenglope_lux",
+  "image": "/images/pals/fenglope_lux.webp",
+  "classification": {
+    "elements": [
+      "Electric"
+    ],
+    "rarity": "Uncommon",
+    "role": [
+      "Combat"
+    ],
+    "size": "Medium",
+    "isRideable": true,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 110,
+    "attack": 115,
+    "defense": 90,
+    "rangedAttack": 0,
+    "speed": 70,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 2,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 2,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Thunder Shock",
+      "element": "Electric",
+      "power": 50,
+      "cooldown": 3,
+      "level": 1
+    },
+    {
+      "name": "Thunderbolt",
+      "element": "Electric",
+      "power": 100,
+      "cooldown": 12,
+      "level": 12
+    },
+    {
+      "name": "Lightning Strike",
+      "element": "Electric",
+      "power": 130,
+      "cooldown": 20,
+      "level": 25
+    }
+  ],
+  "partnerSkill": {
+    "name": "Stormcloud",
+    "descriptionEn": "Can be ridden. Can double jump while mounted. While fighting together, Water Pals drop more items when defeated."
+  },
+  "acquisition": {
+    "habitats": [
+      "various"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false
+  },
+  "breeding": {
+    "breedingPower": 835
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [
+      "generating",
+      "lumbering"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": false
+    },
+    "scores": {},
+    "reasons": {}
+  },
+  "tier": "B"
+}

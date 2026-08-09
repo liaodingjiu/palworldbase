@@ -1,0 +1,133 @@
+{
+  "id": "gobfin_ignis",
+  "gameId": "palworld",
+  "number": 28,
+  "name": {
+    "zh": "炎鲨小子",
+    "en": "Gobfin Ignis"
+  },
+  "slug": "gobfin_ignis",
+  "image": "/images/pals/gobfin_ignis.png",
+  "classification": {
+    "elements": [
+      "Fire"
+    ],
+    "rarity": "Uncommon",
+    "role": [
+      "Worker"
+    ],
+    "size": "Small",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 80,
+    "attack": 95,
+    "defense": 70,
+    "rangedAttack": 0,
+    "speed": 100,
+    "stamina": 110
+  },
+  "workSuitability": {
+    "kindling": 2,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Burning Shark",
+    "descriptionEn": "Increases attack power when HP drops below 30%. Fire variant."
+  },
+  "acquisition": {
+    "habitats": [
+      "volcano"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 1230
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "kindling",
+      "combat"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": false
+    },
+    "scores": {
+      "kindling": 55,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 40,
+      "mount-flying": 0,
+      "mount-ground": 0
+    },
+    "reasons": {
+      "kindling": [
+        "Reliable kindling output for mid-game progression",
+        "Obtainable mid-game"
+      ],
+      "combat": [
+        "Obtainable mid-game"
+      ]
+    }
+  },
+  "tier": "B"
+}

@@ -1,0 +1,141 @@
+{
+  "id": "katress_ignis",
+  "gameId": "palworld",
+  "number": 142,
+  "name": {
+    "zh": "火女巫",
+    "en": "Katress Ignis"
+  },
+  "slug": "katress_ignis",
+  "image": "/images/pals/katress_ignis.png",
+  "classification": {
+    "elements": [
+      "Fire"
+    ],
+    "rarity": "Rare",
+    "role": [
+      "Combat"
+    ],
+    "size": "Medium",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 85,
+    "attack": 135,
+    "defense": 60,
+    "rangedAttack": 0,
+    "speed": 110,
+    "stamina": 120
+  },
+  "workSuitability": {
+    "kindling": 2,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 2,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Fire Arts",
+    "descriptionEn": "Fire variant. Boosts Fire attack. Launches fire orbs."
+  },
+  "acquisition": {
+    "habitats": [
+      "volcano"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 1030
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "kindling",
+      "handiwork",
+      "combat"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": false
+    },
+    "scores": {
+      "kindling": 55,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 55,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 80,
+      "mount-flying": 0,
+      "mount-ground": 0
+    },
+    "reasons": {
+      "kindling": [
+        "Reliable kindling output for mid-game progression",
+        "135 Attack — strong combat presence",
+        "Obtainable mid-game"
+      ],
+      "handiwork": [
+        "Reliable handiwork output for mid-game progression",
+        "135 Attack — strong combat presence",
+        "Obtainable mid-game"
+      ],
+      "combat": [
+        "135 Attack — strong combat presence",
+        "Obtainable mid-game"
+      ]
+    }
+  },
+  "tier": "B"
+}

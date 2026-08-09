@@ -1,0 +1,136 @@
+{
+  "id": "petallia",
+  "gameId": "palworld",
+  "number": 93,
+  "name": {
+    "zh": "花冠",
+    "en": "Petallia"
+  },
+  "slug": "petallia",
+  "image": "/images/pals/petallia.png",
+  "classification": {
+    "elements": [
+      "Grass"
+    ],
+    "rarity": "Rare",
+    "role": [
+      "Worker"
+    ],
+    "size": "Medium",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 90,
+    "attack": 80,
+    "defense": 85,
+    "rangedAttack": 0,
+    "speed": 95,
+    "stamina": 120
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 3,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 2,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Petal Dance",
+    "descriptionEn": "Summons a whirlwind of flower petals that damages and confuses enemies."
+  },
+  "acquisition": {
+    "habitats": [
+      "garden",
+      "forest"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 1130
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "planting",
+      "gathering"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": false
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 80,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 55,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 40,
+      "mount-flying": 0,
+      "mount-ground": 0
+    },
+    "reasons": {
+      "planting": [
+        "Planting Lv 3 — top-tier efficiency",
+        "Reliable planting output for mid-game progression",
+        "Obtainable mid-game"
+      ],
+      "gathering": [
+        "Reliable gathering output for mid-game progression",
+        "Obtainable mid-game"
+      ]
+    }
+  },
+  "tier": "B"
+}

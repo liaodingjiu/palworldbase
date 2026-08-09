@@ -1,0 +1,129 @@
+{
+  "id": "bellanoir_libero",
+  "gameId": "palworld",
+  "number": 152,
+  "name": {
+    "zh": "解放贝拉",
+    "en": "Bellanoir Libero"
+  },
+  "slug": "bellanoir_libero",
+  "image": "/images/pals/bellanoir_libero.png",
+  "classification": {
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "Legendary",
+    "role": [
+      "Combat"
+    ],
+    "size": "Medium",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 140,
+    "attack": 180,
+    "defense": 100,
+    "rangedAttack": 0,
+    "speed": 140,
+    "stamina": 160
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Ultimate Shadow",
+    "descriptionEn": "Ultra raid boss. Unsealed form of Bellanoir with massively boosted stats."
+  },
+  "acquisition": {
+    "habitats": [
+      "raid"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": true,
+    "bossLevel": 50,
+    "bossLocation": "Bellanoir Libero's Domain"
+  },
+  "breeding": {
+    "breedingPower": 200
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "combat"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": true
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 95,
+      "mount-flying": 0,
+      "mount-ground": 0
+    },
+    "reasons": {
+      "combat": [
+        "180 Attack — strong combat presence",
+        "140 Speed — fast and efficient"
+      ]
+    }
+  },
+  "tier": "S"
+}

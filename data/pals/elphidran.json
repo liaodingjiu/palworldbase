@@ -1,0 +1,138 @@
+{
+  "id": "elphidran",
+  "gameId": "palworld",
+  "number": 80,
+  "name": {
+    "zh": "绿牙龙",
+    "en": "Elphidran"
+  },
+  "slug": "elphidran",
+  "image": "/images/pals/elphidran.png",
+  "classification": {
+    "elements": [
+      "Dragon"
+    ],
+    "rarity": "Rare",
+    "role": [
+      "Combat",
+      "Mount"
+    ],
+    "size": "Large",
+    "isRideable": false,
+    "isFlyable": true
+  },
+  "stats": {
+    "hp": 120,
+    "attack": 115,
+    "defense": 100,
+    "rangedAttack": 0,
+    "speed": 100,
+    "stamina": 140
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 1,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 1,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Dragon Flight",
+    "descriptionEn": "Can be ridden as a flying mount. Dragon breath attack while mounted."
+  },
+  "acquisition": {
+    "habitats": [
+      "mountain",
+      "forest"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 390
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "mount-flying",
+      "lumbering",
+      "combat"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": false
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 30,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 30,
+      "farming": 0,
+      "combat": 65,
+      "mount-flying": 50,
+      "mount-ground": 0
+    },
+    "reasons": {
+      "mount-flying": [
+        "Obtainable mid-game"
+      ],
+      "lumbering": [
+        "Obtainable mid-game"
+      ],
+      "combat": [
+        "Obtainable mid-game"
+      ]
+    }
+  },
+  "tier": "A"
+}

@@ -1,0 +1,130 @@
+{
+  "id": "kingpaca",
+  "gameId": "palworld",
+  "number": 96,
+  "name": {
+    "zh": "羊驼王",
+    "en": "Kingpaca"
+  },
+  "slug": "kingpaca",
+  "image": "/images/pals/kingpaca.png",
+  "classification": {
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "Rare",
+    "role": [
+      "Combat",
+      "Mount"
+    ],
+    "size": "Large",
+    "isRideable": true,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 140,
+    "attack": 85,
+    "defense": 130,
+    "rangedAttack": 0,
+    "speed": 80,
+    "stamina": 160
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Fluffy King",
+    "descriptionEn": "Can be ridden. While mounted, player carrying capacity is greatly increased."
+  },
+  "acquisition": {
+    "habitats": [
+      "mountain",
+      "desert"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 350
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "mount-ground"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": false
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 40,
+      "mount-flying": 0,
+      "mount-ground": 45
+    },
+    "reasons": {
+      "mount-ground": [
+        "Obtainable mid-game"
+      ]
+    }
+  },
+  "tier": "A"
+}

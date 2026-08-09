@@ -1,0 +1,136 @@
+{
+  "id": "shadowbeak",
+  "gameId": "palworld",
+  "number": 121,
+  "name": {
+    "zh": "暗影雕",
+    "en": "Shadowbeak"
+  },
+  "slug": "shadowbeak",
+  "image": "/images/pals/shadowbeak.png",
+  "classification": {
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "Legendary",
+    "role": [
+      "Combat",
+      "Mount"
+    ],
+    "size": "Large",
+    "isRideable": false,
+    "isFlyable": true
+  },
+  "stats": {
+    "hp": 160,
+    "attack": 180,
+    "defense": 110,
+    "rangedAttack": 0,
+    "speed": 180,
+    "stamina": 180
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Dark Arrow",
+    "descriptionEn": "Can be ridden as a flying mount. Transforms into a dark arrow that pierces through everything."
+  },
+  "acquisition": {
+    "habitats": [
+      "night",
+      "mountain"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": true,
+    "bossLevel": 50,
+    "bossLocation": "Shadowbeak's Domain"
+  },
+  "breeding": {
+    "breedingPower": 130
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "mount-flying",
+      "combat"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": true
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 95,
+      "mount-flying": 90,
+      "mount-ground": 0
+    },
+    "reasons": {
+      "mount-flying": [
+        "180 Attack — strong combat presence",
+        "180 Speed — fast and efficient"
+      ],
+      "combat": [
+        "180 Attack — strong combat presence",
+        "180 Speed — fast and efficient"
+      ]
+    }
+  },
+  "tier": "S"
+}

@@ -1,0 +1,135 @@
+{
+  "id": "sweepa",
+  "gameId": "palworld",
+  "number": 51,
+  "name": {
+    "zh": "绒霸",
+    "en": "Sweepa"
+  },
+  "slug": "sweepa",
+  "image": "/images/pals/sweepa.png",
+  "classification": {
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "Rare",
+    "role": [
+      "Combat",
+      "Mount"
+    ],
+    "size": "Large",
+    "isRideable": true,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 150,
+    "attack": 80,
+    "defense": 140,
+    "rangedAttack": 0,
+    "speed": 55,
+    "stamina": 160
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 3
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Fluffy King",
+    "descriptionEn": "When activated, Sweepa's fur expands, greatly increasing defense."
+  },
+  "acquisition": {
+    "habitats": [
+      "snow_region",
+      "mountain"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 380
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "farming",
+      "mount-ground"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": true
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 80,
+      "combat": 40,
+      "mount-flying": 0,
+      "mount-ground": 45
+    },
+    "reasons": {
+      "farming": [
+        "Farming Lv 3 — top-tier efficiency",
+        "Reliable farming output for mid-game progression"
+      ],
+      "mount-ground": [
+        "Versatile Pal with balanced stats"
+      ]
+    }
+  },
+  "tier": "A"
+}

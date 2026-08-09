@@ -1,0 +1,155 @@
+{
+  "id": "wispaw",
+  "gameId": "palworld",
+  "number": 50,
+  "name": {
+    "zh": "",
+    "en": "Wispaw"
+  },
+  "slug": "wispaw",
+  "image": "/images/pals/wispaw.webp",
+  "_source": "wiki.gg auto-generated",
+  "_needsReview": [
+    "stats.scale",
+    "drops",
+    "acquisition.habitats",
+    "decision"
+  ],
+  "classification": {
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "Common",
+    "role": [
+      "Combat",
+      "Base Worker"
+    ],
+    "size": "Small",
+    "isRideable": true,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 85,
+    "attack": 95,
+    "defense": 70,
+    "rangedAttack": 0,
+    "speed": 360,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 2,
+    "gathering": 0,
+    "lumbering": 1,
+    "mining": 0,
+    "medicine": 1,
+    "cooling": 0,
+    "transporting": 1,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Dark Ball",
+      "element": "Dark",
+      "power": 40,
+      "cooldown": 2,
+      "level": 1
+    },
+    {
+      "name": "Shadow Burst",
+      "element": "Dark",
+      "power": 55,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Spirit Flame",
+      "element": "Fire",
+      "power": 75,
+      "cooldown": 8,
+      "level": 15
+    },
+    {
+      "name": "Nightmare Ball",
+      "element": "Dark",
+      "power": 80,
+      "cooldown": 10,
+      "level": 22
+    },
+    {
+      "name": "Blizzard Spike",
+      "element": "Ice",
+      "power": 110,
+      "cooldown": 18,
+      "level": 30
+    },
+    {
+      "name": "Apocalypse",
+      "element": "Dark",
+      "power": 125,
+      "cooldown": 24,
+      "level": 40
+    },
+    {
+      "name": "Dark Laser",
+      "element": "Dark",
+      "power": 80,
+      "cooldown": 10,
+      "level": 50
+    },
+    {
+      "name": "Dark Whisp",
+      "element": "Dark",
+      "power": 80,
+      "cooldown": 10,
+      "level": 70
+    }
+  ],
+  "partnerSkill": {
+    "name": "Death-Cheating Feline",
+    "descriptionEn": "While in party, increases the capture rate when awarded a back bonus. (Does not stack)"
+  },
+  "acquisition": {
+    "habitats": [],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": true,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 2250
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": false
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 0,
+      "mount-flying": 0,
+      "mount-ground": 0
+    },
+    "reasons": {}
+  },
+  "_rawDrops": "Small Pal Soul*2@100; Leather*1-2@100",
+  "tier": "B"
+}

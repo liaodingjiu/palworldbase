@@ -1,0 +1,154 @@
+{
+  "id": "bakemi",
+  "gameId": "palworld",
+  "number": 168,
+  "name": {
+    "zh": "",
+    "en": "Bakemi"
+  },
+  "slug": "bakemi",
+  "image": "/images/pals/bakemi.webp",
+  "_source": "wiki.gg auto-generated",
+  "_needsReview": [
+    "stats.scale",
+    "drops",
+    "acquisition.habitats",
+    "decision"
+  ],
+  "classification": {
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "Common",
+    "role": [
+      "Base Worker"
+    ],
+    "size": "Small",
+    "isRideable": true,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 70,
+    "attack": 85,
+    "defense": 80,
+    "rangedAttack": 0,
+    "speed": 400,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 3,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 4,
+    "cooling": 0,
+    "transporting": 2,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Dark Ball",
+      "element": "Dark",
+      "power": 40,
+      "cooldown": 2,
+      "level": 1
+    },
+    {
+      "name": "Shadow Burst",
+      "element": "Dark",
+      "power": 55,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Spirit Flame",
+      "element": "Fire",
+      "power": 75,
+      "cooldown": 8,
+      "level": 15
+    },
+    {
+      "name": "Nightmare Ball",
+      "element": "Dark",
+      "power": 80,
+      "cooldown": 10,
+      "level": 22
+    },
+    {
+      "name": "Apocalypse",
+      "element": "Dark",
+      "power": 110,
+      "cooldown": 18,
+      "level": 30
+    },
+    {
+      "name": "Dark Laser",
+      "element": "Dark",
+      "power": 80,
+      "cooldown": 10,
+      "level": 40
+    },
+    {
+      "name": "Fire Ball",
+      "element": "Fire",
+      "power": 75,
+      "cooldown": 6,
+      "level": 50
+    },
+    {
+      "name": "Dark Whisp",
+      "element": "Dark",
+      "power": 80,
+      "cooldown": 10,
+      "level": 70
+    }
+  ],
+  "partnerSkill": {
+    "name": "Grinning Death",
+    "descriptionEn": "While in party, attacking enemies afflicted with Poison reduces their Attack. (Does not stack)"
+  },
+  "acquisition": {
+    "habitats": [],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": true,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 1540
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": false
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 0,
+      "mount-flying": 0,
+      "mount-ground": 0
+    },
+    "reasons": {}
+  },
+  "_rawDrops": "Cloth*1-2@100; Horn*2@100; Small Pal Soul*1@100",
+  "tier": "B"
+}

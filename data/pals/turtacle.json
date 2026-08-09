@@ -1,0 +1,97 @@
+{
+  "id": "turtacle",
+  "gameId": "palworld",
+  "number": "148",
+  "name": {
+    "zh": "Turtacle",
+    "en": "Turtacle"
+  },
+  "slug": "turtacle",
+  "image": "/images/pals/turtacle.webp",
+  "classification": {
+    "elements": [
+      "Water"
+    ],
+    "rarity": "Common",
+    "role": [
+      "Worker"
+    ],
+    "size": "Medium",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 75,
+    "attack": 75,
+    "defense": 115,
+    "rangedAttack": 0,
+    "speed": 70,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 2,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 1,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 1,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Water Gun",
+      "element": "Water",
+      "power": 65,
+      "cooldown": 4,
+      "level": 1
+    },
+    {
+      "name": "Aqua Jet",
+      "element": "Water",
+      "power": 80,
+      "cooldown": 8,
+      "level": 10
+    },
+    {
+      "name": "Hydro Pump",
+      "element": "Water",
+      "power": 130,
+      "cooldown": 20,
+      "level": 22
+    }
+  ],
+  "partnerSkill": {
+    "name": "Spikey Carrier",
+    "descriptionEn": "While in team,  Turtacle helps carry supplies,  decreasing the weight of armor in the player's inventory."
+  },
+  "acquisition": {
+    "habitats": [
+      "various"
+    ],
+    "isBreedable": false,
+    "isCatchable": true,
+    "isBossEncounter": false
+  },
+  "breeding": {
+    "breedingPower": 1000
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [
+      "watering"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": false
+    },
+    "scores": {},
+    "reasons": {}
+  },
+  "tier": "B"
+}

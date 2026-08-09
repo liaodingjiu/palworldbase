@@ -1,0 +1,139 @@
+{
+  "id": "flopie",
+  "gameId": "palworld",
+  "number": 24,
+  "name": {
+    "zh": "花丽娜",
+    "en": "Flopie"
+  },
+  "slug": "flopie",
+  "image": "/images/pals/flopie.png",
+  "classification": {
+    "elements": [
+      "Grass"
+    ],
+    "rarity": "Uncommon",
+    "role": [
+      "Worker"
+    ],
+    "size": "Medium",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 85,
+    "attack": 75,
+    "defense": 80,
+    "rangedAttack": 0,
+    "speed": 60,
+    "stamina": 110
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 2,
+    "generating": 0,
+    "handiwork": 1,
+    "gathering": 2,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 1,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Flower Heal",
+    "descriptionEn": "Heals nearby allies over time when activated."
+  },
+  "acquisition": {
+    "habitats": [
+      "forest",
+      "garden"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 1290
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "planting",
+      "medicine",
+      "gathering"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": false
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 55,
+      "generating": 0,
+      "handiwork": 30,
+      "gathering": 55,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 30,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 20,
+      "mount-flying": 0,
+      "mount-ground": 0
+    },
+    "reasons": {
+      "planting": [
+        "Reliable planting output for mid-game progression",
+        "Obtainable mid-game"
+      ],
+      "medicine": [
+        "Obtainable mid-game"
+      ],
+      "gathering": [
+        "Reliable gathering output for mid-game progression",
+        "Obtainable mid-game"
+      ]
+    }
+  },
+  "tier": "B"
+}

@@ -1,0 +1,129 @@
+{
+  "id": "selyne",
+  "gameId": "palworld",
+  "number": 166,
+  "name": {
+    "zh": "月神",
+    "en": "Selyne"
+  },
+  "slug": "selyne",
+  "image": "/images/pals/selyne.png",
+  "classification": {
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "Epic",
+    "role": [
+      "Worker"
+    ],
+    "size": "Medium",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 110,
+    "attack": 100,
+    "defense": 85,
+    "rangedAttack": 0,
+    "speed": 110,
+    "stamina": 140
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 2,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Moon Power",
+    "descriptionEn": "At night, boosts the attack and speed of all Pals in the party."
+  },
+  "acquisition": {
+    "habitats": [
+      "mountain",
+      "night"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": true,
+    "bossLevel": 45,
+    "bossLocation": "Selyne's Domain"
+  },
+  "breeding": {
+    "breedingPower": 270
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "handiwork"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": true
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 55,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 65,
+      "mount-flying": 0,
+      "mount-ground": 0
+    },
+    "reasons": {
+      "handiwork": [
+        "Reliable handiwork output for mid-game progression"
+      ]
+    }
+  },
+  "tier": "A"
+}

@@ -1,0 +1,139 @@
+{
+  "id": "blazehowl",
+  "gameId": "palworld",
+  "number": 87,
+  "name": {
+    "zh": "炎吼狮",
+    "en": "Blazehowl"
+  },
+  "slug": "blazehowl",
+  "image": "/images/pals/blazehowl.png",
+  "classification": {
+    "elements": [
+      "Fire"
+    ],
+    "rarity": "Epic",
+    "role": [
+      "Combat",
+      "Mount"
+    ],
+    "size": "Large",
+    "isRideable": true,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 140,
+    "attack": 145,
+    "defense": 115,
+    "rangedAttack": 0,
+    "speed": 110,
+    "stamina": 160
+  },
+  "workSuitability": {
+    "kindling": 3,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "King's Roar",
+    "descriptionEn": "Can be ridden. Roar boosts the attack of all Fire-type Pals in the party."
+  },
+  "acquisition": {
+    "habitats": [
+      "volcano"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": true,
+    "bossLevel": 45,
+    "bossLocation": "Blazehowl's Domain"
+  },
+  "breeding": {
+    "breedingPower": 280
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "kindling",
+      "mount-ground",
+      "combat"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": true
+    },
+    "scores": {
+      "kindling": 80,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 80,
+      "mount-flying": 0,
+      "mount-ground": 70
+    },
+    "reasons": {
+      "kindling": [
+        "Kindling Lv 3 — top-tier efficiency",
+        "Reliable kindling output for mid-game progression",
+        "145 Attack — strong combat presence"
+      ],
+      "mount-ground": [
+        "145 Attack — strong combat presence"
+      ],
+      "combat": [
+        "145 Attack — strong combat presence"
+      ]
+    }
+  },
+  "tier": "A"
+}

@@ -1,0 +1,142 @@
+{
+  "id": "rayhound",
+  "gameId": "palworld",
+  "number": 58,
+  "name": {
+    "zh": "电犬",
+    "en": "Rayhound"
+  },
+  "slug": "rayhound",
+  "image": "/images/pals/rayhound.png",
+  "classification": {
+    "elements": [
+      "Electric"
+    ],
+    "rarity": "Rare",
+    "role": [
+      "Combat",
+      "Mount"
+    ],
+    "size": "Medium",
+    "isRideable": true,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 95,
+    "attack": 105,
+    "defense": 80,
+    "rangedAttack": 0,
+    "speed": 145,
+    "stamina": 130
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 2,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Lightning Sprint",
+    "descriptionEn": "Can be ridden. Extremely fast sprint with a lightning dash."
+  },
+  "acquisition": {
+    "habitats": [
+      "desert",
+      "mountain"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 440
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "generating",
+      "mount-ground",
+      "combat"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": false
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 55,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 65,
+      "mount-flying": 0,
+      "mount-ground": 85
+    },
+    "reasons": {
+      "generating": [
+        "Reliable generating output for mid-game progression",
+        "145 Speed — fast and efficient",
+        "Obtainable mid-game"
+      ],
+      "mount-ground": [
+        "145 Speed — fast and efficient",
+        "Obtainable mid-game"
+      ],
+      "combat": [
+        "145 Speed — fast and efficient",
+        "Obtainable mid-game"
+      ]
+    }
+  },
+  "tier": "B"
+}

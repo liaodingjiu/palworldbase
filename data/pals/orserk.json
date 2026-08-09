@@ -1,0 +1,145 @@
+{
+  "id": "orserk",
+  "gameId": "palworld",
+  "number": 120,
+  "name": {
+    "zh": "雷牙龙",
+    "en": "Orserk"
+  },
+  "slug": "orserk",
+  "image": "/images/pals/orserk.png",
+  "classification": {
+    "elements": [
+      "Dragon",
+      "Electric"
+    ],
+    "rarity": "Legendary",
+    "role": [
+      "Combat",
+      "Mount"
+    ],
+    "size": "Huge",
+    "isRideable": false,
+    "isFlyable": true
+  },
+  "stats": {
+    "hp": 190,
+    "attack": 175,
+    "defense": 150,
+    "rangedAttack": 0,
+    "speed": 110,
+    "stamina": 200
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 3,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 2,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Thunder Dragon",
+    "descriptionEn": "Can be ridden as a flying mount. Dragon+Electric hybrid. Massive thunder breath."
+  },
+  "acquisition": {
+    "habitats": [
+      "mountain",
+      "sky"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": true,
+    "bossLevel": 50,
+    "bossLocation": "Orserk's Domain"
+  },
+  "breeding": {
+    "breedingPower": 145
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "generating",
+      "mount-flying",
+      "transport",
+      "combat"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": true
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 80,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 55,
+      "farming": 0,
+      "combat": 80,
+      "mount-flying": 50,
+      "mount-ground": 0
+    },
+    "reasons": {
+      "generating": [
+        "Generating Lv 3 — top-tier efficiency",
+        "Reliable generating output for mid-game progression",
+        "175 Attack — strong combat presence"
+      ],
+      "mount-flying": [
+        "175 Attack — strong combat presence"
+      ],
+      "transport": [
+        "175 Attack — strong combat presence"
+      ],
+      "combat": [
+        "175 Attack — strong combat presence"
+      ]
+    }
+  },
+  "tier": "S"
+}

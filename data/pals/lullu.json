@@ -1,0 +1,99 @@
+{
+  "id": "lullu",
+  "gameId": "palworld",
+  "number": "115",
+  "name": {
+    "zh": "Lullu",
+    "en": "Lullu"
+  },
+  "slug": "lullu",
+  "image": "/images/pals/lullu.webp",
+  "classification": {
+    "elements": [
+      "Grass"
+    ],
+    "rarity": "Uncommon",
+    "role": [
+      "Worker"
+    ],
+    "size": "Medium",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 90,
+    "attack": 90,
+    "defense": 80,
+    "rangedAttack": 0,
+    "speed": 70,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 2,
+    "generating": 0,
+    "handiwork": 2,
+    "gathering": 1,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 2,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Wind Cutter",
+      "element": "Grass",
+      "power": 55,
+      "cooldown": 4,
+      "level": 1
+    },
+    {
+      "name": "Seed Bomb",
+      "element": "Grass",
+      "power": 90,
+      "cooldown": 10,
+      "level": 10
+    },
+    {
+      "name": "Grass Tornado",
+      "element": "Grass",
+      "power": 100,
+      "cooldown": 18,
+      "level": 22
+    }
+  ],
+  "partnerSkill": {
+    "name": "Floral Boost",
+    "descriptionEn": "While at a base, Lullu fills the farm with good spirits, increasing the growth rate of the crops."
+  },
+  "acquisition": {
+    "habitats": [
+      "various"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false
+  },
+  "breeding": {
+    "breedingPower": 905
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [
+      "planting",
+      "handiwork",
+      "medicine"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": false
+    },
+    "scores": {},
+    "reasons": {}
+  },
+  "tier": "B"
+}

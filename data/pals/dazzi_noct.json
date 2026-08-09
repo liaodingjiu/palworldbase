@@ -1,0 +1,97 @@
+{
+  "id": "dazzi_noct",
+  "gameId": "palworld",
+  "number": "062B",
+  "name": {
+    "zh": "Dazzi Noct",
+    "en": "Dazzi Noct"
+  },
+  "slug": "dazzi_noct",
+  "image": "/images/pals/dazzi_noct.webp",
+  "classification": {
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "Common",
+    "role": [
+      "Worker"
+    ],
+    "size": "Medium",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 70,
+    "attack": 80,
+    "defense": 75,
+    "rangedAttack": 0,
+    "speed": 70,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 1,
+    "handiwork": 1,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 1,
+    "cooling": 0,
+    "transporting": 1,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Lady of Dark Lightning",
+    "descriptionEn": "While in team, appears near the player. Follows up player attacks with dark lightning bolts."
+  },
+  "acquisition": {
+    "habitats": [
+      "various"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false
+  },
+  "breeding": {
+    "breedingPower": 1115
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [
+      "combat"
+    ],
+    "gameStage": {
+      "early": true,
+      "mid": false,
+      "late": false
+    },
+    "scores": {},
+    "reasons": {}
+  },
+  "tier": "B"
+}

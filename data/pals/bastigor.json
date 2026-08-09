@@ -1,0 +1,99 @@
+{
+  "id": "bastigor",
+  "gameId": "palworld",
+  "number": "137",
+  "name": {
+    "zh": "Bastigor",
+    "en": "Bastigor"
+  },
+  "slug": "bastigor",
+  "image": "/images/pals/bastigor.webp",
+  "classification": {
+    "elements": [
+      "Ice"
+    ],
+    "rarity": "Legendary",
+    "role": [
+      "Combat"
+    ],
+    "size": "Large",
+    "isRideable": true,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 140,
+    "attack": 130,
+    "defense": 120,
+    "rangedAttack": 0,
+    "speed": 70,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 3,
+    "mining": 3,
+    "medicine": 0,
+    "cooling": 4,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Ice Shard",
+      "element": "Ice",
+      "power": 55,
+      "cooldown": 4,
+      "level": 1
+    },
+    {
+      "name": "Ice Beam",
+      "element": "Ice",
+      "power": 100,
+      "cooldown": 14,
+      "level": 15
+    },
+    {
+      "name": "Blizzard",
+      "element": "Ice",
+      "power": 140,
+      "cooldown": 24,
+      "level": 30
+    }
+  ],
+  "partnerSkill": {
+    "name": "Blizzard Crash",
+    "descriptionEn": "Can be ridden. While mounted, delivers crushing blows with an Ice-forged hammer."
+  },
+  "acquisition": {
+    "habitats": [
+      "various"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": true
+  },
+  "breeding": {
+    "breedingPower": 170
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [
+      "cooling",
+      "lumbering",
+      "mining"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": true
+    },
+    "scores": {},
+    "reasons": {}
+  },
+  "tier": "S"
+}

@@ -1,0 +1,98 @@
+{
+  "id": "hartalis",
+  "gameId": "palworld",
+  "number": "156",
+  "name": {
+    "zh": "Hartalis",
+    "en": "Hartalis"
+  },
+  "slug": "hartalis",
+  "image": "/images/pals/hartalis.webp",
+  "classification": {
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "Common",
+    "role": [
+      "Combat"
+    ],
+    "size": "Medium",
+    "isRideable": true,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 135,
+    "attack": 130,
+    "defense": 110,
+    "rangedAttack": 0,
+    "speed": 70,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 3,
+    "lumbering": 4,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Sacred Barrier",
+    "descriptionEn": "Can be ridden. While mounted, generates a barrier that blocks all attacks. Can triple jump while mounted."
+  },
+  "acquisition": {
+    "habitats": [
+      "various"
+    ],
+    "isBreedable": false,
+    "isCatchable": true,
+    "isBossEncounter": false
+  },
+  "breeding": {
+    "breedingPower": 1000
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [
+      "lumbering",
+      "gathering"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": false
+    },
+    "scores": {},
+    "reasons": {}
+  },
+  "tier": "A"
+}

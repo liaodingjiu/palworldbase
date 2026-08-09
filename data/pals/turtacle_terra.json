@@ -1,0 +1,97 @@
+{
+  "id": "turtacle_terra",
+  "gameId": "palworld",
+  "number": "148B",
+  "name": {
+    "zh": "Turtacle Terra",
+    "en": "Turtacle Terra"
+  },
+  "slug": "turtacle_terra",
+  "image": "/images/pals/turtacle_terra.webp",
+  "classification": {
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "Common",
+    "role": [
+      "Worker"
+    ],
+    "size": "Medium",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 85,
+    "attack": 85,
+    "defense": 125,
+    "rangedAttack": 0,
+    "speed": 70,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 2,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 1,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 1,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Shiny Hauler",
+    "descriptionEn": "While in the party, reduces the weight of Sulfur and Coal. Also increases Ground damage for the player and all Ground Pals."
+  },
+  "acquisition": {
+    "habitats": [
+      "various"
+    ],
+    "isBreedable": false,
+    "isCatchable": true,
+    "isBossEncounter": false
+  },
+  "breeding": {
+    "breedingPower": 1000
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [
+      "watering"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": false
+    },
+    "scores": {},
+    "reasons": {}
+  },
+  "tier": "B"
+}

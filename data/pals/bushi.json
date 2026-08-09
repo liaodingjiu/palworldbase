@@ -1,0 +1,137 @@
+{
+  "id": "bushi",
+  "gameId": "palworld",
+  "number": 72,
+  "name": {
+    "zh": "武士",
+    "en": "Bushi"
+  },
+  "slug": "bushi",
+  "image": "/images/pals/bushi.png",
+  "classification": {
+    "elements": [
+      "Fire"
+    ],
+    "rarity": "Rare",
+    "role": [
+      "Combat"
+    ],
+    "size": "Medium",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 95,
+    "attack": 120,
+    "defense": 80,
+    "rangedAttack": 0,
+    "speed": 100,
+    "stamina": 120
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 1,
+    "gathering": 0,
+    "lumbering": 1,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Bushido",
+    "descriptionEn": "Performs a powerful iai slash. Damage increases the longer Bushi has not attacked."
+  },
+  "acquisition": {
+    "habitats": [
+      "volcano",
+      "forest"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 1120
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "combat",
+      "kindling",
+      "lumbering"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": false
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 30,
+      "gathering": 0,
+      "lumbering": 30,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 65,
+      "mount-flying": 0,
+      "mount-ground": 0
+    },
+    "reasons": {
+      "combat": [
+        "Obtainable mid-game"
+      ],
+      "kindling": [
+        "Obtainable mid-game"
+      ],
+      "lumbering": [
+        "Obtainable mid-game"
+      ]
+    }
+  },
+  "tier": "B"
+}

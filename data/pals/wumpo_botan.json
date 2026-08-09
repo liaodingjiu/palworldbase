@@ -1,0 +1,137 @@
+{
+  "id": "wumpo_botan",
+  "gameId": "palworld",
+  "number": 101,
+  "name": {
+    "zh": "草巨人",
+    "en": "Wumpo Botan"
+  },
+  "slug": "wumpo_botan",
+  "image": "/images/pals/wumpo_botan.png",
+  "classification": {
+    "elements": [
+      "Grass"
+    ],
+    "rarity": "Rare",
+    "role": [
+      "Worker"
+    ],
+    "size": "Large",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 150,
+    "attack": 90,
+    "defense": 135,
+    "rangedAttack": 0,
+    "speed": 30,
+    "stamina": 170
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 3,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 2,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 3,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Forest Guardian",
+    "descriptionEn": "Grass variant. Creates a healing zone that restores ally HP."
+  },
+  "acquisition": {
+    "habitats": [
+      "forest"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 275
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "planting",
+      "lumbering",
+      "transport"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": true
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 80,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 55,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 80,
+      "farming": 0,
+      "combat": 40,
+      "mount-flying": 0,
+      "mount-ground": 0
+    },
+    "reasons": {
+      "planting": [
+        "Planting Lv 3 — top-tier efficiency",
+        "Reliable planting output for mid-game progression"
+      ],
+      "lumbering": [
+        "Reliable lumbering output for mid-game progression"
+      ],
+      "transport": [
+        "Versatile Pal with balanced stats"
+      ]
+    }
+  },
+  "tier": "B"
+}

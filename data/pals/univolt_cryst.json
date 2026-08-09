@@ -1,0 +1,84 @@
+{
+  "id": "univolt_cryst",
+  "gameId": "palworld",
+  "number": "54B",
+  "name": {
+    "zh": "Univolt Cryst",
+    "en": "Univolt Cryst"
+  },
+  "slug": "univolt_cryst",
+  "image": "/images/pals/univolt_cryst.webp",
+  "classification": {
+    "elements": [
+      "Ice"
+    ],
+    "rarity": "Rare",
+    "role": [
+      "Worker"
+    ],
+    "size": "Medium",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 80,
+    "attack": 80,
+    "defense": 80,
+    "rangedAttack": 0,
+    "speed": 70,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Ice",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    }
+  ],
+  "partnerSkill": {
+    "name": "Unique Skill",
+    "descriptionEn": "Univolt Cryst's partner skill."
+  },
+  "acquisition": {
+    "habitats": [
+      "various"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false
+  },
+  "breeding": {
+    "breedingPower": 690
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [
+      "general"
+    ],
+    "gameStage": {
+      "early": true,
+      "mid": false,
+      "late": false
+    },
+    "scores": {},
+    "reasons": {}
+  },
+  "_dataQuality": "estimated",
+  "tier": "B"
+}

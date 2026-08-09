@@ -1,0 +1,142 @@
+{
+  "id": "gorirat",
+  "gameId": "palworld",
+  "number": 46,
+  "name": {
+    "zh": "暴猿",
+    "en": "Gorirat"
+  },
+  "slug": "gorirat",
+  "image": "/images/pals/gorirat.png",
+  "classification": {
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "Rare",
+    "role": [
+      "Combat",
+      "Mount"
+    ],
+    "size": "Large",
+    "isRideable": true,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 130,
+    "attack": 130,
+    "defense": 110,
+    "rangedAttack": 0,
+    "speed": 75,
+    "stamina": 150
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 1,
+    "gathering": 0,
+    "lumbering": 2,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 1,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Rampage",
+    "descriptionEn": "Can be ridden. Massive AOE ground pound while mounted."
+  },
+  "acquisition": {
+    "habitats": [
+      "forest",
+      "mountain"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 410
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "mount-ground",
+      "combat",
+      "lumbering"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": false
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 30,
+      "gathering": 0,
+      "lumbering": 55,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 30,
+      "farming": 0,
+      "combat": 80,
+      "mount-flying": 0,
+      "mount-ground": 45
+    },
+    "reasons": {
+      "mount-ground": [
+        "130 Attack — strong combat presence",
+        "Obtainable mid-game"
+      ],
+      "combat": [
+        "130 Attack — strong combat presence",
+        "Obtainable mid-game"
+      ],
+      "lumbering": [
+        "Reliable lumbering output for mid-game progression",
+        "130 Attack — strong combat presence",
+        "Obtainable mid-game"
+      ]
+    }
+  },
+  "tier": "B"
+}

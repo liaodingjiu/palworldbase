@@ -1,0 +1,129 @@
+{
+  "id": "dogen",
+  "gameId": "palworld",
+  "number": 161,
+  "name": {
+    "zh": "道犬",
+    "en": "Dogen"
+  },
+  "slug": "dogen",
+  "image": "/images/pals/dogen.png",
+  "classification": {
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "Rare",
+    "role": [
+      "Combat"
+    ],
+    "size": "Medium",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 90,
+    "attack": 120,
+    "defense": 80,
+    "rangedAttack": 0,
+    "speed": 130,
+    "stamina": 120
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Counter Stance",
+    "descriptionEn": "Parries incoming attacks and counters with massive damage."
+  },
+  "acquisition": {
+    "habitats": [
+      "mountain",
+      "forest"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 1080
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "combat"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": true
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 65,
+      "mount-flying": 0,
+      "mount-ground": 0
+    },
+    "reasons": {
+      "combat": [
+        "130 Speed — fast and efficient"
+      ]
+    }
+  },
+  "tier": "B"
+}

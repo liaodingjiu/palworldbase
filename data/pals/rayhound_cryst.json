@@ -1,0 +1,76 @@
+{
+  "id": "rayhound_cryst",
+  "gameId": "palworld",
+  "number": "98B",
+  "name": {
+    "zh": "Rayhound Cryst",
+    "en": "Rayhound Cryst"
+  },
+  "slug": "rayhound_cryst",
+  "image": "/images/pals/rayhound_cryst.webp",
+  "classification": {
+    "elements": [
+      "Ice"
+    ],
+    "rarity": "Uncommon",
+    "role": [
+      "Worker"
+    ],
+    "size": "Medium",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 80,
+    "attack": 80,
+    "defense": 80,
+    "rangedAttack": 0,
+    "speed": 70,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [],
+  "partnerSkill": {
+    "name": "Snow Shepherd",
+    "descriptionEn": "Can be ridden. <br>Can perform a double jump while mounted.<br><br> While in party, increases Defense of  Pals by <span style=\"color: #B0F5C4;\">15%</span>. (Does not stack)"
+  },
+  "acquisition": {
+    "habitats": [
+      "various"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false
+  },
+  "breeding": {
+    "breedingPower": 750
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [
+      "general"
+    ],
+    "gameStage": {
+      "early": true,
+      "mid": false,
+      "late": false
+    },
+    "scores": {},
+    "reasons": {}
+  },
+  "_dataQuality": "estimated",
+  "tier": "B"
+}

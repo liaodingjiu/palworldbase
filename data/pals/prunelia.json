@@ -1,0 +1,99 @@
+{
+  "id": "prunelia",
+  "gameId": "palworld",
+  "number": "138",
+  "name": {
+    "zh": "Prunelia",
+    "en": "Prunelia"
+  },
+  "slug": "prunelia",
+  "image": "/images/pals/prunelia.webp",
+  "classification": {
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "Uncommon",
+    "role": [
+      "Worker"
+    ],
+    "size": "Medium",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 105,
+    "attack": 95,
+    "defense": 100,
+    "rangedAttack": 0,
+    "speed": 70,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 3,
+    "generating": 0,
+    "handiwork": 1,
+    "gathering": 2,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 3,
+    "cooling": 0,
+    "transporting": 1,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Prayer for Abundant Harvest",
+    "descriptionEn": "While at a base, Prunelia's prayers bless the crops, increasing their harvest."
+  },
+  "acquisition": {
+    "habitats": [
+      "various"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false
+  },
+  "breeding": {
+    "breedingPower": 755
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [
+      "planting",
+      "medicine",
+      "gathering"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": false
+    },
+    "scores": {},
+    "reasons": {}
+  },
+  "tier": "B"
+}

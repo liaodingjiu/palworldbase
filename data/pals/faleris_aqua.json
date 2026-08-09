@@ -1,0 +1,98 @@
+{
+  "id": "faleris_aqua",
+  "gameId": "palworld",
+  "number": "105B",
+  "name": {
+    "zh": "Faleris Aqua",
+    "en": "Faleris Aqua"
+  },
+  "slug": "faleris_aqua",
+  "image": "/images/pals/faleris_aqua.webp",
+  "classification": {
+    "elements": [
+      "Water"
+    ],
+    "rarity": "Epic",
+    "role": [
+      "Combat"
+    ],
+    "size": "Large",
+    "isRideable": true,
+    "isFlyable": true
+  },
+  "stats": {
+    "hp": 100,
+    "attack": 110,
+    "defense": 110,
+    "rangedAttack": 0,
+    "speed": 70,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 4,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 3,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Water Gun",
+      "element": "Water",
+      "power": 65,
+      "cooldown": 4,
+      "level": 1
+    },
+    {
+      "name": "Aqua Jet",
+      "element": "Water",
+      "power": 80,
+      "cooldown": 8,
+      "level": 10
+    },
+    {
+      "name": "Hydro Pump",
+      "element": "Water",
+      "power": 130,
+      "cooldown": 20,
+      "level": 22
+    }
+  ],
+  "partnerSkill": {
+    "name": "Tidal Predator",
+    "descriptionEn": "Can be ridden as a flying mount. While fighting together, Fire Pals drop more items when defeated."
+  },
+  "acquisition": {
+    "habitats": [
+      "various"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": true
+  },
+  "breeding": {
+    "breedingPower": 245
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [
+      "watering",
+      "transporting"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": true
+    },
+    "scores": {},
+    "reasons": {}
+  },
+  "tier": "A"
+}

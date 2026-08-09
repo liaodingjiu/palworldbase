@@ -1,0 +1,143 @@
+{
+  "id": "elizabee",
+  "gameId": "palworld",
+  "number": 48,
+  "name": {
+    "zh": "女王蜂",
+    "en": "Elizabee"
+  },
+  "slug": "elizabee",
+  "image": "/images/pals/elizabee.png",
+  "classification": {
+    "elements": [
+      "Grass"
+    ],
+    "rarity": "Rare",
+    "role": [
+      "Combat",
+      "Mount"
+    ],
+    "size": "Medium",
+    "isRideable": false,
+    "isFlyable": true
+  },
+  "stats": {
+    "hp": 90,
+    "attack": 95,
+    "defense": 85,
+    "rangedAttack": 0,
+    "speed": 85,
+    "stamina": 120
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 2,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 2,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 1,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 1
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Queen's Command",
+    "descriptionEn": "When activated, calls Beegarde allies to swarm and attack the target."
+  },
+  "acquisition": {
+    "habitats": [
+      "forest",
+      "garden"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 1150
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "combat",
+      "planting",
+      "medicine",
+      "farming"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": false
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 55,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 55,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 30,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 30,
+      "combat": 40,
+      "mount-flying": 50,
+      "mount-ground": 0
+    },
+    "reasons": {
+      "combat": [
+        "Obtainable mid-game"
+      ],
+      "planting": [
+        "Reliable planting output for mid-game progression",
+        "Obtainable mid-game"
+      ],
+      "medicine": [
+        "Obtainable mid-game"
+      ],
+      "farming": [
+        "Obtainable mid-game"
+      ]
+    }
+  },
+  "tier": "A"
+}

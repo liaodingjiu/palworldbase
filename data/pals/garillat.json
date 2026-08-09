@@ -1,0 +1,143 @@
+{
+  "id": "garillat",
+  "gameId": "palworld",
+  "number": 159,
+  "name": {
+    "zh": "大猩猩",
+    "en": "Garillat"
+  },
+  "slug": "garillat",
+  "image": "/images/pals/garillat.png",
+  "classification": {
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "Rare",
+    "role": [
+      "Combat",
+      "Mount"
+    ],
+    "size": "Large",
+    "isRideable": true,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 140,
+    "attack": 140,
+    "defense": 120,
+    "rangedAttack": 0,
+    "speed": 60,
+    "stamina": 160
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 1,
+    "gathering": 0,
+    "lumbering": 2,
+    "mining": 1,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 1,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Ground Pound",
+    "descriptionEn": "Can be ridden. Pounds the ground repeatedly with both fists."
+  },
+  "acquisition": {
+    "habitats": [
+      "forest",
+      "mountain"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 340
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "mount-ground",
+      "combat",
+      "mining",
+      "lumbering"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": true
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 30,
+      "gathering": 0,
+      "lumbering": 55,
+      "mining": 30,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 30,
+      "farming": 0,
+      "combat": 80,
+      "mount-flying": 0,
+      "mount-ground": 45
+    },
+    "reasons": {
+      "mount-ground": [
+        "140 Attack — strong combat presence"
+      ],
+      "combat": [
+        "140 Attack — strong combat presence"
+      ],
+      "mining": [
+        "140 Attack — strong combat presence"
+      ],
+      "lumbering": [
+        "Reliable lumbering output for mid-game progression",
+        "140 Attack — strong combat presence"
+      ]
+    }
+  },
+  "tier": "A"
+}

@@ -1,0 +1,142 @@
+{
+  "id": "broncherry_aqua",
+  "gameId": "palworld",
+  "number": 92,
+  "name": {
+    "zh": "水花兽",
+    "en": "Broncherry Aqua"
+  },
+  "slug": "broncherry_aqua",
+  "image": "/images/pals/broncherry_aqua.png",
+  "classification": {
+    "elements": [
+      "Grass",
+      "Water"
+    ],
+    "rarity": "Rare",
+    "role": [
+      "Combat",
+      "Mount"
+    ],
+    "size": "Large",
+    "isRideable": true,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 130,
+    "attack": 100,
+    "defense": 135,
+    "rangedAttack": 0,
+    "speed": 55,
+    "stamina": 150
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 3,
+    "planting": 2,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 1,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Aqua Shield",
+    "descriptionEn": "Water variant. Shield also heals allies over time."
+  },
+  "acquisition": {
+    "habitats": [
+      "lake",
+      "garden"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 345
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "watering",
+      "planting",
+      "transport"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": false
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 80,
+      "planting": 55,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 30,
+      "farming": 0,
+      "combat": 65,
+      "mount-flying": 0,
+      "mount-ground": 45
+    },
+    "reasons": {
+      "watering": [
+        "Watering Lv 3 — top-tier efficiency",
+        "Reliable watering output for mid-game progression",
+        "Obtainable mid-game"
+      ],
+      "planting": [
+        "Reliable planting output for mid-game progression",
+        "Obtainable mid-game"
+      ],
+      "transport": [
+        "Obtainable mid-game"
+      ]
+    }
+  },
+  "tier": "B"
+}

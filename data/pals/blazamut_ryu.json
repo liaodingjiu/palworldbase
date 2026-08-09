@@ -1,0 +1,141 @@
+{
+  "id": "blazamut_ryu",
+  "gameId": "palworld",
+  "number": 153,
+  "name": {
+    "zh": "龙焰魔",
+    "en": "Blazamut Ryu"
+  },
+  "slug": "blazamut_ryu",
+  "image": "/images/pals/blazamut_ryu.png",
+  "classification": {
+    "elements": [
+      "Fire",
+      "Dragon"
+    ],
+    "rarity": "Legendary",
+    "role": [
+      "Combat",
+      "Mount"
+    ],
+    "size": "Huge",
+    "isRideable": true,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 200,
+    "attack": 190,
+    "defense": 160,
+    "rangedAttack": 0,
+    "speed": 80,
+    "stamina": 220
+  },
+  "workSuitability": {
+    "kindling": 4,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Dragon Volcano",
+    "descriptionEn": "Raid boss. Dragon+Fire hybrid. Erupts the entire battlefield."
+  },
+  "acquisition": {
+    "habitats": [
+      "raid",
+      "volcano"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": true,
+    "bossLevel": 50,
+    "bossLocation": "Blazamut Ryu's Domain"
+  },
+  "breeding": {
+    "breedingPower": 110
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "kindling",
+      "combat",
+      "mount-ground"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": true
+    },
+    "scores": {
+      "kindling": 95,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 95,
+      "mount-flying": 0,
+      "mount-ground": 45
+    },
+    "reasons": {
+      "kindling": [
+        "Kindling Lv 4 — top-tier efficiency",
+        "Reliable kindling output for mid-game progression",
+        "190 Attack — strong combat presence"
+      ],
+      "combat": [
+        "190 Attack — strong combat presence"
+      ],
+      "mount-ground": [
+        "190 Attack — strong combat presence"
+      ]
+    }
+  },
+  "tier": "S"
+}

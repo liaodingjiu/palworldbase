@@ -1,0 +1,97 @@
+{
+  "id": "smokie",
+  "gameId": "palworld",
+  "number": "131",
+  "name": {
+    "zh": "Smokie",
+    "en": "Smokie"
+  },
+  "slug": "smokie",
+  "image": "/images/pals/smokie.webp",
+  "classification": {
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "Common",
+    "role": [
+      "Worker"
+    ],
+    "size": "Medium",
+    "isRideable": true,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 85,
+    "attack": 90,
+    "defense": 85,
+    "rangedAttack": 0,
+    "speed": 70,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 2,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Dark Pulse",
+      "element": "Dark",
+      "power": 80,
+      "cooldown": 10,
+      "level": 1
+    },
+    {
+      "name": "Shadow Ball",
+      "element": "Dark",
+      "power": 100,
+      "cooldown": 14,
+      "level": 12
+    },
+    {
+      "name": "Night Slash",
+      "element": "Dark",
+      "power": 120,
+      "cooldown": 16,
+      "level": 22
+    }
+  ],
+  "partnerSkill": {
+    "name": "Dig, Dog! Dig!",
+    "descriptionEn": "When activated, uses its sharp sense of smell to detect nearby [[Chromite]]. While fighting together, a large amount of Chromite is obtained."
+  },
+  "acquisition": {
+    "habitats": [
+      "various"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false
+  },
+  "breeding": {
+    "breedingPower": 1245
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [
+      "gathering"
+    ],
+    "gameStage": {
+      "early": true,
+      "mid": false,
+      "late": false
+    },
+    "scores": {},
+    "reasons": {}
+  },
+  "tier": "B"
+}

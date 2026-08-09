@@ -1,0 +1,98 @@
+{
+  "id": "nitemary",
+  "gameId": "palworld",
+  "number": "128",
+  "name": {
+    "zh": "Nitemary",
+    "en": "Nitemary"
+  },
+  "slug": "nitemary",
+  "image": "/images/pals/nitemary.webp",
+  "classification": {
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "Uncommon",
+    "role": [
+      "Worker"
+    ],
+    "size": "Medium",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 105,
+    "attack": 95,
+    "defense": 105,
+    "rangedAttack": 0,
+    "speed": 70,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 3,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 2,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Dark Pulse",
+      "element": "Dark",
+      "power": 80,
+      "cooldown": 10,
+      "level": 1
+    },
+    {
+      "name": "Shadow Ball",
+      "element": "Dark",
+      "power": 100,
+      "cooldown": 14,
+      "level": 12
+    },
+    {
+      "name": "Night Slash",
+      "element": "Dark",
+      "power": 120,
+      "cooldown": 16,
+      "level": 22
+    }
+  ],
+  "partnerSkill": {
+    "name": "Soul Collector",
+    "descriptionEn": "While fighting together, Pals drop more Pal Souls when defeated."
+  },
+  "acquisition": {
+    "habitats": [
+      "various"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false
+  },
+  "breeding": {
+    "breedingPower": 705
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [
+      "handiwork",
+      "transporting"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": false
+    },
+    "scores": {},
+    "reasons": {}
+  },
+  "tier": "B"
+}

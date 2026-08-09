@@ -1,0 +1,139 @@
+{
+  "id": "wixen",
+  "gameId": "palworld",
+  "number": 76,
+  "name": {
+    "zh": "巫狐",
+    "en": "Wixen"
+  },
+  "slug": "wixen",
+  "image": "/images/pals/wixen.png",
+  "classification": {
+    "elements": [
+      "Fire"
+    ],
+    "rarity": "Rare",
+    "role": [
+      "Combat"
+    ],
+    "size": "Medium",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 85,
+    "attack": 125,
+    "defense": 70,
+    "rangedAttack": 0,
+    "speed": 105,
+    "stamina": 120
+  },
+  "workSuitability": {
+    "kindling": 2,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 2,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Fire Magic",
+    "descriptionEn": "Launches fire orbs that home in on enemies. Crafting speed boost."
+  },
+  "acquisition": {
+    "habitats": [
+      "volcano",
+      "forest"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 1020
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "kindling",
+      "handiwork",
+      "combat"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": false
+    },
+    "scores": {
+      "kindling": 55,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 55,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 65,
+      "mount-flying": 0,
+      "mount-ground": 0
+    },
+    "reasons": {
+      "kindling": [
+        "Reliable kindling output for mid-game progression",
+        "Obtainable mid-game"
+      ],
+      "handiwork": [
+        "Reliable handiwork output for mid-game progression",
+        "Obtainable mid-game"
+      ],
+      "combat": [
+        "Obtainable mid-game"
+      ]
+    }
+  },
+  "tier": "B"
+}

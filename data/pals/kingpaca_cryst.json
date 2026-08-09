@@ -1,0 +1,97 @@
+{
+  "id": "kingpaca_cryst",
+  "gameId": "palworld",
+  "number": "089B",
+  "name": {
+    "zh": "Kingpaca Cryst",
+    "en": "Kingpaca Cryst"
+  },
+  "slug": "kingpaca_cryst",
+  "image": "/images/pals/kingpaca_cryst.webp",
+  "classification": {
+    "elements": [
+      "Ice"
+    ],
+    "rarity": "Rare",
+    "role": [
+      "Worker"
+    ],
+    "size": "Medium",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 120,
+    "attack": 85,
+    "defense": 90,
+    "rangedAttack": 0,
+    "speed": 70,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 1,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 3,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Ice Shard",
+      "element": "Ice",
+      "power": 55,
+      "cooldown": 4,
+      "level": 1
+    },
+    {
+      "name": "Ice Beam",
+      "element": "Ice",
+      "power": 100,
+      "cooldown": 14,
+      "level": 15
+    },
+    {
+      "name": "Blizzard",
+      "element": "Ice",
+      "power": 140,
+      "cooldown": 24,
+      "level": 30
+    }
+  ],
+  "partnerSkill": {
+    "name": "Coldhearted King",
+    "descriptionEn": "Can be ridden. Increases the player's carrying capacity while mounted and provides cold resistance."
+  },
+  "acquisition": {
+    "habitats": [
+      "various"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false
+  },
+  "breeding": {
+    "breedingPower": 440
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [
+      "cooling"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": false
+    },
+    "scores": {},
+    "reasons": {}
+  },
+  "tier": "B"
+}

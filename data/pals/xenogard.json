@@ -1,0 +1,97 @@
+{
+  "id": "xenogard",
+  "gameId": "palworld",
+  "number": "126",
+  "name": {
+    "zh": "Xenogard",
+    "en": "Xenogard"
+  },
+  "slug": "xenogard",
+  "image": "/images/pals/xenogard.webp",
+  "classification": {
+    "elements": [
+      "Dragon"
+    ],
+    "rarity": "Rare",
+    "role": [
+      "Combat"
+    ],
+    "size": "Medium",
+    "isRideable": true,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 110,
+    "attack": 120,
+    "defense": 130,
+    "rangedAttack": 0,
+    "speed": 70,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 3,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Dragon Breath",
+      "element": "Dragon",
+      "power": 70,
+      "cooldown": 6,
+      "level": 1
+    },
+    {
+      "name": "Dragon Claw",
+      "element": "Dragon",
+      "power": 95,
+      "cooldown": 10,
+      "level": 12
+    },
+    {
+      "name": "Dragon Meteor",
+      "element": "Dragon",
+      "power": 150,
+      "cooldown": 30,
+      "level": 30
+    }
+  ],
+  "partnerSkill": {
+    "name": "Crater Enthusiast",
+    "descriptionEn": "Can be ridden. While in the team, it's easier to obtain Meteorite Fragment and Pure Quartz."
+  },
+  "acquisition": {
+    "habitats": [
+      "various"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false
+  },
+  "breeding": {
+    "breedingPower": 435
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [
+      "mining"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": false
+    },
+    "scores": {},
+    "reasons": {}
+  },
+  "tier": "A"
+}

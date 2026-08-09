@@ -1,0 +1,99 @@
+{
+  "id": "quivern_botan",
+  "gameId": "palworld",
+  "number": "095B",
+  "name": {
+    "zh": "Quivern Botan",
+    "en": "Quivern Botan"
+  },
+  "slug": "quivern_botan",
+  "image": "/images/pals/quivern_botan.webp",
+  "classification": {
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "Epic",
+    "role": [
+      "Combat"
+    ],
+    "size": "Medium",
+    "isRideable": true,
+    "isFlyable": true
+  },
+  "stats": {
+    "hp": 105,
+    "attack": 105,
+    "defense": 100,
+    "rangedAttack": 0,
+    "speed": 70,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 2,
+    "generating": 0,
+    "handiwork": 1,
+    "gathering": 2,
+    "lumbering": 0,
+    "mining": 2,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 3,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Grass Dragon Affection",
+    "descriptionEn": "Can be ridden as a flying mount. While flying, movement speed is increased. Enhances Grass attacks while mounted."
+  },
+  "acquisition": {
+    "habitats": [
+      "various"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false
+  },
+  "breeding": {
+    "breedingPower": 340
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [
+      "transporting",
+      "planting",
+      "gathering"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": true
+    },
+    "scores": {},
+    "reasons": {}
+  },
+  "tier": "B"
+}

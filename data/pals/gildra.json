@@ -1,0 +1,156 @@
+{
+  "id": "gildra",
+  "gameId": "palworld",
+  "number": 120,
+  "name": {
+    "zh": "",
+    "en": "Gildra"
+  },
+  "slug": "gildra",
+  "image": "/images/pals/gildra.webp",
+  "_source": "wiki.gg auto-generated",
+  "_needsReview": [
+    "stats.scale",
+    "drops",
+    "acquisition.habitats",
+    "decision"
+  ],
+  "classification": {
+    "elements": [
+      "Dark",
+      "Ground"
+    ],
+    "rarity": "Rare",
+    "role": [
+      "Combat",
+      "Base Worker"
+    ],
+    "size": "Large",
+    "isRideable": true,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 105,
+    "attack": 120,
+    "defense": 105,
+    "rangedAttack": 0,
+    "speed": 480,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 5,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 4,
+    "cooling": 0,
+    "transporting": 2,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Dark Ball",
+      "element": "Dark",
+      "power": 40,
+      "cooldown": 2,
+      "level": 1
+    },
+    {
+      "name": "Spirit Flame",
+      "element": "Fire",
+      "power": 55,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Sand Tornado",
+      "element": "Ground",
+      "power": 75,
+      "cooldown": 8,
+      "level": 15
+    },
+    {
+      "name": "Nightmare Ball",
+      "element": "Dark",
+      "power": 80,
+      "cooldown": 10,
+      "level": 22
+    },
+    {
+      "name": "Sand Twister",
+      "element": "Ground",
+      "power": 110,
+      "cooldown": 18,
+      "level": 30
+    },
+    {
+      "name": "Mummy Rush",
+      "element": "Neutral",
+      "power": 125,
+      "cooldown": 24,
+      "level": 40
+    },
+    {
+      "name": "Dark Whisp",
+      "element": "Dark",
+      "power": 80,
+      "cooldown": 10,
+      "level": 50
+    },
+    {
+      "name": "Rocky Impact",
+      "element": "Ground",
+      "power": 150,
+      "cooldown": 40,
+      "level": 70
+    }
+  ],
+  "partnerSkill": {
+    "name": "Resurrection",
+    "descriptionEn": "While fighting together, when Gildra is incapacitated, it revives with its Hunger reduced to 0."
+  },
+  "acquisition": {
+    "habitats": [],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": true,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 1170
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": false
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 0,
+      "mount-flying": 0,
+      "mount-ground": 0
+    },
+    "reasons": {}
+  },
+  "_rawDrops": "Cloth*2-3@100; Leather*2-3@100",
+  "tier": "A"
+}

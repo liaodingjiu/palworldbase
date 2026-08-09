@@ -1,0 +1,142 @@
+{
+  "id": "cryolinx_terra",
+  "gameId": "palworld",
+  "number": 86,
+  "name": {
+    "zh": "地晶猞猁",
+    "en": "Cryolinx Terra"
+  },
+  "slug": "cryolinx_terra",
+  "image": "/images/pals/cryolinx_terra.png",
+  "classification": {
+    "elements": [
+      "Ice",
+      "Ground"
+    ],
+    "rarity": "Rare",
+    "role": [
+      "Combat",
+      "Mount"
+    ],
+    "size": "Medium",
+    "isRideable": true,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 105,
+    "attack": 100,
+    "defense": 100,
+    "rangedAttack": 0,
+    "speed": 120,
+    "stamina": 130
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 1,
+    "medicine": 0,
+    "cooling": 1,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Frozen Earth",
+    "descriptionEn": "Ground variant. Claws cause both frostbite and tremors."
+  },
+  "acquisition": {
+    "habitats": [
+      "snow_region",
+      "cave"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 415
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "mining",
+      "cooling",
+      "combat"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": false
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 30,
+      "medicine": 0,
+      "cooling": 30,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 65,
+      "mount-flying": 0,
+      "mount-ground": 70
+    },
+    "reasons": {
+      "mining": [
+        "120 Speed — fast and efficient",
+        "Obtainable mid-game"
+      ],
+      "cooling": [
+        "120 Speed — fast and efficient",
+        "Obtainable mid-game"
+      ],
+      "combat": [
+        "120 Speed — fast and efficient",
+        "Obtainable mid-game"
+      ]
+    }
+  },
+  "tier": "B"
+}

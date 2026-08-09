@@ -1,0 +1,99 @@
+{
+  "id": "splatterina",
+  "gameId": "palworld",
+  "number": "134",
+  "name": {
+    "zh": "Splatterina",
+    "en": "Splatterina"
+  },
+  "slug": "splatterina",
+  "image": "/images/pals/splatterina.webp",
+  "classification": {
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "Uncommon",
+    "role": [
+      "Combat"
+    ],
+    "size": "Medium",
+    "isRideable": true,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 95,
+    "attack": 115,
+    "defense": 105,
+    "rangedAttack": 0,
+    "speed": 70,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 4,
+    "gathering": 0,
+    "lumbering": 1,
+    "mining": 0,
+    "medicine": 3,
+    "cooling": 0,
+    "transporting": 2,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Dark Pulse",
+      "element": "Dark",
+      "power": 80,
+      "cooldown": 10,
+      "level": 1
+    },
+    {
+      "name": "Shadow Ball",
+      "element": "Dark",
+      "power": 100,
+      "cooldown": 14,
+      "level": 12
+    },
+    {
+      "name": "Night Slash",
+      "element": "Dark",
+      "power": 120,
+      "cooldown": 16,
+      "level": 22
+    }
+  ],
+  "partnerSkill": {
+    "name": "Blade of Uncontrolled Passion",
+    "descriptionEn": "While in possession, the amount of items obtained from using the [[Meat Cleaver]] increases."
+  },
+  "acquisition": {
+    "habitats": [
+      "various"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false
+  },
+  "breeding": {
+    "breedingPower": 725
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [
+      "handiwork",
+      "medicine",
+      "transporting"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": false
+    },
+    "scores": {},
+    "reasons": {}
+  },
+  "tier": "B"
+}

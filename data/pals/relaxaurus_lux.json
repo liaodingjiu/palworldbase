@@ -1,0 +1,136 @@
+{
+  "id": "relaxaurus_lux",
+  "gameId": "palworld",
+  "number": 90,
+  "name": {
+    "zh": "电呆龙",
+    "en": "Relaxaurus Lux"
+  },
+  "slug": "relaxaurus_lux",
+  "image": "/images/pals/relaxaurus_lux.png",
+  "classification": {
+    "elements": [
+      "Electric",
+      "Dragon"
+    ],
+    "rarity": "Rare",
+    "role": [
+      "Worker"
+    ],
+    "size": "Large",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 145,
+    "attack": 95,
+    "defense": 115,
+    "rangedAttack": 0,
+    "speed": 40,
+    "stamina": 160
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 3,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 1,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Thunder Splash",
+    "descriptionEn": "Electric variant. Jump-crash generates a massive electric shockwave."
+  },
+  "acquisition": {
+    "habitats": [
+      "lake",
+      "desert"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 325
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "generating",
+      "transport"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": false
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 80,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 30,
+      "farming": 0,
+      "combat": 40,
+      "mount-flying": 0,
+      "mount-ground": 0
+    },
+    "reasons": {
+      "generating": [
+        "Generating Lv 3 — top-tier efficiency",
+        "Reliable generating output for mid-game progression",
+        "Obtainable mid-game"
+      ],
+      "transport": [
+        "Obtainable mid-game"
+      ]
+    }
+  },
+  "tier": "B"
+}

@@ -1,0 +1,143 @@
+{
+  "id": "verdash",
+  "gameId": "palworld",
+  "number": 77,
+  "name": {
+    "zh": "草遁兔",
+    "en": "Verdash"
+  },
+  "slug": "verdash",
+  "image": "/images/pals/verdash.png",
+  "classification": {
+    "elements": [
+      "Grass"
+    ],
+    "rarity": "Rare",
+    "role": [
+      "Combat",
+      "Mount"
+    ],
+    "size": "Medium",
+    "isRideable": true,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 90,
+    "attack": 100,
+    "defense": 75,
+    "rangedAttack": 0,
+    "speed": 140,
+    "stamina": 130
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 2,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 2,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Grass Dash",
+    "descriptionEn": "Can be ridden. Extremely fast sprint speed on grass terrain."
+  },
+  "acquisition": {
+    "habitats": [
+      "forest",
+      "garden"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 1050
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "planting",
+      "gathering",
+      "mount-ground"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": false
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 55,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 55,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 65,
+      "mount-flying": 0,
+      "mount-ground": 85
+    },
+    "reasons": {
+      "planting": [
+        "Reliable planting output for mid-game progression",
+        "140 Speed — fast and efficient",
+        "Obtainable mid-game"
+      ],
+      "gathering": [
+        "Reliable gathering output for mid-game progression",
+        "140 Speed — fast and efficient",
+        "Obtainable mid-game"
+      ],
+      "mount-ground": [
+        "140 Speed — fast and efficient",
+        "Obtainable mid-game"
+      ]
+    }
+  },
+  "tier": "B"
+}

@@ -1,0 +1,97 @@
+{
+  "id": "fuddler",
+  "gameId": "palworld",
+  "number": "022",
+  "name": {
+    "zh": "Fuddler",
+    "en": "Fuddler"
+  },
+  "slug": "fuddler",
+  "image": "/images/pals/fuddler.webp",
+  "classification": {
+    "elements": [
+      "Ground"
+    ],
+    "rarity": "Common",
+    "role": [
+      "Worker"
+    ],
+    "size": "Medium",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 65,
+    "attack": 80,
+    "defense": 50,
+    "rangedAttack": 0,
+    "speed": 70,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 1,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 1,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 1,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Sand Attack",
+      "element": "Ground",
+      "power": 45,
+      "cooldown": 3,
+      "level": 1
+    },
+    {
+      "name": "Rock Slide",
+      "element": "Ground",
+      "power": 90,
+      "cooldown": 12,
+      "level": 12
+    },
+    {
+      "name": "Earthquake",
+      "element": "Ground",
+      "power": 140,
+      "cooldown": 30,
+      "level": 30
+    }
+  ],
+  "partnerSkill": {
+    "name": "Ore Detector",
+    "descriptionEn": "When activated, generates subtle vibrations to detect nearby ore."
+  },
+  "acquisition": {
+    "habitats": [
+      "various"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false
+  },
+  "breeding": {
+    "breedingPower": 1220
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [
+      "combat"
+    ],
+    "gameStage": {
+      "early": true,
+      "mid": false,
+      "late": false
+    },
+    "scores": {},
+    "reasons": {}
+  },
+  "tier": "B"
+}

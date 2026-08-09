@@ -1,0 +1,155 @@
+{
+  "id": "tetroise",
+  "gameId": "palworld",
+  "number": 142,
+  "name": {
+    "zh": "",
+    "en": "Tetroise"
+  },
+  "slug": "tetroise",
+  "image": "/images/pals/tetroise.webp",
+  "_source": "wiki.gg auto-generated",
+  "_needsReview": [
+    "stats.scale",
+    "drops",
+    "acquisition.habitats",
+    "decision"
+  ],
+  "classification": {
+    "elements": [
+      "Ground"
+    ],
+    "rarity": "Rare",
+    "role": [
+      "Combat",
+      "Base Worker"
+    ],
+    "size": "Huge",
+    "isRideable": true,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 95,
+    "attack": 100,
+    "defense": 135,
+    "rangedAttack": 0,
+    "speed": 360,
+    "stamina": 200
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 4,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Stone Blast",
+      "element": "Ground",
+      "power": 40,
+      "cooldown": 2,
+      "level": 1
+    },
+    {
+      "name": "Stone Cannon",
+      "element": "Ground",
+      "power": 55,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Sand Tornado",
+      "element": "Ground",
+      "power": 75,
+      "cooldown": 8,
+      "level": 15
+    },
+    {
+      "name": "Rockburst",
+      "element": "Ground",
+      "power": 90,
+      "cooldown": 12,
+      "level": 22
+    },
+    {
+      "name": "Rock Lance",
+      "element": "Ground",
+      "power": 110,
+      "cooldown": 18,
+      "level": 30
+    },
+    {
+      "name": "Sand Twister",
+      "element": "Ground",
+      "power": 125,
+      "cooldown": 24,
+      "level": 40
+    },
+    {
+      "name": "Cube Press",
+      "element": "Ground",
+      "power": 140,
+      "cooldown": 30,
+      "level": 50
+    },
+    {
+      "name": "Rocky Impact",
+      "element": "Ground",
+      "power": 150,
+      "cooldown": 40,
+      "level": 70
+    }
+  ],
+  "partnerSkill": {
+    "name": "Masonry Archelon",
+    "descriptionEn": "Can be [[ridden]].<br> While at a base, increases the Mining Work Suitability Level for all other Base Pals by +1. (Does not stack)"
+  },
+  "acquisition": {
+    "habitats": [],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": true,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 790
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": false
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 0,
+      "mount-flying": 0,
+      "mount-ground": 0
+    },
+    "reasons": {}
+  },
+  "_rawDrops": "Ruby*1-2@100; Large Pal Soul*1@100",
+  "tier": "A"
+}

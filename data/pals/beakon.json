@@ -1,0 +1,140 @@
+{
+  "id": "beakon",
+  "gameId": "palworld",
+  "number": 73,
+  "name": {
+    "zh": "雷鹰",
+    "en": "Beakon"
+  },
+  "slug": "beakon",
+  "image": "/images/pals/beakon.png",
+  "classification": {
+    "elements": [
+      "Electric"
+    ],
+    "rarity": "Epic",
+    "role": [
+      "Combat",
+      "Mount"
+    ],
+    "size": "Large",
+    "isRideable": false,
+    "isFlyable": true
+  },
+  "stats": {
+    "hp": 110,
+    "attack": 120,
+    "defense": 90,
+    "rangedAttack": 0,
+    "speed": 150,
+    "stamina": 140
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 3,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Thunderbird",
+    "descriptionEn": "Can be ridden as a flying mount. Very fast flight speed. Electric attacks while mounted."
+  },
+  "acquisition": {
+    "habitats": [
+      "desert",
+      "mountain"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": true,
+    "bossLevel": 45,
+    "bossLocation": "Beakon's Domain"
+  },
+  "breeding": {
+    "breedingPower": 340
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "generating",
+      "mount-flying",
+      "combat"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": true
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 80,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 65,
+      "mount-flying": 90,
+      "mount-ground": 0
+    },
+    "reasons": {
+      "generating": [
+        "Generating Lv 3 — top-tier efficiency",
+        "Reliable generating output for mid-game progression",
+        "150 Speed — fast and efficient"
+      ],
+      "mount-flying": [
+        "150 Speed — fast and efficient"
+      ],
+      "combat": [
+        "150 Speed — fast and efficient"
+      ]
+    }
+  },
+  "tier": "S"
+}

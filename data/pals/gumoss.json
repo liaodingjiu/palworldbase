@@ -1,0 +1,134 @@
+{
+  "id": "gumoss",
+  "gameId": "palworld",
+  "number": 14,
+  "name": {
+    "zh": "泥泥怪",
+    "en": "Gumoss"
+  },
+  "slug": "gumoss",
+  "image": "/images/pals/gumoss.png",
+  "classification": {
+    "elements": [
+      "Grass",
+      "Ground"
+    ],
+    "rarity": "Common",
+    "role": [
+      "Worker"
+    ],
+    "size": "Small",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 80,
+    "attack": 55,
+    "defense": 85,
+    "rangedAttack": 0,
+    "speed": 30,
+    "stamina": 90
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 1,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 1,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Muddy Buddy",
+    "descriptionEn": "When in party, reduces damage from Ground-type attacks."
+  },
+  "acquisition": {
+    "habitats": [
+      "forest",
+      "swamp"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 1470
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "planting",
+      "lumbering"
+    ],
+    "gameStage": {
+      "early": true,
+      "mid": false,
+      "late": false
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 30,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 30,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 20,
+      "mount-flying": 0,
+      "mount-ground": 0
+    },
+    "reasons": {
+      "planting": [
+        "Available from early game"
+      ],
+      "lumbering": [
+        "Available from early game"
+      ]
+    }
+  },
+  "tier": "B"
+}

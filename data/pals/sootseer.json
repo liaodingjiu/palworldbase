@@ -1,0 +1,99 @@
+{
+  "id": "sootseer",
+  "gameId": "palworld",
+  "number": "118",
+  "name": {
+    "zh": "Sootseer",
+    "en": "Sootseer"
+  },
+  "slug": "sootseer",
+  "image": "/images/pals/sootseer.webp",
+  "classification": {
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "Rare",
+    "role": [
+      "Combat"
+    ],
+    "size": "Medium",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 105,
+    "attack": 125,
+    "defense": 90,
+    "rangedAttack": 0,
+    "speed": 70,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 3,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 2,
+    "gathering": 1,
+    "lumbering": 0,
+    "mining": 2,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 1
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Grave Robber",
+    "descriptionEn": "Sometimes digs up Bone when assigned to the ranch."
+  },
+  "acquisition": {
+    "habitats": [
+      "various"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false
+  },
+  "breeding": {
+    "breedingPower": 545
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [
+      "kindling",
+      "handiwork",
+      "mining"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": false
+    },
+    "scores": {},
+    "reasons": {}
+  },
+  "tier": "A"
+}

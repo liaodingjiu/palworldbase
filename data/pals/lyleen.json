@@ -1,0 +1,138 @@
+{
+  "id": "lyleen",
+  "gameId": "palworld",
+  "number": 117,
+  "name": {
+    "zh": "百合女王",
+    "en": "Lyleen"
+  },
+  "slug": "lyleen",
+  "image": "/images/pals/lyleen.png",
+  "classification": {
+    "elements": [
+      "Grass"
+    ],
+    "rarity": "Epic",
+    "role": [
+      "Worker"
+    ],
+    "size": "Large",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 140,
+    "attack": 100,
+    "defense": 120,
+    "rangedAttack": 0,
+    "speed": 100,
+    "stamina": 160
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 4,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 2,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Queen's Grace",
+    "descriptionEn": "Heals all allies in the base over time. Plant harvest yield doubled while assigned."
+  },
+  "acquisition": {
+    "habitats": [
+      "garden",
+      "forest"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": true,
+    "bossLevel": 45,
+    "bossLocation": "Lyleen's Domain"
+  },
+  "breeding": {
+    "breedingPower": 280
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "planting",
+      "gathering",
+      "medicine"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": true
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 95,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 55,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 65,
+      "mount-flying": 0,
+      "mount-ground": 0
+    },
+    "reasons": {
+      "planting": [
+        "Planting Lv 4 — top-tier efficiency",
+        "Reliable planting output for mid-game progression"
+      ],
+      "gathering": [
+        "Reliable gathering output for mid-game progression"
+      ],
+      "medicine": [
+        "Versatile Pal with balanced stats"
+      ]
+    }
+  },
+  "tier": "A"
+}

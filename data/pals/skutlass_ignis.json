@@ -1,0 +1,77 @@
+{
+  "id": "skutlass_ignis",
+  "gameId": "palworld",
+  "number": "128B",
+  "name": {
+    "zh": "Skutlass Ignis",
+    "en": "Skutlass Ignis"
+  },
+  "slug": "skutlass_ignis",
+  "image": "/images/pals/skutlass_ignis.webp",
+  "classification": {
+    "elements": [
+      "Water",
+      "Fire"
+    ],
+    "rarity": "Common",
+    "role": [
+      "Worker"
+    ],
+    "size": "Medium",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 80,
+    "attack": 80,
+    "defense": 80,
+    "rangedAttack": 0,
+    "speed": 70,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 1,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [],
+  "partnerSkill": {
+    "name": "Seared Fish Fillet",
+    "descriptionEn": "When activated, Skutlass Ignis becomes the player's katana (Attack: <span style=\"color: #B0F5C4;\">2,900</span>).<br><br> If it does not revert to its normal form quickly, Skutlass Ignis will become incapacitated.<br><br> It will also become incapacitated if Iagiri is used."
+  },
+  "acquisition": {
+    "habitats": [
+      "various"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false
+  },
+  "breeding": {
+    "breedingPower": 1430
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [
+      "gathering"
+    ],
+    "gameStage": {
+      "early": true,
+      "mid": false,
+      "late": false
+    },
+    "scores": {},
+    "reasons": {}
+  },
+  "_dataQuality": "estimated",
+  "tier": "B"
+}

@@ -1,0 +1,154 @@
+{
+  "id": "venusa",
+  "gameId": "palworld",
+  "number": 178,
+  "name": {
+    "zh": "",
+    "en": "Venusa"
+  },
+  "slug": "venusa",
+  "image": "/images/pals/venusa.webp",
+  "_source": "wiki.gg auto-generated",
+  "_needsReview": [
+    "stats.scale",
+    "drops",
+    "acquisition.habitats",
+    "decision"
+  ],
+  "classification": {
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "Rare",
+    "role": [
+      "Base Worker"
+    ],
+    "size": "Small",
+    "isRideable": true,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 80,
+    "attack": 85,
+    "defense": 90,
+    "rangedAttack": 0,
+    "speed": 450,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 6,
+    "gathering": 6,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 5,
+    "cooling": 0,
+    "transporting": 2,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Poison Fog",
+      "element": "Dark",
+      "power": 40,
+      "cooldown": 2,
+      "level": 1
+    },
+    {
+      "name": "Poison Blast",
+      "element": "Dark",
+      "power": 55,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Shadow Burst",
+      "element": "Dark",
+      "power": 75,
+      "cooldown": 8,
+      "level": 15
+    },
+    {
+      "name": "Spirit Flame",
+      "element": "Fire",
+      "power": 90,
+      "cooldown": 12,
+      "level": 22
+    },
+    {
+      "name": "Poison Shower",
+      "element": "Dark",
+      "power": 110,
+      "cooldown": 18,
+      "level": 30
+    },
+    {
+      "name": "Dark Laser",
+      "element": "Dark",
+      "power": 80,
+      "cooldown": 10,
+      "level": 40
+    },
+    {
+      "name": "Dark Whisp",
+      "element": "Dark",
+      "power": 80,
+      "cooldown": 10,
+      "level": 50
+    },
+    {
+      "name": "Poison Scatter",
+      "element": "Dark",
+      "power": 150,
+      "cooldown": 40,
+      "level": 70
+    }
+  ],
+  "partnerSkill": {
+    "name": "Snake's Sagacity",
+    "descriptionEn": "While in party, the player's attacks inflict [https://palworld.wiki.gg/wiki/Status_Effects#Blind:~:text=Blind,-%5Bedit Blind]. (Does not stack)"
+  },
+  "acquisition": {
+    "habitats": [],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": true,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 970
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": false
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 0,
+      "mount-flying": 0,
+      "mount-ground": 0
+    },
+    "reasons": {}
+  },
+  "_rawDrops": "Aquatic Pal Fluids*2-3@100; Venom Gland*2-3@100",
+  "tier": "A"
+}

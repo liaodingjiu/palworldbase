@@ -1,0 +1,97 @@
+{
+  "id": "frostplume",
+  "gameId": "palworld",
+  "number": "143",
+  "name": {
+    "zh": "Frostplume",
+    "en": "Frostplume"
+  },
+  "slug": "frostplume",
+  "image": "/images/pals/frostplume.webp",
+  "classification": {
+    "elements": [
+      "Ice"
+    ],
+    "rarity": "Common",
+    "role": [
+      "Combat"
+    ],
+    "size": "Medium",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 110,
+    "attack": 100,
+    "defense": 100,
+    "rangedAttack": 0,
+    "speed": 70,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 1,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 2,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Ice Shard",
+      "element": "Ice",
+      "power": 55,
+      "cooldown": 4,
+      "level": 1
+    },
+    {
+      "name": "Ice Beam",
+      "element": "Ice",
+      "power": 100,
+      "cooldown": 14,
+      "level": 15
+    },
+    {
+      "name": "Blizzard",
+      "element": "Ice",
+      "power": 140,
+      "cooldown": 24,
+      "level": 30
+    }
+  ],
+  "partnerSkill": {
+    "name": "Peacock Pounce",
+    "descriptionEn": "While fighting together, Frostplume's icy aura sharpens your focus, improving reload speed."
+  },
+  "acquisition": {
+    "habitats": [
+      "various"
+    ],
+    "isBreedable": false,
+    "isCatchable": true,
+    "isBossEncounter": false
+  },
+  "breeding": {
+    "breedingPower": 1000
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [
+      "cooling"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": false
+    },
+    "scores": {},
+    "reasons": {}
+  },
+  "tier": "A"
+}

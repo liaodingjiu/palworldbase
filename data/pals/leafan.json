@@ -1,0 +1,155 @@
+{
+  "id": "leafan",
+  "gameId": "palworld",
+  "number": 90,
+  "name": {
+    "zh": "",
+    "en": "Leafan"
+  },
+  "slug": "leafan",
+  "image": "/images/pals/leafan.webp",
+  "_source": "wiki.gg auto-generated",
+  "_needsReview": [
+    "stats.scale",
+    "drops",
+    "acquisition.habitats",
+    "decision"
+  ],
+  "classification": {
+    "elements": [
+      "Grass"
+    ],
+    "rarity": "Rare",
+    "role": [
+      "Combat",
+      "Base Worker"
+    ],
+    "size": "Medium",
+    "isRideable": true,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 100,
+    "attack": 115,
+    "defense": 95,
+    "rangedAttack": 0,
+    "speed": 600,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 3,
+    "generating": 0,
+    "handiwork": 3,
+    "gathering": 3,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 2,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Seed Machine Gun",
+      "element": "Grass",
+      "power": 40,
+      "cooldown": 2,
+      "level": 1
+    },
+    {
+      "name": "Multicutter",
+      "element": "Neutral",
+      "power": 55,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Wind Edge",
+      "element": "Neutral",
+      "power": 75,
+      "cooldown": 8,
+      "level": 15
+    },
+    {
+      "name": "Rapid Kick",
+      "element": "Neutral",
+      "power": 90,
+      "cooldown": 12,
+      "level": 22
+    },
+    {
+      "name": "Raid Cutter",
+      "element": "Neutral",
+      "power": 110,
+      "cooldown": 18,
+      "level": 30
+    },
+    {
+      "name": "Reflect Leaf",
+      "element": "Grass",
+      "power": 125,
+      "cooldown": 24,
+      "level": 40
+    },
+    {
+      "name": "Crosswind",
+      "element": "Neutral",
+      "power": 140,
+      "cooldown": 30,
+      "level": 50
+    },
+    {
+      "name": "Wind Burst",
+      "element": "Neutral",
+      "power": 150,
+      "cooldown": 40,
+      "level": 70
+    }
+  ],
+  "partnerSkill": {
+    "name": "Selfless Discipline",
+    "descriptionEn": "This Pal's Attack and Defense increase by 2% for each other {{i|Grass}} Pal in your party."
+  },
+  "acquisition": {
+    "habitats": [],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": true,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 1410
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": false
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 0,
+      "mount-flying": 0,
+      "mount-ground": 0
+    },
+    "reasons": {}
+  },
+  "_rawDrops": "Leather*2-3@100",
+  "tier": "A"
+}

@@ -1,0 +1,155 @@
+{
+  "id": "flaracle",
+  "gameId": "palworld",
+  "number": 174,
+  "name": {
+    "zh": "",
+    "en": "Flaracle"
+  },
+  "slug": "flaracle",
+  "image": "/images/pals/flaracle.webp",
+  "_source": "wiki.gg auto-generated",
+  "_needsReview": [
+    "stats.scale",
+    "drops",
+    "acquisition.habitats",
+    "decision"
+  ],
+  "classification": {
+    "elements": [
+      "Fire"
+    ],
+    "rarity": "Epic",
+    "role": [
+      "Combat",
+      "Base Worker"
+    ],
+    "size": "Medium",
+    "isRideable": true,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 110,
+    "attack": 125,
+    "defense": 105,
+    "rangedAttack": 0,
+    "speed": 500,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 7,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 6,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 2,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Ignis Blast",
+      "element": "Fire",
+      "power": 40,
+      "cooldown": 2,
+      "level": 1
+    },
+    {
+      "name": "Flare Arrow",
+      "element": "Fire",
+      "power": 55,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Ignis Breath",
+      "element": "Fire",
+      "power": 75,
+      "cooldown": 8,
+      "level": 15
+    },
+    {
+      "name": "Flame Wall",
+      "element": "Fire",
+      "power": 90,
+      "cooldown": 12,
+      "level": 22
+    },
+    {
+      "name": "Flame Funnel",
+      "element": "Fire",
+      "power": 110,
+      "cooldown": 18,
+      "level": 30
+    },
+    {
+      "name": "Dark Laser",
+      "element": "Dark",
+      "power": 80,
+      "cooldown": 10,
+      "level": 40
+    },
+    {
+      "name": "Volcanic Rain",
+      "element": "Fire",
+      "power": 140,
+      "cooldown": 30,
+      "level": 50
+    },
+    {
+      "name": "Fire Ball",
+      "element": "Fire",
+      "power": 75,
+      "cooldown": 6,
+      "level": 70
+    }
+  ],
+  "partnerSkill": {
+    "name": "Burning Future",
+    "descriptionEn": "While in party, when the player attacks an enemy afflicted with Burn, the enemy explodes, dealing damage equal to a percent of the player's attack damage to nearby enemies. (Does not stack.)"
+  },
+  "acquisition": {
+    "habitats": [],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": true,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 390
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": false
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 0,
+      "mount-flying": 0,
+      "mount-ground": 0
+    },
+    "reasons": {}
+  },
+  "_rawDrops": "Leather*3-4@100",
+  "tier": "S"
+}

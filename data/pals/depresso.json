@@ -1,0 +1,129 @@
+{
+  "id": "depresso",
+  "gameId": "palworld",
+  "number": 17,
+  "name": {
+    "zh": "焦虑鳗",
+    "en": "Depresso"
+  },
+  "slug": "depresso",
+  "image": "/images/pals/depresso.png",
+  "classification": {
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "Common",
+    "role": [
+      "Worker"
+    ],
+    "size": "Small",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 65,
+    "attack": 60,
+    "defense": 60,
+    "rangedAttack": 0,
+    "speed": 40,
+    "stamina": 80
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 1,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Caffeine Free",
+    "descriptionEn": "Consumes less food than other Pals. Works at normal speed despite low stats."
+  },
+  "acquisition": {
+    "habitats": [
+      "beach",
+      "cave"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 1480
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "handiwork"
+    ],
+    "gameStage": {
+      "early": true,
+      "mid": false,
+      "late": false
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 30,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 20,
+      "mount-flying": 0,
+      "mount-ground": 0
+    },
+    "reasons": {
+      "handiwork": [
+        "Available from early game"
+      ]
+    }
+  },
+  "tier": "B"
+}

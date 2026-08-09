@@ -1,0 +1,133 @@
+{
+  "id": "gobfin",
+  "gameId": "palworld",
+  "number": 27,
+  "name": {
+    "zh": "鲨小子",
+    "en": "Gobfin"
+  },
+  "slug": "gobfin",
+  "image": "/images/pals/gobfin.png",
+  "classification": {
+    "elements": [
+      "Water"
+    ],
+    "rarity": "Uncommon",
+    "role": [
+      "Worker"
+    ],
+    "size": "Small",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 80,
+    "attack": 90,
+    "defense": 75,
+    "rangedAttack": 0,
+    "speed": 100,
+    "stamina": 110
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 1,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Angry Shark",
+    "descriptionEn": "Increases attack power when HP drops below 30%."
+  },
+  "acquisition": {
+    "habitats": [
+      "beach",
+      "ocean"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 1240
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "watering",
+      "combat"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": false
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 30,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 40,
+      "mount-flying": 0,
+      "mount-ground": 0
+    },
+    "reasons": {
+      "watering": [
+        "Obtainable mid-game"
+      ],
+      "combat": [
+        "Obtainable mid-game"
+      ]
+    }
+  },
+  "tier": "B"
+}

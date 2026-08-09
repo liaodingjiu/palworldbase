@@ -1,0 +1,141 @@
+{
+  "id": "sibelyx",
+  "gameId": "palworld",
+  "number": 79,
+  "name": {
+    "zh": "冰羽",
+    "en": "Sibelyx"
+  },
+  "slug": "sibelyx",
+  "image": "/images/pals/sibelyx.png",
+  "classification": {
+    "elements": [
+      "Ice"
+    ],
+    "rarity": "Rare",
+    "role": [
+      "Combat",
+      "Mount"
+    ],
+    "size": "Medium",
+    "isRideable": false,
+    "isFlyable": true
+  },
+  "stats": {
+    "hp": 95,
+    "attack": 105,
+    "defense": 80,
+    "rangedAttack": 0,
+    "speed": 130,
+    "stamina": 130
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 2,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Snow Storm",
+    "descriptionEn": "Can be ridden as a flying mount. Creates a snowstorm that damages nearby enemies."
+  },
+  "acquisition": {
+    "habitats": [
+      "snow_region"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 410
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "cooling",
+      "mount-flying",
+      "combat"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": false
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 55,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 65,
+      "mount-flying": 75,
+      "mount-ground": 0
+    },
+    "reasons": {
+      "cooling": [
+        "Reliable cooling output for mid-game progression",
+        "130 Speed — fast and efficient",
+        "Obtainable mid-game"
+      ],
+      "mount-flying": [
+        "130 Speed — fast and efficient",
+        "Obtainable mid-game"
+      ],
+      "combat": [
+        "130 Speed — fast and efficient",
+        "Obtainable mid-game"
+      ]
+    }
+  },
+  "tier": "A"
+}

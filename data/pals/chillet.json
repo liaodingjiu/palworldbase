@@ -1,0 +1,139 @@
+{
+  "id": "chillet",
+  "gameId": "palworld",
+  "number": 52,
+  "name": {
+    "zh": "滑水蛇",
+    "en": "Chillet"
+  },
+  "slug": "chillet",
+  "image": "/images/pals/chillet.png",
+  "classification": {
+    "elements": [
+      "Ice",
+      "Dragon"
+    ],
+    "rarity": "Rare",
+    "role": [
+      "Combat",
+      "Mount"
+    ],
+    "size": "Medium",
+    "isRideable": true,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 100,
+    "attack": 100,
+    "defense": 85,
+    "rangedAttack": 0,
+    "speed": 95,
+    "stamina": 120
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 1,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 1,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Serpent Slither",
+    "descriptionEn": "Can be ridden. Slides across terrain quickly. Boosts Ice and Dragon attacks while mounted."
+  },
+  "acquisition": {
+    "habitats": [
+      "snow_region",
+      "lake"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 460
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "mount-ground",
+      "cooling",
+      "combat"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": false
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 30,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 30,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 65,
+      "mount-flying": 0,
+      "mount-ground": 45
+    },
+    "reasons": {
+      "mount-ground": [
+        "Obtainable mid-game"
+      ],
+      "cooling": [
+        "Obtainable mid-game"
+      ],
+      "combat": [
+        "Obtainable mid-game"
+      ]
+    }
+  },
+  "tier": "B"
+}

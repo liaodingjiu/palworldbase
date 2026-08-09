@@ -1,0 +1,154 @@
+{
+  "id": "panthalus",
+  "gameId": "palworld",
+  "number": 203,
+  "name": {
+    "zh": "",
+    "en": "Panthalus"
+  },
+  "slug": "panthalus",
+  "image": "/images/pals/panthalus.webp",
+  "_source": "wiki.gg auto-generated",
+  "_needsReview": [
+    "stats.scale",
+    "drops",
+    "acquisition.habitats",
+    "decision"
+  ],
+  "classification": {
+    "elements": [
+      "Water"
+    ],
+    "rarity": "Legendary",
+    "role": [
+      "Combat"
+    ],
+    "size": "Huge",
+    "isRideable": true,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 180,
+    "attack": 120,
+    "defense": 200,
+    "rangedAttack": 0,
+    "speed": 3000,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Bubble Rain",
+      "element": "Water",
+      "power": 40,
+      "cooldown": 2,
+      "level": 1
+    },
+    {
+      "name": "Creeping Bubbles",
+      "element": "Water",
+      "power": 55,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Aqua Blade",
+      "element": "Water",
+      "power": 75,
+      "cooldown": 8,
+      "level": 15
+    },
+    {
+      "name": "Tidal Charge",
+      "element": "Water",
+      "power": 90,
+      "cooldown": 12,
+      "level": 22
+    },
+    {
+      "name": "Maelstrom",
+      "element": "Water",
+      "power": 110,
+      "cooldown": 18,
+      "level": 30
+    },
+    {
+      "name": "Grand Breach",
+      "element": "Water",
+      "power": 125,
+      "cooldown": 24,
+      "level": 40
+    },
+    {
+      "name": "Holy Burst",
+      "element": "Dark",
+      "power": 80,
+      "cooldown": 10,
+      "level": 50
+    },
+    {
+      "name": "Aqua Tornado",
+      "element": "Water",
+      "power": 150,
+      "cooldown": 40,
+      "level": 60
+    }
+  ],
+  "partnerSkill": {
+    "name": "Resonant Guardian",
+    "descriptionEn": "Can be ridden as a flying mount. Only 1 can be summoned to a base. While at a base, it constantly patrols the skies and bombards intruders from high above."
+  },
+  "acquisition": {
+    "habitats": [],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": true,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 20
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": false
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 0,
+      "mount-flying": 0,
+      "mount-ground": 0
+    },
+    "reasons": {}
+  },
+  "_rawDrops": "Diamond*1@100; Giant Pal Soul*1@100",
+  "tier": "S"
+}

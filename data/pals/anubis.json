@@ -1,0 +1,149 @@
+{
+  "id": "anubis",
+  "gameId": "palworld",
+  "number": 111,
+  "name": {
+    "zh": "阿努比斯",
+    "en": "Anubis"
+  },
+  "slug": "anubis",
+  "image": "/images/pals/anubis.png",
+  "classification": {
+    "elements": [
+      "Ground"
+    ],
+    "rarity": "Epic",
+    "role": [
+      "Combat"
+    ],
+    "size": "Medium",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 120,
+    "attack": 130,
+    "defense": 100,
+    "rangedAttack": 0,
+    "speed": 80,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 4,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 3,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 2,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Guardian of the Desert",
+    "descriptionEn": "When activated, Anubis leaps onto the player's shoulder and attacks with a powerful machine gun."
+  },
+  "acquisition": {
+    "habitats": [
+      "desert",
+      "cave"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": true,
+    "bossLevel": 45,
+    "bossLocation": "Anubis's Domain"
+  },
+  "breeding": {
+    "breedingPower": 570
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "handiwork",
+      "mining",
+      "combat",
+      "base-worker"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": true
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 95,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 80,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 55,
+      "farming": 0,
+      "combat": 80,
+      "mount-flying": 0,
+      "mount-ground": 0
+    },
+    "reasons": {
+      "handiwork": [
+        "Handiwork Lv 4 — top-tier efficiency",
+        "Reliable handiwork output for mid-game progression",
+        "130 Attack — strong combat presence",
+        "Obtainable mid-game"
+      ],
+      "mining": [
+        "Mining Lv 3 — top-tier efficiency",
+        "Reliable mining output for mid-game progression",
+        "130 Attack — strong combat presence",
+        "Obtainable mid-game"
+      ],
+      "combat": [
+        "130 Attack — strong combat presence",
+        "Obtainable mid-game"
+      ],
+      "base-worker": [
+        "130 Attack — strong combat presence",
+        "Obtainable mid-game"
+      ]
+    }
+  },
+  "tier": "A"
+}

@@ -1,0 +1,132 @@
+{
+  "id": "mau_cryst",
+  "gameId": "palworld",
+  "number": 21,
+  "name": {
+    "zh": "冰喵斯特",
+    "en": "Mau Cryst"
+  },
+  "slug": "mau_cryst",
+  "image": "/images/pals/mau_cryst.png",
+  "classification": {
+    "elements": [
+      "Ice"
+    ],
+    "rarity": "Uncommon",
+    "role": [
+      "Worker"
+    ],
+    "size": "Small",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 75,
+    "attack": 70,
+    "defense": 65,
+    "rangedAttack": 0,
+    "speed": 85,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 1,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Gold Digger",
+    "descriptionEn": "When assigned to a Ranch, digs up Gold Coins. Ice variant."
+  },
+  "acquisition": {
+    "habitats": [
+      "snow_region"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 1320
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "cooling",
+      "farming"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": false
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 30,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 20,
+      "mount-flying": 0,
+      "mount-ground": 0
+    },
+    "reasons": {
+      "cooling": [
+        "Obtainable mid-game"
+      ],
+      "farming": [
+        "Obtainable mid-game"
+      ]
+    }
+  },
+  "tier": "B"
+}

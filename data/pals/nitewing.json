@@ -1,0 +1,131 @@
+{
+  "id": "nitewing",
+  "gameId": "palworld",
+  "number": 33,
+  "name": {
+    "zh": "夜幕魔蝠",
+    "en": "Nitewing"
+  },
+  "slug": "nitewing",
+  "image": "/images/pals/nitewing.png",
+  "classification": {
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "Uncommon",
+    "role": [
+      "Combat",
+      "Mount"
+    ],
+    "size": "Medium",
+    "isRideable": false,
+    "isFlyable": true
+  },
+  "stats": {
+    "hp": 90,
+    "attack": 85,
+    "defense": 80,
+    "rangedAttack": 0,
+    "speed": 120,
+    "stamina": 130
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Travel Companion",
+    "descriptionEn": "First flying mount most players obtain. Can be ridden to fly across the map."
+  },
+  "acquisition": {
+    "habitats": [
+      "forest",
+      "mountain"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 420
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "mount-flying"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": false
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 40,
+      "mount-flying": 75,
+      "mount-ground": 0
+    },
+    "reasons": {
+      "mount-flying": [
+        "120 Speed — fast and efficient",
+        "Obtainable mid-game"
+      ]
+    }
+  },
+  "tier": "A"
+}

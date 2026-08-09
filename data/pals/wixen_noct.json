@@ -1,0 +1,99 @@
+{
+  "id": "wixen_noct",
+  "gameId": "palworld",
+  "number": "076B",
+  "name": {
+    "zh": "Wixen Noct",
+    "en": "Wixen Noct"
+  },
+  "slug": "wixen_noct",
+  "image": "/images/pals/wixen_noct.webp",
+  "classification": {
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "Common",
+    "role": [
+      "Combat"
+    ],
+    "size": "Medium",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 90,
+    "attack": 110,
+    "defense": 85,
+    "rangedAttack": 0,
+    "speed": 70,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 2,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 3,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 2,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Black Fox Lord",
+    "descriptionEn": "While fighting together, changes the player's attack type to Dark."
+  },
+  "acquisition": {
+    "habitats": [
+      "various"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false
+  },
+  "breeding": {
+    "breedingPower": 1150
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [
+      "handiwork",
+      "kindling",
+      "transporting"
+    ],
+    "gameStage": {
+      "early": true,
+      "mid": false,
+      "late": false
+    },
+    "scores": {},
+    "reasons": {}
+  },
+  "tier": "B"
+}

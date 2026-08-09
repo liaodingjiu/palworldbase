@@ -1,0 +1,145 @@
+{
+  "id": "vanwyrm_ignis",
+  "gameId": "palworld",
+  "number": 150,
+  "name": {
+    "zh": "怒火翼龙",
+    "en": "Vanwyrm Ignis"
+  },
+  "slug": "vanwyrm_ignis",
+  "image": "/images/pals/vanwyrm_ignis.png",
+  "classification": {
+    "elements": [
+      "Fire"
+    ],
+    "rarity": "Rare",
+    "role": [
+      "Combat",
+      "Mount"
+    ],
+    "size": "Large",
+    "isRideable": false,
+    "isFlyable": true
+  },
+  "stats": {
+    "hp": 110,
+    "attack": 130,
+    "defense": 90,
+    "rangedAttack": 0,
+    "speed": 120,
+    "stamina": 140
+  },
+  "workSuitability": {
+    "kindling": 3,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 1,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Rage Wyrm",
+    "descriptionEn": "Pure fire variant. Faster and stronger than Vanwyrm."
+  },
+  "acquisition": {
+    "habitats": [
+      "volcano"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 370
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "kindling",
+      "mount-flying",
+      "combat"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": false
+    },
+    "scores": {
+      "kindling": 80,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 30,
+      "farming": 0,
+      "combat": 80,
+      "mount-flying": 75,
+      "mount-ground": 0
+    },
+    "reasons": {
+      "kindling": [
+        "Kindling Lv 3 — top-tier efficiency",
+        "Reliable kindling output for mid-game progression",
+        "130 Attack — strong combat presence",
+        "120 Speed — fast and efficient",
+        "Obtainable mid-game"
+      ],
+      "mount-flying": [
+        "130 Attack — strong combat presence",
+        "120 Speed — fast and efficient",
+        "Obtainable mid-game"
+      ],
+      "combat": [
+        "130 Attack — strong combat presence",
+        "120 Speed — fast and efficient",
+        "Obtainable mid-game"
+      ]
+    }
+  },
+  "tier": "B"
+}

@@ -1,0 +1,142 @@
+{
+  "id": "vanwyrm",
+  "gameId": "palworld",
+  "number": 70,
+  "name": {
+    "zh": "炎翼龙",
+    "en": "Vanwyrm"
+  },
+  "slug": "vanwyrm",
+  "image": "/images/pals/vanwyrm.png",
+  "classification": {
+    "elements": [
+      "Fire",
+      "Dark"
+    ],
+    "rarity": "Rare",
+    "role": [
+      "Combat",
+      "Mount"
+    ],
+    "size": "Large",
+    "isRideable": false,
+    "isFlyable": true
+  },
+  "stats": {
+    "hp": 110,
+    "attack": 125,
+    "defense": 95,
+    "rangedAttack": 0,
+    "speed": 120,
+    "stamina": 140
+  },
+  "workSuitability": {
+    "kindling": 2,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 1,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Flying Wyrm",
+    "descriptionEn": "Can be ridden as a flying mount. Average speed, good combat ability."
+  },
+  "acquisition": {
+    "habitats": [
+      "volcano"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 380
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "kindling",
+      "mount-flying",
+      "combat"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": false
+    },
+    "scores": {
+      "kindling": 55,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 30,
+      "farming": 0,
+      "combat": 65,
+      "mount-flying": 75,
+      "mount-ground": 0
+    },
+    "reasons": {
+      "kindling": [
+        "Reliable kindling output for mid-game progression",
+        "120 Speed — fast and efficient",
+        "Obtainable mid-game"
+      ],
+      "mount-flying": [
+        "120 Speed — fast and efficient",
+        "Obtainable mid-game"
+      ],
+      "combat": [
+        "120 Speed — fast and efficient",
+        "Obtainable mid-game"
+      ]
+    }
+  },
+  "tier": "A"
+}

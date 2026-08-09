@@ -1,0 +1,98 @@
+{
+  "id": "loupmoon_cryst",
+  "gameId": "palworld",
+  "number": "046B",
+  "name": {
+    "zh": "Loupmoon Cryst",
+    "en": "Loupmoon Cryst"
+  },
+  "slug": "loupmoon_cryst",
+  "image": "/images/pals/loupmoon_cryst.webp",
+  "classification": {
+    "elements": [
+      "Ice"
+    ],
+    "rarity": "Uncommon",
+    "role": [
+      "Combat"
+    ],
+    "size": "Medium",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 80,
+    "attack": 105,
+    "defense": 80,
+    "rangedAttack": 0,
+    "speed": 70,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 2,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 3,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Ice Shard",
+      "element": "Ice",
+      "power": 55,
+      "cooldown": 4,
+      "level": 1
+    },
+    {
+      "name": "Ice Beam",
+      "element": "Ice",
+      "power": 100,
+      "cooldown": 14,
+      "level": 15
+    },
+    {
+      "name": "Blizzard",
+      "element": "Ice",
+      "power": 140,
+      "cooldown": 24,
+      "level": 30
+    }
+  ],
+  "partnerSkill": {
+    "name": "Frozen Gleam Strike",
+    "descriptionEn": "When activated, attacks targeted enemy with a powerful Snow Claw."
+  },
+  "acquisition": {
+    "habitats": [
+      "various"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false
+  },
+  "breeding": {
+    "breedingPower": 805
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [
+      "cooling",
+      "handiwork"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": false
+    },
+    "scores": {},
+    "reasons": {}
+  },
+  "tier": "B"
+}

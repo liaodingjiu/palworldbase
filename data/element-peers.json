@@ -1,0 +1,5480 @@
+{
+  "Neutral": [
+    {
+      "slug": "valentail",
+      "name": "Valentail",
+      "number": 162,
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 925,
+      "stats": {
+        "hp": 75,
+        "attack": 80,
+        "defense": 70,
+        "speed": 700
+      },
+      "rank": 1
+    },
+    {
+      "slug": "lapure",
+      "name": "Lapure",
+      "number": 170,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 905,
+      "stats": {
+        "hp": 105,
+        "attack": 100,
+        "defense": 100,
+        "speed": 600
+      },
+      "rank": 2
+    },
+    {
+      "slug": "paladius",
+      "name": "Paladius",
+      "number": 123,
+      "rarity": "Legendary",
+      "tier": "S",
+      "statTotal": 680,
+      "stats": {
+        "hp": 200,
+        "attack": 200,
+        "defense": 180,
+        "speed": 100
+      },
+      "rank": 3
+    },
+    {
+      "slug": "clovee",
+      "name": "Clovee",
+      "number": 14,
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 610,
+      "stats": {
+        "hp": 80,
+        "attack": 65,
+        "defense": 65,
+        "speed": 400
+      },
+      "rank": 4
+    },
+    {
+      "slug": "illuminant_bat",
+      "name": "Illuminant Bat",
+      "number": 0,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 555,
+      "stats": {
+        "hp": 80,
+        "attack": 80,
+        "defense": 95,
+        "speed": 300
+      },
+      "rank": 5
+    },
+    {
+      "slug": "fenglope",
+      "name": "Fenglope",
+      "number": 103,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 490,
+      "stats": {
+        "hp": 120,
+        "attack": 110,
+        "defense": 100,
+        "speed": 160
+      },
+      "rank": 6
+    },
+    {
+      "slug": "garillat",
+      "name": "Garillat",
+      "number": 159,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 460,
+      "stats": {
+        "hp": 140,
+        "attack": 140,
+        "defense": 120,
+        "speed": 60
+      },
+      "rank": 7
+    },
+    {
+      "slug": "gorirat",
+      "name": "Gorirat",
+      "number": 46,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 445,
+      "stats": {
+        "hp": 130,
+        "attack": 130,
+        "defense": 110,
+        "speed": 75
+      },
+      "rank": 8
+    },
+    {
+      "slug": "hartalis",
+      "name": "Hartalis",
+      "number": "156",
+      "rarity": "Common",
+      "tier": "A",
+      "statTotal": 445,
+      "stats": {
+        "hp": 135,
+        "attack": 130,
+        "defense": 110,
+        "speed": 70
+      },
+      "rank": 9
+    },
+    {
+      "slug": "voxy",
+      "name": "Voxy",
+      "number": 132,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 445,
+      "stats": {
+        "hp": 120,
+        "attack": 115,
+        "defense": 100,
+        "speed": 110
+      },
+      "rank": 10
+    },
+    {
+      "slug": "kingpaca",
+      "name": "Kingpaca",
+      "number": 96,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 435,
+      "stats": {
+        "hp": 140,
+        "attack": 85,
+        "defense": 130,
+        "speed": 80
+      },
+      "rank": 11
+    },
+    {
+      "slug": "sweepa",
+      "name": "Sweepa",
+      "number": 51,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 425,
+      "stats": {
+        "hp": 150,
+        "attack": 80,
+        "defense": 140,
+        "speed": 55
+      },
+      "rank": 12
+    },
+    {
+      "slug": "direhowl",
+      "name": "Direhowl",
+      "number": 22,
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 420,
+      "stats": {
+        "hp": 100,
+        "attack": 110,
+        "defense": 80,
+        "speed": 130
+      },
+      "rank": 13
+    },
+    {
+      "slug": "dogen",
+      "name": "Dogen",
+      "number": 161,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 420,
+      "stats": {
+        "hp": 90,
+        "attack": 120,
+        "defense": 80,
+        "speed": 130
+      },
+      "rank": 14
+    },
+    {
+      "slug": "braloha",
+      "name": "Braloha",
+      "number": "145",
+      "rarity": "Common",
+      "tier": "A",
+      "statTotal": 415,
+      "stats": {
+        "hp": 130,
+        "attack": 95,
+        "defense": 120,
+        "speed": 70
+      },
+      "rank": 15
+    },
+    {
+      "slug": "solenne",
+      "name": "Solenne",
+      "number": "182",
+      "rarity": "Epic",
+      "tier": "A",
+      "statTotal": 410,
+      "stats": {
+        "hp": 110,
+        "attack": 115,
+        "defense": 115,
+        "speed": 70
+      },
+      "rank": 16
+    },
+    {
+      "slug": "selyne",
+      "name": "Selyne",
+      "number": 166,
+      "rarity": "Epic",
+      "tier": "A",
+      "statTotal": 405,
+      "stats": {
+        "hp": 110,
+        "attack": 100,
+        "defense": 85,
+        "speed": 110
+      },
+      "rank": 17
+    },
+    {
+      "slug": "whalaska_ignis",
+      "name": "Whalaska Ignis",
+      "number": "154B",
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 405,
+      "stats": {
+        "hp": 105,
+        "attack": 120,
+        "defense": 110,
+        "speed": 70
+      },
+      "rank": 18
+    },
+    {
+      "slug": "celesdir",
+      "name": "Celesdir",
+      "number": "132",
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 400,
+      "stats": {
+        "hp": 120,
+        "attack": 110,
+        "defense": 100,
+        "speed": 70
+      },
+      "rank": 19
+    },
+    {
+      "slug": "grintale",
+      "name": "Grintale",
+      "number": 49,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 400,
+      "stats": {
+        "hp": 100,
+        "attack": 100,
+        "defense": 80,
+        "speed": 120
+      },
+      "rank": 20
+    },
+    {
+      "slug": "whalaska",
+      "name": "Whalaska",
+      "number": "154",
+      "rarity": "Common",
+      "tier": "A",
+      "statTotal": 400,
+      "stats": {
+        "hp": 105,
+        "attack": 115,
+        "defense": 110,
+        "speed": 70
+      },
+      "rank": 21
+    },
+    {
+      "slug": "azurobe_cryst",
+      "name": "Azurobe Cryst",
+      "number": "082B",
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 395,
+      "stats": {
+        "hp": 115,
+        "attack": 105,
+        "defense": 105,
+        "speed": 70
+      },
+      "rank": 22
+    },
+    {
+      "slug": "ghangler_ignis",
+      "name": "Ghangler Ignis",
+      "number": "153B",
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 395,
+      "stats": {
+        "hp": 90,
+        "attack": 130,
+        "defense": 105,
+        "speed": 70
+      },
+      "rank": 23
+    },
+    {
+      "slug": "ghangler",
+      "name": "Ghangler",
+      "number": "153",
+      "rarity": "Common",
+      "tier": "A",
+      "statTotal": 390,
+      "stats": {
+        "hp": 90,
+        "attack": 125,
+        "defense": 105,
+        "speed": 70
+      },
+      "rank": 24
+    },
+    {
+      "slug": "sootseer",
+      "name": "Sootseer",
+      "number": "118",
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 390,
+      "stats": {
+        "hp": 105,
+        "attack": 125,
+        "defense": 90,
+        "speed": 70
+      },
+      "rank": 25
+    },
+    {
+      "slug": "galeclaw",
+      "name": "Galeclaw",
+      "number": 43,
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 380,
+      "stats": {
+        "hp": 85,
+        "attack": 80,
+        "defense": 75,
+        "speed": 140
+      },
+      "rank": 26
+    },
+    {
+      "slug": "quivern_botan",
+      "name": "Quivern Botan",
+      "number": "095B",
+      "rarity": "Epic",
+      "tier": "B",
+      "statTotal": 380,
+      "stats": {
+        "hp": 105,
+        "attack": 105,
+        "defense": 100,
+        "speed": 70
+      },
+      "rank": 27
+    },
+    {
+      "slug": "nitewing",
+      "name": "Nitewing",
+      "number": 33,
+      "rarity": "Uncommon",
+      "tier": "A",
+      "statTotal": 375,
+      "stats": {
+        "hp": 90,
+        "attack": 85,
+        "defense": 80,
+        "speed": 120
+      },
+      "rank": 28
+    },
+    {
+      "slug": "polapup",
+      "name": "Polapup",
+      "number": "147",
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 375,
+      "stats": {
+        "hp": 95,
+        "attack": 105,
+        "defense": 105,
+        "speed": 70
+      },
+      "rank": 29
+    },
+    {
+      "slug": "lovander",
+      "name": "Lovander",
+      "number": 69,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 370,
+      "stats": {
+        "hp": 100,
+        "attack": 90,
+        "defense": 85,
+        "speed": 95
+      },
+      "rank": 30
+    },
+    {
+      "slug": "penking_lux",
+      "name": "Penking Lux",
+      "number": "011B",
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 370,
+      "stats": {
+        "hp": 100,
+        "attack": 100,
+        "defense": 100,
+        "speed": 70
+      },
+      "rank": 31
+    },
+    {
+      "slug": "prunelia",
+      "name": "Prunelia",
+      "number": "138",
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 370,
+      "stats": {
+        "hp": 105,
+        "attack": 95,
+        "defense": 100,
+        "speed": 70
+      },
+      "rank": 32
+    },
+    {
+      "slug": "turtacle_terra",
+      "name": "Turtacle Terra",
+      "number": "148B",
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 365,
+      "stats": {
+        "hp": 85,
+        "attack": 85,
+        "defense": 125,
+        "speed": 70
+      },
+      "rank": 33
+    },
+    {
+      "slug": "enchanted_sword",
+      "name": "Enchanted Sword",
+      "number": "",
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 360,
+      "stats": {
+        "hp": 90,
+        "attack": 105,
+        "defense": 95,
+        "speed": 70
+      },
+      "rank": 34
+    },
+    {
+      "slug": "prixter",
+      "name": "Prixter",
+      "number": "119",
+      "rarity": "Epic",
+      "tier": "A",
+      "statTotal": 360,
+      "stats": {
+        "hp": 90,
+        "attack": 110,
+        "defense": 90,
+        "speed": 70
+      },
+      "rank": 35
+    },
+    {
+      "slug": "croajiro_noct",
+      "name": "Croajiro Noct",
+      "number": "114B",
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 355,
+      "stats": {
+        "hp": 85,
+        "attack": 110,
+        "defense": 90,
+        "speed": 70
+      },
+      "rank": 36
+    },
+    {
+      "slug": "lunaris",
+      "name": "Lunaris",
+      "number": 61,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 355,
+      "stats": {
+        "hp": 90,
+        "attack": 85,
+        "defense": 80,
+        "speed": 100
+      },
+      "rank": 37
+    },
+    {
+      "slug": "wixen_noct",
+      "name": "Wixen Noct",
+      "number": "076B",
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 355,
+      "stats": {
+        "hp": 90,
+        "attack": 110,
+        "defense": 85,
+        "speed": 70
+      },
+      "rank": 38
+    },
+    {
+      "slug": "dumud_gild",
+      "name": "Dumud Gild",
+      "number": "043B",
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 350,
+      "stats": {
+        "hp": 105,
+        "attack": 75,
+        "defense": 100,
+        "speed": 70
+      },
+      "rank": 39
+    },
+    {
+      "slug": "chillet_ignis",
+      "name": "Chillet Ignis",
+      "number": "055B",
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 325,
+      "stats": {
+        "hp": 90,
+        "attack": 85,
+        "defense": 80,
+        "speed": 70
+      },
+      "rank": 40
+    },
+    {
+      "slug": "eikthyrdeer",
+      "name": "Eikthyrdeer",
+      "number": "037",
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 325,
+      "stats": {
+        "hp": 95,
+        "attack": 80,
+        "defense": 80,
+        "speed": 70
+      },
+      "rank": 41
+    },
+    {
+      "slug": "kikit",
+      "name": "Kikit",
+      "number": 171,
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 325,
+      "stats": {
+        "hp": 70,
+        "attack": 80,
+        "defense": 65,
+        "speed": 110
+      },
+      "rank": 42
+    },
+    {
+      "slug": "melpaca",
+      "name": "Melpaca",
+      "number": "036",
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 325,
+      "stats": {
+        "hp": 90,
+        "attack": 75,
+        "defense": 90,
+        "speed": 70
+      },
+      "rank": 43
+    },
+    {
+      "slug": "yakumo",
+      "name": "Yakumo",
+      "number": "121",
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 325,
+      "stats": {
+        "hp": 85,
+        "attack": 85,
+        "defense": 85,
+        "speed": 70
+      },
+      "rank": 44
+    },
+    {
+      "slug": "mimog",
+      "name": "Mimog",
+      "number": "124",
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 320,
+      "stats": {
+        "hp": 60,
+        "attack": 60,
+        "defense": 130,
+        "speed": 70
+      },
+      "rank": 45
+    },
+    {
+      "slug": "finsider_ignis",
+      "name": "Finsider Ignis",
+      "number": "152B",
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 315,
+      "stats": {
+        "hp": 75,
+        "attack": 90,
+        "defense": 80,
+        "speed": 70
+      },
+      "rank": 46
+    },
+    {
+      "slug": "aegidron",
+      "name": "Aegidron",
+      "number": "184",
+      "rarity": "Epic",
+      "tier": "B",
+      "statTotal": 310,
+      "stats": {
+        "hp": 80,
+        "attack": 80,
+        "defense": 80,
+        "speed": 70
+      },
+      "rank": 47
+    },
+    {
+      "slug": "dandilord",
+      "name": "Dandilord",
+      "number": "194",
+      "rarity": "Epic",
+      "tier": "B",
+      "statTotal": 310,
+      "stats": {
+        "hp": 80,
+        "attack": 80,
+        "defense": 80,
+        "speed": 70
+      },
+      "rank": 48
+    },
+    {
+      "slug": "gloopie_primo",
+      "name": "Gloopie Primo",
+      "number": "48B",
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 310,
+      "stats": {
+        "hp": 80,
+        "attack": 80,
+        "defense": 80,
+        "speed": 70
+      },
+      "rank": 49
+    },
+    {
+      "slug": "jellroy",
+      "name": "Jellroy",
+      "number": "149",
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 310,
+      "stats": {
+        "hp": 90,
+        "attack": 75,
+        "defense": 75,
+        "speed": 70
+      },
+      "rank": 50
+    },
+    {
+      "slug": "munchill",
+      "name": "Munchill",
+      "number": "146",
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 310,
+      "stats": {
+        "hp": 75,
+        "attack": 80,
+        "defense": 85,
+        "speed": 70
+      },
+      "rank": 51
+    },
+    {
+      "slug": "renjishi",
+      "name": "Renjishi",
+      "number": "183",
+      "rarity": "Epic",
+      "tier": "B",
+      "statTotal": 310,
+      "stats": {
+        "hp": 80,
+        "attack": 80,
+        "defense": 80,
+        "speed": 70
+      },
+      "rank": 52
+    },
+    {
+      "slug": "shaolong",
+      "name": "Shaolong",
+      "number": "192",
+      "rarity": "Epic",
+      "tier": "B",
+      "statTotal": 310,
+      "stats": {
+        "hp": 80,
+        "attack": 80,
+        "defense": 80,
+        "speed": 70
+      },
+      "rank": 53
+    },
+    {
+      "slug": "sibelyx_primo",
+      "name": "Sibelyx Primo",
+      "number": "116B",
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 310,
+      "stats": {
+        "hp": 80,
+        "attack": 80,
+        "defense": 80,
+        "speed": 70
+      },
+      "rank": 54
+    },
+    {
+      "slug": "silvance",
+      "name": "Silvance",
+      "number": "193",
+      "rarity": "Epic",
+      "tier": "B",
+      "statTotal": 310,
+      "stats": {
+        "hp": 80,
+        "attack": 80,
+        "defense": 80,
+        "speed": 70
+      },
+      "rank": 55
+    },
+    {
+      "slug": "starryon_primo",
+      "name": "Starryon Primo",
+      "number": "130B",
+      "rarity": "Epic",
+      "tier": "B",
+      "statTotal": 310,
+      "stats": {
+        "hp": 80,
+        "attack": 80,
+        "defense": 80,
+        "speed": 70
+      },
+      "rank": 56
+    },
+    {
+      "slug": "tetroise_primo",
+      "name": "Tetroise Primo",
+      "number": "142B",
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 310,
+      "stats": {
+        "hp": 80,
+        "attack": 80,
+        "defense": 80,
+        "speed": 70
+      },
+      "rank": 57
+    },
+    {
+      "slug": "wistella",
+      "name": "Wistella",
+      "number": "181",
+      "rarity": "Epic",
+      "tier": "B",
+      "statTotal": 310,
+      "stats": {
+        "hp": 80,
+        "attack": 80,
+        "defense": 80,
+        "speed": 70
+      },
+      "rank": 58
+    },
+    {
+      "slug": "celaray_lux",
+      "name": "Celaray Lux",
+      "number": "025B",
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 305,
+      "stats": {
+        "hp": 80,
+        "attack": 75,
+        "defense": 80,
+        "speed": 70
+      },
+      "rank": 59
+    },
+    {
+      "slug": "herbil",
+      "name": "Herbil",
+      "number": "141",
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 300,
+      "stats": {
+        "hp": 80,
+        "attack": 75,
+        "defense": 75,
+        "speed": 70
+      },
+      "rank": 60
+    },
+    {
+      "slug": "swee",
+      "name": "Swee",
+      "number": 50,
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 300,
+      "stats": {
+        "hp": 110,
+        "attack": 50,
+        "defense": 100,
+        "speed": 40
+      },
+      "rank": 61
+    },
+    {
+      "slug": "dazzi_noct",
+      "name": "Dazzi Noct",
+      "number": "062B",
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 295,
+      "stats": {
+        "hp": 70,
+        "attack": 80,
+        "defense": 75,
+        "speed": 70
+      },
+      "rank": 62
+    },
+    {
+      "slug": "gloopie",
+      "name": "Gloopie",
+      "number": "151",
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 295,
+      "stats": {
+        "hp": 70,
+        "attack": 85,
+        "defense": 70,
+        "speed": 70
+      },
+      "rank": 63
+    },
+    {
+      "slug": "cave_bat",
+      "name": "Cave Bat",
+      "number": "",
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 290,
+      "stats": {
+        "hp": 65,
+        "attack": 75,
+        "defense": 80,
+        "speed": 70
+      },
+      "rank": 64
+    },
+    {
+      "slug": "pengullet_lux",
+      "name": "Pengullet Lux",
+      "number": "010B",
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 290,
+      "stats": {
+        "hp": 70,
+        "attack": 80,
+        "defense": 70,
+        "speed": 70
+      },
+      "rank": 65
+    },
+    {
+      "slug": "vixy",
+      "name": "Vixy",
+      "number": 15,
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 290,
+      "stats": {
+        "hp": 65,
+        "attack": 70,
+        "defense": 65,
+        "speed": 90
+      },
+      "rank": 66
+    },
+    {
+      "slug": "cattiva",
+      "name": "Cattiva",
+      "number": 2,
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 280,
+      "stats": {
+        "hp": 70,
+        "attack": 70,
+        "defense": 70,
+        "speed": 70
+      },
+      "rank": 67
+    },
+    {
+      "slug": "ribbuny",
+      "name": "Ribbuny",
+      "number": 130,
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 280,
+      "stats": {
+        "hp": 65,
+        "attack": 55,
+        "defense": 60,
+        "speed": 100
+      },
+      "rank": 68
+    },
+    {
+      "slug": "fuack_ignis",
+      "name": "Fuack Ignis",
+      "number": "006B",
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 275,
+      "stats": {
+        "hp": 60,
+        "attack": 85,
+        "defense": 60,
+        "speed": 70
+      },
+      "rank": 69
+    },
+    {
+      "slug": "killamari_primo",
+      "name": "Killamari Primo",
+      "number": "023B",
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 270,
+      "stats": {
+        "hp": 70,
+        "attack": 60,
+        "defense": 70,
+        "speed": 70
+      },
+      "rank": 70
+    },
+    {
+      "slug": "mozzarina",
+      "name": "Mozzarina",
+      "number": 25,
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 270,
+      "stats": {
+        "hp": 90,
+        "attack": 60,
+        "defense": 80,
+        "speed": 40
+      },
+      "rank": 71
+    },
+    {
+      "slug": "cremis",
+      "name": "Cremis",
+      "number": 128,
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 260,
+      "stats": {
+        "hp": 70,
+        "attack": 55,
+        "defense": 75,
+        "speed": 60
+      },
+      "rank": 72
+    },
+    {
+      "slug": "killamari",
+      "name": "Killamari",
+      "number": "023",
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 260,
+      "stats": {
+        "hp": 60,
+        "attack": 60,
+        "defense": 70,
+        "speed": 70
+      },
+      "rank": 73
+    },
+    {
+      "slug": "lamball",
+      "name": "Lamball",
+      "number": 1,
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 250,
+      "stats": {
+        "hp": 70,
+        "attack": 70,
+        "defense": 70,
+        "speed": 40
+      },
+      "rank": 74
+    },
+    {
+      "slug": "woolipop",
+      "name": "Woolipop",
+      "number": 129,
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 235,
+      "stats": {
+        "hp": 65,
+        "attack": 50,
+        "defense": 80,
+        "speed": 40
+      },
+      "rank": 75
+    },
+    {
+      "slug": "chikipi",
+      "name": "Chikipi",
+      "number": 3,
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 230,
+      "stats": {
+        "hp": 60,
+        "attack": 60,
+        "defense": 60,
+        "speed": 50
+      },
+      "rank": 76
+    },
+    {
+      "slug": "tocotoco",
+      "name": "Tocotoco",
+      "number": 23,
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 220,
+      "stats": {
+        "hp": 50,
+        "attack": 40,
+        "defense": 50,
+        "speed": 80
+      },
+      "rank": 77
+    }
+  ],
+  "Water": [
+    {
+      "slug": "panthalus",
+      "name": "Panthalus",
+      "number": 203,
+      "rarity": "Legendary",
+      "tier": "S",
+      "statTotal": 3500,
+      "stats": {
+        "hp": 180,
+        "attack": 120,
+        "defense": 200,
+        "speed": 3000
+      },
+      "rank": 1
+    },
+    {
+      "slug": "ophydia",
+      "name": "Ophydia",
+      "number": 175,
+      "rarity": "Epic",
+      "tier": "S",
+      "statTotal": 1065,
+      "stats": {
+        "hp": 130,
+        "attack": 115,
+        "defense": 120,
+        "speed": 700
+      },
+      "rank": 2
+    },
+    {
+      "slug": "solmora",
+      "name": "Solmora",
+      "number": 169,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 765,
+      "stats": {
+        "hp": 90,
+        "attack": 90,
+        "defense": 85,
+        "speed": 500
+      },
+      "rank": 3
+    },
+    {
+      "slug": "skutlass",
+      "name": "Skutlass",
+      "number": 128,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 750,
+      "stats": {
+        "hp": 70,
+        "attack": 100,
+        "defense": 80,
+        "speed": 500
+      },
+      "rank": 4
+    },
+    {
+      "slug": "amione",
+      "name": "Amione",
+      "number": 47,
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 650,
+      "stats": {
+        "hp": 65,
+        "attack": 70,
+        "defense": 65,
+        "speed": 450
+      },
+      "rank": 5
+    },
+    {
+      "slug": "suzaku_aqua",
+      "name": "Suzaku Aqua",
+      "number": 115,
+      "rarity": "Legendary",
+      "tier": "S",
+      "statTotal": 600,
+      "stats": {
+        "hp": 170,
+        "attack": 155,
+        "defense": 145,
+        "speed": 130
+      },
+      "rank": 6
+    },
+    {
+      "slug": "jormuntide",
+      "name": "Jormuntide",
+      "number": 112,
+      "rarity": "Legendary",
+      "tier": "S",
+      "statTotal": 530,
+      "stats": {
+        "hp": 200,
+        "attack": 120,
+        "defense": 130,
+        "speed": 80
+      },
+      "rank": 7
+    },
+    {
+      "slug": "azurobe",
+      "name": "Azurobe",
+      "number": 84,
+      "rarity": "Epic",
+      "tier": "A",
+      "statTotal": 450,
+      "stats": {
+        "hp": 130,
+        "attack": 110,
+        "defense": 120,
+        "speed": 90
+      },
+      "rank": 8
+    },
+    {
+      "slug": "neptilius",
+      "name": "Neptilius",
+      "number": "155",
+      "rarity": "Common",
+      "tier": "A",
+      "statTotal": 445,
+      "stats": {
+        "hp": 105,
+        "attack": 145,
+        "defense": 125,
+        "speed": 70
+      },
+      "rank": 9
+    },
+    {
+      "slug": "elphidran_aqua",
+      "name": "Elphidran Aqua",
+      "number": 81,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 435,
+      "stats": {
+        "hp": 120,
+        "attack": 110,
+        "defense": 105,
+        "speed": 100
+      },
+      "rank": 10
+    },
+    {
+      "slug": "broncherry_aqua",
+      "name": "Broncherry Aqua",
+      "number": 92,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 420,
+      "stats": {
+        "hp": 130,
+        "attack": 100,
+        "defense": 135,
+        "speed": 55
+      },
+      "rank": 11
+    },
+    {
+      "slug": "faleris_aqua",
+      "name": "Faleris Aqua",
+      "number": "105B",
+      "rarity": "Epic",
+      "tier": "A",
+      "statTotal": 390,
+      "stats": {
+        "hp": 100,
+        "attack": 110,
+        "defense": 110,
+        "speed": 70
+      },
+      "rank": 12
+    },
+    {
+      "slug": "relaxaurus",
+      "name": "Relaxaurus",
+      "number": 89,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 390,
+      "stats": {
+        "hp": 140,
+        "attack": 90,
+        "defense": 120,
+        "speed": 40
+      },
+      "rank": 13
+    },
+    {
+      "slug": "surfent",
+      "name": "Surfent",
+      "number": 64,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 385,
+      "stats": {
+        "hp": 95,
+        "attack": 100,
+        "defense": 80,
+        "speed": 110
+      },
+      "rank": 14
+    },
+    {
+      "slug": "penking",
+      "name": "Penking",
+      "number": 11,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 375,
+      "stats": {
+        "hp": 110,
+        "attack": 105,
+        "defense": 100,
+        "speed": 60
+      },
+      "rank": 15
+    },
+    {
+      "slug": "gobfin",
+      "name": "Gobfin",
+      "number": 27,
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 345,
+      "stats": {
+        "hp": 80,
+        "attack": 90,
+        "defense": 75,
+        "speed": 100
+      },
+      "rank": 16
+    },
+    {
+      "slug": "croajiro",
+      "name": "Croajiro",
+      "number": 168,
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 335,
+      "stats": {
+        "hp": 100,
+        "attack": 80,
+        "defense": 95,
+        "speed": 60
+      },
+      "rank": 17
+    },
+    {
+      "slug": "turtacle",
+      "name": "Turtacle",
+      "number": "148",
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 335,
+      "stats": {
+        "hp": 75,
+        "attack": 75,
+        "defense": 115,
+        "speed": 70
+      },
+      "rank": 18
+    },
+    {
+      "slug": "teafant",
+      "name": "Teafant",
+      "number": 127,
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 315,
+      "stats": {
+        "hp": 90,
+        "attack": 70,
+        "defense": 85,
+        "speed": 70
+      },
+      "rank": 19
+    },
+    {
+      "slug": "finsider",
+      "name": "Finsider",
+      "number": "152",
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 310,
+      "stats": {
+        "hp": 75,
+        "attack": 85,
+        "defense": 80,
+        "speed": 70
+      },
+      "rank": 20
+    },
+    {
+      "slug": "skutlass_ignis",
+      "name": "Skutlass Ignis",
+      "number": "128B",
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 310,
+      "stats": {
+        "hp": 80,
+        "attack": 80,
+        "defense": 80,
+        "speed": 70
+      },
+      "rank": 21
+    },
+    {
+      "slug": "jelliette",
+      "name": "Jelliette",
+      "number": "150",
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 305,
+      "stats": {
+        "hp": 75,
+        "attack": 90,
+        "defense": 70,
+        "speed": 70
+      },
+      "rank": 22
+    },
+    {
+      "slug": "celaray",
+      "name": "Celaray",
+      "number": "025",
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 300,
+      "stats": {
+        "hp": 80,
+        "attack": 70,
+        "defense": 80,
+        "speed": 70
+      },
+      "rank": 23
+    },
+    {
+      "slug": "fuack",
+      "name": "Fuack",
+      "number": 6,
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 270,
+      "stats": {
+        "hp": 75,
+        "attack": 65,
+        "defense": 70,
+        "speed": 60
+      },
+      "rank": 24
+    },
+    {
+      "slug": "pengullet",
+      "name": "Pengullet",
+      "number": 10,
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 250,
+      "stats": {
+        "hp": 65,
+        "attack": 65,
+        "defense": 75,
+        "speed": 45
+      },
+      "rank": 25
+    },
+    {
+      "slug": "kelpsea",
+      "name": "Kelpsea",
+      "number": 82,
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 235,
+      "stats": {
+        "hp": 60,
+        "attack": 50,
+        "defense": 55,
+        "speed": 70
+      },
+      "rank": 26
+    }
+  ],
+  "Ground": [
+    {
+      "slug": "moldron",
+      "name": "Moldron",
+      "number": 105,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 1000,
+      "stats": {
+        "hp": 110,
+        "attack": 125,
+        "defense": 115,
+        "speed": 650
+      },
+      "rank": 1
+    },
+    {
+      "slug": "dualith",
+      "name": "Dualith",
+      "number": 138,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 940,
+      "stats": {
+        "hp": 110,
+        "attack": 105,
+        "defense": 125,
+        "speed": 600
+      },
+      "rank": 2
+    },
+    {
+      "slug": "sekhmet",
+      "name": "Sekhmet",
+      "number": 140,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 925,
+      "stats": {
+        "hp": 110,
+        "attack": 115,
+        "defense": 100,
+        "speed": 600
+      },
+      "rank": 3
+    },
+    {
+      "slug": "bulldosu",
+      "name": "Bulldosu",
+      "number": 156,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 910,
+      "stats": {
+        "hp": 115,
+        "attack": 95,
+        "defense": 100,
+        "speed": 600
+      },
+      "rank": 4
+    },
+    {
+      "slug": "gildra",
+      "name": "Gildra",
+      "number": 120,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 810,
+      "stats": {
+        "hp": 105,
+        "attack": 120,
+        "defense": 105,
+        "speed": 480
+      },
+      "rank": 5
+    },
+    {
+      "slug": "lapiron",
+      "name": "Lapiron",
+      "number": 165,
+      "rarity": "Common",
+      "tier": "A",
+      "statTotal": 705,
+      "stats": {
+        "hp": 70,
+        "attack": 75,
+        "defense": 80,
+        "speed": 480
+      },
+      "rank": 6
+    },
+    {
+      "slug": "tetroise",
+      "name": "Tetroise",
+      "number": 142,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 690,
+      "stats": {
+        "hp": 95,
+        "attack": 100,
+        "defense": 135,
+        "speed": 360
+      },
+      "rank": 7
+    },
+    {
+      "slug": "pierdon",
+      "name": "Pierdon",
+      "number": 131,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 675,
+      "stats": {
+        "hp": 100,
+        "attack": 105,
+        "defense": 120,
+        "speed": 350
+      },
+      "rank": 8
+    },
+    {
+      "slug": "pupperai",
+      "name": "Pupperai",
+      "number": 13,
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 620,
+      "stats": {
+        "hp": 70,
+        "attack": 80,
+        "defense": 70,
+        "speed": 400
+      },
+      "rank": 9
+    },
+    {
+      "slug": "menasting",
+      "name": "Menasting",
+      "number": 110,
+      "rarity": "Epic",
+      "tier": "A",
+      "statTotal": 535,
+      "stats": {
+        "hp": 160,
+        "attack": 155,
+        "defense": 140,
+        "speed": 80
+      },
+      "rank": 10
+    },
+    {
+      "slug": "woolipop_terra",
+      "name": "Woolipop Terra",
+      "number": 0,
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 535,
+      "stats": {
+        "hp": 70,
+        "attack": 70,
+        "defense": 95,
+        "speed": 300
+      },
+      "rank": 11
+    },
+    {
+      "slug": "warsect",
+      "name": "Warsect",
+      "number": 102,
+      "rarity": "Epic",
+      "tier": "A",
+      "statTotal": 515,
+      "stats": {
+        "hp": 160,
+        "attack": 145,
+        "defense": 150,
+        "speed": 60
+      },
+      "rank": 12
+    },
+    {
+      "slug": "tarantriss",
+      "name": "Tarantriss",
+      "number": 162,
+      "rarity": "Epic",
+      "tier": "A",
+      "statTotal": 485,
+      "stats": {
+        "hp": 140,
+        "attack": 135,
+        "defense": 120,
+        "speed": 90
+      },
+      "rank": 13
+    },
+    {
+      "slug": "knocklem",
+      "name": "Knocklem",
+      "number": 167,
+      "rarity": "Epic",
+      "tier": "A",
+      "statTotal": 470,
+      "stats": {
+        "hp": 160,
+        "attack": 100,
+        "defense": 180,
+        "speed": 30
+      },
+      "rank": 14
+    },
+    {
+      "slug": "reptyro_cryst",
+      "name": "Reptyro Cryst",
+      "number": 95,
+      "rarity": "Epic",
+      "tier": "A",
+      "statTotal": 455,
+      "stats": {
+        "hp": 145,
+        "attack": 125,
+        "defense": 155,
+        "speed": 30
+      },
+      "rank": 15
+    },
+    {
+      "slug": "reptyro",
+      "name": "Reptyro",
+      "number": 94,
+      "rarity": "Epic",
+      "tier": "A",
+      "statTotal": 450,
+      "stats": {
+        "hp": 140,
+        "attack": 130,
+        "defense": 150,
+        "speed": 30
+      },
+      "rank": 16
+    },
+    {
+      "slug": "anubis",
+      "name": "Anubis",
+      "number": 111,
+      "rarity": "Epic",
+      "tier": "A",
+      "statTotal": 430,
+      "stats": {
+        "hp": 120,
+        "attack": 130,
+        "defense": 100,
+        "speed": 80
+      },
+      "rank": 17
+    },
+    {
+      "slug": "cryolinx_terra",
+      "name": "Cryolinx Terra",
+      "number": 86,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 425,
+      "stats": {
+        "hp": 105,
+        "attack": 100,
+        "defense": 100,
+        "speed": 120
+      },
+      "rank": 18
+    },
+    {
+      "slug": "dazemu",
+      "name": "Dazemu",
+      "number": 160,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 415,
+      "stats": {
+        "hp": 100,
+        "attack": 95,
+        "defense": 110,
+        "speed": 110
+      },
+      "rank": 19
+    },
+    {
+      "slug": "warsect_terra",
+      "name": "Warsect Terra",
+      "number": "092B",
+      "rarity": "Epic",
+      "tier": "B",
+      "statTotal": 415,
+      "stats": {
+        "hp": 120,
+        "attack": 105,
+        "defense": 120,
+        "speed": 70
+      },
+      "rank": 20
+    },
+    {
+      "slug": "gildane",
+      "name": "Gildane",
+      "number": "140",
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 410,
+      "stats": {
+        "hp": 120,
+        "attack": 110,
+        "defense": 110,
+        "speed": 70
+      },
+      "rank": 21
+    },
+    {
+      "slug": "menasting_terra",
+      "name": "Menasting Terra",
+      "number": "099B",
+      "rarity": "Epic",
+      "tier": "A",
+      "statTotal": 405,
+      "stats": {
+        "hp": 100,
+        "attack": 105,
+        "defense": 130,
+        "speed": 70
+      },
+      "rank": 22
+    },
+    {
+      "slug": "surfent_terra",
+      "name": "Surfent Terra",
+      "number": 65,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 380,
+      "stats": {
+        "hp": 100,
+        "attack": 95,
+        "defense": 85,
+        "speed": 100
+      },
+      "rank": 23
+    },
+    {
+      "slug": "robinquill_terra",
+      "name": "Robinquill Terra",
+      "number": 45,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 360,
+      "stats": {
+        "hp": 90,
+        "attack": 115,
+        "defense": 70,
+        "speed": 85
+      },
+      "rank": 24
+    },
+    {
+      "slug": "digtoise",
+      "name": "Digtoise",
+      "number": 67,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 355,
+      "stats": {
+        "hp": 100,
+        "attack": 85,
+        "defense": 130,
+        "speed": 40
+      },
+      "rank": 25
+    },
+    {
+      "slug": "gorirat_terra",
+      "name": "Gorirat Terra",
+      "number": "049B",
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 350,
+      "stats": {
+        "hp": 90,
+        "attack": 100,
+        "defense": 90,
+        "speed": 70
+      },
+      "rank": 26
+    },
+    {
+      "slug": "eikthyrdeer_terra",
+      "name": "Eikthyrdeer Terra",
+      "number": "037B",
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 325,
+      "stats": {
+        "hp": 95,
+        "attack": 80,
+        "defense": 80,
+        "speed": 70
+      },
+      "rank": 27
+    },
+    {
+      "slug": "dualith_noct",
+      "name": "Dualith Noct",
+      "number": "138B",
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 310,
+      "stats": {
+        "hp": 80,
+        "attack": 80,
+        "defense": 80,
+        "speed": 70
+      },
+      "rank": 28
+    },
+    {
+      "slug": "polapup_terra",
+      "name": "Polapup Terra",
+      "number": "72B",
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 310,
+      "stats": {
+        "hp": 80,
+        "attack": 80,
+        "defense": 80,
+        "speed": 70
+      },
+      "rank": 29
+    },
+    {
+      "slug": "dumud",
+      "name": "Dumud",
+      "number": 38,
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 305,
+      "stats": {
+        "hp": 100,
+        "attack": 65,
+        "defense": 110,
+        "speed": 30
+      },
+      "rank": 30
+    },
+    {
+      "slug": "rushoar",
+      "name": "Rushoar",
+      "number": "020",
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 290,
+      "stats": {
+        "hp": 80,
+        "attack": 70,
+        "defense": 70,
+        "speed": 70
+      },
+      "rank": 31
+    },
+    {
+      "slug": "hangyu",
+      "name": "Hangyu",
+      "number": 29,
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 280,
+      "stats": {
+        "hp": 90,
+        "attack": 60,
+        "defense": 100,
+        "speed": 30
+      },
+      "rank": 32
+    },
+    {
+      "slug": "gumoss_special",
+      "name": "Gumoss Special",
+      "number": 136,
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 270,
+      "stats": {
+        "hp": 85,
+        "attack": 60,
+        "defense": 90,
+        "speed": 35
+      },
+      "rank": 33
+    },
+    {
+      "slug": "fuddler",
+      "name": "Fuddler",
+      "number": "022",
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 265,
+      "stats": {
+        "hp": 65,
+        "attack": 80,
+        "defense": 50,
+        "speed": 70
+      },
+      "rank": 34
+    },
+    {
+      "slug": "gumoss",
+      "name": "Gumoss",
+      "number": 14,
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 250,
+      "stats": {
+        "hp": 80,
+        "attack": 55,
+        "defense": 85,
+        "speed": 30
+      },
+      "rank": 35
+    }
+  ],
+  "Fire": [
+    {
+      "slug": "moldron",
+      "name": "Moldron",
+      "number": 105,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 1000,
+      "stats": {
+        "hp": 110,
+        "attack": 125,
+        "defense": 115,
+        "speed": 650
+      },
+      "rank": 1
+    },
+    {
+      "slug": "flaracle",
+      "name": "Flaracle",
+      "number": 174,
+      "rarity": "Epic",
+      "tier": "S",
+      "statTotal": 840,
+      "stats": {
+        "hp": 110,
+        "attack": 125,
+        "defense": 105,
+        "speed": 500
+      },
+      "rank": 2
+    },
+    {
+      "slug": "majex",
+      "name": "Majex",
+      "number": 115,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 815,
+      "stats": {
+        "hp": 110,
+        "attack": 115,
+        "defense": 90,
+        "speed": 500
+      },
+      "rank": 3
+    },
+    {
+      "slug": "dupin",
+      "name": "Dupin",
+      "number": 176,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 810,
+      "stats": {
+        "hp": 100,
+        "attack": 110,
+        "defense": 100,
+        "speed": 500
+      },
+      "rank": 4
+    },
+    {
+      "slug": "blazamut_ryu",
+      "name": "Blazamut Ryu",
+      "number": 153,
+      "rarity": "Legendary",
+      "tier": "S",
+      "statTotal": 630,
+      "stats": {
+        "hp": 200,
+        "attack": 190,
+        "defense": 160,
+        "speed": 80
+      },
+      "rank": 5
+    },
+    {
+      "slug": "faleris",
+      "name": "Faleris",
+      "number": 119,
+      "rarity": "Legendary",
+      "tier": "S",
+      "statTotal": 610,
+      "stats": {
+        "hp": 170,
+        "attack": 160,
+        "defense": 110,
+        "speed": 170
+      },
+      "rank": 6
+    },
+    {
+      "slug": "suzaku",
+      "name": "Suzaku",
+      "number": 114,
+      "rarity": "Legendary",
+      "tier": "S",
+      "statTotal": 600,
+      "stats": {
+        "hp": 170,
+        "attack": 160,
+        "defense": 140,
+        "speed": 130
+      },
+      "rank": 7
+    },
+    {
+      "slug": "loomen",
+      "name": "Loomen",
+      "number": 180,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 585,
+      "stats": {
+        "hp": 90,
+        "attack": 100,
+        "defense": 95,
+        "speed": 300
+      },
+      "rank": 8
+    },
+    {
+      "slug": "blazamut",
+      "name": "Blazamut",
+      "number": 106,
+      "rarity": "Legendary",
+      "tier": "S",
+      "statTotal": 580,
+      "stats": {
+        "hp": 180,
+        "attack": 170,
+        "defense": 140,
+        "speed": 90
+      },
+      "rank": 9
+    },
+    {
+      "slug": "jormuntide_ignis",
+      "name": "Jormuntide Ignis",
+      "number": 113,
+      "rarity": "Legendary",
+      "tier": "S",
+      "statTotal": 535,
+      "stats": {
+        "hp": 200,
+        "attack": 130,
+        "defense": 125,
+        "speed": 80
+      },
+      "rank": 10
+    },
+    {
+      "slug": "blazehowl_noct",
+      "name": "Blazehowl Noct",
+      "number": 88,
+      "rarity": "Epic",
+      "tier": "A",
+      "statTotal": 520,
+      "stats": {
+        "hp": 145,
+        "attack": 150,
+        "defense": 110,
+        "speed": 115
+      },
+      "rank": 11
+    },
+    {
+      "slug": "blazehowl",
+      "name": "Blazehowl",
+      "number": 87,
+      "rarity": "Epic",
+      "tier": "A",
+      "statTotal": 510,
+      "stats": {
+        "hp": 140,
+        "attack": 145,
+        "defense": 115,
+        "speed": 110
+      },
+      "rank": 12
+    },
+    {
+      "slug": "pyrin_noct",
+      "name": "Pyrin Noct",
+      "number": 56,
+      "rarity": "Epic",
+      "tier": "A",
+      "statTotal": 495,
+      "stats": {
+        "hp": 125,
+        "attack": 135,
+        "defense": 95,
+        "speed": 140
+      },
+      "rank": 13
+    },
+    {
+      "slug": "pyrin",
+      "name": "Pyrin",
+      "number": 55,
+      "rarity": "Epic",
+      "tier": "A",
+      "statTotal": 490,
+      "stats": {
+        "hp": 120,
+        "attack": 130,
+        "defense": 100,
+        "speed": 140
+      },
+      "rank": 14
+    },
+    {
+      "slug": "ragnahawk",
+      "name": "Ragnahawk",
+      "number": 74,
+      "rarity": "Epic",
+      "tier": "A",
+      "statTotal": 465,
+      "stats": {
+        "hp": 115,
+        "attack": 125,
+        "defense": 85,
+        "speed": 140
+      },
+      "rank": 15
+    },
+    {
+      "slug": "reptyro",
+      "name": "Reptyro",
+      "number": 94,
+      "rarity": "Epic",
+      "tier": "A",
+      "statTotal": 450,
+      "stats": {
+        "hp": 140,
+        "attack": 130,
+        "defense": 150,
+        "speed": 30
+      },
+      "rank": 16
+    },
+    {
+      "slug": "vanwyrm",
+      "name": "Vanwyrm",
+      "number": 70,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 450,
+      "stats": {
+        "hp": 110,
+        "attack": 125,
+        "defense": 95,
+        "speed": 120
+      },
+      "rank": 17
+    },
+    {
+      "slug": "vanwyrm_ignis",
+      "name": "Vanwyrm Ignis",
+      "number": 150,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 450,
+      "stats": {
+        "hp": 110,
+        "attack": 130,
+        "defense": 90,
+        "speed": 120
+      },
+      "rank": 18
+    },
+    {
+      "slug": "mossanda_ignis",
+      "name": "Mossanda Ignis",
+      "number": 156,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 420,
+      "stats": {
+        "hp": 125,
+        "attack": 110,
+        "defense": 125,
+        "speed": 60
+      },
+      "rank": 19
+    },
+    {
+      "slug": "incineram",
+      "name": "Incineram",
+      "number": 34,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 410,
+      "stats": {
+        "hp": 110,
+        "attack": 115,
+        "defense": 85,
+        "speed": 100
+      },
+      "rank": 20
+    },
+    {
+      "slug": "kitsun",
+      "name": "Kitsun",
+      "number": 59,
+      "rarity": "Epic",
+      "tier": "A",
+      "statTotal": 410,
+      "stats": {
+        "hp": 95,
+        "attack": 115,
+        "defense": 80,
+        "speed": 120
+      },
+      "rank": 21
+    },
+    {
+      "slug": "arsox",
+      "name": "Arsox",
+      "number": 37,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 405,
+      "stats": {
+        "hp": 120,
+        "attack": 115,
+        "defense": 100,
+        "speed": 70
+      },
+      "rank": 22
+    },
+    {
+      "slug": "bushi",
+      "name": "Bushi",
+      "number": 72,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 395,
+      "stats": {
+        "hp": 95,
+        "attack": 120,
+        "defense": 80,
+        "speed": 100
+      },
+      "rank": 23
+    },
+    {
+      "slug": "katress_ignis",
+      "name": "Katress Ignis",
+      "number": 142,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 390,
+      "stats": {
+        "hp": 85,
+        "attack": 135,
+        "defense": 60,
+        "speed": 110
+      },
+      "rank": 24
+    },
+    {
+      "slug": "wixen",
+      "name": "Wixen",
+      "number": 76,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 385,
+      "stats": {
+        "hp": 85,
+        "attack": 125,
+        "defense": 70,
+        "speed": 105
+      },
+      "rank": 25
+    },
+    {
+      "slug": "leezpunk_ignis",
+      "name": "Leezpunk Ignis",
+      "number": 41,
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 360,
+      "stats": {
+        "hp": 85,
+        "attack": 95,
+        "defense": 70,
+        "speed": 110
+      },
+      "rank": 26
+    },
+    {
+      "slug": "digtoise_ignis",
+      "name": "Digtoise Ignis",
+      "number": 145,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 355,
+      "stats": {
+        "hp": 100,
+        "attack": 90,
+        "defense": 125,
+        "speed": 40
+      },
+      "rank": 27
+    },
+    {
+      "slug": "gobfin_ignis",
+      "name": "Gobfin Ignis",
+      "number": 28,
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 345,
+      "stats": {
+        "hp": 80,
+        "attack": 95,
+        "defense": 70,
+        "speed": 100
+      },
+      "rank": 28
+    },
+    {
+      "slug": "eidrolon_ignis",
+      "name": "Eidrolon Ignis",
+      "number": "171B",
+      "rarity": "Epic",
+      "tier": "B",
+      "statTotal": 310,
+      "stats": {
+        "hp": 80,
+        "attack": 80,
+        "defense": 80,
+        "speed": 70
+      },
+      "rank": 29
+    },
+    {
+      "slug": "knocklem_ignis",
+      "name": "Knocklem Ignis",
+      "number": "159B",
+      "rarity": "Epic",
+      "tier": "B",
+      "statTotal": 310,
+      "stats": {
+        "hp": 80,
+        "attack": 80,
+        "defense": 80,
+        "speed": 70
+      },
+      "rank": 30
+    },
+    {
+      "slug": "petallia_ignis",
+      "name": "Petallia Ignis",
+      "number": "89B",
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 310,
+      "stats": {
+        "hp": 80,
+        "attack": 80,
+        "defense": 80,
+        "speed": 70
+      },
+      "rank": 31
+    },
+    {
+      "slug": "skutlass_ignis",
+      "name": "Skutlass Ignis",
+      "number": "128B",
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 310,
+      "stats": {
+        "hp": 80,
+        "attack": 80,
+        "defense": 80,
+        "speed": 70
+      },
+      "rank": 32
+    },
+    {
+      "slug": "lifmunk_ignis",
+      "name": "Lifmunk Ignis",
+      "number": 135,
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 295,
+      "stats": {
+        "hp": 75,
+        "attack": 80,
+        "defense": 60,
+        "speed": 80
+      },
+      "rank": 33
+    },
+    {
+      "slug": "flambelle",
+      "name": "Flambelle",
+      "number": 131,
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 285,
+      "stats": {
+        "hp": 60,
+        "attack": 80,
+        "defense": 55,
+        "speed": 90
+      },
+      "rank": 34
+    },
+    {
+      "slug": "foxparks",
+      "name": "Foxparks",
+      "number": 5,
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 275,
+      "stats": {
+        "hp": 65,
+        "attack": 70,
+        "defense": 60,
+        "speed": 80
+      },
+      "rank": 35
+    },
+    {
+      "slug": "tanzee_ignis",
+      "name": "Tanzee Ignis",
+      "number": 134,
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 275,
+      "stats": {
+        "hp": 80,
+        "attack": 70,
+        "defense": 70,
+        "speed": 55
+      },
+      "rank": 36
+    },
+    {
+      "slug": "rooby",
+      "name": "Rooby",
+      "number": 9,
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 255,
+      "stats": {
+        "hp": 60,
+        "attack": 65,
+        "defense": 60,
+        "speed": 70
+      },
+      "rank": 37
+    },
+    {
+      "slug": "pengullet_ignis",
+      "name": "Pengullet Ignis",
+      "number": 133,
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 240,
+      "stats": {
+        "hp": 65,
+        "attack": 70,
+        "defense": 60,
+        "speed": 45
+      },
+      "rank": 38
+    },
+    {
+      "slug": "kelpsea_ignis",
+      "name": "Kelpsea Ignis",
+      "number": 83,
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 235,
+      "stats": {
+        "hp": 60,
+        "attack": 55,
+        "defense": 50,
+        "speed": 70
+      },
+      "rank": 39
+    },
+    {
+      "slug": "tocotoco",
+      "name": "Tocotoco",
+      "number": 23,
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 220,
+      "stats": {
+        "hp": 50,
+        "attack": 40,
+        "defense": 50,
+        "speed": 80
+      },
+      "rank": 40
+    }
+  ],
+  "Dark": [
+    {
+      "slug": "eidrolon",
+      "name": "Eidrolon",
+      "number": 171,
+      "rarity": "Epic",
+      "tier": "S",
+      "statTotal": 1760,
+      "stats": {
+        "hp": 115,
+        "attack": 125,
+        "defense": 120,
+        "speed": 1400
+      },
+      "rank": 1
+    },
+    {
+      "slug": "roujay",
+      "name": "Roujay",
+      "number": 177,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 1270,
+      "stats": {
+        "hp": 110,
+        "attack": 115,
+        "defense": 95,
+        "speed": 950
+      },
+      "rank": 2
+    },
+    {
+      "slug": "majex",
+      "name": "Majex",
+      "number": 115,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 815,
+      "stats": {
+        "hp": 110,
+        "attack": 115,
+        "defense": 90,
+        "speed": 500
+      },
+      "rank": 3
+    },
+    {
+      "slug": "gildra",
+      "name": "Gildra",
+      "number": 120,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 810,
+      "stats": {
+        "hp": 105,
+        "attack": 120,
+        "defense": 105,
+        "speed": 480
+      },
+      "rank": 4
+    },
+    {
+      "slug": "venusa",
+      "name": "Venusa",
+      "number": 178,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 705,
+      "stats": {
+        "hp": 80,
+        "attack": 85,
+        "defense": 90,
+        "speed": 450
+      },
+      "rank": 5
+    },
+    {
+      "slug": "dragostrophe_noct",
+      "name": "Dragostrophe Noct",
+      "number": 175,
+      "rarity": "Legendary",
+      "tier": "S",
+      "statTotal": 690,
+      "stats": {
+        "hp": 200,
+        "attack": 205,
+        "defense": 155,
+        "speed": 130
+      },
+      "rank": 6
+    },
+    {
+      "slug": "frostallion_noct",
+      "name": "Frostallion Noct",
+      "number": 125,
+      "rarity": "Legendary",
+      "tier": "S",
+      "statTotal": 690,
+      "stats": {
+        "hp": 190,
+        "attack": 185,
+        "defense": 165,
+        "speed": 150
+      },
+      "rank": 7
+    },
+    {
+      "slug": "necromus",
+      "name": "Necromus",
+      "number": 122,
+      "rarity": "Legendary",
+      "tier": "S",
+      "statTotal": 680,
+      "stats": {
+        "hp": 200,
+        "attack": 200,
+        "defense": 180,
+        "speed": 100
+      },
+      "rank": 8
+    },
+    {
+      "slug": "shadowbeak_noct",
+      "name": "Shadowbeak Noct",
+      "number": 149,
+      "rarity": "Legendary",
+      "tier": "S",
+      "statTotal": 640,
+      "stats": {
+        "hp": 165,
+        "attack": 185,
+        "defense": 105,
+        "speed": 185
+      },
+      "rank": 9
+    },
+    {
+      "slug": "bakemi",
+      "name": "Bakemi",
+      "number": 168,
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 635,
+      "stats": {
+        "hp": 70,
+        "attack": 85,
+        "defense": 80,
+        "speed": 400
+      },
+      "rank": 10
+    },
+    {
+      "slug": "hoodle",
+      "name": "Hoodle",
+      "number": 166,
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 635,
+      "stats": {
+        "hp": 70,
+        "attack": 85,
+        "defense": 80,
+        "speed": 400
+      },
+      "rank": 11
+    },
+    {
+      "slug": "shadowbeak",
+      "name": "Shadowbeak",
+      "number": 121,
+      "rarity": "Legendary",
+      "tier": "S",
+      "statTotal": 630,
+      "stats": {
+        "hp": 160,
+        "attack": 180,
+        "defense": 110,
+        "speed": 180
+      },
+      "rank": 12
+    },
+    {
+      "slug": "wispaw",
+      "name": "Wispaw",
+      "number": 50,
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 610,
+      "stats": {
+        "hp": 85,
+        "attack": 95,
+        "defense": 70,
+        "speed": 360
+      },
+      "rank": 13
+    },
+    {
+      "slug": "loomen",
+      "name": "Loomen",
+      "number": 180,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 585,
+      "stats": {
+        "hp": 90,
+        "attack": 100,
+        "defense": 95,
+        "speed": 300
+      },
+      "rank": 14
+    },
+    {
+      "slug": "astegon",
+      "name": "Astegon",
+      "number": 109,
+      "rarity": "Legendary",
+      "tier": "S",
+      "statTotal": 570,
+      "stats": {
+        "hp": 180,
+        "attack": 150,
+        "defense": 160,
+        "speed": 80
+      },
+      "rank": 15
+    },
+    {
+      "slug": "bellanoir_libero",
+      "name": "Bellanoir Libero",
+      "number": 152,
+      "rarity": "Legendary",
+      "tier": "S",
+      "statTotal": 560,
+      "stats": {
+        "hp": 140,
+        "attack": 180,
+        "defense": 100,
+        "speed": 140
+      },
+      "rank": 16
+    },
+    {
+      "slug": "menasting",
+      "name": "Menasting",
+      "number": 110,
+      "rarity": "Epic",
+      "tier": "A",
+      "statTotal": 535,
+      "stats": {
+        "hp": 160,
+        "attack": 155,
+        "defense": 140,
+        "speed": 80
+      },
+      "rank": 17
+    },
+    {
+      "slug": "blazehowl_noct",
+      "name": "Blazehowl Noct",
+      "number": 88,
+      "rarity": "Epic",
+      "tier": "A",
+      "statTotal": 520,
+      "stats": {
+        "hp": 145,
+        "attack": 150,
+        "defense": 110,
+        "speed": 115
+      },
+      "rank": 18
+    },
+    {
+      "slug": "helzephyr",
+      "name": "Helzephyr",
+      "number": 107,
+      "rarity": "Epic",
+      "tier": "A",
+      "statTotal": 505,
+      "stats": {
+        "hp": 120,
+        "attack": 145,
+        "defense": 90,
+        "speed": 150
+      },
+      "rank": 19
+    },
+    {
+      "slug": "helzephyr_lux",
+      "name": "Helzephyr Lux",
+      "number": 108,
+      "rarity": "Epic",
+      "tier": "A",
+      "statTotal": 505,
+      "stats": {
+        "hp": 125,
+        "attack": 140,
+        "defense": 85,
+        "speed": 155
+      },
+      "rank": 20
+    },
+    {
+      "slug": "pyrin_noct",
+      "name": "Pyrin Noct",
+      "number": 56,
+      "rarity": "Epic",
+      "tier": "A",
+      "statTotal": 495,
+      "stats": {
+        "hp": 125,
+        "attack": 135,
+        "defense": 95,
+        "speed": 140
+      },
+      "rank": 21
+    },
+    {
+      "slug": "bellanoir",
+      "name": "Bellanoir",
+      "number": 151,
+      "rarity": "Epic",
+      "tier": "A",
+      "statTotal": 490,
+      "stats": {
+        "hp": 120,
+        "attack": 160,
+        "defense": 90,
+        "speed": 120
+      },
+      "rank": 22
+    },
+    {
+      "slug": "tarantriss",
+      "name": "Tarantriss",
+      "number": 162,
+      "rarity": "Epic",
+      "tier": "A",
+      "statTotal": 485,
+      "stats": {
+        "hp": 140,
+        "attack": 135,
+        "defense": 120,
+        "speed": 90
+      },
+      "rank": 23
+    },
+    {
+      "slug": "beakon_noct",
+      "name": "Beakon Noct",
+      "number": 148,
+      "rarity": "Epic",
+      "tier": "A",
+      "statTotal": 470,
+      "stats": {
+        "hp": 110,
+        "attack": 125,
+        "defense": 85,
+        "speed": 150
+      },
+      "rank": 24
+    },
+    {
+      "slug": "lyleen_noct",
+      "name": "Lyleen Noct",
+      "number": 118,
+      "rarity": "Epic",
+      "tier": "A",
+      "statTotal": 465,
+      "stats": {
+        "hp": 140,
+        "attack": 110,
+        "defense": 115,
+        "speed": 100
+      },
+      "rank": 25
+    },
+    {
+      "slug": "vanwyrm_cryst",
+      "name": "Vanwyrm Cryst",
+      "number": 71,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 455,
+      "stats": {
+        "hp": 115,
+        "attack": 120,
+        "defense": 100,
+        "speed": 120
+      },
+      "rank": 26
+    },
+    {
+      "slug": "vanwyrm",
+      "name": "Vanwyrm",
+      "number": 70,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 450,
+      "stats": {
+        "hp": 110,
+        "attack": 125,
+        "defense": 95,
+        "speed": 120
+      },
+      "rank": 27
+    },
+    {
+      "slug": "elphidran_noct",
+      "name": "Elphidran Noct",
+      "number": 139,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 440,
+      "stats": {
+        "hp": 120,
+        "attack": 120,
+        "defense": 100,
+        "speed": 100
+      },
+      "rank": 28
+    },
+    {
+      "slug": "rayhound_noct",
+      "name": "Rayhound Noct",
+      "number": 157,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 425,
+      "stats": {
+        "hp": 95,
+        "attack": 110,
+        "defense": 75,
+        "speed": 145
+      },
+      "rank": 29
+    },
+    {
+      "slug": "reindrix_noct",
+      "name": "Reindrix Noct",
+      "number": 138,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 425,
+      "stats": {
+        "hp": 115,
+        "attack": 115,
+        "defense": 105,
+        "speed": 90
+      },
+      "rank": 30
+    },
+    {
+      "slug": "broncherry_noct",
+      "name": "Broncherry Noct",
+      "number": 177,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 420,
+      "stats": {
+        "hp": 130,
+        "attack": 110,
+        "defense": 125,
+        "speed": 55
+      },
+      "rank": 31
+    },
+    {
+      "slug": "incineram_noct",
+      "name": "Incineram Noct",
+      "number": 35,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 420,
+      "stats": {
+        "hp": 110,
+        "attack": 120,
+        "defense": 85,
+        "speed": 105
+      },
+      "rank": 32
+    },
+    {
+      "slug": "kitsun_noct",
+      "name": "Kitsun Noct",
+      "number": 137,
+      "rarity": "Epic",
+      "tier": "A",
+      "statTotal": 415,
+      "stats": {
+        "hp": 95,
+        "attack": 120,
+        "defense": 80,
+        "speed": 120
+      },
+      "rank": 33
+    },
+    {
+      "slug": "sibelyx_noct",
+      "name": "Sibelyx Noct",
+      "number": 176,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 415,
+      "stats": {
+        "hp": 95,
+        "attack": 110,
+        "defense": 80,
+        "speed": 130
+      },
+      "rank": 34
+    },
+    {
+      "slug": "verdash_noct",
+      "name": "Verdash Noct",
+      "number": 143,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 415,
+      "stats": {
+        "hp": 90,
+        "attack": 105,
+        "defense": 75,
+        "speed": 145
+      },
+      "rank": 35
+    },
+    {
+      "slug": "solenne",
+      "name": "Solenne",
+      "number": "182",
+      "rarity": "Epic",
+      "tier": "A",
+      "statTotal": 410,
+      "stats": {
+        "hp": 110,
+        "attack": 115,
+        "defense": 115,
+        "speed": 70
+      },
+      "rank": 36
+    },
+    {
+      "slug": "felbat",
+      "name": "Felbat",
+      "number": 104,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 405,
+      "stats": {
+        "hp": 95,
+        "attack": 120,
+        "defense": 70,
+        "speed": 120
+      },
+      "rank": 37
+    },
+    {
+      "slug": "loupmoon",
+      "name": "Loupmoon",
+      "number": 42,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 405,
+      "stats": {
+        "hp": 95,
+        "attack": 115,
+        "defense": 75,
+        "speed": 120
+      },
+      "rank": 38
+    },
+    {
+      "slug": "bushi_noct",
+      "name": "Bushi Noct",
+      "number": 141,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 400,
+      "stats": {
+        "hp": 95,
+        "attack": 125,
+        "defense": 80,
+        "speed": 100
+      },
+      "rank": 39
+    },
+    {
+      "slug": "tombat_noct",
+      "name": "Tombat Noct",
+      "number": 146,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 395,
+      "stats": {
+        "hp": 90,
+        "attack": 105,
+        "defense": 70,
+        "speed": 130
+      },
+      "rank": 40
+    },
+    {
+      "slug": "katress",
+      "name": "Katress",
+      "number": 75,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 390,
+      "stats": {
+        "hp": 85,
+        "attack": 130,
+        "defense": 65,
+        "speed": 110
+      },
+      "rank": 41
+    },
+    {
+      "slug": "tombat",
+      "name": "Tombat",
+      "number": 68,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 390,
+      "stats": {
+        "hp": 90,
+        "attack": 100,
+        "defense": 70,
+        "speed": 130
+      },
+      "rank": 42
+    },
+    {
+      "slug": "splatterina",
+      "name": "Splatterina",
+      "number": "134",
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 385,
+      "stats": {
+        "hp": 95,
+        "attack": 115,
+        "defense": 105,
+        "speed": 70
+      },
+      "rank": 43
+    },
+    {
+      "slug": "maraith",
+      "name": "Maraith",
+      "number": 66,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 380,
+      "stats": {
+        "hp": 80,
+        "attack": 115,
+        "defense": 60,
+        "speed": 125
+      },
+      "rank": 44
+    },
+    {
+      "slug": "starryon",
+      "name": "Starryon",
+      "number": "129",
+      "rarity": "Epic",
+      "tier": "A",
+      "statTotal": 380,
+      "stats": {
+        "hp": 110,
+        "attack": 100,
+        "defense": 100,
+        "speed": 70
+      },
+      "rank": 45
+    },
+    {
+      "slug": "nitemary",
+      "name": "Nitemary",
+      "number": "128",
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 375,
+      "stats": {
+        "hp": 105,
+        "attack": 95,
+        "defense": 105,
+        "speed": 70
+      },
+      "rank": 46
+    },
+    {
+      "slug": "lovander_noct",
+      "name": "Lovander Noct",
+      "number": 147,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 370,
+      "stats": {
+        "hp": 100,
+        "attack": 95,
+        "defense": 80,
+        "speed": 95
+      },
+      "rank": 47
+    },
+    {
+      "slug": "omascul",
+      "name": "Omascul",
+      "number": "133",
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 370,
+      "stats": {
+        "hp": 95,
+        "attack": 105,
+        "defense": 100,
+        "speed": 70
+      },
+      "rank": 48
+    },
+    {
+      "slug": "leezpunk",
+      "name": "Leezpunk",
+      "number": 40,
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 355,
+      "stats": {
+        "hp": 85,
+        "attack": 90,
+        "defense": 70,
+        "speed": 110
+      },
+      "rank": 49
+    },
+    {
+      "slug": "petallia_noct",
+      "name": "Petallia Noct",
+      "number": 144,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 350,
+      "stats": {
+        "hp": 90,
+        "attack": 85,
+        "defense": 80,
+        "speed": 95
+      },
+      "rank": 50
+    },
+    {
+      "slug": "cinnamoth_noct",
+      "name": "Cinnamoth Noct",
+      "number": 179,
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 345,
+      "stats": {
+        "hp": 85,
+        "attack": 85,
+        "defense": 75,
+        "speed": 100
+      },
+      "rank": 51
+    },
+    {
+      "slug": "nyafia",
+      "name": "Nyafia",
+      "number": 165,
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 345,
+      "stats": {
+        "hp": 75,
+        "attack": 90,
+        "defense": 60,
+        "speed": 120
+      },
+      "rank": 52
+    },
+    {
+      "slug": "caprity_noct",
+      "name": "Caprity Noct",
+      "number": "035B",
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 335,
+      "stats": {
+        "hp": 100,
+        "attack": 75,
+        "defense": 90,
+        "speed": 70
+      },
+      "rank": 53
+    },
+    {
+      "slug": "smokie",
+      "name": "Smokie",
+      "number": "131",
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 330,
+      "stats": {
+        "hp": 85,
+        "attack": 90,
+        "defense": 85,
+        "speed": 70
+      },
+      "rank": 54
+    },
+    {
+      "slug": "cawgnito",
+      "name": "Cawgnito",
+      "number": 39,
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 325,
+      "stats": {
+        "hp": 70,
+        "attack": 95,
+        "defense": 55,
+        "speed": 105
+      },
+      "rank": 55
+    },
+    {
+      "slug": "nox",
+      "name": "Nox",
+      "number": 19,
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 320,
+      "stats": {
+        "hp": 80,
+        "attack": 90,
+        "defense": 65,
+        "speed": 85
+      },
+      "rank": 56
+    },
+    {
+      "slug": "celesdir_noct",
+      "name": "Celesdir Noct",
+      "number": "157B",
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 310,
+      "stats": {
+        "hp": 80,
+        "attack": 80,
+        "defense": 80,
+        "speed": 70
+      },
+      "rank": 57
+    },
+    {
+      "slug": "dualith_noct",
+      "name": "Dualith Noct",
+      "number": "138B",
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 310,
+      "stats": {
+        "hp": 80,
+        "attack": 80,
+        "defense": 80,
+        "speed": 70
+      },
+      "rank": 58
+    },
+    {
+      "slug": "needoll_noct",
+      "name": "Needoll Noct",
+      "number": "100B",
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 310,
+      "stats": {
+        "hp": 80,
+        "attack": 80,
+        "defense": 80,
+        "speed": 70
+      },
+      "rank": 59
+    },
+    {
+      "slug": "bristla_noct",
+      "name": "Bristla Noct",
+      "number": 178,
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 305,
+      "stats": {
+        "hp": 85,
+        "attack": 90,
+        "defense": 75,
+        "speed": 55
+      },
+      "rank": 60
+    },
+    {
+      "slug": "mau",
+      "name": "Mau",
+      "number": 20,
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 295,
+      "stats": {
+        "hp": 70,
+        "attack": 75,
+        "defense": 60,
+        "speed": 90
+      },
+      "rank": 61
+    },
+    {
+      "slug": "daedream",
+      "name": "Daedream",
+      "number": 18,
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 285,
+      "stats": {
+        "hp": 70,
+        "attack": 85,
+        "defense": 55,
+        "speed": 75
+      },
+      "rank": 62
+    },
+    {
+      "slug": "shroomer_noct",
+      "name": "Shroomer Noct",
+      "number": 170,
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 285,
+      "stats": {
+        "hp": 85,
+        "attack": 75,
+        "defense": 85,
+        "speed": 40
+      },
+      "rank": 63
+    },
+    {
+      "slug": "beegarde_noct",
+      "name": "Beegarde Noct",
+      "number": 180,
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 270,
+      "stats": {
+        "hp": 55,
+        "attack": 55,
+        "defense": 50,
+        "speed": 110
+      },
+      "rank": 64
+    },
+    {
+      "slug": "hoocrates",
+      "name": "Hoocrates",
+      "number": 16,
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 265,
+      "stats": {
+        "hp": 70,
+        "attack": 80,
+        "defense": 55,
+        "speed": 60
+      },
+      "rank": 65
+    },
+    {
+      "slug": "rooby_noct",
+      "name": "Rooby Noct",
+      "number": 155,
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 255,
+      "stats": {
+        "hp": 60,
+        "attack": 70,
+        "defense": 55,
+        "speed": 70
+      },
+      "rank": 66
+    },
+    {
+      "slug": "silkina_noct",
+      "name": "Silkina Noct",
+      "number": 173,
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 250,
+      "stats": {
+        "hp": 60,
+        "attack": 55,
+        "defense": 50,
+        "speed": 85
+      },
+      "rank": 67
+    },
+    {
+      "slug": "depresso",
+      "name": "Depresso",
+      "number": 17,
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 225,
+      "stats": {
+        "hp": 65,
+        "attack": 60,
+        "defense": 60,
+        "speed": 40
+      },
+      "rank": 68
+    }
+  ],
+  "Dragon": [
+    {
+      "slug": "eidrolon",
+      "name": "Eidrolon",
+      "number": 171,
+      "rarity": "Epic",
+      "tier": "S",
+      "statTotal": 1760,
+      "stats": {
+        "hp": 115,
+        "attack": 125,
+        "defense": 120,
+        "speed": 1400
+      },
+      "rank": 1
+    },
+    {
+      "slug": "jetragon",
+      "name": "Jetragon",
+      "number": 126,
+      "rarity": "Legendary",
+      "tier": "S",
+      "statTotal": 770,
+      "stats": {
+        "hp": 200,
+        "attack": 200,
+        "defense": 140,
+        "speed": 230
+      },
+      "rank": 2
+    },
+    {
+      "slug": "xenolord",
+      "name": "Xenolord",
+      "number": 154,
+      "rarity": "Legendary",
+      "tier": "S",
+      "statTotal": 700,
+      "stats": {
+        "hp": 200,
+        "attack": 190,
+        "defense": 160,
+        "speed": 150
+      },
+      "rank": 3
+    },
+    {
+      "slug": "dragostrophe",
+      "name": "Dragostrophe",
+      "number": 174,
+      "rarity": "Legendary",
+      "tier": "S",
+      "statTotal": 690,
+      "stats": {
+        "hp": 200,
+        "attack": 200,
+        "defense": 160,
+        "speed": 130
+      },
+      "rank": 4
+    },
+    {
+      "slug": "blazamut_ryu",
+      "name": "Blazamut Ryu",
+      "number": 153,
+      "rarity": "Legendary",
+      "tier": "S",
+      "statTotal": 630,
+      "stats": {
+        "hp": 200,
+        "attack": 190,
+        "defense": 160,
+        "speed": 80
+      },
+      "rank": 5
+    },
+    {
+      "slug": "orserk",
+      "name": "Orserk",
+      "number": 120,
+      "rarity": "Legendary",
+      "tier": "S",
+      "statTotal": 625,
+      "stats": {
+        "hp": 190,
+        "attack": 175,
+        "defense": 150,
+        "speed": 110
+      },
+      "rank": 6
+    },
+    {
+      "slug": "astegon",
+      "name": "Astegon",
+      "number": 109,
+      "rarity": "Legendary",
+      "tier": "S",
+      "statTotal": 570,
+      "stats": {
+        "hp": 180,
+        "attack": 150,
+        "defense": 160,
+        "speed": 80
+      },
+      "rank": 7
+    },
+    {
+      "slug": "jormuntide_ignis",
+      "name": "Jormuntide Ignis",
+      "number": 113,
+      "rarity": "Legendary",
+      "tier": "S",
+      "statTotal": 535,
+      "stats": {
+        "hp": 200,
+        "attack": 130,
+        "defense": 125,
+        "speed": 80
+      },
+      "rank": 8
+    },
+    {
+      "slug": "xenovader",
+      "name": "Xenovader",
+      "number": 163,
+      "rarity": "Epic",
+      "tier": "A",
+      "statTotal": 535,
+      "stats": {
+        "hp": 140,
+        "attack": 145,
+        "defense": 110,
+        "speed": 140
+      },
+      "rank": 9
+    },
+    {
+      "slug": "jormuntide",
+      "name": "Jormuntide",
+      "number": 112,
+      "rarity": "Legendary",
+      "tier": "S",
+      "statTotal": 530,
+      "stats": {
+        "hp": 200,
+        "attack": 120,
+        "defense": 130,
+        "speed": 80
+      },
+      "rank": 10
+    },
+    {
+      "slug": "quivern",
+      "name": "Quivern",
+      "number": 105,
+      "rarity": "Epic",
+      "tier": "S",
+      "statTotal": 525,
+      "stats": {
+        "hp": 160,
+        "attack": 135,
+        "defense": 130,
+        "speed": 100
+      },
+      "rank": 11
+    },
+    {
+      "slug": "azurobe",
+      "name": "Azurobe",
+      "number": 84,
+      "rarity": "Epic",
+      "tier": "A",
+      "statTotal": 450,
+      "stats": {
+        "hp": 130,
+        "attack": 110,
+        "defense": 120,
+        "speed": 90
+      },
+      "rank": 12
+    },
+    {
+      "slug": "dinossom_lux",
+      "name": "Dinossom Lux",
+      "number": 63,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 440,
+      "stats": {
+        "hp": 130,
+        "attack": 125,
+        "defense": 110,
+        "speed": 75
+      },
+      "rank": 13
+    },
+    {
+      "slug": "dinossom",
+      "name": "Dinossom",
+      "number": 62,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 435,
+      "stats": {
+        "hp": 130,
+        "attack": 120,
+        "defense": 115,
+        "speed": 70
+      },
+      "rank": 14
+    },
+    {
+      "slug": "elphidran",
+      "name": "Elphidran",
+      "number": 80,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 435,
+      "stats": {
+        "hp": 120,
+        "attack": 115,
+        "defense": 100,
+        "speed": 100
+      },
+      "rank": 15
+    },
+    {
+      "slug": "elphidran_aqua",
+      "name": "Elphidran Aqua",
+      "number": 81,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 435,
+      "stats": {
+        "hp": 120,
+        "attack": 110,
+        "defense": 105,
+        "speed": 100
+      },
+      "rank": 16
+    },
+    {
+      "slug": "xenogard",
+      "name": "Xenogard",
+      "number": "126",
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 430,
+      "stats": {
+        "hp": 110,
+        "attack": 120,
+        "defense": 130,
+        "speed": 70
+      },
+      "rank": 17
+    },
+    {
+      "slug": "silvegis",
+      "name": "Silvegis",
+      "number": "130",
+      "rarity": "Epic",
+      "tier": "A",
+      "statTotal": 415,
+      "stats": {
+        "hp": 120,
+        "attack": 110,
+        "defense": 115,
+        "speed": 70
+      },
+      "rank": 18
+    },
+    {
+      "slug": "relaxaurus_lux",
+      "name": "Relaxaurus Lux",
+      "number": 90,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 395,
+      "stats": {
+        "hp": 145,
+        "attack": 95,
+        "defense": 115,
+        "speed": 40
+      },
+      "rank": 19
+    },
+    {
+      "slug": "relaxaurus",
+      "name": "Relaxaurus",
+      "number": 89,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 390,
+      "stats": {
+        "hp": 140,
+        "attack": 90,
+        "defense": 120,
+        "speed": 40
+      },
+      "rank": 20
+    },
+    {
+      "slug": "chillet",
+      "name": "Chillet",
+      "number": 52,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 380,
+      "stats": {
+        "hp": 100,
+        "attack": 100,
+        "defense": 85,
+        "speed": 95
+      },
+      "rank": 21
+    }
+  ],
+  "Electric": [
+    {
+      "slug": "boltmane",
+      "name": "Boltmane",
+      "number": 0,
+      "rarity": "Unknown",
+      "tier": "B",
+      "statTotal": 1080,
+      "stats": {
+        "hp": 100,
+        "attack": 110,
+        "defense": 70,
+        "speed": 800
+      },
+      "rank": 1
+    },
+    {
+      "slug": "dynamoff",
+      "name": "Dynamoff",
+      "number": 172,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 940,
+      "stats": {
+        "hp": 75,
+        "attack": 85,
+        "defense": 80,
+        "speed": 700
+      },
+      "rank": 2
+    },
+    {
+      "slug": "orserk",
+      "name": "Orserk",
+      "number": 120,
+      "rarity": "Legendary",
+      "tier": "S",
+      "statTotal": 625,
+      "stats": {
+        "hp": 190,
+        "attack": 175,
+        "defense": 150,
+        "speed": 110
+      },
+      "rank": 3
+    },
+    {
+      "slug": "grizzbolt",
+      "name": "Grizzbolt",
+      "number": 116,
+      "rarity": "Legendary",
+      "tier": "S",
+      "statTotal": 590,
+      "stats": {
+        "hp": 180,
+        "attack": 170,
+        "defense": 140,
+        "speed": 100
+      },
+      "rank": 4
+    },
+    {
+      "slug": "snock",
+      "name": "Snock",
+      "number": 163,
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 570,
+      "stats": {
+        "hp": 65,
+        "attack": 70,
+        "defense": 75,
+        "speed": 360
+      },
+      "rank": 5
+    },
+    {
+      "slug": "slowatt",
+      "name": "Slowatt",
+      "number": 167,
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 525,
+      "stats": {
+        "hp": 80,
+        "attack": 75,
+        "defense": 70,
+        "speed": 300
+      },
+      "rank": 6
+    },
+    {
+      "slug": "helzephyr_lux",
+      "name": "Helzephyr Lux",
+      "number": 108,
+      "rarity": "Epic",
+      "tier": "A",
+      "statTotal": 505,
+      "stats": {
+        "hp": 125,
+        "attack": 140,
+        "defense": 85,
+        "speed": 155
+      },
+      "rank": 7
+    },
+    {
+      "slug": "beakon",
+      "name": "Beakon",
+      "number": 73,
+      "rarity": "Epic",
+      "tier": "S",
+      "statTotal": 470,
+      "stats": {
+        "hp": 110,
+        "attack": 120,
+        "defense": 90,
+        "speed": 150
+      },
+      "rank": 8
+    },
+    {
+      "slug": "dinossom_lux",
+      "name": "Dinossom Lux",
+      "number": 63,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 440,
+      "stats": {
+        "hp": 130,
+        "attack": 125,
+        "defense": 110,
+        "speed": 75
+      },
+      "rank": 9
+    },
+    {
+      "slug": "azurmane",
+      "name": "Azurmane",
+      "number": "136",
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 430,
+      "stats": {
+        "hp": 130,
+        "attack": 120,
+        "defense": 110,
+        "speed": 70
+      },
+      "rank": 10
+    },
+    {
+      "slug": "puffolt",
+      "name": "Puffolt",
+      "number": 62,
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 425,
+      "stats": {
+        "hp": 75,
+        "attack": 80,
+        "defense": 70,
+        "speed": 200
+      },
+      "rank": 11
+    },
+    {
+      "slug": "rayhound",
+      "name": "Rayhound",
+      "number": 58,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 425,
+      "stats": {
+        "hp": 95,
+        "attack": 105,
+        "defense": 80,
+        "speed": 145
+      },
+      "rank": 12
+    },
+    {
+      "slug": "mossanda_lux",
+      "name": "Mossanda Lux",
+      "number": 32,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 420,
+      "stats": {
+        "hp": 125,
+        "attack": 115,
+        "defense": 120,
+        "speed": 60
+      },
+      "rank": 13
+    },
+    {
+      "slug": "univolt",
+      "name": "Univolt",
+      "number": 53,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 415,
+      "stats": {
+        "hp": 100,
+        "attack": 105,
+        "defense": 80,
+        "speed": 130
+      },
+      "rank": 14
+    },
+    {
+      "slug": "relaxaurus_lux",
+      "name": "Relaxaurus Lux",
+      "number": 90,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 395,
+      "stats": {
+        "hp": 145,
+        "attack": 95,
+        "defense": 115,
+        "speed": 40
+      },
+      "rank": 15
+    },
+    {
+      "slug": "fenglope_lux",
+      "name": "Fenglope Lux",
+      "number": "093B",
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 385,
+      "stats": {
+        "hp": 110,
+        "attack": 115,
+        "defense": 90,
+        "speed": 70
+      },
+      "rank": 16
+    },
+    {
+      "slug": "beakon_cryst",
+      "name": "Beakon Cryst",
+      "number": "96B",
+      "rarity": "Epic",
+      "tier": "B",
+      "statTotal": 310,
+      "stats": {
+        "hp": 80,
+        "attack": 80,
+        "defense": 80,
+        "speed": 70
+      },
+      "rank": 17
+    },
+    {
+      "slug": "prixter_lux",
+      "name": "Prixter Lux",
+      "number": "141B",
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 310,
+      "stats": {
+        "hp": 80,
+        "attack": 80,
+        "defense": 80,
+        "speed": 70
+      },
+      "rank": 18
+    },
+    {
+      "slug": "snock_lux",
+      "name": "Snock Lux",
+      "number": "163B",
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 310,
+      "stats": {
+        "hp": 80,
+        "attack": 80,
+        "defense": 80,
+        "speed": 70
+      },
+      "rank": 19
+    },
+    {
+      "slug": "solmora_lux",
+      "name": "Solmora Lux",
+      "number": "169B",
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 310,
+      "stats": {
+        "hp": 80,
+        "attack": 80,
+        "defense": 80,
+        "speed": 70
+      },
+      "rank": 20
+    },
+    {
+      "slug": "dazzi",
+      "name": "Dazzi",
+      "number": 60,
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 290,
+      "stats": {
+        "hp": 60,
+        "attack": 75,
+        "defense": 55,
+        "speed": 100
+      },
+      "rank": 21
+    },
+    {
+      "slug": "sparkit",
+      "name": "Sparkit",
+      "number": 7,
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 285,
+      "stats": {
+        "hp": 65,
+        "attack": 75,
+        "defense": 60,
+        "speed": 85
+      },
+      "rank": 22
+    },
+    {
+      "slug": "jolthog",
+      "name": "Jolthog",
+      "number": 12,
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 255,
+      "stats": {
+        "hp": 60,
+        "attack": 65,
+        "defense": 60,
+        "speed": 70
+      },
+      "rank": 23
+    }
+  ],
+  "Ice": [
+    {
+      "slug": "frostallion",
+      "name": "Frostallion",
+      "number": 124,
+      "rarity": "Legendary",
+      "tier": "S",
+      "statTotal": 690,
+      "stats": {
+        "hp": 190,
+        "attack": 180,
+        "defense": 170,
+        "speed": 150
+      },
+      "rank": 1
+    },
+    {
+      "slug": "snugloo",
+      "name": "Snugloo",
+      "number": 133,
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 640,
+      "stats": {
+        "hp": 80,
+        "attack": 75,
+        "defense": 85,
+        "speed": 400
+      },
+      "rank": 2
+    },
+    {
+      "slug": "mammorest_cryst",
+      "name": "Mammorest Cryst",
+      "number": 99,
+      "rarity": "Epic",
+      "tier": "A",
+      "statTotal": 505,
+      "stats": {
+        "hp": 185,
+        "attack": 115,
+        "defense": 165,
+        "speed": 40
+      },
+      "rank": 3
+    },
+    {
+      "slug": "muffly",
+      "name": "Muffly",
+      "number": 59,
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 495,
+      "stats": {
+        "hp": 60,
+        "attack": 80,
+        "defense": 55,
+        "speed": 300
+      },
+      "rank": 4
+    },
+    {
+      "slug": "fenglope",
+      "name": "Fenglope",
+      "number": 103,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 490,
+      "stats": {
+        "hp": 120,
+        "attack": 110,
+        "defense": 100,
+        "speed": 160
+      },
+      "rank": 5
+    },
+    {
+      "slug": "bastigor",
+      "name": "Bastigor",
+      "number": "137",
+      "rarity": "Legendary",
+      "tier": "S",
+      "statTotal": 460,
+      "stats": {
+        "hp": 140,
+        "attack": 130,
+        "defense": 120,
+        "speed": 70
+      },
+      "rank": 6
+    },
+    {
+      "slug": "reptyro_cryst",
+      "name": "Reptyro Cryst",
+      "number": 95,
+      "rarity": "Epic",
+      "tier": "A",
+      "statTotal": 455,
+      "stats": {
+        "hp": 145,
+        "attack": 125,
+        "defense": 155,
+        "speed": 30
+      },
+      "rank": 7
+    },
+    {
+      "slug": "vanwyrm_cryst",
+      "name": "Vanwyrm Cryst",
+      "number": 71,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 455,
+      "stats": {
+        "hp": 115,
+        "attack": 120,
+        "defense": 100,
+        "speed": 120
+      },
+      "rank": 8
+    },
+    {
+      "slug": "ice_kingpaca",
+      "name": "Ice Kingpaca",
+      "number": 97,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 435,
+      "stats": {
+        "hp": 145,
+        "attack": 80,
+        "defense": 135,
+        "speed": 75
+      },
+      "rank": 9
+    },
+    {
+      "slug": "cryolinx",
+      "name": "Cryolinx",
+      "number": 85,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 425,
+      "stats": {
+        "hp": 100,
+        "attack": 105,
+        "defense": 95,
+        "speed": 125
+      },
+      "rank": 10
+    },
+    {
+      "slug": "cryolinx_terra",
+      "name": "Cryolinx Terra",
+      "number": 86,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 425,
+      "stats": {
+        "hp": 105,
+        "attack": 100,
+        "defense": 100,
+        "speed": 120
+      },
+      "rank": 11
+    },
+    {
+      "slug": "reindrix",
+      "name": "Reindrix",
+      "number": 57,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 420,
+      "stats": {
+        "hp": 115,
+        "attack": 110,
+        "defense": 105,
+        "speed": 90
+      },
+      "rank": 12
+    },
+    {
+      "slug": "sibelyx",
+      "name": "Sibelyx",
+      "number": 79,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 410,
+      "stats": {
+        "hp": 95,
+        "attack": 105,
+        "defense": 80,
+        "speed": 130
+      },
+      "rank": 13
+    },
+    {
+      "slug": "wumpo",
+      "name": "Wumpo",
+      "number": 100,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 405,
+      "stats": {
+        "hp": 150,
+        "attack": 85,
+        "defense": 140,
+        "speed": 30
+      },
+      "rank": 14
+    },
+    {
+      "slug": "foxcicle",
+      "name": "Foxcicle",
+      "number": 54,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 395,
+      "stats": {
+        "hp": 95,
+        "attack": 100,
+        "defense": 85,
+        "speed": 115
+      },
+      "rank": 15
+    },
+    {
+      "slug": "icelyn",
+      "name": "Icelyn",
+      "number": "142",
+      "rarity": "Common",
+      "tier": "A",
+      "statTotal": 385,
+      "stats": {
+        "hp": 95,
+        "attack": 115,
+        "defense": 105,
+        "speed": 70
+      },
+      "rank": 16
+    },
+    {
+      "slug": "chillet",
+      "name": "Chillet",
+      "number": 52,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 380,
+      "stats": {
+        "hp": 100,
+        "attack": 100,
+        "defense": 85,
+        "speed": 95
+      },
+      "rank": 17
+    },
+    {
+      "slug": "frostplume",
+      "name": "Frostplume",
+      "number": "143",
+      "rarity": "Common",
+      "tier": "A",
+      "statTotal": 380,
+      "stats": {
+        "hp": 110,
+        "attack": 100,
+        "defense": 100,
+        "speed": 70
+      },
+      "rank": 18
+    },
+    {
+      "slug": "penking",
+      "name": "Penking",
+      "number": 11,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 375,
+      "stats": {
+        "hp": 110,
+        "attack": 105,
+        "defense": 100,
+        "speed": 60
+      },
+      "rank": 19
+    },
+    {
+      "slug": "kingpaca_cryst",
+      "name": "Kingpaca Cryst",
+      "number": "089B",
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 365,
+      "stats": {
+        "hp": 120,
+        "attack": 85,
+        "defense": 90,
+        "speed": 70
+      },
+      "rank": 20
+    },
+    {
+      "slug": "loupmoon_cryst",
+      "name": "Loupmoon Cryst",
+      "number": "046B",
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 335,
+      "stats": {
+        "hp": 80,
+        "attack": 105,
+        "defense": 80,
+        "speed": 70
+      },
+      "rank": 21
+    },
+    {
+      "slug": "beakon_cryst",
+      "name": "Beakon Cryst",
+      "number": "96B",
+      "rarity": "Epic",
+      "tier": "B",
+      "statTotal": 310,
+      "stats": {
+        "hp": 80,
+        "attack": 80,
+        "defense": 80,
+        "speed": 70
+      },
+      "rank": 22
+    },
+    {
+      "slug": "elgrove_cryst",
+      "name": "Elgrove Cryst",
+      "number": "81B",
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 310,
+      "stats": {
+        "hp": 80,
+        "attack": 80,
+        "defense": 80,
+        "speed": 70
+      },
+      "rank": 23
+    },
+    {
+      "slug": "moldron_cryst",
+      "name": "Moldron Cryst",
+      "number": "105B",
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 310,
+      "stats": {
+        "hp": 80,
+        "attack": 80,
+        "defense": 80,
+        "speed": 70
+      },
+      "rank": 24
+    },
+    {
+      "slug": "pierdon_cryst",
+      "name": "Pierdon Cryst",
+      "number": "131B",
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 310,
+      "stats": {
+        "hp": 80,
+        "attack": 80,
+        "defense": 80,
+        "speed": 70
+      },
+      "rank": 25
+    },
+    {
+      "slug": "rayhound_cryst",
+      "name": "Rayhound Cryst",
+      "number": "98B",
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 310,
+      "stats": {
+        "hp": 80,
+        "attack": 80,
+        "defense": 80,
+        "speed": 70
+      },
+      "rank": 26
+    },
+    {
+      "slug": "smokie_cryst",
+      "name": "Smokie Cryst",
+      "number": "149B",
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 310,
+      "stats": {
+        "hp": 80,
+        "attack": 80,
+        "defense": 80,
+        "speed": 70
+      },
+      "rank": 27
+    },
+    {
+      "slug": "univolt_cryst",
+      "name": "Univolt Cryst",
+      "number": "54B",
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 310,
+      "stats": {
+        "hp": 80,
+        "attack": 80,
+        "defense": 80,
+        "speed": 70
+      },
+      "rank": 28
+    },
+    {
+      "slug": "dumud_cryst",
+      "name": "Dumud Cryst",
+      "number": 158,
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 305,
+      "stats": {
+        "hp": 100,
+        "attack": 60,
+        "defense": 115,
+        "speed": 30
+      },
+      "rank": 29
+    },
+    {
+      "slug": "mau_cryst",
+      "name": "Mau Cryst",
+      "number": 21,
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 295,
+      "stats": {
+        "hp": 75,
+        "attack": 70,
+        "defense": 65,
+        "speed": 85
+      },
+      "rank": 30
+    },
+    {
+      "slug": "foxparks_cryst",
+      "name": "Foxparks Cryst",
+      "number": "005B",
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 285,
+      "stats": {
+        "hp": 65,
+        "attack": 80,
+        "defense": 70,
+        "speed": 70
+      },
+      "rank": 31
+    },
+    {
+      "slug": "hangyu_cryst",
+      "name": "Hangyu Cryst",
+      "number": 30,
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 285,
+      "stats": {
+        "hp": 95,
+        "attack": 55,
+        "defense": 105,
+        "speed": 30
+      },
+      "rank": 32
+    },
+    {
+      "slug": "jolthog_cryst",
+      "name": "Jolthog Cryst",
+      "number": 13,
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 255,
+      "stats": {
+        "hp": 65,
+        "attack": 60,
+        "defense": 65,
+        "speed": 65
+      },
+      "rank": 33
+    },
+    {
+      "slug": "pengullet",
+      "name": "Pengullet",
+      "number": 10,
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 250,
+      "stats": {
+        "hp": 65,
+        "attack": 65,
+        "defense": 75,
+        "speed": 45
+      },
+      "rank": 34
+    }
+  ],
+  "Grass": [
+    {
+      "slug": "ophydia",
+      "name": "Ophydia",
+      "number": 175,
+      "rarity": "Epic",
+      "tier": "S",
+      "statTotal": 1065,
+      "stats": {
+        "hp": 130,
+        "attack": 115,
+        "defense": 120,
+        "speed": 700
+      },
+      "rank": 1
+    },
+    {
+      "slug": "elgrove",
+      "name": "Elgrove",
+      "number": 81,
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 1020,
+      "stats": {
+        "hp": 110,
+        "attack": 105,
+        "defense": 105,
+        "speed": 700
+      },
+      "rank": 2
+    },
+    {
+      "slug": "dualith",
+      "name": "Dualith",
+      "number": 138,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 940,
+      "stats": {
+        "hp": 110,
+        "attack": 105,
+        "defense": 125,
+        "speed": 600
+      },
+      "rank": 3
+    },
+    {
+      "slug": "leafan",
+      "name": "Leafan",
+      "number": 90,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 910,
+      "stats": {
+        "hp": 100,
+        "attack": 115,
+        "defense": 95,
+        "speed": 600
+      },
+      "rank": 4
+    },
+    {
+      "slug": "carnibora",
+      "name": "Carnibora",
+      "number": 136,
+      "rarity": "Common",
+      "tier": "A",
+      "statTotal": 860,
+      "stats": {
+        "hp": 85,
+        "attack": 90,
+        "defense": 85,
+        "speed": 600
+      },
+      "rank": 5
+    },
+    {
+      "slug": "tropicaw",
+      "name": "Tropicaw",
+      "number": 173,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 860,
+      "stats": {
+        "hp": 85,
+        "attack": 85,
+        "defense": 90,
+        "speed": 600
+      },
+      "rank": 6
+    },
+    {
+      "slug": "needoll",
+      "name": "Needoll",
+      "number": 100,
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 755,
+      "stats": {
+        "hp": 75,
+        "attack": 85,
+        "defense": 70,
+        "speed": 525
+      },
+      "rank": 7
+    },
+    {
+      "slug": "clovee",
+      "name": "Clovee",
+      "number": 14,
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 610,
+      "stats": {
+        "hp": 80,
+        "attack": 65,
+        "defense": 65,
+        "speed": 400
+      },
+      "rank": 8
+    },
+    {
+      "slug": "mycora",
+      "name": "Mycora",
+      "number": 179,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 590,
+      "stats": {
+        "hp": 105,
+        "attack": 95,
+        "defense": 90,
+        "speed": 300
+      },
+      "rank": 9
+    },
+    {
+      "slug": "quvern_botan",
+      "name": "Quivern Botan",
+      "number": 140,
+      "rarity": "Epic",
+      "tier": "A",
+      "statTotal": 530,
+      "stats": {
+        "hp": 165,
+        "attack": 130,
+        "defense": 135,
+        "speed": 100
+      },
+      "rank": 10
+    },
+    {
+      "slug": "warsect",
+      "name": "Warsect",
+      "number": 102,
+      "rarity": "Epic",
+      "tier": "A",
+      "statTotal": 515,
+      "stats": {
+        "hp": 160,
+        "attack": 145,
+        "defense": 150,
+        "speed": 60
+      },
+      "rank": 11
+    },
+    {
+      "slug": "souffline",
+      "name": "Souffline",
+      "number": 164,
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 505,
+      "stats": {
+        "hp": 70,
+        "attack": 75,
+        "defense": 60,
+        "speed": 300
+      },
+      "rank": 12
+    },
+    {
+      "slug": "mammorest",
+      "name": "Mammorest",
+      "number": 98,
+      "rarity": "Epic",
+      "tier": "A",
+      "statTotal": 500,
+      "stats": {
+        "hp": 180,
+        "attack": 120,
+        "defense": 160,
+        "speed": 40
+      },
+      "rank": 13
+    },
+    {
+      "slug": "lyleen",
+      "name": "Lyleen",
+      "number": 117,
+      "rarity": "Epic",
+      "tier": "A",
+      "statTotal": 460,
+      "stats": {
+        "hp": 140,
+        "attack": 100,
+        "defense": 120,
+        "speed": 100
+      },
+      "rank": 14
+    },
+    {
+      "slug": "dinossom",
+      "name": "Dinossom",
+      "number": 62,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 435,
+      "stats": {
+        "hp": 130,
+        "attack": 120,
+        "defense": 115,
+        "speed": 70
+      },
+      "rank": 15
+    },
+    {
+      "slug": "broncherry",
+      "name": "Broncherry",
+      "number": 91,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 420,
+      "stats": {
+        "hp": 130,
+        "attack": 105,
+        "defense": 130,
+        "speed": 55
+      },
+      "rank": 16
+    },
+    {
+      "slug": "broncherry_aqua",
+      "name": "Broncherry Aqua",
+      "number": 92,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 420,
+      "stats": {
+        "hp": 130,
+        "attack": 100,
+        "defense": 135,
+        "speed": 55
+      },
+      "rank": 17
+    },
+    {
+      "slug": "mossanda",
+      "name": "Mossanda",
+      "number": 31,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 415,
+      "stats": {
+        "hp": 120,
+        "attack": 110,
+        "defense": 125,
+        "speed": 60
+      },
+      "rank": 18
+    },
+    {
+      "slug": "verdash",
+      "name": "Verdash",
+      "number": 77,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 405,
+      "stats": {
+        "hp": 90,
+        "attack": 100,
+        "defense": 75,
+        "speed": 140
+      },
+      "rank": 19
+    },
+    {
+      "slug": "wumpo_botan",
+      "name": "Wumpo Botan",
+      "number": 101,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 405,
+      "stats": {
+        "hp": 150,
+        "attack": 90,
+        "defense": 135,
+        "speed": 30
+      },
+      "rank": 20
+    },
+    {
+      "slug": "palumba",
+      "name": "Palumba",
+      "number": "144",
+      "rarity": "Common",
+      "tier": "A",
+      "statTotal": 400,
+      "stats": {
+        "hp": 105,
+        "attack": 110,
+        "defense": 115,
+        "speed": 70
+      },
+      "rank": 21
+    },
+    {
+      "slug": "robinquill",
+      "name": "Robinquill",
+      "number": 44,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 360,
+      "stats": {
+        "hp": 85,
+        "attack": 120,
+        "defense": 65,
+        "speed": 90
+      },
+      "rank": 22
+    },
+    {
+      "slug": "elizabee",
+      "name": "Elizabee",
+      "number": 48,
+      "rarity": "Rare",
+      "tier": "A",
+      "statTotal": 355,
+      "stats": {
+        "hp": 90,
+        "attack": 95,
+        "defense": 85,
+        "speed": 85
+      },
+      "rank": 23
+    },
+    {
+      "slug": "petallia",
+      "name": "Petallia",
+      "number": 93,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 350,
+      "stats": {
+        "hp": 90,
+        "attack": 80,
+        "defense": 85,
+        "speed": 95
+      },
+      "rank": 24
+    },
+    {
+      "slug": "prunellia",
+      "name": "Prunellia",
+      "number": 164,
+      "rarity": "Rare",
+      "tier": "B",
+      "statTotal": 350,
+      "stats": {
+        "hp": 100,
+        "attack": 80,
+        "defense": 100,
+        "speed": 70
+      },
+      "rank": 25
+    },
+    {
+      "slug": "cinnamoth",
+      "name": "Cinnamoth",
+      "number": 36,
+      "rarity": "Uncommon",
+      "tier": "A",
+      "statTotal": 340,
+      "stats": {
+        "hp": 85,
+        "attack": 80,
+        "defense": 75,
+        "speed": 100
+      },
+      "rank": 26
+    },
+    {
+      "slug": "caprity",
+      "name": "Caprity",
+      "number": "035",
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 330,
+      "stats": {
+        "hp": 100,
+        "attack": 70,
+        "defense": 90,
+        "speed": 70
+      },
+      "rank": 27
+    },
+    {
+      "slug": "lullu",
+      "name": "Lullu",
+      "number": "115",
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 330,
+      "stats": {
+        "hp": 90,
+        "attack": 90,
+        "defense": 80,
+        "speed": 70
+      },
+      "rank": 28
+    },
+    {
+      "slug": "vaelet",
+      "name": "Vaelet",
+      "number": 78,
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 320,
+      "stats": {
+        "hp": 80,
+        "attack": 70,
+        "defense": 80,
+        "speed": 90
+      },
+      "rank": 29
+    },
+    {
+      "slug": "needoll_noct",
+      "name": "Needoll Noct",
+      "number": "100B",
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 310,
+      "stats": {
+        "hp": 80,
+        "attack": 80,
+        "defense": 80,
+        "speed": 70
+      },
+      "rank": 30
+    },
+    {
+      "slug": "nitemary_botan",
+      "name": "Nitemary Botan",
+      "number": "148B",
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 310,
+      "stats": {
+        "hp": 80,
+        "attack": 80,
+        "defense": 80,
+        "speed": 70
+      },
+      "rank": 31
+    },
+    {
+      "slug": "bristla",
+      "name": "Bristla",
+      "number": 26,
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 300,
+      "stats": {
+        "hp": 85,
+        "attack": 85,
+        "defense": 75,
+        "speed": 55
+      },
+      "rank": 32
+    },
+    {
+      "slug": "flopie",
+      "name": "Flopie",
+      "number": 24,
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 300,
+      "stats": {
+        "hp": 85,
+        "attack": 75,
+        "defense": 80,
+        "speed": 60
+      },
+      "rank": 33
+    },
+    {
+      "slug": "lifmunk",
+      "name": "Lifmunk",
+      "number": 4,
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 295,
+      "stats": {
+        "hp": 75,
+        "attack": 75,
+        "defense": 65,
+        "speed": 80
+      },
+      "rank": 34
+    },
+    {
+      "slug": "ribbuny_botan",
+      "name": "Ribbuny Botan",
+      "number": "039B",
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 285,
+      "stats": {
+        "hp": 80,
+        "attack": 65,
+        "defense": 70,
+        "speed": 70
+      },
+      "rank": 35
+    },
+    {
+      "slug": "shroomer",
+      "name": "Shroomer",
+      "number": 169,
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 285,
+      "stats": {
+        "hp": 85,
+        "attack": 70,
+        "defense": 90,
+        "speed": 40
+      },
+      "rank": 36
+    },
+    {
+      "slug": "tanzee",
+      "name": "Tanzee",
+      "number": 8,
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 275,
+      "stats": {
+        "hp": 80,
+        "attack": 65,
+        "defense": 75,
+        "speed": 55
+      },
+      "rank": 37
+    },
+    {
+      "slug": "beegarde",
+      "name": "Beegarde",
+      "number": 47,
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 265,
+      "stats": {
+        "hp": 55,
+        "attack": 50,
+        "defense": 50,
+        "speed": 110
+      },
+      "rank": 38
+    },
+    {
+      "slug": "gumoss",
+      "name": "Gumoss",
+      "number": 14,
+      "rarity": "Common",
+      "tier": "B",
+      "statTotal": 250,
+      "stats": {
+        "hp": 80,
+        "attack": 55,
+        "defense": 85,
+        "speed": 30
+      },
+      "rank": 39
+    },
+    {
+      "slug": "silkina",
+      "name": "Silkina",
+      "number": 172,
+      "rarity": "Uncommon",
+      "tier": "B",
+      "statTotal": 250,
+      "stats": {
+        "hp": 60,
+        "attack": 50,
+        "defense": 55,
+        "speed": 85
+      },
+      "rank": 40
+    }
+  ]
+}

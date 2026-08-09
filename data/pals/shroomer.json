@@ -1,0 +1,139 @@
+{
+  "id": "shroomer",
+  "gameId": "palworld",
+  "number": 169,
+  "name": {
+    "zh": "蘑菇怪",
+    "en": "Shroomer"
+  },
+  "slug": "shroomer",
+  "image": "/images/pals/shroomer.png",
+  "classification": {
+    "elements": [
+      "Grass"
+    ],
+    "rarity": "Uncommon",
+    "role": [
+      "Worker"
+    ],
+    "size": "Medium",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 85,
+    "attack": 70,
+    "defense": 90,
+    "rangedAttack": 0,
+    "speed": 40,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 2,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 2,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Spore Cloud",
+    "descriptionEn": "Releases spores that heal allies and poison enemies."
+  },
+  "acquisition": {
+    "habitats": [
+      "forest",
+      "cave"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 1260
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "planting",
+      "gathering",
+      "medicine"
+    ],
+    "gameStage": {
+      "early": true,
+      "mid": false,
+      "late": false
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 55,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 55,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 20,
+      "mount-flying": 0,
+      "mount-ground": 0
+    },
+    "reasons": {
+      "planting": [
+        "Reliable planting output for mid-game progression",
+        "Available from early game"
+      ],
+      "gathering": [
+        "Reliable gathering output for mid-game progression",
+        "Available from early game"
+      ],
+      "medicine": [
+        "Available from early game"
+      ]
+    }
+  },
+  "tier": "B"
+}

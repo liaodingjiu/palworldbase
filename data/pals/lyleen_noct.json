@@ -1,0 +1,138 @@
+{
+  "id": "lyleen_noct",
+  "gameId": "palworld",
+  "number": 118,
+  "name": {
+    "zh": "暗百合",
+    "en": "Lyleen Noct"
+  },
+  "slug": "lyleen_noct",
+  "image": "/images/pals/lyleen_noct.png",
+  "classification": {
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "Epic",
+    "role": [
+      "Worker"
+    ],
+    "size": "Large",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 140,
+    "attack": 110,
+    "defense": 115,
+    "rangedAttack": 0,
+    "speed": 100,
+    "stamina": 160
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 3,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 2,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Dark Grace",
+    "descriptionEn": "Dark variant. Boosts the attack of all Dark Pals in the base while assigned."
+  },
+  "acquisition": {
+    "habitats": [
+      "night",
+      "cave"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": true,
+    "bossLevel": 45,
+    "bossLocation": "Lyleen Noct's Domain"
+  },
+  "breeding": {
+    "breedingPower": 275
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "handiwork",
+      "medicine",
+      "combat"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": true
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 80,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 55,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 65,
+      "mount-flying": 0,
+      "mount-ground": 0
+    },
+    "reasons": {
+      "handiwork": [
+        "Handiwork Lv 3 — top-tier efficiency",
+        "Reliable handiwork output for mid-game progression"
+      ],
+      "medicine": [
+        "Reliable medicine output for mid-game progression"
+      ],
+      "combat": [
+        "Versatile Pal with balanced stats"
+      ]
+    }
+  },
+  "tier": "A"
+}

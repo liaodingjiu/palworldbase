@@ -1,0 +1,140 @@
+{
+  "id": "blazehowl_noct",
+  "gameId": "palworld",
+  "number": 88,
+  "name": {
+    "zh": "暗吼狮",
+    "en": "Blazehowl Noct"
+  },
+  "slug": "blazehowl_noct",
+  "image": "/images/pals/blazehowl_noct.png",
+  "classification": {
+    "elements": [
+      "Fire",
+      "Dark"
+    ],
+    "rarity": "Epic",
+    "role": [
+      "Combat",
+      "Mount"
+    ],
+    "size": "Large",
+    "isRideable": true,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 145,
+    "attack": 150,
+    "defense": 110,
+    "rangedAttack": 0,
+    "speed": 115,
+    "stamina": 160
+  },
+  "workSuitability": {
+    "kindling": 2,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Dark Roar",
+    "descriptionEn": "Dark variant. Roar boosts Fire and Dark attacks of all Pals in the party."
+  },
+  "acquisition": {
+    "habitats": [
+      "volcano",
+      "night"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": true,
+    "bossLevel": 45,
+    "bossLocation": "Blazehowl Noct's Domain"
+  },
+  "breeding": {
+    "breedingPower": 270
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "kindling",
+      "mount-ground",
+      "combat"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": true
+    },
+    "scores": {
+      "kindling": 55,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 80,
+      "mount-flying": 0,
+      "mount-ground": 70
+    },
+    "reasons": {
+      "kindling": [
+        "Reliable kindling output for mid-game progression",
+        "150 Attack — strong combat presence"
+      ],
+      "mount-ground": [
+        "150 Attack — strong combat presence"
+      ],
+      "combat": [
+        "150 Attack — strong combat presence"
+      ]
+    }
+  },
+  "tier": "A"
+}

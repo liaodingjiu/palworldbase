@@ -1,0 +1,97 @@
+{
+  "id": "gildane",
+  "gameId": "palworld",
+  "number": "140",
+  "name": {
+    "zh": "Gildane",
+    "en": "Gildane"
+  },
+  "slug": "gildane",
+  "image": "/images/pals/gildane.webp",
+  "classification": {
+    "elements": [
+      "Ground"
+    ],
+    "rarity": "Rare",
+    "role": [
+      "Combat"
+    ],
+    "size": "Medium",
+    "isRideable": true,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 120,
+    "attack": 110,
+    "defense": 110,
+    "rangedAttack": 0,
+    "speed": 70,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 2,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Sand Attack",
+      "element": "Ground",
+      "power": 45,
+      "cooldown": 3,
+      "level": 1
+    },
+    {
+      "name": "Rock Slide",
+      "element": "Ground",
+      "power": 90,
+      "cooldown": 12,
+      "level": 12
+    },
+    {
+      "name": "Earthquake",
+      "element": "Ground",
+      "power": 140,
+      "cooldown": 30,
+      "level": 30
+    }
+  ],
+  "partnerSkill": {
+    "name": "Sandstorm's Blessing",
+    "descriptionEn": "Can be ridden. Changes the player's attack type to Ground while mounted."
+  },
+  "acquisition": {
+    "habitats": [
+      "various"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false
+  },
+  "breeding": {
+    "breedingPower": 505
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [
+      "gathering"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": false
+    },
+    "scores": {},
+    "reasons": {}
+  },
+  "tier": "A"
+}

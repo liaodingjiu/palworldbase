@@ -1,0 +1,143 @@
+{
+  "id": "pyrin_noct",
+  "gameId": "palworld",
+  "number": 56,
+  "name": {
+    "zh": "暗火麒麟",
+    "en": "Pyrin Noct"
+  },
+  "slug": "pyrin_noct",
+  "image": "/images/pals/pyrin_noct.png",
+  "classification": {
+    "elements": [
+      "Fire",
+      "Dark"
+    ],
+    "rarity": "Epic",
+    "role": [
+      "Combat",
+      "Mount"
+    ],
+    "size": "Large",
+    "isRideable": true,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 125,
+    "attack": 135,
+    "defense": 95,
+    "rangedAttack": 0,
+    "speed": 140,
+    "stamina": 150
+  },
+  "workSuitability": {
+    "kindling": 2,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Dark Flames",
+    "descriptionEn": "Can be ridden. Leaves a trail of dark fire. Boosts Dark and Fire attacks while mounted."
+  },
+  "acquisition": {
+    "habitats": [
+      "volcano",
+      "night"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": true,
+    "bossLevel": 45,
+    "bossLocation": "Pyrin Noct's Domain"
+  },
+  "breeding": {
+    "breedingPower": 360
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "kindling",
+      "mount-ground",
+      "combat"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": true
+    },
+    "scores": {
+      "kindling": 55,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 80,
+      "mount-flying": 0,
+      "mount-ground": 85
+    },
+    "reasons": {
+      "kindling": [
+        "Reliable kindling output for mid-game progression",
+        "135 Attack — strong combat presence",
+        "140 Speed — fast and efficient"
+      ],
+      "mount-ground": [
+        "135 Attack — strong combat presence",
+        "140 Speed — fast and efficient"
+      ],
+      "combat": [
+        "135 Attack — strong combat presence",
+        "140 Speed — fast and efficient"
+      ]
+    }
+  },
+  "tier": "A"
+}

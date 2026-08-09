@@ -1,0 +1,156 @@
+{
+  "id": "majex",
+  "gameId": "palworld",
+  "number": 115,
+  "name": {
+    "zh": "",
+    "en": "Majex"
+  },
+  "slug": "majex",
+  "image": "/images/pals/majex.webp",
+  "_source": "wiki.gg auto-generated",
+  "_needsReview": [
+    "stats.scale",
+    "drops",
+    "acquisition.habitats",
+    "decision"
+  ],
+  "classification": {
+    "elements": [
+      "Dark",
+      "Fire"
+    ],
+    "rarity": "Rare",
+    "role": [
+      "Combat",
+      "Base Worker"
+    ],
+    "size": "Medium",
+    "isRideable": true,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 110,
+    "attack": 115,
+    "defense": 90,
+    "rangedAttack": 0,
+    "speed": 500,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 4,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 5,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 3,
+    "cooling": 0,
+    "transporting": 2,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Dark Shot",
+      "element": "Dark",
+      "power": 40,
+      "cooldown": 2,
+      "level": 1
+    },
+    {
+      "name": "Spirit Fire",
+      "element": "Fire",
+      "power": 55,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Dark Arrow",
+      "element": "Dark",
+      "power": 75,
+      "cooldown": 8,
+      "level": 15
+    },
+    {
+      "name": "Flame Wall",
+      "element": "Fire",
+      "power": 90,
+      "cooldown": 12,
+      "level": 22
+    },
+    {
+      "name": "Volcanic Rain",
+      "element": "Fire",
+      "power": 110,
+      "cooldown": 18,
+      "level": 30
+    },
+    {
+      "name": "Dark Laser",
+      "element": "Dark",
+      "power": 80,
+      "cooldown": 10,
+      "level": 40
+    },
+    {
+      "name": "Fire Ball",
+      "element": "Fire",
+      "power": 75,
+      "cooldown": 6,
+      "level": 50
+    },
+    {
+      "name": "Dark Whisp",
+      "element": "Dark",
+      "power": 80,
+      "cooldown": 10,
+      "level": 70
+    }
+  ],
+  "partnerSkill": {
+    "name": "Phantasmal Arcana",
+    "descriptionEn": "While in party, when the player attacks an enemy afflicted with [https://palworld.wiki.gg/wiki/Status_Effects#Burn:~:text=Burn,-%5Bedit Burn], the enemy creates flames around itself, dealing continuous damage equal to <span style=\"color: #B0F5C4;\">15%</span> of the player's attack damage to enemies that come into contact with them. (Does not stack.)"
+  },
+  "acquisition": {
+    "habitats": [],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": true,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 1010
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": false
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 0,
+      "mount-flying": 0,
+      "mount-ground": 0
+    },
+    "reasons": {}
+  },
+  "_rawDrops": "Leather*2-3@100; Flame Organ*2@100",
+  "tier": "A"
+}

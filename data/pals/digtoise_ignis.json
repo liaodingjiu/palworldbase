@@ -1,0 +1,136 @@
+{
+  "id": "digtoise_ignis",
+  "gameId": "palworld",
+  "number": 145,
+  "name": {
+    "zh": "火掘龟",
+    "en": "Digtoise Ignis"
+  },
+  "slug": "digtoise_ignis",
+  "image": "/images/pals/digtoise_ignis.png",
+  "classification": {
+    "elements": [
+      "Fire"
+    ],
+    "rarity": "Rare",
+    "role": [
+      "Worker"
+    ],
+    "size": "Medium",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 100,
+    "attack": 90,
+    "defense": 125,
+    "rangedAttack": 0,
+    "speed": 40,
+    "stamina": 120
+  },
+  "workSuitability": {
+    "kindling": 2,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 3,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Flame Spin",
+    "descriptionEn": "Fire variant. Spins with flame blades — excellent at ore mining + kindling."
+  },
+  "acquisition": {
+    "habitats": [
+      "volcano",
+      "cave"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 435
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "mining",
+      "kindling"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": false
+    },
+    "scores": {
+      "kindling": 55,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 80,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 40,
+      "mount-flying": 0,
+      "mount-ground": 0
+    },
+    "reasons": {
+      "mining": [
+        "Mining Lv 3 — top-tier efficiency",
+        "Reliable mining output for mid-game progression",
+        "Obtainable mid-game"
+      ],
+      "kindling": [
+        "Reliable kindling output for mid-game progression",
+        "Obtainable mid-game"
+      ]
+    }
+  },
+  "tier": "B"
+}

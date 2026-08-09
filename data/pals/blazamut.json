@@ -1,0 +1,139 @@
+{
+  "id": "blazamut",
+  "gameId": "palworld",
+  "number": 106,
+  "name": {
+    "zh": "焰魔",
+    "en": "Blazamut"
+  },
+  "slug": "blazamut",
+  "image": "/images/pals/blazamut.png",
+  "classification": {
+    "elements": [
+      "Fire"
+    ],
+    "rarity": "Legendary",
+    "role": [
+      "Combat",
+      "Mount"
+    ],
+    "size": "Huge",
+    "isRideable": true,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 180,
+    "attack": 170,
+    "defense": 140,
+    "rangedAttack": 0,
+    "speed": 90,
+    "stamina": 200
+  },
+  "workSuitability": {
+    "kindling": 4,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Volcanic Eruption",
+    "descriptionEn": "Unleashes a massive volcanic eruption that devastates all enemies on screen."
+  },
+  "acquisition": {
+    "habitats": [
+      "volcano"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": true,
+    "bossLevel": 50,
+    "bossLocation": "Blazamut's Domain"
+  },
+  "breeding": {
+    "breedingPower": 150
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "kindling",
+      "combat",
+      "mount-ground"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": true
+    },
+    "scores": {
+      "kindling": 95,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 80,
+      "mount-flying": 0,
+      "mount-ground": 45
+    },
+    "reasons": {
+      "kindling": [
+        "Kindling Lv 4 — top-tier efficiency",
+        "Reliable kindling output for mid-game progression",
+        "170 Attack — strong combat presence"
+      ],
+      "combat": [
+        "170 Attack — strong combat presence"
+      ],
+      "mount-ground": [
+        "170 Attack — strong combat presence"
+      ]
+    }
+  },
+  "tier": "S"
+}

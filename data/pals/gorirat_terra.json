@@ -1,0 +1,98 @@
+{
+  "id": "gorirat_terra",
+  "gameId": "palworld",
+  "number": "049B",
+  "name": {
+    "zh": "Gorirat Terra",
+    "en": "Gorirat Terra"
+  },
+  "slug": "gorirat_terra",
+  "image": "/images/pals/gorirat_terra.webp",
+  "classification": {
+    "elements": [
+      "Ground"
+    ],
+    "rarity": "Common",
+    "role": [
+      "Combat"
+    ],
+    "size": "Medium",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 90,
+    "attack": 100,
+    "defense": 90,
+    "rangedAttack": 0,
+    "speed": 70,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 1,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 2,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 3,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Sand Attack",
+      "element": "Ground",
+      "power": 45,
+      "cooldown": 3,
+      "level": 1
+    },
+    {
+      "name": "Rock Slide",
+      "element": "Ground",
+      "power": 90,
+      "cooldown": 12,
+      "level": 12
+    },
+    {
+      "name": "Earthquake",
+      "element": "Ground",
+      "power": 140,
+      "cooldown": 30,
+      "level": 30
+    }
+  ],
+  "partnerSkill": {
+    "name": "Full-Power Gorilla Mode",
+    "descriptionEn": "When activated, unleashes a primal fury that increases Gorirat Terra's Attack for a limited time."
+  },
+  "acquisition": {
+    "habitats": [
+      "various"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false
+  },
+  "breeding": {
+    "breedingPower": 1030
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [
+      "transporting",
+      "mining"
+    ],
+    "gameStage": {
+      "early": true,
+      "mid": false,
+      "late": false
+    },
+    "scores": {},
+    "reasons": {}
+  },
+  "tier": "B"
+}

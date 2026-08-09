@@ -1,0 +1,84 @@
+{
+  "id": "solmora_lux",
+  "gameId": "palworld",
+  "number": "169B",
+  "name": {
+    "zh": "Solmora Lux",
+    "en": "Solmora Lux"
+  },
+  "slug": "solmora_lux",
+  "image": "/images/pals/solmora_lux.webp",
+  "classification": {
+    "elements": [
+      "Electric"
+    ],
+    "rarity": "Common",
+    "role": [
+      "Worker"
+    ],
+    "size": "Medium",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 80,
+    "attack": 80,
+    "defense": 80,
+    "rangedAttack": 0,
+    "speed": 70,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Electric",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    }
+  ],
+  "partnerSkill": {
+    "name": "Unique Skill",
+    "descriptionEn": "Solmora Lux's partner skill."
+  },
+  "acquisition": {
+    "habitats": [
+      "various"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false
+  },
+  "breeding": {
+    "breedingPower": 1380
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [
+      "general"
+    ],
+    "gameStage": {
+      "early": true,
+      "mid": false,
+      "late": false
+    },
+    "scores": {},
+    "reasons": {}
+  },
+  "_dataQuality": "estimated",
+  "tier": "B"
+}

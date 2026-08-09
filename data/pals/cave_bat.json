@@ -1,0 +1,84 @@
+{
+  "id": "cave_bat",
+  "gameId": "palworld",
+  "number": "",
+  "name": {
+    "zh": "Cave Bat",
+    "en": "Cave Bat"
+  },
+  "slug": "cave_bat",
+  "image": "/images/pals/cave_bat.webp",
+  "classification": {
+    "elements": [
+      "Neutral"
+    ],
+    "rarity": "Rare",
+    "role": [
+      "Worker"
+    ],
+    "size": "Medium",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 65,
+    "attack": 75,
+    "defense": 80,
+    "rangedAttack": 0,
+    "speed": 70,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 1,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Winged Assault",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 10,
+      "level": 1
+    }
+  ],
+  "partnerSkill": {
+    "name": "Bat Backup",
+    "descriptionEn": "While in team, appears near the player. Automatically picks up nearby items."
+  },
+  "acquisition": {
+    "habitats": [
+      "various"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false
+  },
+  "breeding": {
+    "breedingPower": 500
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [
+      "gathering"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": false
+    },
+    "scores": {},
+    "reasons": {}
+  },
+  "_dataQuality": "estimated",
+  "tier": "B"
+}

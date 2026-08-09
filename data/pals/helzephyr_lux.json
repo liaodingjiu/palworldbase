@@ -1,0 +1,143 @@
+{
+  "id": "helzephyr_lux",
+  "gameId": "palworld",
+  "number": 108,
+  "name": {
+    "zh": "电鸦",
+    "en": "Helzephyr Lux"
+  },
+  "slug": "helzephyr_lux",
+  "image": "/images/pals/helzephyr_lux.png",
+  "classification": {
+    "elements": [
+      "Dark",
+      "Electric"
+    ],
+    "rarity": "Epic",
+    "role": [
+      "Combat",
+      "Mount"
+    ],
+    "size": "Large",
+    "isRideable": false,
+    "isFlyable": true
+  },
+  "stats": {
+    "hp": 125,
+    "attack": 140,
+    "defense": 85,
+    "rangedAttack": 0,
+    "speed": 155,
+    "stamina": 150
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 2,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Thunder Dive",
+    "descriptionEn": "Electric variant. Dive-bombs enemies with lightning."
+  },
+  "acquisition": {
+    "habitats": [
+      "mountain",
+      "sky"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": true,
+    "bossLevel": 45,
+    "bossLocation": "Helzephyr Lux's Domain"
+  },
+  "breeding": {
+    "breedingPower": 285
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "generating",
+      "mount-flying",
+      "combat"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": true
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 55,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 80,
+      "mount-flying": 90,
+      "mount-ground": 0
+    },
+    "reasons": {
+      "generating": [
+        "Reliable generating output for mid-game progression",
+        "140 Attack — strong combat presence",
+        "155 Speed — fast and efficient"
+      ],
+      "mount-flying": [
+        "140 Attack — strong combat presence",
+        "155 Speed — fast and efficient"
+      ],
+      "combat": [
+        "140 Attack — strong combat presence",
+        "155 Speed — fast and efficient"
+      ]
+    }
+  },
+  "tier": "A"
+}

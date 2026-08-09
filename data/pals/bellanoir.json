@@ -1,0 +1,129 @@
+{
+  "id": "bellanoir",
+  "gameId": "palworld",
+  "number": 151,
+  "name": {
+    "zh": "贝拉诺亚",
+    "en": "Bellanoir"
+  },
+  "slug": "bellanoir",
+  "image": "/images/pals/bellanoir.png",
+  "classification": {
+    "elements": [
+      "Dark"
+    ],
+    "rarity": "Epic",
+    "role": [
+      "Combat"
+    ],
+    "size": "Medium",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 120,
+    "attack": 160,
+    "defense": 90,
+    "rangedAttack": 0,
+    "speed": 120,
+    "stamina": 140
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Shadow Strike",
+    "descriptionEn": "Raid boss Pal. Teleports behind enemies and delivers a devastating strike."
+  },
+  "acquisition": {
+    "habitats": [
+      "raid"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": true,
+    "bossLevel": 45,
+    "bossLocation": "Bellanoir's Domain"
+  },
+  "breeding": {
+    "breedingPower": 320
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "combat"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": true
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 80,
+      "mount-flying": 0,
+      "mount-ground": 0
+    },
+    "reasons": {
+      "combat": [
+        "160 Attack — strong combat presence",
+        "120 Speed — fast and efficient"
+      ]
+    }
+  },
+  "tier": "A"
+}

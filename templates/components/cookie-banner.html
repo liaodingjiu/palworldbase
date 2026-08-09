@@ -1,0 +1,48 @@
+<!-- cookie-banner.html — Cookie consent banner (glass morphism, slide-up animation) -->
+<div class="cookie-banner visible" id="cookie-banner" role="dialog" aria-labelledby="cookie-title" aria-modal="true">
+  <div class="cookie-banner-icon">🔒</div>
+  <h3 id="cookie-title">Cookie Preferences</h3>
+  <p>
+    We use cookies to understand how you use PalworldBase and to show relevant ads.
+    By clicking "Accept All", you consent to cookies for analytics and advertising.
+    You can change your mind anytime — visit our Cookie Policy.
+  </p>
+  <div class="cookie-buttons">
+    <button class="cookie-btn cookie-btn-accept" onclick="acceptCookies()">Accept All</button>
+    <button class="cookie-btn cookie-btn-essential" onclick="essentialOnly()">Essential Only</button>
+    <a href="/cookie-policy/" class="cookie-btn cookie-btn-settings" style="text-decoration:none">Cookie Policy</a>
+  </div>
+</div>
+
+<script>
+(function() {
+  // Check if consent was already given
+  var consent = localStorage.getItem('pb_cookie_consent');
+  if (consent === 'all' || consent === 'essential') {
+    document.getElementById('cookie-banner').style.display = 'none';
+    if (consent === 'all') loadThirdParty();
+    return;
+  }
+
+  // Show banner with slight delay for animation
+  setTimeout(function() {
+    document.getElementById('cookie-banner').classList.add('visible');
+  }, 800);
+
+  window.acceptCookies = function() {
+    localStorage.setItem('pb_cookie_consent', 'all');
+    document.getElementById('cookie-banner').style.display = 'none';
+    loadThirdParty();
+  };
+
+  window.essentialOnly = function() {
+    localStorage.setItem('pb_cookie_consent', 'essential');
+    document.getElementById('cookie-banner').style.display = 'none';
+  };
+
+  function loadThirdParty() {
+    // AdSense placeholder — will be replaced when AdSense is approved
+    // Ads will be loaded here via Google AdSense script
+  }
+})();
+</script>

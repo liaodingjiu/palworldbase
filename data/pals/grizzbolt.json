@@ -1,0 +1,149 @@
+{
+  "id": "grizzbolt",
+  "gameId": "palworld",
+  "number": 116,
+  "name": {
+    "zh": "暴电熊",
+    "en": "Grizzbolt"
+  },
+  "slug": "grizzbolt",
+  "image": "/images/pals/grizzbolt.png",
+  "classification": {
+    "elements": [
+      "Electric"
+    ],
+    "rarity": "Legendary",
+    "role": [
+      "Combat",
+      "Mount"
+    ],
+    "size": "Huge",
+    "isRideable": true,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 180,
+    "attack": 170,
+    "defense": 140,
+    "rangedAttack": 0,
+    "speed": 100,
+    "stamina": 200
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 4,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 2,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 3,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Thunder Clap",
+    "descriptionEn": "Can be ridden. Fires a massive lightning cannon. Devastates everything in its path."
+  },
+  "acquisition": {
+    "habitats": [
+      "forest",
+      "mountain"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": true,
+    "bossLevel": 50,
+    "bossLocation": "Grizzbolt's Domain"
+  },
+  "breeding": {
+    "breedingPower": 160
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "generating",
+      "lumbering",
+      "transport",
+      "mount-ground",
+      "combat"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": true
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 95,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 55,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 80,
+      "farming": 0,
+      "combat": 80,
+      "mount-flying": 0,
+      "mount-ground": 70
+    },
+    "reasons": {
+      "generating": [
+        "Generating Lv 4 — top-tier efficiency",
+        "Reliable generating output for mid-game progression",
+        "170 Attack — strong combat presence"
+      ],
+      "lumbering": [
+        "Reliable lumbering output for mid-game progression",
+        "170 Attack — strong combat presence"
+      ],
+      "transport": [
+        "170 Attack — strong combat presence"
+      ],
+      "mount-ground": [
+        "170 Attack — strong combat presence"
+      ],
+      "combat": [
+        "170 Attack — strong combat presence"
+      ]
+    }
+  },
+  "tier": "S"
+}

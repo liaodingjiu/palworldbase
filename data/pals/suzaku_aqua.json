@@ -1,0 +1,143 @@
+{
+  "id": "suzaku_aqua",
+  "gameId": "palworld",
+  "number": 115,
+  "name": {
+    "zh": "水朱雀",
+    "en": "Suzaku Aqua"
+  },
+  "slug": "suzaku_aqua",
+  "image": "/images/pals/suzaku_aqua.png",
+  "classification": {
+    "elements": [
+      "Water"
+    ],
+    "rarity": "Legendary",
+    "role": [
+      "Combat",
+      "Mount"
+    ],
+    "size": "Huge",
+    "isRideable": false,
+    "isFlyable": true
+  },
+  "stats": {
+    "hp": 170,
+    "attack": 155,
+    "defense": 145,
+    "rangedAttack": 0,
+    "speed": 130,
+    "stamina": 190
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 3,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Azure Bird",
+    "descriptionEn": "Water variant. Creates a massive waterspout while flying."
+  },
+  "acquisition": {
+    "habitats": [
+      "ocean",
+      "sky"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": true,
+    "bossLevel": 50,
+    "bossLocation": "Suzaku Aqua's Domain"
+  },
+  "breeding": {
+    "breedingPower": 175
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "watering",
+      "mount-flying",
+      "combat"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": true
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 80,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 80,
+      "mount-flying": 75,
+      "mount-ground": 0
+    },
+    "reasons": {
+      "watering": [
+        "Watering Lv 3 — top-tier efficiency",
+        "Reliable watering output for mid-game progression",
+        "155 Attack — strong combat presence",
+        "130 Speed — fast and efficient"
+      ],
+      "mount-flying": [
+        "155 Attack — strong combat presence",
+        "130 Speed — fast and efficient"
+      ],
+      "combat": [
+        "155 Attack — strong combat presence",
+        "130 Speed — fast and efficient"
+      ]
+    }
+  },
+  "tier": "S"
+}

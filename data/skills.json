@@ -1,0 +1,2251 @@
+{
+  "active": [
+    {
+      "name": "Dragon Meteor",
+      "element": "Dragon",
+      "power": 150,
+      "cooldown": 30,
+      "learnLv": 30,
+      "pals": [
+        "Xenogard",
+        "Jetragon",
+        "Quivern",
+        "Silvegis",
+        "Elphidran"
+      ]
+    },
+    {
+      "name": "Blizzard",
+      "element": "Ice",
+      "power": 140,
+      "cooldown": 24,
+      "learnLv": 30,
+      "pals": [
+        "Foxcicle",
+        "Bastigor",
+        "Hangyu Cryst",
+        "Frostplume",
+        "Icelyn",
+        "Jolthog Cryst",
+        "Sweepa",
+        "Mau Cryst",
+        "Sibelyx",
+        "Swee",
+        "Foxparks Cryst",
+        "Reindrix",
+        "Kingpaca Cryst",
+        "Wumpo",
+        "Frostallion",
+        "Cryolinx",
+        "Loupmoon Cryst"
+      ]
+    },
+    {
+      "name": "Earthquake",
+      "element": "Ground",
+      "power": 140,
+      "cooldown": 30,
+      "learnLv": 30,
+      "pals": [
+        "Warsect Terra",
+        "Gildane",
+        "Anubis",
+        "Dazemu",
+        "Menasting Terra",
+        "Digtoise",
+        "Fuddler",
+        "Knocklem",
+        "Gorirat Terra",
+        "Kikit",
+        "Hangyu",
+        "Cryolinx Terra",
+        "Surfent Terra",
+        "Rushoar",
+        "Eikthyrdeer Terra"
+      ]
+    },
+    {
+      "name": "Hydro Pump",
+      "element": "Water",
+      "power": 130,
+      "cooldown": 20,
+      "learnLv": 22,
+      "pals": [
+        "Fuack",
+        "Faleris Aqua",
+        "Suzaku Aqua",
+        "Jelliette",
+        "Surfent",
+        "Finsider",
+        "Kelpsea",
+        "Gobfin",
+        "Neptilius",
+        "Teafant",
+        "Croajiro",
+        "Turtacle",
+        "Celaray"
+      ]
+    },
+    {
+      "name": "Lightning Strike",
+      "element": "Electric",
+      "power": 130,
+      "cooldown": 20,
+      "learnLv": 25,
+      "pals": [
+        "Univolt",
+        "Azurmane",
+        "Fenglope Lux",
+        "Jolthog",
+        "Beakon",
+        "Sparkit",
+        "Rayhound",
+        "Grizzbolt",
+        "Mossanda Lux",
+        "Dazzi"
+      ]
+    },
+    {
+      "name": "Night Slash",
+      "element": "Dark",
+      "power": 120,
+      "cooldown": 16,
+      "learnLv": 22,
+      "pals": [
+        "Xenovader",
+        "Kitsun Noct",
+        "Lyleen Noct",
+        "Omascul",
+        "Felbat",
+        "Nox",
+        "Nyafia",
+        "Bellanoir Libero",
+        "Helzephyr",
+        "Caprity Noct",
+        "Maraith",
+        "Mau",
+        "Cawgnito",
+        "Depresso",
+        "Daedream",
+        "Tombat",
+        "Nitemary",
+        "Bellanoir",
+        "Frostallion Noct",
+        "Smokie",
+        "Starryon",
+        "Incineram Noct",
+        "Necromus",
+        "Hoocrates",
+        "Leezpunk",
+        "Shadowbeak",
+        "Loupmoon",
+        "Splatterina",
+        "Tarantriss",
+        "Katress"
+      ]
+    },
+    {
+      "name": "Flame Thrower",
+      "element": "Fire",
+      "power": 120,
+      "cooldown": 18,
+      "learnLv": 15,
+      "pals": [
+        "Arsox",
+        "Foxparks",
+        "Flambelle",
+        "Kelpsea Ignis",
+        "Faleris",
+        "Kitsun",
+        "Gobfin Ignis",
+        "Leezpunk Ignis",
+        "Rooby",
+        "Ragnahawk",
+        "Suzaku",
+        "Blazehowl",
+        "Pyrin",
+        "Bushi",
+        "Wixen",
+        "Blazamut"
+      ]
+    },
+    {
+      "name": "Ice Beam",
+      "element": "Ice",
+      "power": 100,
+      "cooldown": 14,
+      "learnLv": 15,
+      "pals": [
+        "Foxcicle",
+        "Bastigor",
+        "Hangyu Cryst",
+        "Frostplume",
+        "Icelyn",
+        "Jolthog Cryst",
+        "Sweepa",
+        "Mau Cryst",
+        "Sibelyx",
+        "Swee",
+        "Foxparks Cryst",
+        "Reindrix",
+        "Kingpaca Cryst",
+        "Wumpo",
+        "Frostallion",
+        "Cryolinx",
+        "Loupmoon Cryst"
+      ]
+    },
+    {
+      "name": "Shadow Ball",
+      "element": "Dark",
+      "power": 100,
+      "cooldown": 14,
+      "learnLv": 12,
+      "pals": [
+        "Xenovader",
+        "Kitsun Noct",
+        "Lyleen Noct",
+        "Omascul",
+        "Felbat",
+        "Nox",
+        "Nyafia",
+        "Bellanoir Libero",
+        "Helzephyr",
+        "Caprity Noct",
+        "Maraith",
+        "Mau",
+        "Cawgnito",
+        "Depresso",
+        "Daedream",
+        "Tombat",
+        "Nitemary",
+        "Bellanoir",
+        "Frostallion Noct",
+        "Smokie",
+        "Starryon",
+        "Incineram Noct",
+        "Necromus",
+        "Hoocrates",
+        "Leezpunk",
+        "Shadowbeak",
+        "Loupmoon",
+        "Splatterina",
+        "Tarantriss",
+        "Katress"
+      ]
+    },
+    {
+      "name": "Grass Tornado",
+      "element": "Grass",
+      "power": 100,
+      "cooldown": 18,
+      "learnLv": 22,
+      "pals": [
+        "Vaelet",
+        "Lifmunk",
+        "Caprity",
+        "Petallia",
+        "Verdash",
+        "Cinnamoth",
+        "Ribbuny Botan",
+        "Elizabee",
+        "Bristla",
+        "Lullu",
+        "Tanzee",
+        "Broncherry",
+        "Wumpo Botan",
+        "Robinquill",
+        "Lyleen",
+        "Beegarde",
+        "Shroomer",
+        "Palumba",
+        "Flopie",
+        "Mossanda"
+      ]
+    },
+    {
+      "name": "Fire Blast",
+      "element": "Fire",
+      "power": 100,
+      "cooldown": 14,
+      "learnLv": 22,
+      "pals": [
+        "Arsox",
+        "Foxparks",
+        "Flambelle",
+        "Kelpsea Ignis",
+        "Faleris",
+        "Kitsun",
+        "Gobfin Ignis",
+        "Leezpunk Ignis",
+        "Rooby",
+        "Ragnahawk",
+        "Suzaku",
+        "Blazehowl",
+        "Pyrin",
+        "Bushi",
+        "Wixen",
+        "Blazamut"
+      ]
+    },
+    {
+      "name": "Thunderbolt",
+      "element": "Electric",
+      "power": 100,
+      "cooldown": 12,
+      "learnLv": 12,
+      "pals": [
+        "Univolt",
+        "Azurmane",
+        "Fenglope Lux",
+        "Jolthog",
+        "Beakon",
+        "Sparkit",
+        "Rayhound",
+        "Grizzbolt",
+        "Mossanda Lux",
+        "Dazzi"
+      ]
+    },
+    {
+      "name": "Dragon Claw",
+      "element": "Dragon",
+      "power": 95,
+      "cooldown": 10,
+      "learnLv": 12,
+      "pals": [
+        "Xenogard",
+        "Jetragon",
+        "Quivern",
+        "Silvegis",
+        "Elphidran"
+      ]
+    },
+    {
+      "name": "Rock Slide",
+      "element": "Ground",
+      "power": 90,
+      "cooldown": 12,
+      "learnLv": 12,
+      "pals": [
+        "Warsect Terra",
+        "Gildane",
+        "Anubis",
+        "Dazemu",
+        "Menasting Terra",
+        "Digtoise",
+        "Fuddler",
+        "Knocklem",
+        "Gorirat Terra",
+        "Kikit",
+        "Hangyu",
+        "Cryolinx Terra",
+        "Surfent Terra",
+        "Rushoar",
+        "Eikthyrdeer Terra"
+      ]
+    },
+    {
+      "name": "Seed Bomb",
+      "element": "Grass",
+      "power": 90,
+      "cooldown": 10,
+      "learnLv": 10,
+      "pals": [
+        "Vaelet",
+        "Lifmunk",
+        "Caprity",
+        "Petallia",
+        "Verdash",
+        "Cinnamoth",
+        "Ribbuny Botan",
+        "Elizabee",
+        "Bristla",
+        "Lullu",
+        "Tanzee",
+        "Broncherry",
+        "Wumpo Botan",
+        "Robinquill",
+        "Lyleen",
+        "Beegarde",
+        "Shroomer",
+        "Palumba",
+        "Flopie",
+        "Mossanda"
+      ]
+    },
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "learnLv": 1,
+      "pals": [
+        "Warsect",
+        "Orserk",
+        "Lovander",
+        "Elphidran Aqua",
+        "Mozzarina",
+        "Mammorest",
+        "Ribbuny",
+        "Quivern Botan",
+        "Dazzi Noct",
+        "Jormuntide Ignis",
+        "Finsider Ignis",
+        "Shroomer Noct",
+        "Woolipop",
+        "Pyrin Noct",
+        "Bushi Noct",
+        "Gorirat",
+        "Prunelia",
+        "Penking Lux",
+        "Azurobe",
+        "Melpaca",
+        "Lamball",
+        "Braloha",
+        "Pengullet",
+        "Robinquill Terra",
+        "Vanwyrm",
+        "Ghangler Ignis",
+        "Cremis",
+        "Galeclaw",
+        "Pengullet Lux",
+        "Wixen Noct",
+        "Killamari",
+        "Jellroy",
+        "Prixter",
+        "Munchill",
+        "Astegon",
+        "Killamari Primo",
+        "Herbil",
+        "Cattiva",
+        "Lunaris",
+        "Paladius",
+        "Menasting",
+        "Penking",
+        "Direhowl",
+        "Vanwyrm Cryst",
+        "Incineram",
+        "Grintale",
+        "Yakumo",
+        "Ghangler",
+        "Relaxaurus Lux",
+        "Fuack Ignis",
+        "Kingpaca",
+        "Croajiro Noct",
+        "Gloopie",
+        "Polapup",
+        "Selyne",
+        "Celesdir",
+        "Chikipi",
+        "Whalaska",
+        "Whalaska Ignis",
+        "Chillet",
+        "Mammorest Cryst",
+        "Vixy",
+        "Dinossom",
+        "Relaxaurus",
+        "Nitewing",
+        "Turtacle Terra",
+        "Xenolord",
+        "Gumoss",
+        "Celaray Lux",
+        "Blazehowl Noct",
+        "Dogen",
+        "Reptyro Cryst",
+        "Sootseer",
+        "Blazamut Ryu",
+        "Katress Ignis",
+        "Helzephyr Lux",
+        "Chillet Ignis",
+        "Reptyro",
+        "Dinossom Lux",
+        "Hartalis",
+        "Tocotoco",
+        "Dumud",
+        "Dumud Gild",
+        "Broncherry Aqua",
+        "Azurobe Cryst",
+        "Jormuntide",
+        "Mimog",
+        "Fenglope",
+        "Eikthyrdeer"
+      ]
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "learnLv": 15,
+      "pals": [
+        "Warsect",
+        "Orserk",
+        "Lovander",
+        "Elphidran Aqua",
+        "Mozzarina",
+        "Mammorest",
+        "Ribbuny",
+        "Quivern Botan",
+        "Dazzi Noct",
+        "Jormuntide Ignis",
+        "Finsider Ignis",
+        "Shroomer Noct",
+        "Woolipop",
+        "Pyrin Noct",
+        "Bushi Noct",
+        "Gorirat",
+        "Prunelia",
+        "Penking Lux",
+        "Azurobe",
+        "Melpaca",
+        "Lamball",
+        "Braloha",
+        "Pengullet",
+        "Robinquill Terra",
+        "Vanwyrm",
+        "Ghangler Ignis",
+        "Cremis",
+        "Galeclaw",
+        "Pengullet Lux",
+        "Wixen Noct",
+        "Killamari",
+        "Jellroy",
+        "Prixter",
+        "Munchill",
+        "Astegon",
+        "Killamari Primo",
+        "Herbil",
+        "Cattiva",
+        "Lunaris",
+        "Paladius",
+        "Menasting",
+        "Penking",
+        "Direhowl",
+        "Vanwyrm Cryst",
+        "Incineram",
+        "Grintale",
+        "Yakumo",
+        "Ghangler",
+        "Relaxaurus Lux",
+        "Fuack Ignis",
+        "Kingpaca",
+        "Croajiro Noct",
+        "Gloopie",
+        "Polapup",
+        "Selyne",
+        "Celesdir",
+        "Chikipi",
+        "Whalaska",
+        "Whalaska Ignis",
+        "Chillet",
+        "Mammorest Cryst",
+        "Vixy",
+        "Dinossom",
+        "Relaxaurus",
+        "Nitewing",
+        "Turtacle Terra",
+        "Xenolord",
+        "Gumoss",
+        "Celaray Lux",
+        "Blazehowl Noct",
+        "Dogen",
+        "Reptyro Cryst",
+        "Sootseer",
+        "Blazamut Ryu",
+        "Katress Ignis",
+        "Helzephyr Lux",
+        "Chillet Ignis",
+        "Reptyro",
+        "Dinossom Lux",
+        "Hartalis",
+        "Tocotoco",
+        "Dumud",
+        "Dumud Gild",
+        "Broncherry Aqua",
+        "Azurobe Cryst",
+        "Jormuntide",
+        "Mimog",
+        "Fenglope",
+        "Eikthyrdeer"
+      ]
+    },
+    {
+      "name": "Dark Pulse",
+      "element": "Dark",
+      "power": 80,
+      "cooldown": 10,
+      "learnLv": 1,
+      "pals": [
+        "Xenovader",
+        "Kitsun Noct",
+        "Lyleen Noct",
+        "Omascul",
+        "Felbat",
+        "Nox",
+        "Nyafia",
+        "Bellanoir Libero",
+        "Helzephyr",
+        "Caprity Noct",
+        "Maraith",
+        "Mau",
+        "Cawgnito",
+        "Depresso",
+        "Daedream",
+        "Tombat",
+        "Nitemary",
+        "Bellanoir",
+        "Frostallion Noct",
+        "Smokie",
+        "Starryon",
+        "Incineram Noct",
+        "Necromus",
+        "Hoocrates",
+        "Leezpunk",
+        "Shadowbeak",
+        "Loupmoon",
+        "Splatterina",
+        "Tarantriss",
+        "Katress"
+      ]
+    },
+    {
+      "name": "Aqua Jet",
+      "element": "Water",
+      "power": 80,
+      "cooldown": 8,
+      "learnLv": 10,
+      "pals": [
+        "Fuack",
+        "Faleris Aqua",
+        "Suzaku Aqua",
+        "Jelliette",
+        "Surfent",
+        "Finsider",
+        "Kelpsea",
+        "Gobfin",
+        "Neptilius",
+        "Teafant",
+        "Croajiro",
+        "Turtacle",
+        "Celaray"
+      ]
+    },
+    {
+      "name": "Fire Ball",
+      "element": "Fire",
+      "power": 75,
+      "cooldown": 6,
+      "learnLv": 1,
+      "pals": [
+        "Arsox",
+        "Foxparks",
+        "Flambelle",
+        "Kelpsea Ignis",
+        "Faleris",
+        "Kitsun",
+        "Gobfin Ignis",
+        "Leezpunk Ignis",
+        "Rooby",
+        "Ragnahawk",
+        "Suzaku",
+        "Blazehowl",
+        "Pyrin",
+        "Bushi",
+        "Wixen",
+        "Blazamut"
+      ]
+    },
+    {
+      "name": "Dragon Breath",
+      "element": "Dragon",
+      "power": 70,
+      "cooldown": 6,
+      "learnLv": 1,
+      "pals": [
+        "Xenogard",
+        "Jetragon",
+        "Quivern",
+        "Silvegis",
+        "Elphidran"
+      ]
+    },
+    {
+      "name": "Water Gun",
+      "element": "Water",
+      "power": 65,
+      "cooldown": 4,
+      "learnLv": 1,
+      "pals": [
+        "Fuack",
+        "Faleris Aqua",
+        "Suzaku Aqua",
+        "Jelliette",
+        "Surfent",
+        "Finsider",
+        "Kelpsea",
+        "Gobfin",
+        "Neptilius",
+        "Teafant",
+        "Croajiro",
+        "Turtacle",
+        "Celaray"
+      ]
+    },
+    {
+      "name": "Ice Shard",
+      "element": "Ice",
+      "power": 55,
+      "cooldown": 4,
+      "learnLv": 1,
+      "pals": [
+        "Foxcicle",
+        "Bastigor",
+        "Hangyu Cryst",
+        "Frostplume",
+        "Icelyn",
+        "Jolthog Cryst",
+        "Sweepa",
+        "Mau Cryst",
+        "Sibelyx",
+        "Swee",
+        "Foxparks Cryst",
+        "Reindrix",
+        "Kingpaca Cryst",
+        "Wumpo",
+        "Frostallion",
+        "Cryolinx",
+        "Loupmoon Cryst"
+      ]
+    },
+    {
+      "name": "Wind Cutter",
+      "element": "Grass",
+      "power": 55,
+      "cooldown": 4,
+      "learnLv": 1,
+      "pals": [
+        "Vaelet",
+        "Lifmunk",
+        "Caprity",
+        "Petallia",
+        "Verdash",
+        "Cinnamoth",
+        "Ribbuny Botan",
+        "Elizabee",
+        "Bristla",
+        "Lullu",
+        "Tanzee",
+        "Broncherry",
+        "Wumpo Botan",
+        "Robinquill",
+        "Lyleen",
+        "Beegarde",
+        "Shroomer",
+        "Palumba",
+        "Flopie",
+        "Mossanda"
+      ]
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "learnLv": 7,
+      "pals": [
+        "Warsect",
+        "Orserk",
+        "Lovander",
+        "Elphidran Aqua",
+        "Mozzarina",
+        "Mammorest",
+        "Ribbuny",
+        "Quivern Botan",
+        "Dazzi Noct",
+        "Jormuntide Ignis",
+        "Finsider Ignis",
+        "Shroomer Noct",
+        "Woolipop",
+        "Pyrin Noct",
+        "Bushi Noct",
+        "Gorirat",
+        "Prunelia",
+        "Penking Lux",
+        "Azurobe",
+        "Melpaca",
+        "Lamball",
+        "Braloha",
+        "Pengullet",
+        "Robinquill Terra",
+        "Vanwyrm",
+        "Ghangler Ignis",
+        "Cremis",
+        "Galeclaw",
+        "Pengullet Lux",
+        "Wixen Noct",
+        "Killamari",
+        "Jellroy",
+        "Prixter",
+        "Munchill",
+        "Astegon",
+        "Killamari Primo",
+        "Herbil",
+        "Cattiva",
+        "Lunaris",
+        "Paladius",
+        "Menasting",
+        "Penking",
+        "Direhowl",
+        "Vanwyrm Cryst",
+        "Incineram",
+        "Grintale",
+        "Yakumo",
+        "Ghangler",
+        "Relaxaurus Lux",
+        "Fuack Ignis",
+        "Kingpaca",
+        "Croajiro Noct",
+        "Gloopie",
+        "Polapup",
+        "Selyne",
+        "Celesdir",
+        "Chikipi",
+        "Whalaska",
+        "Whalaska Ignis",
+        "Chillet",
+        "Mammorest Cryst",
+        "Vixy",
+        "Dinossom",
+        "Relaxaurus",
+        "Nitewing",
+        "Turtacle Terra",
+        "Xenolord",
+        "Gumoss",
+        "Celaray Lux",
+        "Blazehowl Noct",
+        "Dogen",
+        "Reptyro Cryst",
+        "Sootseer",
+        "Blazamut Ryu",
+        "Katress Ignis",
+        "Helzephyr Lux",
+        "Chillet Ignis",
+        "Reptyro",
+        "Dinossom Lux",
+        "Hartalis",
+        "Tocotoco",
+        "Dumud",
+        "Dumud Gild",
+        "Broncherry Aqua",
+        "Azurobe Cryst",
+        "Jormuntide",
+        "Mimog",
+        "Fenglope",
+        "Eikthyrdeer"
+      ]
+    },
+    {
+      "name": "Thunder Shock",
+      "element": "Electric",
+      "power": 50,
+      "cooldown": 3,
+      "learnLv": 1,
+      "pals": [
+        "Univolt",
+        "Azurmane",
+        "Fenglope Lux",
+        "Jolthog",
+        "Beakon",
+        "Sparkit",
+        "Rayhound",
+        "Grizzbolt",
+        "Mossanda Lux",
+        "Dazzi"
+      ]
+    },
+    {
+      "name": "Sand Attack",
+      "element": "Ground",
+      "power": 45,
+      "cooldown": 3,
+      "learnLv": 1,
+      "pals": [
+        "Warsect Terra",
+        "Gildane",
+        "Anubis",
+        "Dazemu",
+        "Menasting Terra",
+        "Digtoise",
+        "Fuddler",
+        "Knocklem",
+        "Gorirat Terra",
+        "Kikit",
+        "Hangyu",
+        "Cryolinx Terra",
+        "Surfent Terra",
+        "Rushoar",
+        "Eikthyrdeer Terra"
+      ]
+    }
+  ],
+  "partner": [
+    {
+      "name": "Fluffy Shield",
+      "pal": "Lamball",
+      "type": "Combat / Farming",
+      "desc": "When activated, equips to the player and becomes a shield. Sometimes drops Wool when assigned to Ranch."
+    },
+    {
+      "name": "Cat Helper",
+      "pal": "Cattiva",
+      "type": "Utility",
+      "desc": "While in team, Cattiva helps carry supplies, increasing the player's max carrying capacity."
+    },
+    {
+      "name": "Egg Layer",
+      "pal": "Chikipi",
+      "type": "Farming",
+      "desc": "Sometimes lays an Egg when assigned to Ranch."
+    },
+    {
+      "name": "Lifmunk Recoil",
+      "pal": "Lifmunk",
+      "type": "Combat",
+      "desc": "When activated, leaps onto the player's head and uses a submachine gun to follow up player attacks."
+    },
+    {
+      "name": "Huggy Fire",
+      "pal": "Foxparks",
+      "type": "Combat",
+      "desc": "When activated, equips to the player and transforms into a flamethrower."
+    },
+    {
+      "name": "Huggy Frost",
+      "pal": "Foxparks Cryst",
+      "type": "Combat",
+      "desc": "When activated, equips to the player and attacks using frigid air."
+    },
+    {
+      "name": "Surfing Slam",
+      "pal": "Fuack",
+      "type": "Combat",
+      "desc": "When activated, Fuack body surfs toward an enemy and slams into them."
+    },
+    {
+      "name": "Fire Tackle",
+      "pal": "Fuack Ignis",
+      "type": "Combat",
+      "desc": "When Activated, Fuack Ignis fire surfs towards and enemy and slams into them."
+    },
+    {
+      "name": "Static Electricity",
+      "pal": "Sparkit",
+      "type": "Utility",
+      "desc": "While in team, increases Attack of Electric Pals."
+    },
+    {
+      "name": "Cheery Rifle",
+      "pal": "Tanzee",
+      "type": "Combat",
+      "desc": "When activated, Tanzee will mercilessly fire an assault rifle at nearby enemies for a limited time."
+    },
+    {
+      "name": "Tiny Spark",
+      "pal": "Rooby",
+      "type": "Utility",
+      "desc": "While in team, increases Attack of Fire Pals."
+    },
+    {
+      "name": "Pengullet Launcher",
+      "pal": "Pengullet",
+      "type": "Combat",
+      "desc": "When activated, the player equips a Rocket Launcher and fires Pengullet as ammunition. Pengullet explodes on contact and is incapacitated."
+    },
+    {
+      "name": "Pengullet Lux Launcher",
+      "pal": "Pengullet Lux",
+      "type": "Combat",
+      "desc": "When activated, the player equips a Rocket Launcher and fires Pengullet Lux as ammunition. Pengullet Lux explodes on contact and is incapacitated."
+    },
+    {
+      "name": "Brave Sailor",
+      "pal": "Penking",
+      "type": "Utility",
+      "desc": "While fighting together, Fire Pals drop more items when defeated."
+    },
+    {
+      "name": "Unyielding Storm Commander",
+      "pal": "Penking Lux",
+      "type": "Utility",
+      "desc": "While fighting together, Water Pals drop more items when defeated."
+    },
+    {
+      "name": "Jolt Bomb",
+      "pal": "Jolthog",
+      "type": "Combat",
+      "desc": "When activated, equips Jolthog to the player's hand. When thrown at an enemy, causes an electrical explosion upon impact."
+    },
+    {
+      "name": "Cold Bomb",
+      "pal": "Jolthog Cryst",
+      "type": "Combat",
+      "desc": "When activated, equips Jolthog Cryst to the player's hand. When thrown at an enemy, causes an icy explosion upon impact."
+    },
+    {
+      "name": "Logging Assistance",
+      "pal": "Gumoss",
+      "type": "Utility",
+      "desc": "While in team, improves efficiency of cutting trees."
+    },
+    {
+      "name": "Dig Here!",
+      "pal": "Vixy",
+      "type": "Farming",
+      "desc": "Sometimes digs up items from the ground when assigned to Ranch"
+    },
+    {
+      "name": "Dark Knowledge",
+      "pal": "Hoocrates",
+      "type": "Utility",
+      "desc": "While in team, increases Attack of Dark Pals."
+    },
+    {
+      "name": "Soothing Shower",
+      "pal": "Teafant",
+      "type": "Utility",
+      "desc": "When activated, spouts mysterious water that soothes wounds and restores the player's Health."
+    },
+    {
+      "name": "Caffeine Inoculation",
+      "pal": "Depresso",
+      "type": "Utility",
+      "desc": "When activated, Depresso drinks a massive amount of energy drinks, causing its movement speed to increase for a limited time."
+    },
+    {
+      "name": "Fluffy Wool",
+      "pal": "Cremis",
+      "type": "Combat / Farming",
+      "desc": "While in team, increases Attack of Neutral Pals. Sometimes drops Wool when assigned to Ranch."
+    },
+    {
+      "name": "Dream Chaser",
+      "pal": "Daedream",
+      "type": "Combat",
+      "desc": "While in team, appears near the player. Follows up player attacks with magic bullets."
+    },
+    {
+      "name": "Hard Head",
+      "pal": "Rushoar",
+      "type": "Mount",
+      "desc": "Can be ridden. Increases efficiency of destroying boulders while mounted."
+    },
+    {
+      "name": "Kuudere",
+      "pal": "Nox",
+      "type": "Combat",
+      "desc": "When fighting together, changes the player's attack type to Dark."
+    },
+    {
+      "name": "Ore Detector",
+      "pal": "Fuddler",
+      "type": "Utility",
+      "desc": "When activated, generates subtle vibrations to detect nearby ore."
+    },
+    {
+      "name": "Fried Squid",
+      "pal": "Killamari",
+      "type": "Mount (Glider)",
+      "desc": "While in team, modifies the performance of the equipped glider. Enables gentle floating while gliding for an extended time."
+    },
+    {
+      "name": "Fried Killamari",
+      "pal": "Killamari Primo",
+      "type": "Mount (Glider)",
+      "desc": "While in team, modifies the performance of the equipped glider. Enables gentle floating while gliding for an extended time."
+    },
+    {
+      "name": "Gold Digger",
+      "pal": "Mau",
+      "type": "Farming",
+      "desc": "Sometimes digs up Gold Coin when assigned to a Ranch."
+    },
+    {
+      "name": "Gold Digger",
+      "pal": "Mau Cryst",
+      "type": "Farming",
+      "desc": "Sometimes digs up Gold Coin when assigned to a Ranch."
+    },
+    {
+      "name": "Zephyr Glider",
+      "pal": "Celaray",
+      "type": "Mount (Glider)",
+      "desc": "While in team, modifies the performance of the equipped glider. Increases speed while gliding for an extended time."
+    },
+    {
+      "name": "Jolt Glider",
+      "pal": "Celaray Lux",
+      "type": "Mount (Glider)",
+      "desc": "While in team, modifies the performance of the equipped glider. Increases speed while gliding for an extended time."
+    },
+    {
+      "name": "Direhowl Rider",
+      "pal": "Direhowl",
+      "type": "Mount",
+      "desc": "Can be ridden. Moves slightly faster than most mounts"
+    },
+    {
+      "name": "Eggbomb Launcher",
+      "pal": "Tocotoco",
+      "type": "Combat",
+      "desc": "When activated, equips to the player and transforms into an egg launcher."
+    },
+    {
+      "name": "Helper Bunny",
+      "pal": "Flopie",
+      "type": "Utility",
+      "desc": "While in team, appears near the player. Automatically picks up nearby items."
+    },
+    {
+      "name": "Milk Maker",
+      "pal": "Mozzarina",
+      "type": "Farming",
+      "desc": "Sometimes produces Milk when assigned to a Ranch."
+    },
+    {
+      "name": "Princess Gaze",
+      "pal": "Bristla",
+      "type": "Utility",
+      "desc": "While in team, increases Attack of Grass Pals."
+    },
+    {
+      "name": "Angry Shark",
+      "pal": "Gobfin",
+      "type": "Combat / Utility",
+      "desc": "When activated, attacks targeted enemy with a powerful Aqua Gun. While in team, increases player's Attack."
+    },
+    {
+      "name": "Angry Shark",
+      "pal": "Gobfin Ignis",
+      "type": "Combat / Utility",
+      "desc": "When activated, attacks targeted enemy with a powerful Spirit Fire. While in team, increases player's Attack."
+    },
+    {
+      "name": "Flying Trapeze",
+      "pal": "Hangyu",
+      "type": "Mount (Glider)",
+      "desc": "While in team, modified the performance of the equipped glider. Enables slow ascent while gliding."
+    },
+    {
+      "name": "Winter Trapeze",
+      "pal": "Hangyu Cryst",
+      "type": "Mount (Glider)",
+      "desc": "While in team, can be summoned and used instead of a glider. Enables slow ascent while gliding."
+    },
+    {
+      "name": "Grenadier Panda",
+      "pal": "Mossanda",
+      "type": "Mount",
+      "desc": "Can be ridden. Can rapidly fire a grenade launcher while mounted."
+    },
+    {
+      "name": "Grenadier Panda",
+      "pal": "Mossanda Lux",
+      "type": "Mount",
+      "desc": "Can be ridden. Can rapidly fire a grenade launcher while mounted."
+    },
+    {
+      "name": "Candy Pop",
+      "pal": "Woolipop",
+      "type": "Farming",
+      "desc": "Sometimes drops Cotton Candy when assigned to Ranch."
+    },
+    {
+      "name": "Berry Picker",
+      "pal": "Caprity",
+      "type": "Farming",
+      "desc": "Sometimes drops Red Berries from its back when assigned to Ranch."
+    },
+    {
+      "name": "Venom Picker",
+      "pal": "Caprity Noct",
+      "type": "Farming",
+      "desc": "Sometimes drops Venom Gland from its back when assigned to Ranch."
+    },
+    {
+      "name": "Pecapaca Wool",
+      "pal": "Melpaca",
+      "type": "Mount / Farming",
+      "desc": "Can be Ridden. Sometimes drops Wool when assigned to Ranch."
+    },
+    {
+      "name": "Guardian of the Forest",
+      "pal": "Eikthyrdeer",
+      "type": "Mount",
+      "desc": "Can be ridden. Can perform a double jump while mounted. Increases efficiency of cutting trees."
+    },
+    {
+      "name": "Guardian of the Golden Forest",
+      "pal": "Eikthyrdeer Terra",
+      "type": "Mount",
+      "desc": "Can be ridden. Can perform a double jump while mounted. Increases efficiency of cutting trees."
+    },
+    {
+      "name": "Travel Companion",
+      "pal": "Nitewing",
+      "type": "Mount (Flying)",
+      "desc": "Can be ridden as a flying mount."
+    },
+    {
+      "name": "Skilled Fingers",
+      "pal": "Ribbuny",
+      "type": "Combat / Utility",
+      "desc": "While in team, increases Attack of Neutral Pals. While at a base, increases work efficiency when working at Weapon Workbench, Weapon Assembly Line, and other related facilities."
+    },
+    {
+      "name": "Grass Weaver",
+      "pal": "Ribbuny Botan",
+      "type": "Combat / Utility",
+      "desc": "While in team, increases Attack of Grass Pals. While at a base, increases work efficiency when working at Weapon Workbench, Weapon Assembly Line, and other related facilities."
+    },
+    {
+      "name": "Flameclaw Hunter",
+      "pal": "Incineram",
+      "type": "Combat",
+      "desc": "When activated, attacks targeted enemy with a powerful Hellfire Claw."
+    },
+    {
+      "name": "Darkclaw Hunter",
+      "pal": "Incineram Noct",
+      "type": "Combat",
+      "desc": "When activated, attacks targeted enemy with a powerful Hellfire Claw."
+    },
+    {
+      "name": "Mysterious Scales",
+      "pal": "Cinnamoth",
+      "type": "Combat",
+      "desc": "When activated, attacks targeted enemy with Poison Fog."
+    },
+    {
+      "name": "Warm Body",
+      "pal": "Arsox",
+      "type": "Mount",
+      "desc": "Keeps the rider warm in cold environments."
+    },
+    {
+      "name": "Soil Improver",
+      "pal": "Dumud",
+      "type": "Combat / Farming",
+      "desc": "While in team, increases Attack of Ground Pals. Sometimes drops High Quality Pal Oil when assigned to Ranch."
+    },
+    {
+      "name": "Golden Harvest",
+      "pal": "Dumud Gild",
+      "type": "Combat / Farming",
+      "desc": "While in team, increases Attack of Ground Pals. Sometimes drops High Quality Pal Oil when assigned to Ranch, with a small chance to drop Gold Coin."
+    },
+    {
+      "name": "Telepeck",
+      "pal": "Cawgnito",
+      "type": "Combat",
+      "desc": "When activated, attacks targeted enemy with a powerful Phantom Peck."
+    },
+    {
+      "name": "Sixth Sense",
+      "pal": "Leezpunk",
+      "type": "Utility",
+      "desc": "When activated, utilizes its sixth sense to detect nearby dungeons."
+    },
+    {
+      "name": "Sixth Sense",
+      "pal": "Leezpunk Ignis",
+      "type": "Utility",
+      "desc": "When activated, utilizes its sixth sense to detect nearby dungeons."
+    },
+    {
+      "name": "Dark Gleam Strike",
+      "pal": "Loupmoon",
+      "type": "Combat",
+      "desc": "When activated, attacks targeted enemy with a powerful Jumping Claw."
+    },
+    {
+      "name": "Frozen Gleam Strike",
+      "pal": "Loupmoon Cryst",
+      "type": "Combat",
+      "desc": "When activated, attacks targeted enemy with a powerful Snow Claw."
+    },
+    {
+      "name": "Galeclaw Rider",
+      "pal": "Galeclaw",
+      "type": "Mount (Glider)",
+      "desc": "While in team, modifies the performance of the equipped glider. Enables high-speed gliding and allows shooting with the right hand."
+    },
+    {
+      "name": "Hawk Eye",
+      "pal": "Robinquill",
+      "type": "Utility",
+      "desc": "While fighting together, allows you to deal more damage to weak points."
+    },
+    {
+      "name": "Hawk Eye",
+      "pal": "Robinquill Terra",
+      "type": "Utility",
+      "desc": "While fighting together, allows you to deal more damage to weak points."
+    },
+    {
+      "name": "Full-power Gorilla Mode",
+      "pal": "Gorirat",
+      "type": "Utility",
+      "desc": "When activated, unleashes a primal fury that increases Gorirat's Attack for a limited time."
+    },
+    {
+      "name": "Full-power Gorilla Mode",
+      "pal": "Gorirat Terra",
+      "type": "Utility",
+      "desc": "When activated, unleashes a primal fury that increases Gorirat Terra's Attack for a limited time."
+    },
+    {
+      "name": "Worker Bee",
+      "pal": "Beegarde",
+      "type": "Utility / Farming",
+      "desc": "Sometimes drops Honey when assigned to Ranch. While in team, Elizabee's stats will be increased."
+    },
+    {
+      "name": "Queen Bee Command",
+      "pal": "Elizabee",
+      "type": "Combat",
+      "desc": "When fighting together, stats will increase the more Beegarde are in your team."
+    },
+    {
+      "name": "Plump Body",
+      "pal": "Grintale",
+      "type": "Mount",
+      "desc": "Can be ridden. Enhances Neutral attacks while mounted."
+    },
+    {
+      "name": "Fluffy",
+      "pal": "Swee",
+      "type": "Utility",
+      "desc": "While in team, Sweepa's stats will be increased."
+    },
+    {
+      "name": "King of Fluff",
+      "pal": "Sweepa",
+      "type": "Mount",
+      "desc": "Can be ridden. When fighting together, stats will increase the more Swee are in your team."
+    },
+    {
+      "name": "Wriggling Weasel",
+      "pal": "Chillet",
+      "type": "Mount",
+      "desc": "Can be ridden. Changes the player's attack type to Dragon while mounted."
+    },
+    {
+      "name": "Sparkling Weasel",
+      "pal": "Chillet Ignis",
+      "type": "Mount",
+      "desc": "Can be ridden. Changes the player's attack type to Fire while mounted."
+    },
+    {
+      "name": "Swift Deity",
+      "pal": "Univolt",
+      "type": "Mount",
+      "desc": "Changes the player's attack type to Electric while mounted."
+    },
+    {
+      "name": "Aurora Guide",
+      "pal": "Foxcicle",
+      "type": "Combat",
+      "desc": "While in team, increases Attack of Ice Pals."
+    },
+    {
+      "name": "Red Hare",
+      "pal": "Pyrin",
+      "type": "Mount",
+      "desc": "Can be ridden. Changes the player's attack type to Fire while mounted."
+    },
+    {
+      "name": "Black Hare",
+      "pal": "Pyrin Noct",
+      "type": "Mount",
+      "desc": "Can be ridden. Changes the player's attack type to Dark while mounted."
+    },
+    {
+      "name": "Cool Body",
+      "pal": "Reindrix",
+      "type": "Mount",
+      "desc": "Can be ridden. Keeps the rider cool in hot environments."
+    },
+    {
+      "name": "Jumping Force",
+      "pal": "Rayhound",
+      "type": "Mount",
+      "desc": "Can be ridden. Can double jump while mounted."
+    },
+    {
+      "name": "Clear Mind",
+      "pal": "Kitsun",
+      "type": "Mount",
+      "desc": "Can be ridden. Unaffected by the cold or heat while riding this Pal."
+    },
+    {
+      "name": "Fogged Mind",
+      "pal": "Kitsun Noct",
+      "type": "Mount",
+      "desc": "Can be ridden. Changes the Player's attack type to Dark while mounted."
+    },
+    {
+      "name": "Lady of Lightning",
+      "pal": "Dazzi",
+      "type": "Combat",
+      "desc": "While in team, appears near the player. Follows up player attacks with lightning bolts."
+    },
+    {
+      "name": "Lady of Dark Lightning",
+      "pal": "Dazzi Noct",
+      "type": "Combat",
+      "desc": "While in team, appears near the player. Follows up player attacks with dark lightning bolts."
+    },
+    {
+      "name": "Antigravity",
+      "pal": "Lunaris",
+      "type": "Utility",
+      "desc": "While in team, Lunaris manipulates gravity, increasing the player's max carrying capacity."
+    },
+    {
+      "name": "Fragrant Dragon",
+      "pal": "Dinossom",
+      "type": "Combat / Mount",
+      "desc": "Can be ridden. Enhances Grass attacks while mounted."
+    },
+    {
+      "name": "Thunder Dragon",
+      "pal": "Dinossom Lux",
+      "type": "Combat / Mount",
+      "desc": "Can be ridden. Enhances Electric attacks while mounted."
+    },
+    {
+      "name": "Swift Swimmer",
+      "pal": "Surfent",
+      "type": "Mount (Swimmer)",
+      "desc": "Can be ridden to travel on water. While mounted, prevents stamina depletion while moving on water."
+    },
+    {
+      "name": "Sand Swimmer",
+      "pal": "Surfent Terra",
+      "type": "Mount (Swimmer)",
+      "desc": "Can be ridden. While in team, Surfent Terra helps carry supplies, decreasing the weight of ores in the player's inventory."
+    },
+    {
+      "name": "Messenger of Death",
+      "pal": "Maraith",
+      "type": "Mount",
+      "desc": "Can be ridden. Changes the player's attack type to Dark while mounted."
+    },
+    {
+      "name": "Drill Crusher",
+      "pal": "Digtoise",
+      "type": "Utility",
+      "desc": "When activated, performs Shell Spin, follows the player while spinning and mines ores efficiently."
+    },
+    {
+      "name": "Ultrasonic Sensor",
+      "pal": "Tombat",
+      "type": "Utility",
+      "desc": "When activated, uses ultrasonic waves to detect the presence of nearby Pals."
+    },
+    {
+      "name": "Heart Drain",
+      "pal": "Lovander",
+      "type": "Utility",
+      "desc": "While fighting together, grants the player and Loveander the life steal effect which absorbs some of the received damage and restores Health."
+    },
+    {
+      "name": "Magma Tears",
+      "pal": "Flambelle",
+      "type": "Farming",
+      "desc": "Sometimes produces Flame Organ when assigned to Ranch."
+    },
+    {
+      "name": "Aerial Marauder",
+      "pal": "Vanwyrm",
+      "type": "Mount (Flying)",
+      "desc": "Can be ridden as a flying mount. Increases damage player deals to enemy weak points while mounted."
+    },
+    {
+      "name": "Aerial Marauder",
+      "pal": "Vanwyrm Cryst",
+      "type": "Mount (Flying)",
+      "desc": "Can be ridden as a flying mount. Increases damage player deals to enemy weak points while mounted."
+    },
+    {
+      "name": "Brandish Blade",
+      "pal": "Bushi",
+      "type": "Combat",
+      "desc": "When activated, attacks targeted enemy with a powerful Iaigiri."
+    },
+    {
+      "name": "Flash Blade",
+      "pal": "Bushi Noct",
+      "type": "Combat",
+      "desc": "When activated, attacks targeted enemy with a powerful Iaigiri."
+    },
+    {
+      "name": "Thunderous",
+      "pal": "Beakon",
+      "type": "Mount (Flying)",
+      "desc": "Can be ridden as a flying mount. Changes the player's attack type to Electric while mounted."
+    },
+    {
+      "name": "Flame Wing",
+      "pal": "Ragnahawk",
+      "type": "Mount (Flying)",
+      "desc": "Can be ridden as a flying mount. Changes the player's attack type to Fire while mounted."
+    },
+    {
+      "name": "Grimoire Collector",
+      "pal": "Katress",
+      "type": "Utility",
+      "desc": "When fighting together, Neutral Pals drop more items when defeated."
+    },
+    {
+      "name": "Botanical Atlas",
+      "pal": "Katress Ignis",
+      "type": "Utility",
+      "desc": "When fighting together, Grass Pals drop more items when defeated."
+    },
+    {
+      "name": "Lord Fox",
+      "pal": "Wixen",
+      "type": "Combat",
+      "desc": "When fighting together, changes the player's attack type to Fire."
+    },
+    {
+      "name": "Black Fox Lord",
+      "pal": "Wixen Noct",
+      "type": "Combat",
+      "desc": "When fighting together, Changes the player's attack type to Dark."
+    },
+    {
+      "name": "Grassland Speedster",
+      "pal": "Verdash",
+      "type": "Utility / Combat",
+      "desc": "When fighting together, increases player's movement speed and Changes the player's attack type to Grass"
+    },
+    {
+      "name": "Purification of Gaia",
+      "pal": "Vaelet",
+      "type": "Utility",
+      "desc": "While fighting together, Ground Pals drop more items when defeated."
+    },
+    {
+      "name": "Silk Maker",
+      "pal": "Sibelyx",
+      "type": "Combat / Farming",
+      "desc": "When activated, attacks targeted enemy with a powerful Blizzard Spike. Sometimes produces High Quality Cloth when assigned to Ranch."
+    },
+    {
+      "name": "Amicable Holy Dragon",
+      "pal": "Elphidran",
+      "type": "Mount (Flying)",
+      "desc": "Can be ridden as a flying mount. While flying, movement speed is increased. While fighting together, Dark Pals drop more items when defeated."
+    },
+    {
+      "name": "Amicable Water Dragon",
+      "pal": "Elphidran Aqua",
+      "type": "Mount (Flying)",
+      "desc": "Can be ridden as a flying mount. While flying, movement speed is increased. While fighting together, Fire Pals drop more items when defeated."
+    },
+    {
+      "name": "Aqua Spout",
+      "pal": "Kelpsea",
+      "type": "Utility / Farming",
+      "desc": "While in team, increases the Attack of Water Pals. Sometimes drops Pal Fluids when assigned to Ranch."
+    },
+    {
+      "name": "Lava Spout",
+      "pal": "Kelpsea Ignis",
+      "type": "Utility / Farming",
+      "desc": "While in team, increases the Attack of Fire Pals. Sometimes drops Flame Organ when assigned to Ranch."
+    },
+    {
+      "name": "Waterwing Dance",
+      "pal": "Azurobe",
+      "type": "Combat / Mount",
+      "desc": "Can be ridden to travel on water. Changes the player's attack type to Water while mounted."
+    },
+    {
+      "name": "Icewing Dance",
+      "pal": "Azurobe Cryst",
+      "type": "Combat / Mount",
+      "desc": "Can be ridden to travel on water. Changes the player's attack type to Ice while mounted."
+    },
+    {
+      "name": "Dragon Hunter",
+      "pal": "Cryolinx",
+      "type": "Utility",
+      "desc": "While fighting together, Dragon Pals drop more items when defeated."
+    },
+    {
+      "name": "Electro Hunter",
+      "pal": "Cryolinx Terra",
+      "type": "Utility",
+      "desc": "While fighting together, Electric Pals drop more items when defeated."
+    },
+    {
+      "name": "Hellflame Lion",
+      "pal": "Blazehowl",
+      "type": "Mount / Utility",
+      "desc": "Can be ridden. While fighting together, Grass Pals drop more items when defeated."
+    },
+    {
+      "name": "Darkflame Lion",
+      "pal": "Blazehowl Noct",
+      "type": "Mount / Utility",
+      "desc": "Can be ridden. While fighting together, Neutral Pals drop more items when defeated."
+    },
+    {
+      "name": "Hungry Missile",
+      "pal": "Relaxaurus",
+      "type": "Mount",
+      "desc": "Can be ridden. Can rapidly fire a missile launcher while mounted."
+    },
+    {
+      "name": "Missile Party",
+      "pal": "Relaxaurus Lux",
+      "type": "Mount",
+      "desc": "Can be ridden. Can rapidly fire a missile launcher while mounted."
+    },
+    {
+      "name": "Overaffectionate",
+      "pal": "Broncherry",
+      "type": "Mount / Utility",
+      "desc": "Can be ridden. While in team, Broncherry helps carry supplies, increasing the player's max carrying capacity."
+    },
+    {
+      "name": "Overaffectionate",
+      "pal": "Broncherry Aqua",
+      "type": "Mount / Utility",
+      "desc": "Can be ridden. While in team, Broncherry Aqua helps carry supplies, increasing the player's max carrying capacity."
+    },
+    {
+      "name": "Blessing of the Flower Spirit",
+      "pal": "Petallia",
+      "type": "Combat",
+      "desc": "When activated, uses medicinal flowers to restore the player's Health."
+    },
+    {
+      "name": "Ore-loving Beast",
+      "pal": "Reptyro",
+      "type": "Mount",
+      "desc": "Can be ridden. Improves efficiency of mining ores while mounted."
+    },
+    {
+      "name": "Ore-loving Beast",
+      "pal": "Reptyro Cryst",
+      "type": "Mount",
+      "desc": "Can be ridden. Improves efficiency of mining ores while mounted."
+    },
+    {
+      "name": "King of Muscles",
+      "pal": "Kingpaca",
+      "type": "Mount",
+      "desc": "While in a team, Kingpaca helps carry supplies, increasing the player's max carrying capacity."
+    },
+    {
+      "name": "King of Muscles",
+      "pal": "Kingpaca Cryst",
+      "type": "Mount",
+      "desc": "While in a team, Kingpaca Cryst helps carry supplies, increasing the player's max carrying capacity."
+    },
+    {
+      "name": "Gaia Crusher",
+      "pal": "Mammorest",
+      "type": "Mount",
+      "desc": "Can be ridden. Improves efficiency of cutting trees and mining ores while mounted."
+    },
+    {
+      "name": "Ice Crusher",
+      "pal": "Mammorest Cryst",
+      "type": "Mount",
+      "desc": "Can be ridden. Improves efficiency of cutting trees and mining ores while mounted."
+    },
+    {
+      "name": "Guardian of the Snowy Mountain",
+      "pal": "Wumpo",
+      "type": "Mount / Utility",
+      "desc": "Can be ridden. While in team, Wumpo helps carry supplies, increasing the player's max carrying capacity."
+    },
+    {
+      "name": "Guardian of the South",
+      "pal": "Wumpo Botan",
+      "type": "Mount / Utility",
+      "desc": "Can be ridden. While in team, Wumpo Botan helps carry supplies, increasing the player's max carrying capacity."
+    },
+    {
+      "name": "Hard Armor",
+      "pal": "Warsect",
+      "type": "Combat",
+      "desc": "When fighting together, increases player's defense and reduces damage recieved from Fire."
+    },
+    {
+      "name": "Fortified Shell",
+      "pal": "Warsect Terra",
+      "type": "Combat",
+      "desc": "When fighting together, increases player's defense and reduces damage recieved from Fire."
+    },
+    {
+      "name": "Wind and Clouds",
+      "pal": "Fenglope",
+      "type": "Mount",
+      "desc": "Can be ridden. Can double jump while mounted."
+    },
+    {
+      "name": "Stormcloud",
+      "pal": "Fenglope Lux",
+      "type": "Mount",
+      "desc": "Can be ridden. Can double jump while mounted. While fighting together, Water Pals drop more items when defeated."
+    },
+    {
+      "name": "Life Steal",
+      "pal": "Felbat",
+      "type": "Combat",
+      "desc": "While fighting together, grants the player and Felbat the life steal effect which absorbs some of the received damage and restores Health."
+    },
+    {
+      "name": "Sky Dragon's Affection",
+      "pal": "Quivern",
+      "type": "Mount (Flying)",
+      "desc": "Can be ridden as a flying mount. While flying, movement speed is increased. Enhances Dragon attacks while mounted."
+    },
+    {
+      "name": "Grass Dragon's Affection",
+      "pal": "Quivern Botan",
+      "type": "Mount (Flying)",
+      "desc": "Can be ridden as a flying mount. While flying, movement speed is increased. Enhances Grass attacks while mounted."
+    },
+    {
+      "name": "Magma Kaiser",
+      "pal": "Blazamut",
+      "type": "Mount",
+      "desc": "Can be ridden. Enhances Fire attacks while mounted."
+    },
+    {
+      "name": "Dragon Kaiser",
+      "pal": "Blazamut Ryu",
+      "type": "Mount",
+      "desc": "Can be ridden. Enhances Dragon attacks while mounted."
+    },
+    {
+      "name": "Wings of Death",
+      "pal": "Helzephyr",
+      "type": "Mount (Flying)",
+      "desc": "Can be ridden as a flying mount. Changes the player's attack type to Dark while mounted."
+    },
+    {
+      "name": "Wings of Thunder",
+      "pal": "Helzephyr Lux",
+      "type": "Mount (Flying)",
+      "desc": "Can be ridden as a flying mount. Changes the player's attack type to Electric while mounted."
+    },
+    {
+      "name": "Black Ankylosaur",
+      "pal": "Astegon",
+      "type": "Utility / Mount (Flying)",
+      "desc": "Can be ridden as a flying mount. Increases damage dealt to ores, and you can obtain more Ore while mounted."
+    },
+    {
+      "name": "Steel Scorpion",
+      "pal": "Menasting",
+      "type": "Mount",
+      "desc": "When fighting together, increases the player's defense and Electric Pals drop more items when defeated."
+    },
+    {
+      "name": "Steel Scorpion",
+      "pal": "Menasting Terra",
+      "type": "Mount",
+      "desc": "When fighting together, increases the player's defense and Electric Pals drop more items when defeated."
+    },
+    {
+      "name": "Guardian of the Desert",
+      "pal": "Anubis",
+      "type": "Combat",
+      "desc": "When fighting together, changes the player's attack type to Ground. Sometimes dodges attacks with a high speed sidestep in battle."
+    },
+    {
+      "name": "Stormbringer Sea Dragon",
+      "pal": "Jormuntide",
+      "type": "Mount",
+      "desc": "Can be ridden to travel on water. While mounted, prevents stamina depletion while moving over water."
+    },
+    {
+      "name": "Stormbringer Lava Dragon",
+      "pal": "Jormuntide Ignis",
+      "type": "Mount",
+      "desc": "Can be ridden. Enhances Fire attacks while mounted."
+    },
+    {
+      "name": "Wings of Flame",
+      "pal": "Suzaku",
+      "type": "Mount (Flying)",
+      "desc": "Can be ridden as a flying mount. Enhances Fire attacks while mounted."
+    },
+    {
+      "name": "Wings of Water",
+      "pal": "Suzaku Aqua",
+      "type": "Mount (Flying)",
+      "desc": "Can be ridden as a flying mount. Enhances Water attacks while mounted."
+    },
+    {
+      "name": "Yellow Tank",
+      "pal": "Grizzbolt",
+      "type": "Combat / Mount",
+      "desc": "Can be ridden. Can rapidly fire a minigun while mounted."
+    },
+    {
+      "name": "Harvest Goddess",
+      "pal": "Lyleen",
+      "type": "Utility",
+      "desc": "When activated, the queen's soothing graces greatly restore the player's Health."
+    },
+    {
+      "name": "Goddess of the Tranquil Light",
+      "pal": "Lyleen Noct",
+      "type": "Utility",
+      "desc": "When activated, the queen's soothing graces greatly restore the player's Health."
+    },
+    {
+      "name": "Scorching Predator",
+      "pal": "Faleris",
+      "type": "Mount (Flying) / Utility",
+      "desc": "Can be ridden as a flying mount. While fighting together, Ice Pals drop more items when defeated."
+    },
+    {
+      "name": "Tidal Predator",
+      "pal": "Faleris Aqua",
+      "type": "Mount (Flying) / Utility",
+      "desc": "Can be ridden as a flying mount. While fighting together, Fire Pals drop more items when defeated."
+    },
+    {
+      "name": "Ferocious Thunder Dragon",
+      "pal": "Orserk",
+      "type": "Utility",
+      "desc": "While fighting together, Water Pals drop more items when defeated."
+    },
+    {
+      "name": "Modified DNA",
+      "pal": "Shadowbeak",
+      "type": "Mount (Flying)",
+      "desc": "Can be ridden as a flying mount. While flying, movement speed is increased. Enhances Dark attacks while mounted."
+    },
+    {
+      "name": "Holy Knight of the Firmament",
+      "pal": "Paladius",
+      "type": "Mount",
+      "desc": "Can be ridden. Can triple jump while mounted."
+    },
+    {
+      "name": "Dark Knight of the Abyss",
+      "pal": "Necromus",
+      "type": "Mount",
+      "desc": "Can be ridden. Can double jump while mounted."
+    },
+    {
+      "name": "Ice Steed",
+      "pal": "Frostallion",
+      "type": "Mount (Flying)",
+      "desc": "Can be ridden as a flying mount. Changes the player's attack type to Ice and enhances Ice attacks while mounted."
+    },
+    {
+      "name": "Steed of Darkness",
+      "pal": "Frostallion Noct",
+      "type": "Mount (Flying)",
+      "desc": "Can be ridden as a flying mount. Changes the player's attack type to Dark and enhances Dark attacks while mounted."
+    },
+    {
+      "name": "Aerial Missile",
+      "pal": "Jetragon",
+      "type": "Mount (Flying)",
+      "desc": "Can be ridden as a flying mount. Can rapidly fire a missile launcher while mounted."
+    },
+    {
+      "name": "Nightmare Iris",
+      "pal": "Bellanoir",
+      "type": "Combat",
+      "desc": "When activated, attacks targeted enemy with a powerful Nightmare Ray."
+    },
+    {
+      "name": "Nightmare Stare",
+      "pal": "Bellanoir Libero",
+      "type": "Combat",
+      "desc": "When activated, attacks targeted enemy with a powerful [[Nightmare Bloom."
+    },
+    {
+      "name": "Celestial Darkness",
+      "pal": "Selyne",
+      "type": "Mount (Flying)",
+      "desc": "Can be ridden as a flying mount. Enhances Neutral and Dark attacks while mounted."
+    },
+    {
+      "name": "Leap Stance",
+      "pal": "Croajiro",
+      "type": "Utility",
+      "desc": "When activated, Croajiro swells its abdomen and channels its loyalty to build up energy. Climbing on top will propel the player high into the air."
+    },
+    {
+      "name": "Shadow Stance",
+      "pal": "Croajiro Noct",
+      "type": "Utility",
+      "desc": "When activated, Croajiro Noct swells its abdomen and channels its loyalty to build up energy. Climbing on top will propel the player high into the air. While in team, increases Attack of Dark pals."
+    },
+    {
+      "name": "Floral Boost",
+      "pal": "Lullu",
+      "type": "Utility",
+      "desc": "While at a base, Lullu fills the farm with good spirits, increasing the growth rate of the crops."
+    },
+    {
+      "name": "Swooshy Spores",
+      "pal": "Shroomer",
+      "type": "Mount / Utility",
+      "desc": "Can be ridden. While at a base, its mysterious spores slow the rate at which the SAN value of allies at the base decreases."
+    },
+    {
+      "name": "Swooshy Spores",
+      "pal": "Shroomer Noct",
+      "type": "Mount / Utility",
+      "desc": "Can be ridden. While at a base, its mysterious spores slow the rate at which the SAN value of allies at the base decreases."
+    },
+    {
+      "name": "Rollin' Full Oil",
+      "pal": "Kikit",
+      "type": "Utility",
+      "desc": "While in team, Kikit helps carry supplies, decreasing the weight of crude oil in the player's inventory."
+    },
+    {
+      "name": "Grave Robber",
+      "pal": "Sootseer",
+      "type": "Farming",
+      "desc": "Sometimes digs up Bone when assigned to Ranch."
+    },
+    {
+      "name": "Scorpion Sonar",
+      "pal": "Prixter",
+      "type": "Utility",
+      "desc": "When activated, it can analyze airborne particles and find a dungeon's exit."
+    },
+    {
+      "name": "Steel Guardian Mode",
+      "pal": "Knocklem",
+      "type": "Combat",
+      "desc": "When activated, a steel resolve increases Knocklem's Attack and Defense for a limited time."
+    },
+    {
+      "name": "Birds of a Feather",
+      "pal": "Yakumo",
+      "type": "Mount / Utility",
+      "desc": "Can be ridden. While fighting together, it becomes easier to encounter pals with the same Passive Skill as this Pal. (Excludes certain Passive Skills)"
+    },
+    {
+      "name": "Homeward Prayer",
+      "pal": "Dogen",
+      "type": "Utility",
+      "desc": "When activated, moves to the closest base. Cannot be used within dungeons, etc."
+    },
+    {
+      "name": "Sand Sprint",
+      "pal": "Dazemu",
+      "type": "Mount",
+      "desc": "Can be ridden. Runs faster over sand."
+    },
+    {
+      "name": "Master of Unlocking",
+      "pal": "Mimog",
+      "type": "Utility",
+      "desc": "When near a treasure chest, Mimog can open the chest without using a key. The types of treasure chests that can be opened depend on the skill level"
+    },
+    {
+      "name": "Meteor Mania",
+      "pal": "Xenovader",
+      "type": "Utility",
+      "desc": "While in the team, increases damage dealt to ores, and it's easier to obtain Meteorite Fragment."
+    },
+    {
+      "name": "Crater Enthusiast",
+      "pal": "Xenogard",
+      "type": "Mount / Utility",
+      "desc": "Can be ridden. While in the team, it's easier to obtain Meteorite Fragment and Pure Quartz."
+    },
+    {
+      "name": "(TBA)",
+      "pal": "Xenolord",
+      "type": "(TBA)",
+      "desc": "(TBA)"
+    },
+    {
+      "name": "Soul Collector",
+      "pal": "Nitemary",
+      "type": "Utility",
+      "desc": "While fighting together, Pals drop more Pal Souls when defeated."
+    },
+    {
+      "name": "Night Dancer",
+      "pal": "Starryon",
+      "type": "Mount",
+      "desc": "Can be ridden. Increases movement speed while mounted at night."
+    },
+    {
+      "name": "Aegis Shield",
+      "pal": "Silvegis",
+      "type": "Mount / Combat",
+      "desc": "Can be ridden. Increases the duration of the shield when using Aegis Charge while mounted."
+    },
+    {
+      "name": "Dig, Dog, Dig!",
+      "pal": "Smokie",
+      "type": "Utility",
+      "desc": "When activated, uses its sharp sense of smell to detect nearby Chromite. While fighting together, a large amount of Chromite is obtained."
+    },
+    {
+      "name": "Blessing of Purification",
+      "pal": "Celesdir",
+      "type": "Mount / Utility",
+      "desc": "Can be ridden. Increases the player's auto recovery speed while mounted."
+    },
+    {
+      "name": "Masquerade Dance",
+      "pal": "Omascul",
+      "type": "Utility",
+      "desc": "While in team, the Pals in the team gain more experience points."
+    },
+    {
+      "name": "Blade of Uncontrolled Passion",
+      "pal": "Splatterina",
+      "type": "Utility",
+      "desc": "While in possession, the amount of items obtained from using the Meat Cleaver increases."
+    },
+    {
+      "name": "Tarantriss' Web",
+      "pal": "Tarantriss",
+      "type": "Mount",
+      "desc": "Can be ridden. Can double jump while mounted. Additionally, can shoot spider silk to grapple and move at fast speed."
+    },
+    {
+      "name": "Plasma Dash",
+      "pal": "Azurmane",
+      "type": "Mount",
+      "desc": "Can be ridden. Also allows dashing in the air and moving at high speed."
+    },
+    {
+      "name": "Blizzard Crash",
+      "pal": "Bastigor",
+      "type": "Mount / Combat",
+      "desc": "Can be ridden. While mounted, delivers crushing blows with an Ice-forged hammer."
+    },
+    {
+      "name": "Prayer for Abundant Harvest",
+      "pal": "Prunelia",
+      "type": "Utility",
+      "desc": "While at a base, Prunelia's prayers bless the crops, increasing their harvest."
+    },
+    {
+      "name": "Shot-Nyan Mode",
+      "pal": "Nyafia",
+      "type": "Combat",
+      "desc": "When activated, Nyafia will fire a shotgun at nearby enemies for a limited time."
+    },
+    {
+      "name": "Sandstorm's Blessing",
+      "pal": "Gildane",
+      "type": "Mount",
+      "desc": "Can be ridden. Changes the player's attack type to Ground while mounted."
+    },
+    {
+      "name": "Herbil Pulse",
+      "pal": "Herbil",
+      "type": "Utility",
+      "desc": "While in team, Herbil uses its healing powers to revive the player when incapacitated."
+    },
+    {
+      "name": "Witch's Icy Veil",
+      "pal": "Icelyn",
+      "type": "Combat",
+      "desc": "While fighting together, changes the player's attack type to Ice."
+    },
+    {
+      "name": "Peacock Poune",
+      "pal": "Frostplume",
+      "type": "Combat",
+      "desc": "While fighting together, Frostplume's icy aura sharpens your focus, improving reload speed."
+    },
+    {
+      "name": "Samba Step",
+      "pal": "Palumba",
+      "type": "Mount",
+      "desc": "Can be ridden. Runs faster over grass."
+    },
+    {
+      "name": "Balmy Weather",
+      "pal": "Braloha",
+      "type": "Mount / Utility",
+      "desc": "Can be ridden. While at a base, shortens the time it takes Pals assigned to Breeding Farm to produce eggs. (Effect does not stack.)"
+    },
+    {
+      "name": "Icy Maw",
+      "pal": "Munchill",
+      "type": "Utility",
+      "desc": "While in team, Munchill cools ingredients inside its mouth, making the food in your inventory less likely to spoil."
+    },
+    {
+      "name": "Rider of the Snowy Mountain",
+      "pal": "Polapup",
+      "type": "Mount",
+      "desc": "Can be ridden. Runs faster over snow. Can slide quickly down slopes."
+    },
+    {
+      "name": "Spikey Carrier",
+      "pal": "Turtacle",
+      "type": "Utility",
+      "desc": "While in team, Turtacle helps carry supplies, decreasing the weight of armor in the player's inventory."
+    },
+    {
+      "name": "Shiny Hauler",
+      "pal": "Turtacle Terra",
+      "type": "Utility / Combat",
+      "desc": "While in team, Turtacle Terra helps carry supplies, decreasing the weight of armor in the player's inventory. Also increases Attack of Ground Pals."
+    },
+    {
+      "name": "Jellroy Drop",
+      "pal": "Jellroy",
+      "type": "Utility",
+      "desc": "While in team, increases items obtained from salvage. While Jelliette and Jellroy are in your base, Jellroy's watering speed is increased."
+    },
+    {
+      "name": "Jelliette Drop",
+      "pal": "Jelliette",
+      "type": "Utility",
+      "desc": "While in team, increases items obtained from fishing. While Jelliette and Jellroy are in your base, Jelliette's watering speed is increased."
+    },
+    {
+      "name": "Sticky Princess",
+      "pal": "Gloopie",
+      "type": "Utility",
+      "desc": "While fighting together, the capture gauge decreases more slowly in the fishing minigame when the bar is not aligned."
+    },
+    {
+      "name": "Echo Chamber",
+      "pal": "Finsider",
+      "type": "Utility",
+      "desc": "While in team, Finsider helps carry supplies, decreasing the weight of weapons in the player's inventory."
+    },
+    {
+      "name": "Ember Chamber",
+      "pal": "Finsider Ignis",
+      "type": "Utility / Combat",
+      "desc": "While in team, Finsider Ignis helps carry supplies, decreasing the weight of weapons in the player's inventory. Also increases Attack of Fire Pals."
+    },
+    {
+      "name": "Master Night Angler",
+      "pal": "Ghangler",
+      "type": "Mount / Utility",
+      "desc": "Can be ridden to travel quickly across water. While fighting together, the time it takes for Pals to bite during night fishing is reduced."
+    },
+    {
+      "name": "Flame Lantern",
+      "pal": "Ghangler Ignis",
+      "type": "Mount / Utility",
+      "desc": "Can be ridden to travel quickly across water. While fighting together, the time it takes for Pals to bite during night fishing is reduced."
+    },
+    {
+      "name": "Chilled Whale Cruiser",
+      "pal": "Whalaska",
+      "type": "Mount / Utility",
+      "desc": "Can be ridden. While fighting together, the fishing minigame starts with the capture gauge higher than usual. Additionally, the capture gauge fills faster when the bar is aligned."
+    },
+    {
+      "name": "Cozy Whale Cruiser",
+      "pal": "Whalaska Ignis",
+      "type": "Mount / Utility",
+      "desc": "Can be ridden. While fighting together, the fishing minigame starts with the capture gauge higher than usual. Additionally, the capture gauge fills faster when the bar is aligned."
+    },
+    {
+      "name": "Sentinal of the Great Sea",
+      "pal": "Neptilius",
+      "type": "Mount / Combat",
+      "desc": "While fighting together, it follows up your attacks with spear strikes. Can be ridden to travel quicky across water. While mounted, it can leap high into the air over water."
+    },
+    {
+      "name": "(TBA)",
+      "pal": "Hartalis",
+      "type": "(TBA)",
+      "desc": "(TBA)"
+    },
+    {
+      "name": "Slime Body",
+      "pal": "Blue Slime",
+      "type": "Can be ridden. Can jump high into the air while mounted.",
+      "desc": ""
+    },
+    {
+      "name": "Slime Body",
+      "pal": "Green Slime",
+      "type": "Can be ridden. Can jump high into the air while mounted.",
+      "desc": ""
+    },
+    {
+      "name": "Slime Body",
+      "pal": "Red Slime",
+      "type": "Can be ridden. Can jump high into the air while mounted.",
+      "desc": ""
+    },
+    {
+      "name": "Slime Body",
+      "pal": "Purple Slime",
+      "type": "Can be ridden. Can jump high into the air while mounted.",
+      "desc": ""
+    },
+    {
+      "name": "Slime Body",
+      "pal": "Illuminant Slime",
+      "type": "Can be ridden. Can jump high into the air while mounted.",
+      "desc": ""
+    },
+    {
+      "name": "Slime Body",
+      "pal": "Rainbow Slime",
+      "type": "Can be ridden. Can jump high into the air while mounted.",
+      "desc": ""
+    },
+    {
+      "name": "Demonic Sight",
+      "pal": "Demon Eye",
+      "type": "While in team, increases Attack of Dark Pals.",
+      "desc": ""
+    },
+    {
+      "name": "Bat Backup",
+      "pal": "Cave Bat",
+      "type": "While in team, appears near the player and picks up nearby items.",
+      "desc": ""
+    },
+    {
+      "name": "Bat Backup",
+      "pal": "Illuminant Bat",
+      "type": "While in team, appears near the player and picks up nearby items.",
+      "desc": ""
+    },
+    {
+      "name": "Enchant",
+      "pal": "Enchanted Sword",
+      "type": "While fighting together, Dark Pals drop more items when defeated.",
+      "desc": ""
+    },
+    {
+      "name": "Mad Eye Lunge",
+      "pal": "Eye of Cthulhu",
+      "type": "When activated, Eye of Cthulhu charges and attacks targeted enemy.",
+      "desc": ""
+    }
+  ],
+  "passive": []
+}

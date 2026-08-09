@@ -1,0 +1,138 @@
+{
+  "id": "quivern",
+  "gameId": "palworld",
+  "number": 105,
+  "name": {
+    "zh": "羽龙",
+    "en": "Quivern"
+  },
+  "slug": "quivern",
+  "image": "/images/pals/quivern.png",
+  "classification": {
+    "elements": [
+      "Dragon"
+    ],
+    "rarity": "Epic",
+    "role": [
+      "Combat",
+      "Mount"
+    ],
+    "size": "Huge",
+    "isRideable": false,
+    "isFlyable": true
+  },
+  "stats": {
+    "hp": 160,
+    "attack": 135,
+    "defense": 130,
+    "rangedAttack": 0,
+    "speed": 100,
+    "stamina": 180
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 3,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Dragon Force",
+    "descriptionEn": "Can be ridden as a flying mount. Massive dragon breath attack while mounted."
+  },
+  "acquisition": {
+    "habitats": [
+      "mountain",
+      "sky"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": true,
+    "bossLevel": 45,
+    "bossLocation": "Quivern's Domain"
+  },
+  "breeding": {
+    "breedingPower": 230
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "mount-flying",
+      "transport",
+      "combat"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": true
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 0,
+      "medicine": 0,
+      "cooling": 0,
+      "transporting": 80,
+      "farming": 0,
+      "combat": 80,
+      "mount-flying": 50,
+      "mount-ground": 0
+    },
+    "reasons": {
+      "mount-flying": [
+        "135 Attack — strong combat presence"
+      ],
+      "transport": [
+        "135 Attack — strong combat presence"
+      ],
+      "combat": [
+        "135 Attack — strong combat presence"
+      ]
+    }
+  },
+  "tier": "S"
+}

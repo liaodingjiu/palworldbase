@@ -1,0 +1,121 @@
+{
+  "id": "solenne",
+  "gameId": "palworld",
+  "number": "182",
+  "name": {
+    "zh": "Solenne",
+    "en": "Solenne"
+  },
+  "slug": "solenne",
+  "image": "/images/pals/solenne.webp",
+  "classification": {
+    "elements": [
+      "Dark",
+      "Neutral"
+    ],
+    "rarity": "Epic",
+    "role": [
+      "Worker"
+    ],
+    "size": "Medium",
+    "isRideable": true,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 110,
+    "attack": 115,
+    "defense": 115,
+    "rangedAttack": 0,
+    "speed": 70,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 4,
+    "gathering": 2,
+    "lumbering": 0,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 1,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Dark Cannon",
+      "element": "Dark",
+      "power": 80,
+      "cooldown": 10,
+      "level": 7
+    },
+    {
+      "name": "Air Blade",
+      "element": "Dark",
+      "power": 80,
+      "cooldown": 10,
+      "level": 15
+    },
+    {
+      "name": "Nightmare Ball",
+      "element": "Dark",
+      "power": 80,
+      "cooldown": 10,
+      "level": 22
+    },
+    {
+      "name": "Dark Laser",
+      "element": "Dark",
+      "power": 80,
+      "cooldown": 10,
+      "level": 30
+    },
+    {
+      "name": "Dark Whisp",
+      "element": "Dark",
+      "power": 80,
+      "cooldown": 10,
+      "level": 50
+    },
+    {
+      "name": "Holy Burst",
+      "element": "Dark",
+      "power": 80,
+      "cooldown": 10,
+      "level": 70
+    }
+  ],
+  "partnerSkill": {
+    "name": "Untainted Maiden",
+    "descriptionEn": "While in the party, increases the player's Attack in party of different Pal species."
+  },
+  "acquisition": {
+    "habitats": [
+      "various"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false
+  },
+  "breeding": {
+    "breedingPower": 300
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [
+      "handiwork",
+      "gathering"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": false
+    },
+    "scores": {},
+    "reasons": {}
+  },
+  "_dataQuality": "estimated",
+  "tier": "A"
+}

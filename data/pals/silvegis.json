@@ -1,0 +1,97 @@
+{
+  "id": "silvegis",
+  "gameId": "palworld",
+  "number": "130",
+  "name": {
+    "zh": "Silvegis",
+    "en": "Silvegis"
+  },
+  "slug": "silvegis",
+  "image": "/images/pals/silvegis.webp",
+  "classification": {
+    "elements": [
+      "Dragon"
+    ],
+    "rarity": "Epic",
+    "role": [
+      "Combat"
+    ],
+    "size": "Large",
+    "isRideable": true,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 120,
+    "attack": 110,
+    "defense": 115,
+    "rangedAttack": 0,
+    "speed": 70,
+    "stamina": 100
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 3,
+    "mining": 0,
+    "medicine": 0,
+    "cooling": 0,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Dragon Breath",
+      "element": "Dragon",
+      "power": 70,
+      "cooldown": 6,
+      "level": 1
+    },
+    {
+      "name": "Dragon Claw",
+      "element": "Dragon",
+      "power": 95,
+      "cooldown": 10,
+      "level": 12
+    },
+    {
+      "name": "Dragon Meteor",
+      "element": "Dragon",
+      "power": 150,
+      "cooldown": 30,
+      "level": 30
+    }
+  ],
+  "partnerSkill": {
+    "name": "Aegis Shield",
+    "descriptionEn": "Can be ridden. Increases the duration of the shield when using Aegis Charge while mounted."
+  },
+  "acquisition": {
+    "habitats": [
+      "various"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": true
+  },
+  "breeding": {
+    "breedingPower": 215
+  },
+  "drops": [],
+  "decision": {
+    "bestFor": [
+      "lumbering"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": false,
+      "late": true
+    },
+    "scores": {},
+    "reasons": {}
+  },
+  "tier": "A"
+}

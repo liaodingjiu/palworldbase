@@ -1,0 +1,133 @@
+{
+  "id": "dumud_cryst",
+  "gameId": "palworld",
+  "number": 158,
+  "name": {
+    "zh": "冰呆鳗",
+    "en": "Dumud Cryst"
+  },
+  "slug": "dumud_cryst",
+  "image": "/images/pals/dumud_cryst.png",
+  "classification": {
+    "elements": [
+      "Ice"
+    ],
+    "rarity": "Uncommon",
+    "role": [
+      "Worker"
+    ],
+    "size": "Medium",
+    "isRideable": false,
+    "isFlyable": false
+  },
+  "stats": {
+    "hp": 100,
+    "attack": 60,
+    "defense": 115,
+    "rangedAttack": 0,
+    "speed": 30,
+    "stamina": 90
+  },
+  "workSuitability": {
+    "kindling": 0,
+    "watering": 0,
+    "planting": 0,
+    "generating": 0,
+    "handiwork": 0,
+    "gathering": 0,
+    "lumbering": 0,
+    "mining": 1,
+    "medicine": 0,
+    "cooling": 1,
+    "transporting": 0,
+    "farming": 0
+  },
+  "skills": [
+    {
+      "name": "Power Shot",
+      "element": "Neutral",
+      "power": 85,
+      "cooldown": 8,
+      "level": 1
+    },
+    {
+      "name": "Air Cannon",
+      "element": "Neutral",
+      "power": 50,
+      "cooldown": 4,
+      "level": 7
+    },
+    {
+      "name": "Body Slam",
+      "element": "Neutral",
+      "power": 80,
+      "cooldown": 12,
+      "level": 15
+    }
+  ],
+  "partnerSkill": {
+    "name": "Ice Bath",
+    "descriptionEn": "Ice variant. Increases defense of Ice-type Pals."
+  },
+  "acquisition": {
+    "habitats": [
+      "snow_region",
+      "lake"
+    ],
+    "isBreedable": true,
+    "isCatchable": true,
+    "isBossEncounter": false,
+    "bossLevel": null,
+    "bossLocation": null
+  },
+  "breeding": {
+    "breedingPower": 1330
+  },
+  "drops": [
+    {
+      "itemId": "leather",
+      "dropRate": "100%",
+      "quantity": [
+        1,
+        2
+      ]
+    }
+  ],
+  "decision": {
+    "bestFor": [
+      "mining",
+      "cooling"
+    ],
+    "gameStage": {
+      "early": false,
+      "mid": true,
+      "late": false
+    },
+    "scores": {
+      "kindling": 0,
+      "watering": 0,
+      "planting": 0,
+      "generating": 0,
+      "handiwork": 0,
+      "gathering": 0,
+      "lumbering": 0,
+      "mining": 30,
+      "medicine": 0,
+      "cooling": 30,
+      "transporting": 0,
+      "farming": 0,
+      "combat": 20,
+      "mount-flying": 0,
+      "mount-ground": 0
+    },
+    "reasons": {
+      "mining": [
+        "Obtainable mid-game"
+      ],
+      "cooling": [
+        "Obtainable mid-game"
+      ]
+    }
+  },
+  "tier": "B"
+}
