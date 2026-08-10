@@ -1,0 +1,6 @@
+{
+  "name": "palworldbase",
+  "assets": {
+    "directory": "./dist"
+  }
+}
