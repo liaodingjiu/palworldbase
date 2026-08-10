@@ -218,7 +218,7 @@ function buildHeader(activeNav) {
   return `<header class="site-header">
   <div class="container">
     <a href="/" class="header-logo" aria-label="${SITE_NAME} Home">
-      <span class="header-logo-icon">⚡</span>
+      <img src="/assets/logo-48.png" alt="" width="24" height="24" class="header-logo-img" aria-hidden="true">
       PALWORLDBASE
     </a>
     <nav class="header-nav" aria-label="Main navigation">
