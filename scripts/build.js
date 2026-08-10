@@ -1230,6 +1230,37 @@ for (const ts of topTargetSlugs) {
 }
 console.log(`  dist/breeding-calculator/index.html (+ ${topTargetSlugs.length} sitemap variants)`);
 
+/**
+ * Classify a Pal into role buckets for Calculator filtering.
+ * @param {object} pal
+ * @returns {string} comma-separated roles, e.g. "worker,fighter" or "all"
+ */
+/**
+ * Build Pal grid data for client-side rendering.
+ * Embeds full Pal list as JSON for the click-grid in calculator.js.
+ * @returns {Array} Array of { slug, name, number, element, elements, bp, tier, isWild }
+ */
+function buildPalGridData() {
+  return allPals.map(p => {
+    const el = (p.classification && p.classification.elements && p.classification.elements[0])
+      ? p.classification.elements[0].toLowerCase() : 'neutral';
+    const els = (p.classification && p.classification.elements)
+      ? p.classification.elements.map(e => e.toLowerCase())
+      : ['neutral'];
+    return {
+      slug: p.slug,
+      name: p.name.en,
+      number: p.number,
+      element: el,
+      elements: els,
+      bp: calculatorData.palBP[p.slug] || null,
+      tier: palTiers[p.slug] || 'B',
+      isWild: !!(p.acquisition && p.acquisition.isCatchable !== false),
+    };
+  });
+}
+
+
 function renderCalculator() {
   const title = TITLE_TEMPLATES.calculator;
   const description = 'Palworld Breeding Calculator — find the shortest path to any Pal. 51K+ combinations, special combos, instant results. Verified against the breeding formula.'.substring(0, 155);
@@ -1237,156 +1268,193 @@ function renderCalculator() {
 
   const palOptions = allPals
     .sort((a, b) => a.name.en.localeCompare(b.name.en))
-    .map(p => `<option value="${p.slug}">${esc(p.name.en)}</option>`)
+    .map(p => '<option value="' + p.slug + '">' + esc(p.name.en) + '</option>')
     .join('\n                ');
 
-  // Precompute 3 static Best Path examples for SEO (Anubis, Jormuntide Ignis, Blazamut)
+  // Build grid data for client-side rendering
+  const gridData = buildPalGridData();
+  const gridDataJSON = JSON.stringify(gridData);
+
+  // Precompute 3 static Best Path examples for SEO
   const staticExamples = buildStaticPathExamples();
 
-  // Hot Pal tags (top 8 popular/valuable Pals)
-  const hotPals = ['anubis', 'jormuntide_ignis', 'blazamut', 'frostallion',
-                   'shadowbeak', 'paladius', 'necromus', 'jetragon'];
-  const hotTagsHTML = hotPals.map(slug => {
-    const p = palBySlug[slug];
-    if (!p) return '';
-    return `<button class="calc-quick-tag" data-slug="${slug}">${esc(p.name.en)}</button>`;
-  }).join('\n          ');
+  const bodyHTML = '<div class="container">\n' +
+    '    <div class="page-header">\n' +
+    '      <h1>🧬 Breeding Calculator</h1>\n' +
+    '      <p class="page-description">Hatched Pals inherit better stats and rare passive skills — breed smarter, not harder.</p>\n' +
+    '    </div>\n' +
+    '\n' +
+    '    <!-- EQUATION BAR: A + B = C -->\n' +
+    '    <div class="calc-equation" id="calc-equation">\n' +
+    '      <div class="calc-eq-card eq-slot-a" id="calc-eq-card-a">\n' +
+    '        <div class="calc-eq-placeholder">\n' +
+    '          <span class="calc-eq-q">?</span>\n' +
+    '          <span class="calc-eq-hint">Pick a Pal</span>\n' +
+    '        </div>\n' +
+    '        <div class="calc-eq-filled" style="display:none">\n' +
+    '          <button class="calc-eq-remove" aria-label="Remove">&times;</button>\n' +
+    '          <img class="calc-eq-img" src="" alt="">\n' +
+    '          <span class="calc-eq-name"></span>\n' +
+    '          <span class="calc-eq-meta"></span>\n' +
+    '        </div>\n' +
+    '        <span class="calc-eq-label">Parent A</span>\n' +
+    '      </div>\n' +
+    '      <span class="calc-eq-op">+</span>\n' +
+    '      <div class="calc-eq-card eq-slot-b" id="calc-eq-card-b">\n' +
+    '        <div class="calc-eq-placeholder">\n' +
+    '          <span class="calc-eq-q">?</span>\n' +
+    '          <span class="calc-eq-hint">Pick another</span>\n' +
+    '        </div>\n' +
+    '        <div class="calc-eq-filled" style="display:none">\n' +
+    '          <button class="calc-eq-remove" aria-label="Remove">&times;</button>\n' +
+    '          <img class="calc-eq-img" src="" alt="">\n' +
+    '          <span class="calc-eq-name"></span>\n' +
+    '          <span class="calc-eq-meta"></span>\n' +
+    '        </div>\n' +
+    '        <span class="calc-eq-label">Parent B</span>\n' +
+    '      </div>\n' +
+    '      <span class="calc-eq-op">=</span>\n' +
+    '      <div class="calc-eq-card eq-slot-c" id="calc-eq-card-c">\n' +
+    '        <div class="calc-eq-placeholder">\n' +
+    '          <span class="calc-eq-q">?</span>\n' +
+    '          <span class="calc-eq-hint">Waiting...</span>\n' +
+    '        </div>\n' +
+    '        <div class="calc-eq-filled" style="display:none">\n' +
+    '          <img class="calc-eq-img" src="" alt="">\n' +
+    '          <span class="calc-eq-name"></span>\n' +
+    '          <span class="calc-eq-meta"></span>\n' +
+    '        </div>\n' +
+    '        <span class="calc-eq-label">Child</span>\n' +
+    '      </div>\n' +
+    '      <button class="calc-eq-swap" id="calc-eq-swap" title="Swap parents" style="display:none">🔀</button>\n' +
+    '    </div>\n' +
+    '\n' +
+    '    <!-- TWO-COLUMN LAYOUT: Left = Selection, Right = Results -->\n' +
+    '    <div class="calc-layout" id="calc-layout">\n' +
+    '\n' +
+    '      <!-- LEFT PANEL: Pal Selection -->\n' +
+    '      <div class="calc-left">\n' +
+    '\n' +
+    '        <!-- Search -->\n' +
+    '        <div class="calc-search-wrap">\n' +
+    '          <input type="text" id="calc-search" class="calc-search-input"\n' +
+    '                 placeholder="Search Pals by name or number…" autocomplete="off">\n' +
+      '        </div>\n' +
+    '\n' +
 
-  const bodyHTML = `<div class="container">
-    <div class="page-header">
-      <h1>🧬 Breeding Calculator</h1>
-      <p class="page-description">Find the shortest breeding path to any Pal — or see what two parents produce.</p>
-    </div>
-
-    <!-- Mode Toggle -->
-    <div class="calc-mode-switch" style="display:flex;gap:0;margin-bottom:var(--space-5);border-radius:var(--radius-md);overflow:hidden">
-      <button id="calc-mode-target" class="calc-mode-btn active" style="flex:1">
-        🎯 I Want a Pal
-      </button>
-      <button id="calc-mode-forward" class="calc-mode-btn" style="flex:1">
-        🧬 Two Parents → ?
-      </button>
-    </div>
-
-    <!-- Panel: Target Mode (default) -->
-    <div id="calc-panel-target">
-      <div class="glass-panel glass-panel-accent" style="margin-bottom:var(--space-4)">
-        <label style="display:block;font-size:0.8125rem;font-weight:600;color:var(--color-text-secondary);margin-bottom:8px;text-transform:uppercase;letter-spacing:0.05em">
-          Search Target Pal
-        </label>
-        <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
-          <div style="position:relative;flex:1;min-width:200px">
-            <input type="text" id="search-target" class="form-input" placeholder="Type Pal name or number..."
-                   autocomplete="off" style="width:100%">
-          </div>
-        </div>
-        <p style="font-size:0.75rem;color:var(--color-text-muted);margin:8px 0 0">Popular: ${hotTagsHTML}</p>
-        <!-- Hidden select for SEO (all Pal names stay in DOM) -->
-        <select id="calc-select-target" name="target" class="sr-only" aria-hidden="true">
-          <option value="">Select Target Pal…</option>
-          ${palOptions}
-        </select>
-      </div>
-    </div>
-
-    <!-- Panel: Forward Mode (hidden by default) -->
-    <div id="calc-panel-forward" style="display:none">
-      <div class="glass-panel" style="margin-bottom:var(--space-4)">
-        <label style="display:block;font-size:0.8125rem;font-weight:600;color:var(--color-text-secondary);margin-bottom:8px;text-transform:uppercase;letter-spacing:0.05em">
-          Select Two Parents
-        </label>
-        <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
-          <div style="position:relative;flex:1;min-width:160px">
-            <input type="text" id="search-parent-a" class="form-input" placeholder="Parent A…" autocomplete="off" style="width:100%">
-          </div>
-          <span style="font-size:1.25rem;color:var(--color-accent);font-weight:700;padding:0 4px">+</span>
-          <div style="position:relative;flex:1;min-width:160px">
-            <input type="text" id="search-parent-b" class="form-input" placeholder="Parent B…" autocomplete="off" style="width:100%">
-          </div>
-        </div>
-        <div style="margin-top:12px;display:flex;gap:8px">
-          <button id="calc-forward-btn" class="cta-button">Find Child Pal →</button>
-        </div>
-        <!-- Hidden selects for SEO -->
-        <select id="calc-select-a" name="parentA" class="sr-only" aria-hidden="true">
-          <option value="">Select Parent A…</option>${palOptions}
-        </select>
-        <select id="calc-select-b" name="parentB" class="sr-only" aria-hidden="true">
-          <option value="">Select Parent B…</option>${palOptions}
-        </select>
-      </div>
-    </div>
-
-    <!-- Results Container -->
-    <div id="calc-results"></div>
-
-    <!-- Palbox Panel -->
-    <div class="glass-panel" style="margin-bottom:var(--space-4)">
-      <div style="display:flex;align-items:center;justify-content:space-between;cursor:pointer" id="palbox-toggle">
-        <span style="font-weight:600;font-size:0.9375rem">📦 My Palbox (<span id="palbox-count">0</span>)</span>
-        <span style="font-size:0.75rem;color:var(--color-text-muted)">Click to expand</span>
-      </div>
-      <div id="palbox-panel" style="display:none;margin-top:var(--space-3);padding-top:var(--space-3);border-top:1px solid var(--color-border)">
-        <p style="font-size:0.75rem;color:var(--color-text-muted);margin-bottom:8px">
-          Add Pals you own to personalize breeding paths. Click 📦 on any result.
-        </p>
-        <div id="palbox-list" style="display:flex;flex-wrap:wrap;gap:6px"></div>
-      </div>
-    </div>
-
-    <!-- Static Best Path Examples (SEO: visible to Google, replaced by JS for users) -->
-    <div id="static-examples">
-      ${staticExamples}
-    </div>
-
-    <!-- Reverse lookup (bottom, secondary) -->
-    <div class="content-upgrade-cta">
-      <p>Looking for all parent pairs for a specific Pal?</p>
-      <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
-        <div style="position:relative;flex:1;min-width:180px">
-          <input type="text" id="search-target-2" class="form-input" placeholder="Type Pal name…" autocomplete="off" style="width:100%">
-        </div>
-        <button id="calc-reverse-btn" class="cta-button">Find All Parent Pairs →</button>
-      </div>
-      <select id="calc-select-target-2" name="target" class="sr-only" aria-hidden="true">
-        <option value="">Select Target Pal…</option>${palOptions}
-      </select>
-    </div>
-
-    <!-- Formula (collapsible, expanded by default for SEO) -->
-    <details open class="calc-formula" style="margin-top:var(--space-6);padding:var(--space-4);border:1px solid var(--color-border);border-radius:var(--radius-md)">
-      <summary style="cursor:pointer;font-family:var(--font-display);font-size:1rem;color:var(--color-accent);padding:4px 0">
-        📐 How Palworld Breeding Works
-      </summary>
-      <div style="margin-top:var(--space-3)">
-        <p style="font-size:1.0625rem;margin-bottom:var(--space-3)">
-          <strong>Child BP = ⌊(Parent A BP + Parent B BP) ÷ 2⌋</strong>
-        </p>
-        <p style="font-size:0.875rem;color:var(--color-text-secondary);margin-bottom:var(--space-2)">
-          Every Pal has a hidden <strong>Breeding Power (BP)</strong> value. When you breed two Pals, the game
-          averages their BP values and finds the Pal whose BP is closest to that average — that's the child.
-        </p>
-        <p style="font-size:0.875rem;color:var(--color-text-secondary);margin-bottom:var(--space-2)">
-          Some combinations produce a <strong>fixed child</strong> regardless of BP — these are called
-          <span style="color:var(--color-accent)">Special Combos</span> and the Calculator checks them first.
-        </p>
-        <p style="font-size:0.8125rem;color:var(--color-text-muted)">
-          Higher BP = easier to catch in the wild (🟢). Lower BP = harder (🔴⚡).
-          Breeding chains let you go from easy-to-catch Pals to rare ones by breeding in steps.
-        </p>
-      </div>
-    </details>
-  </div>
-
-  <script src="/assets/calculator.js" defer></script>`;
+    '        <!-- Filter Chips -->\n' +
+    '        <div class="calc-filters" id="calc-filters">\n' +
+    '          <button class="calc-filter-chip active" data-filter="all">All</button>\n' +
+    '          <button class="calc-filter-chip" data-filter="palbox" id="calc-filter-palbox" style="display:none">\n' +
+    '            📦 My Box (<span id="calc-filter-palbox-count">0</span>)\n' +
+    '          </button>\n' +
+    '          <button class="calc-filter-chip" data-filter="fire">🔥 Fire</button>\n' +
+    '          <button class="calc-filter-chip" data-filter="water">💧 Water</button>\n' +
+    '          <button class="calc-filter-chip" data-filter="grass">🌿 Grass</button>\n' +
+    '          <button class="calc-filter-chip" data-filter="electric">⚡ Electric</button>\n' +
+    '          <button class="calc-filter-chip" data-filter="ground">⛰ Ground</button>\n' +
+    '          <button class="calc-filter-chip" data-filter="ice">❄ Ice</button>\n' +
+    '          <button class="calc-filter-chip" data-filter="dragon">🐉 Dragon</button>\n' +
+    '          <button class="calc-filter-chip" data-filter="dark">🌑 Dark</button>\n' +
+    '          <button class="calc-filter-chip" data-filter="neutral">⬜ Neutral</button>\n' +
+    '        </div>\n' +
+    '\n' +
+    '        <!-- Pal Grid (6 columns, scrollable) -->\n' +
+    '        <div class="calc-grid" id="calc-grid">\n' +
+    '          <!-- Dynamically populated by JS -->\n' +
+    '        </div>\n' +
+    '      </div>\n' +
+    '\n' +
+    '      <!-- RIGHT PANEL: Results -->\n' +
+    '      <div class="calc-right" id="calc-right">\n' +
+    '\n' +
+    '        <!-- Empty State -->\n' +
+    '        <div class="calc-empty" id="calc-empty">\n' +
+    '          <div class="calc-empty-icon">🧬</div>\n' +
+    '          <div class="calc-empty-slots">\n' +
+    '            <div class="calc-empty-slot">?</div>\n' +
+    '            <span style="color:var(--color-accent);font-size:1.25rem;font-weight:700">✕</span>\n' +
+    '            <div class="calc-empty-slot">?</div>\n' +
+    '          </div>\n' +
+    '          <p class="calc-empty-text" id="calc-empty-text">\n' +
+    '            Pick a Pal from the grid to see its breeding path,<br>\n' +
+    '            or pick two to see what they produce.\n' +
+    '          </p>\n' +
+    '          <button class="cta-button cta-button-secondary" id="calc-empty-palbox">\n' +
+    '            📦 Browse My Palbox\n' +
+    '          </button>\n' +
+    '        </div>\n' +
+    '\n' +
+    '        <!-- Result State -->\n' +
+    '        <div class="calc-result" id="calc-result" style="display:none">\n' +
+    '          <div class="calc-result-header" id="calc-result-header"></div>\n' +
+    '          <div class="calc-result-primary" id="calc-result-primary"></div>\n' +
+    '          <div class="calc-result-tabs" id="calc-result-tabs" style="display:none">\n' +
+    '            <button class="calc-result-tab active" data-tab="tab1"></button>\n' +
+    '            <button class="calc-result-tab" data-tab="tab2"></button>\n' +
+    '          </div>\n' +
+    '          <div class="calc-result-secondary" id="calc-result-secondary"></div>\n' +
+    '        </div>\n' +
+    '      </div>\n' +
+    '    </div>\n' +
+    '\n' +
+    '    <!-- PALBOX FLOATING PANEL -->\n' +
+    '    <div id="calc-palbox-float" class="calc-palbox-float" style="display:none">\n' +
+    '      <div class="calc-palbox-float-header">\n' +
+    '        <span>📦 My Palbox (<span id="calc-palbox-count-float">0</span>)</span>\n' +
+    '        <button id="calc-palbox-add-btn" class="calc-palbox-add-btn" aria-label="Add Pal to Palbox">＋ Add</button>\n' +
+    '      </div>\n' +
+    '      <div id="calc-palbox-list" class="calc-palbox-chips"></div>\n' +
+    '      <div class="calc-palbox-actions">\n' +
+    '        <button id="calc-palbox-what-can-breed" class="cta-button cta-button-secondary" disabled>🔒 Add 2+ Pals to see what you can breed</button>\n' +
+    '      </div>\n' +
+    '    </div>\n' +
+    '\n' +
+    '    <!-- STATIC SEO EXAMPLES -->\n' +
+    '    <div id="static-examples" aria-hidden="true">\n' +
+    '      ' + staticExamples + '\n' +
+    '    </div>\n' +
+    '\n' +
+    '    <!-- HIDDEN SELECT FOR SEO -->\n' +
+    '    <select id="calc-select-target" name="target" class="sr-only" aria-hidden="true">\n' +
+    '      <option value="">Select Target Pal…</option>\n' +
+    '      ' + palOptions + '\n' +
+    '    </select>\n' +
+    '\n' +
+    '    <!-- GRID DATA (embedded JSON) -->\n' +
+    '    <script id="calc-grid-data" type="application/json">' + gridDataJSON.replace(/</g, '\\u003c') + '</script>\n' +
+    '\n' +
+    '    <!-- FORMULA -->\n' +
+    '    <details class="calc-formula" style="margin-top:var(--space-6);padding:var(--space-4);border:1px solid var(--color-border);border-radius:var(--radius-md)">\n' +
+    '      <summary style="cursor:pointer;font-family:var(--font-display);font-size:1rem;color:var(--color-accent);padding:4px 0">\n' +
+    '        📐 How Palworld Breeding Works\n' +
+    '      </summary>\n' +
+    '      <div style="margin-top:var(--space-3)">\n' +
+    '        <p style="font-size:1.0625rem;margin-bottom:var(--space-3)">\n' +
+    '          <strong>Child BP = ⌊(Parent A BP + Parent B BP) ÷ 2⌋</strong>\n' +
+    '        </p>\n' +
+    '        <p style="font-size:0.875rem;color:var(--color-text-secondary);margin-bottom:var(--space-2)">\n' +
+    '          Every Pal has a hidden <strong>Breeding Power (BP)</strong> value. When you breed two Pals, the game\n' +
+    '          averages their BP values and finds the Pal whose BP is closest to that average — that\'s the child.\n' +
+    '        </p>\n' +
+    '        <p style="font-size:0.875rem;color:var(--color-text-secondary);margin-bottom:var(--space-2)">\n' +
+    '          Some combinations produce a <strong>fixed child</strong> regardless of BP — these are called\n' +
+    '          <span style="color:var(--color-accent)">Special Combos</span> and the Calculator checks them first.\n' +
+    '        </p>\n' +
+    '        <p style="font-size:0.8125rem;color:var(--color-text-muted)">\n' +
+    '          Higher BP = easier to catch in the wild (🟢). Lower BP = harder (🔴⚡).\n' +
+    '          Breeding chains let you go from easy-to-catch Pals to rare ones by breeding in steps.\n' +
+    '        </p>\n' +
+    '      </div>\n' +
+    '    </details>\n' +
+    '  </div>\n' +
+    '\n' +
+    '  <script src="/assets/calculator.js" defer></script>';
 
   return wrapPage(headHTML, bodyHTML);
 }
 
-/**
- * Build 3 static Best Path examples for SEO.
- * Uses reverse-breeding data to find the easiest pair for popular Pals.
- */
+
 function buildStaticPathExamples() {
   const targets = [
     { slug: 'anubis', label: 'Most wanted base Pal' },
@@ -1394,10 +1462,7 @@ function buildStaticPathExamples() {
     { slug: 'blazamut', label: 'Top-tier combat mount' },
   ];
 
-  let html = '<div class="glass-panel" style="margin-bottom:var(--space-4)">';
-  html += '<h2 style="font-size:0.9375rem;font-weight:600;margin-bottom:var(--space-3)">📊 Popular Breeding Paths</h2>';
-  html += '<div style="display:flex;flex-wrap:wrap;gap:var(--space-3)">';
-
+  let html = '';
   for (const t of targets) {
     const pairs = reverseIndex[t.slug] || [];
     if (pairs.length === 0) continue;
@@ -1412,8 +1477,8 @@ function buildStaticPathExamples() {
     const target = palBySlug[t.slug];
     if (!a || !b || !target) continue;
 
-    html += `<a href="/breeding-calculator/?target=${t.slug}" style="text-decoration:none;color:inherit;flex:1;min-width:200px;max-width:320px">
-      <div style="border:1px solid var(--color-border);border-radius:var(--radius-md);padding:var(--space-3);transition:border-color var(--transition-fast)">
+    html += `<a href="/breeding-calculator/?target=${t.slug}" style="text-decoration:none;color:inherit;display:block;margin-bottom:var(--space-2)">
+      <div style="border:1px solid var(--color-border);border-radius:var(--radius-md);padding:var(--space-3);background:var(--color-bg-glass)">
         <div style="font-size:0.75rem;color:var(--color-text-muted);margin-bottom:4px">${t.label}</div>
         <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;font-size:0.8125rem">
           <span>${esc(a.name.en)}</span> <span style="color:var(--color-accent)">+</span> <span>${esc(b.name.en)}</span>
@@ -1424,9 +1489,7 @@ function buildStaticPathExamples() {
       </div>
     </a>`;
   }
-
-  html += '</div></div>';
-  return html;
+  return html;return html;
 }
 
 // ---- Render Pal Finder page ----
