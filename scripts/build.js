@@ -2411,8 +2411,8 @@ console.log('  dist/audit-report.json');
 
 	// ── IndexNow key file ──
 	const INDEXNOW_KEY = fs.readFileSync(path.join(DATA_DIR, 'indexnow-key.txt'), 'utf8').trim();
-	fs.writeFileSync(path.join(DIST_DIR, `${INDEXNOW_KEY}.txt`), INDEXNOW_KEY);
-	console.log(`  dist/${INDEXNOW_KEY}.txt`);
+	fs.writeFileSync(path.join(DIST_DIR, `indexnow-key.html`), INDEXNOW_KEY);
+	console.log(`  dist/indexnow-key.html`);
 
 	// ── IndexNow API submission ──
 	const indexNowUrls = SITEMAP_ENTRIES.map(e => e.url);
@@ -2420,7 +2420,7 @@ console.log('  dist/audit-report.json');
 	const payload = JSON.stringify({
 	  host: new URL(DOMAIN).hostname,
 	  key: INDEXNOW_KEY,
-	  keyLocation: `${DOMAIN}/${INDEXNOW_KEY}.txt`,
+	  keyLocation: `${DOMAIN}/indexnow-key.html`,
 	  urlList: indexNowUrls,
 	});
 	const req = require('https').request({
