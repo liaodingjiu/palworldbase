@@ -375,10 +375,8 @@ function renderPalPage(pal, tier) {
     }
   }
 
-  // 10. Content Upgrade CTA (S/A only)
-  if (tier !== 'B') {
-    sections.push(renderContentUpgradeCTA(pal, comboCount, variant));
-  }
+  // 10. Content Upgrade CTA
+  sections.push(renderContentUpgradeCTA(pal, comboCount, variant));
 
   // Breadcrumb
   const breadcrumb = `<nav class="breadcrumb" aria-label="Breadcrumb">
