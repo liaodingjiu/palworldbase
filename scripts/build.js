@@ -2272,10 +2272,11 @@ const robotsTXT = `User-agent: *
 Allow: /
 Disallow: /cdn-cgi/
 
-# AI Crawlers
+# AI Crawlers -- allow AI search engines (GEO)
 User-agent: GPTBot
-Disallow: /
+Allow: /
 
+# Training-data crawlers -- keep blocked
 User-agent: CCBot
 Disallow: /
 
@@ -2283,47 +2284,112 @@ User-agent: anthropic-ai
 Disallow: /
 
 User-agent: Google-Extended
-Disallow: /
+Allow: /
 
 Sitemap: ${DOMAIN}/sitemap.xml
 `;
 fs.writeFileSync(path.join(DIST_DIR, 'robots.txt'), robotsTXT);
 console.log('  dist/robots.txt');
 
-// llms.txt
-const llmsLines = [
-  `# ${SITE_NAME}`,
-  `> Peer-ranked Pal stats, skill builds, and breeding paths for ${allPals.length} Pals.`,
-  '',
-  '## Core Pages',
-  `- [Home](${DOMAIN}/): Pal stats, mini Calculator, top Pal cards`,
-  `- [Calculator](${DOMAIN}/breeding-calculator/): Find child from parents or parents from child`,
-  `- [Breeding Tree](${DOMAIN}/breeding-tree/): Explore chains that lead to any Pal`,
-  `- [Pal Finder](${DOMAIN}/pal-finder/): Filter by element, work, rarity`,
-  `- [All Pals](${DOMAIN}/pals/): Accordion index by element/work/rarity`,
-  '',
-  '## Guides',
-  `- [Best Base Workers](${DOMAIN}/guides/best-base-workers/): Work rankings`,
-  `- [Fastest Flying Mounts](${DOMAIN}/guides/best-flying-mounts/): Speed ranking`,
-  `- [Best Combat Pals](${DOMAIN}/guides/best-combat-pals/): Attack ranking`,
-  `- [Breeding Explained](${DOMAIN}/guides/breeding-explained/): Formula + strategy`,
-  '',
-  `## Pal Pages (${allPals.length} total)`,
-];
-const topPals = allPals.filter(p => palTiers[p.slug] === 'S').slice(0, 10);
-for (const p of topPals) {
-  llmsLines.push(`- [${p.name.en}](${DOMAIN}/pals/${p.slug}/): ${p.classification.elements[0]} ${p.classification.rarity}, Tier ${palTiers[p.slug]}`);
-}
-llmsLines.push(`- [...and ${allPals.length - 10} more Pal detail pages](${DOMAIN}/pals/)`);
+// ── llms.txt (AI crawler directory) ──
+  const sTierPals = allPals.filter(p => palTiers[p.slug] === 'S');
+  const aTierPals = allPals.filter(p => palTiers[p.slug] === 'A');
+  const bTierPals = allPals.filter(p => palTiers[p.slug] === 'B');
 
-fs.writeFileSync(path.join(DIST_DIR, 'llms.txt'), llmsLines.join('\n'));
-console.log('  dist/llms.txt');
+  const llmsLines = [
+    `# ${SITE_NAME}`,
+    `> Peer-ranked Pal stats, skill builds, and breeding paths for ${allPals.length} Pals.`,
+    `> Data sourced from game files, verified against the Palworld breeding formula. Updated ${BUILD_DATE}.`,
+    '',
+    '## Core Pages',
+    `- [Home](${DOMAIN}/): Pal stats, mini Calculator, top Pal cards`,
+    `- [Calculator](${DOMAIN}/breeding-calculator/): Find child from parents or parents from child`,
+    `- [Breeding Tree](${DOMAIN}/breeding-tree/): Explore ALL parent pairs grouped by difficulty, with chain tracing`,
+    `- [Pal Finder](${DOMAIN}/pal-finder/): Filter by element, work suitability, rarity`,
+    `- [All Pals](${DOMAIN}/pals/): Accordion index by element/work/rarity`,
+    '',
+    '## Guides',
+    `- [Best Base Workers](${DOMAIN}/guides/best-base-workers/): Kindling, Watering, Planting, Mining, Handiwork, Transport, Cooling, Medicine, Lumbering`,
+    `- [Fastest Flying Mounts](${DOMAIN}/guides/best-flying-mounts/): All flying mounts ranked by speed + early game picks`,
+    `- [Best Combat Pals](${DOMAIN}/guides/best-combat-pals/): Top 20 by attack, with element breakdowns`,
+    `- [Breeding Explained](${DOMAIN}/guides/breeding-explained/): Formula, BP system, special combos, difficulty groups, FAQ`,
+    '',
+    '## Info',
+    `- [About](${DOMAIN}/about/): Data sources and methodology`,
+    '',
+    `## S-Tier Pals (${sTierPals.length} total) — highest priority pages`,
+  ];
+  for (const p of sTierPals) {
+    const bp = calculatorData.palBP && calculatorData.palBP[p.slug] ? `BP ${calculatorData.palBP[p.slug]}` : '';
+    llmsLines.push(`- [${p.name.en}](${DOMAIN}/pals/${p.slug}/): ${p.classification.elements.join('/')} ${p.classification.rarity}, ${bp}`);
+  }
+  llmsLines.push('', `## A-Tier Pals (${aTierPals.length} total)`, '');
+  for (const p of aTierPals) {
+    llmsLines.push(`- [${p.name.en}](${DOMAIN}/pals/${p.slug}/): ${p.classification.elements.join('/')} ${p.classification.rarity}`);
+  }
+  llmsLines.push('', `> ${bTierPals.length} B-tier Pals also available — see [All Pals](${DOMAIN}/pals/) for full index.`);
 
-// ---- Summary ----
-const sCount = allPals.filter(p => palTiers[p.slug] === 'S').length;
-const aCount = allPals.filter(p => palTiers[p.slug] === 'A').length;
-const bCount = allPals.filter(p => palTiers[p.slug] === 'B').length;
-const totalPages = 1 + 1 + palPagesRendered + 4 + 1 + 1 + 1 + 1 + 4 + 1;
+  fs.writeFileSync(path.join(DIST_DIR, 'llms.txt'), llmsLines.join('\n'));
+  console.log('  dist/llms.txt');
+
+  // ── llms-full.txt (AI crawler full content) ──
+  const llmsFull = [
+    `# ${SITE_NAME} — Full Content`,
+    `> Data sourced from Palworld game files. All ${allPals.length} Pals verified against the breeding formula.`,
+    `> Last updated: ${BUILD_DATE}. Site: ${DOMAIN}`,
+    '',
+    '## Site Overview',
+    `PalworldBase is a data-driven Palworld database with ${allPals.length} Pals.`,
+    'Every Pal has: stats (HP/ATK/DEF), work suitabilities, breeding power, tier ranking, and skill loadouts.',
+    'Tools: Breeding Calculator (50K+ combos), Breeding Tree (pair difficulty + chain tracing), Pal Finder (filter by element/work/rarity).',
+    '',
+    '## Breeding Formula',
+    'Child BP = floor((Parent A BP + Parent B BP) / 2). The child is the Pal whose Breeding Power is closest to this average.',
+    'Special combos override the formula for variant Pals (e.g. Frostallion Noct = Frostallion + Helzephyr).',
+    '',
+    '## Breeding Power (BP) — All Pals',
+    '| # | Pal | BP | Elements | Rarity | Tier |',
+    '|---|-----|----|----------|--------|------|',
+  ];
+  for (const p of allPals) {
+    const bp = calculatorData.palBP[p.slug] || '?';
+    const tier = palTiers[p.slug] || 'B';
+    const els = p.classification.elements.join('/');
+    llmsFull.push(`| ${p.number || '-'} | ${p.name.en} | ${bp} | ${els} | ${p.classification.rarity} | ${tier} |`);
+  }
+
+  // Work rankings summary
+  const workKeys = ['kindling', 'watering', 'planting', 'mining', 'handiwork', 'transport', 'cooling', 'medicine', 'lumbering'];
+  llmsFull.push('', '## Best Base Workers', '');
+  for (const wk of workKeys) {
+    const top5 = allPals
+      .filter(p => (p.workSuitability[wk] || 0) >= 2)
+      .sort((a, b) => (b.workSuitability[wk] || 0) - (a.workSuitability[wk] || 0))
+      .slice(0, 5);
+    if (top5.length === 0) continue;
+    const label = wk.charAt(0).toUpperCase() + wk.slice(1);
+    llmsFull.push(`**Top ${label}**: ${top5.map(p => `${p.name.en} (Lv ${p.workSuitability[wk]})`).join(', ')}`);
+  }
+
+  // Fastest flyers
+  llmsFull.push('', '## Fastest Flying Mounts', '');
+  const topFlyers = allPals.filter(p => p.classification.isFlyable).sort((a, b) => b.stats.speed - a.stats.speed).slice(0, 10);
+  llmsFull.push(topFlyers.map((p, i) => `${i + 1}. ${p.name.en} — Speed ${p.stats.speed}, Stamina ${p.stats.stamina}`).join('\n'));
+
+  // Best combat
+  llmsFull.push('', '## Best Combat Pals (by ATK)', '');
+  const topCombat = [...allPals].sort((a, b) => (b.stats.attack || 0) - (a.stats.attack || 0)).slice(0, 10);
+  llmsFull.push(topCombat.map((p, i) => `${i + 1}. ${p.name.en} — ATK ${p.stats.attack}, ${p.classification.elements.join('/')}`).join('\n'));
+
+  llmsFull.push('', '---', `Generated: ${BUILD_DATE} | ${DOMAIN} | ${allPals.length} Pals`);
+
+  fs.writeFileSync(path.join(DIST_DIR, 'llms-full.txt'), llmsFull.join('\n'));
+  console.log('  dist/llms-full.txt');
+
+  // ---- Summary ----
+  const sCount = sTierPals.length;
+  const aCount = aTierPals.length;
+  const bCount = bTierPals.length;const totalPages = 1 + 1 + palPagesRendered + 4 + 1 + 1 + 1 + 1 + 4 + 1;
 
 console.log(`\n═══ Build Complete ═══`);
 console.log(`Total pages:  ${totalPages}`);
