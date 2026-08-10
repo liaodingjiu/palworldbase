@@ -81,6 +81,13 @@ function renderHead(config, meta = {}) {
     '<!-- Stylesheets -->',
     '<link rel="stylesheet" href="/css/shared.css">',
     '<link rel="stylesheet" href="/css/components.css">',
+    '',
+    '<!-- Favicon -->',
+    '<link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">',
+    '<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">',
+    '<link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16.png">',
+    '<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon-180.png">',
+    '<link rel="manifest" href="/assets/site.webmanifest">',
   ];
 
   if (noIndex) {

@@ -1,0 +1,13 @@
+{
+  "name": "PalworldBase",
+  "short_name": "PalworldBase",
+  "description": "Pal stats, builds, skill loadouts, and breeding paths",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#0b0f17",
+  "theme_color": "#34d399",
+  "icons": [
+    { "src": "/assets/favicon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/assets/favicon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
