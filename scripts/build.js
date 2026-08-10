@@ -1705,7 +1705,7 @@ fs.writeFileSync(path.join(DIST_DIR, 'breeding-calculator', 'index.html'), calcH
 SITEMAP_ENTRIES.push({ url: DOMAIN + '/breeding-calculator/', tier: 'S', lastmod: BUILD_DATE });
 // Top 10 Calculator variant URLs for Google indexing
 const topTargetSlugs = ['anubis', 'jormuntide_ignis', 'blazamut', 'frostallion',
-  'shadowbeak', 'paladius', 'necromus', 'jetragon', 'astral_lupus', 'lunaris'];
+  'shadowbeak', 'paladius', 'necromus', 'jetragon', 'bastigor', 'lunaris'];
 for (const ts of topTargetSlugs) {
   SITEMAP_ENTRIES.push({ url: `${DOMAIN}/breeding-calculator/?target=${ts}`, tier: 'A', lastmod: BUILD_DATE });
 }

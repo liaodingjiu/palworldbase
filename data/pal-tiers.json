@@ -18,6 +18,7 @@
   "bellanoir_libero": "S",
   "blazamut": "S",
   "blazamut_ryu": "S",
+  "boltmane": "B",
   "blazehowl": "A",
   "blazehowl_noct": "A",
   "braloha": "A",
@@ -84,6 +85,7 @@
   "enchanted_sword": "B",
   "faleris": "S",
   "faleris_aqua": "A",
+  "faleris_noct": "B",
   "felbat": "B",
   "fenglope": "B",
   "fenglope_lux": "B",
@@ -323,7 +325,7 @@
   "_metadata": {
     "sCount": 28,
     "aCount": 87,
-    "bCount": 206,
+    "bCount": 208,
     "thresholds": {
       "s": 100,
       "a": 65
