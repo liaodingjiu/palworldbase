@@ -1,0 +1,3 @@
+# Cloudflare Pages 配置
+name = "palworldbasenet"
+pages_build_output_dir = "dist"
