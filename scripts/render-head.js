@@ -144,21 +144,25 @@ function guideFAQSchema(questions) {
 
 /**
  * Generate Pal detail page schema.
+ * Uses Thing + additionalProperty so AI engines understand each Pal as an entity,
+ * not as a video game product.
  */
 function palSchema(pal, canonical) {
   return {
     '@context': 'https://schema.org',
-    '@type': 'VideoGame',
-    name: `${pal.name.en} — Palworld Pal #${pal.number}`,
-    description: `${pal.name.en} is a ${pal.classification.elements.join('/')} ${pal.classification.rarity} Pal in Palworld. HP ${pal.stats.hp}, ATK ${pal.stats.attack}, DEF ${pal.stats.defense}.`,
+    '@type': 'Thing',
+    name: `${pal.name.en} — Pal #${pal.number}`,
+    description: `${pal.name.en} is a ${pal.classification.elements.join('/')} ${pal.classification.rarity} creature in Palworld. HP ${pal.stats.hp}, ATK ${pal.stats.attack}, DEF ${pal.stats.defense}.`,
     url: canonical,
-    gamePlatform: ['PC', 'Xbox', 'PlayStation'],
-    playMode: { '@type': 'GamePlayMode', name: 'SinglePlayer' },
-    characterAttribute: {
-      '@type': 'Thing',
-      name: `Element: ${pal.classification.elements.join(', ')}`,
-    },
-    game: {
+    additionalProperty: [
+      { '@type': 'PropertyValue', name: 'HP', value: pal.stats.hp },
+      { '@type': 'PropertyValue', name: 'ATK', value: pal.stats.attack },
+      { '@type': 'PropertyValue', name: 'DEF', value: pal.stats.defense },
+      { '@type': 'PropertyValue', name: 'Rarity', value: pal.classification.rarity },
+      { '@type': 'PropertyValue', name: 'Elements', value: pal.classification.elements.join(', ') },
+      { '@type': 'PropertyValue', name: 'Pal Number', value: pal.number },
+    ],
+    subjectOf: {
       '@type': 'VideoGame',
       name: 'Palworld',
       url: 'https://www.pocketpair.jp/palworld',
