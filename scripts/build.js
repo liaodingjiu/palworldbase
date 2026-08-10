@@ -2093,7 +2093,7 @@ function renderBreedingTree() {
 
 function renderPalFinder() {
   const title = TITLE_TEMPLATES.palFinder;
-  const description = `Filter ${allPals.length} Pals by element, work type, rarity, and mount capability. Compare stats, find the right Pal for your team or base.`.substring(0, 155);
+  const description = `Filter Pals by element, work type, rarity, and mount capability. Compare stats, find the right Pal for your team or base.`.substring(0, 155);
   const headHTML = renderHead(config, { title, description, canonical: DOMAIN + '/pal-finder/' });
 
   // Default: show top 20 by stat total (no-JS fallback)

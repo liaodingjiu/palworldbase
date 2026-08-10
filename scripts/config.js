@@ -80,7 +80,7 @@ const TITLE_TEMPLATES = {
   home: `${SITE_NAME} — Pal Stats, Builds & Breeding Compared`,
   calculator: `Palworld Breeding Calculator — Shortest Path to Any Pal`,
   breedingTree: `Palworld Breeding Tree — Explore All Breeding Relationships`,
-  palFinder: `${SITE_NAME} Pal Finder — Filter 323 Pals by Element, Work & Role`,
+  palFinder: `Palworld Pal Finder — Filter by Element, Work & Role`,
   palsIndex: `${SITE_NAME} Paldeck — All Pals with Stats & Images`,
   guides: `Palworld Guides — Best Pals, Breeding & Strategy`,
   guide1: `Best Base Workers — Mining, Kindling & Every Role Ranked`,
