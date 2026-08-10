@@ -22,7 +22,8 @@
 .site-header .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: var(--space-6);
   height: 100%;
 }
 
@@ -142,8 +143,9 @@
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1fr auto auto;
+  grid-template-columns: 360px auto auto;
   gap: var(--space-10);
+  justify-content: start;
 }
 
 .footer-brand {
