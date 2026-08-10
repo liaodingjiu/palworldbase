@@ -33,7 +33,7 @@
   }
 
   function imgFallback(slug) {
-    return " onerror=\"this.src='/images/pals/" + slug + ".png'\"";
+    return " onerror=\"if(this.src.indexOf('.png')===-1){this.src='/images/pals/" + slug + ".png'}else{this.src='/images/pals/_placeholder.png'}\"";
   }
 
   // ---- Data Loading ----
@@ -414,7 +414,11 @@
       var selClass = '';
       if (p.slug === state.slotA) selClass = ' selected-a';
       else if (p.slug === state.slotB) selClass = ' selected-b';
+      var badgeHtml = '';
+      if (p.slug === state.slotA) badgeHtml = '<span class="calc-grid-card-badge">A</span>';
+      else if (p.slug === state.slotB) badgeHtml = '<span class="calc-grid-card-badge">B</span>';
       html += '<div class="calc-grid-card ' + p.element + selClass + '" data-slug="' + p.slug + '" role="button" tabindex="0" title="' + esc(p.name) + ' #' + p.number + '">' +
+        badgeHtml +
         '<img src="/images/pals/' + p.slug + '.webp" alt="' + esc(p.name) + '" class="calc-grid-card-img" loading="lazy"' + imgFallback(p.slug) + '>' +
         '<span class="calc-grid-card-name">' + esc(p.name) + '</span>' +
         '<span class="calc-grid-card-bp">#' + p.number + ' · BP' + (p.bp || '?') + '</span>' +
@@ -483,13 +487,24 @@
     var ph = card.querySelector('.calc-eq-placeholder');
     var fl = card.querySelector('.calc-eq-filled');
     card.classList.remove('active-step');
+    card.classList.remove('path-target');
+    // Reset placeholder overrides from path-target mode
+    if (ph) {
+      ph.querySelector('.calc-eq-q').textContent = '?';
+      ph.querySelector('.calc-eq-q').style.opacity = '';
+      ph.querySelector('.calc-eq-hint').style.color = '';
+    }
     if (slug) {
       var p = findGridPal(slug);
       card.classList.add('filled');
       if (ph) ph.style.display = 'none';
       if (fl) {
         fl.style.display = '';
+        // Reset path-target overrides for Card C
+        fl.querySelector('.calc-eq-img').style.display = '';
+        fl.querySelector('.calc-eq-name').style.fontFamily = '';
         fl.querySelector('.calc-eq-img').src = '/images/pals/' + slug + '.webp';
+        fl.querySelector('.calc-eq-img').setAttribute('onerror', "if(this.src.indexOf('.png')===-1){this.src='/images/pals/" + slug + ".png'}else{this.src='/images/pals/_placeholder.png'}");
         fl.querySelector('.calc-eq-img').alt = p ? p.name : slug;
         fl.querySelector('.calc-eq-name').textContent = p ? p.name : slug;
         fl.querySelector('.calc-eq-meta').textContent = p ? ('#' + p.number + ' \u00b7 BP' + (p.bp || '?')) : '';
@@ -499,16 +514,43 @@
       if (lbl) lbl.textContent = key === 'a' ? '\u2713 Parent A' : (key === 'b' ? '\u2713 Parent B' : '\ud83c\udf89 Child');
     } else {
       card.classList.remove('filled');
+      card.classList.remove('path-target');
       if (ph) ph.style.display = '';
-      if (fl) fl.style.display = 'none';
+      if (fl) {
+        fl.style.display = 'none';
+        fl.querySelector('.calc-eq-img').style.display = '';
+        fl.querySelector('.calc-eq-name').style.fontFamily = '';
+      }
       var lbl2 = card.querySelector('.calc-eq-label');
       if (lbl2) lbl2.textContent = key === 'a' ? 'Parent A' : (key === 'b' ? 'Parent B' : 'Child');
     }
   }
 
+  // Set Card C to \ud83c\udfaf target indicator (path mode \u2014 don't show Pal avatar)
+  function setCardCPathTarget() {
+    var card = document.getElementById('calc-eq-card-c');
+    if (!card) return;
+    var ph = card.querySelector('.calc-eq-placeholder');
+    var fl = card.querySelector('.calc-eq-filled');
+    card.classList.remove('active-step');
+    card.classList.add('path-target');
+    // Keep filled hidden, show special placeholder with \ud83c\udfaf
+    if (fl) fl.style.display = 'none';
+    if (ph) {
+      ph.style.display = '';
+      ph.querySelector('.calc-eq-q').textContent = '\ud83c\udfaf';
+      ph.querySelector('.calc-eq-q').style.opacity = '1';
+      ph.querySelector('.calc-eq-hint').textContent = 'Path Below \u2193';
+      ph.querySelector('.calc-eq-hint').style.color = 'var(--color-accent)';
+    }
+    var lbl = card.querySelector('.calc-eq-label');
+    if (lbl) lbl.textContent = '\ud83c\udfaf Target';
+  }
+
   function updateEqStepGuide() {
     var cardA = document.getElementById('calc-eq-card-a');
     var cardB = document.getElementById('calc-eq-card-b');
+    var cardC = document.getElementById('calc-eq-card-c');
     var swapBtn = document.getElementById('calc-eq-swap');
     if (!cardA || !cardB) return;
 
@@ -523,6 +565,7 @@
     }
     function setLabel(card, text) {
       if (!card) return;
+      if (card.classList.contains('filled')) return;
       var l = card.querySelector('.calc-eq-label');
       if (l) l.textContent = text;
     }
@@ -530,13 +573,14 @@
     if (!state.slotA && !state.slotB) {
       cardA.classList.add('active-step');
       setHint(cardA, 'Click a Pal \u2193');
-      setLabel(cardA, 'Step 1 \u2014 Pick a Pal');
+      setLabel(cardA, '\u2190 Step 1 \u2014 Pick');
       setLabel(cardB, 'Step 2');
+      if (cardC) setLabel(cardC, 'Result');
     } else if (state.slotA && !state.slotB) {
       cardB.classList.add('active-step');
-      setHint(cardB, 'Click another \u2193');
-      setLabel(cardB, 'Step 2 \u2014 Pick another');
-      // A is already filled (updateEqCard sets label)
+      setHint(cardB, 'Pick another \u2193');
+      setLabel(cardB, '\u2190 Step 2 \u2014 Pick');
+      if (cardC) setLabel(cardC, 'Path below \u2193');
     } else {
       // Both filled — swap button
       if (swapBtn) swapBtn.style.display = '';
@@ -561,7 +605,7 @@
   function showBreedingPath() {
     if (!state.slotA) return;
     state.mode = 'showing-result'; state.resultType = 'path'; state.currentTab = 'tab1';
-    renderPathResult(state.slotA); updateRightPanel(); updateEqCard('c', state.slotA); updateEqStepGuide();
+    renderPathResult(state.slotA); updateRightPanel(); setCardCPathTarget(); updateEqStepGuide();
   }
   function breedThem() {
     if (!state.slotA || !state.slotB) return;

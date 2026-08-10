@@ -1216,6 +1216,62 @@
   color: var(--color-text-secondary);
 }
 
+/* ---- Calculator Hero ---- */
+.calc-hero {
+  padding: var(--space-8) 0 var(--space-6);
+  border-bottom: none;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.calc-hero h1 {
+  font-size: 1.625rem;
+  font-family: var(--font-display);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin-bottom: var(--space-2);
+  line-height: 1.3;
+}
+
+.calc-hero-amp {
+  color: var(--color-accent);
+  font-weight: 300;
+}
+
+.calc-hero-sub {
+  font-size: 0.9375rem !important;
+  color: var(--color-text-secondary) !important;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto var(--space-3);
+}
+
+.calc-hero-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-2);
+}
+
+.calc-hero-stat {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 12px;
+  font-size: 0.6875rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 999px;
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 480px) {
+  .calc-hero h1 { font-size: 1.25rem; }
+  .calc-hero-sub { font-size: 0.8125rem !important; }
+}
+
 /* ============================================================
    Pal Hero (detail page top section)
    Image + Paldeck# + elements + role badges + ranking
@@ -1646,17 +1702,15 @@
   justify-content: center;
   gap: var(--space-3);
   padding: var(--space-5) var(--space-6) 38px;
-  margin-bottom: var(--space-6);
-  background: linear-gradient(135deg, rgba(255,255,255,0.02) 0%, rgba(0,212,255,0.02) 50%, rgba(255,255,255,0.01) 100%);
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: var(--radius-lg);
+  margin-bottom: var(--space-4);
   position: relative;
 }
-.calc-equation::before {
+/* Connecting line below equation bar — subtle bridge to the columns below */
+.calc-equation::after {
   content: '';
   position: absolute;
-  top: 0; left: 20%; right: 20%; height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(0,212,255,0.3), rgba(52,211,153,0.3), rgba(0,212,255,0.3), transparent);
+  bottom: 0; left: 15%; right: 15%; height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(0,212,255,0.12), rgba(52,211,153,0.12), rgba(0,212,255,0.12), transparent);
 }
 
 /* Equation card — shared base */
@@ -1706,6 +1760,16 @@
   border-color: rgba(250,204,21,0.5);
   box-shadow: 0 0 24px rgba(250,204,21,0.2), inset 0 0 20px rgba(250,204,21,0.03);
   animation: eq-child-glow 2.5s ease-in-out infinite alternate;
+}
+
+/* Path-target state: Card C shows 🎯 indicator, not Pal avatar */
+.calc-eq-card.path-target {
+  border-style: dashed;
+  border-color: rgba(0,212,255,0.35) !important;
+  background: rgba(0,212,255,0.03);
+}
+.calc-eq-card.path-target .calc-eq-q {
+  font-size: 2rem;
 }
 
 @keyframes eq-child-glow {
@@ -1960,6 +2024,31 @@
   border-color: #34d399;
   box-shadow: 0 0 12px rgba(52,211,153,0.3);
   transform: scale(1.03);
+}
+
+/* ---- A/B Badge on selected grid cards ---- */
+.calc-grid-card-badge {
+  position: absolute;
+  top: -5px; left: -5px;
+  width: 18px; height: 18px;
+  border-radius: 50%;
+  font-family: var(--font-display);
+  font-size: 0.5625rem;
+  font-weight: 800;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  line-height: 1;
+}
+.calc-grid-card.selected-a .calc-grid-card-badge {
+  background: var(--color-accent);
+  box-shadow: 0 0 8px rgba(0,212,255,0.5);
+}
+.calc-grid-card.selected-b .calc-grid-card-badge {
+  background: #34d399;
+  box-shadow: 0 0 8px rgba(52,211,153,0.5);
 }
 
 .calc-grid-card-img {

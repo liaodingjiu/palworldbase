@@ -1279,9 +1279,14 @@ function renderCalculator() {
   const staticExamples = buildStaticPathExamples();
 
   const bodyHTML = '<div class="container">\n' +
-    '    <div class="page-header">\n' +
-    '      <h1>🧬 Breeding Calculator</h1>\n' +
-    '      <p class="page-description">Hatched Pals inherit better stats and rare passive skills — breed smarter, not harder.</p>\n' +
+    '    <div class="page-header calc-hero">\n' +
+    '      <h1>🧬 Palworld Breeding Calculator <span class="calc-hero-amp">&amp;</span> Combinations</h1>\n' +
+    '      <p class="page-description calc-hero-sub">Breed any two Pals to see their offspring, or pick a target to trace every path to it.</p>\n' +
+    '      <div class="calc-hero-stats">\n' +
+    '        <span class="calc-hero-stat">📚 323 Pals</span>\n' +
+    '        <span class="calc-hero-stat">🔀 50K+ Combos</span>\n' +
+    '        <span class="calc-hero-stat">⚡ Instant</span>\n' +
+    '      </div>\n' +
     '    </div>\n' +
     '\n' +
     '    <!-- EQUATION BAR: A + B = C -->\n' +
