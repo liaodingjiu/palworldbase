@@ -2408,3 +2408,32 @@ fs.writeFileSync(
   JSON.stringify(auditReport, null, 2)
 );
 console.log('  dist/audit-report.json');
+
+	// ── IndexNow key file ──
+	const INDEXNOW_KEY = fs.readFileSync(path.join(DATA_DIR, 'indexnow-key.txt'), 'utf8').trim();
+	fs.writeFileSync(path.join(DIST_DIR, `${INDEXNOW_KEY}.txt`), INDEXNOW_KEY);
+	console.log(`  dist/${INDEXNOW_KEY}.txt`);
+
+	// ── IndexNow API submission ──
+	const indexNowUrls = SITEMAP_ENTRIES.map(e => e.url);
+	console.log(`\nSubmitting ${indexNowUrls.length} URLs to IndexNow...`);
+	const payload = JSON.stringify({
+	  host: new URL(DOMAIN).hostname,
+	  key: INDEXNOW_KEY,
+	  keyLocation: `${DOMAIN}/${INDEXNOW_KEY}.txt`,
+	  urlList: indexNowUrls,
+	});
+	const req = require('https').request({
+	  hostname: 'api.indexnow.org',
+	  path: '/indexnow',
+	  method: 'POST',
+	  headers: {
+	    'Content-Type': 'application/json; charset=utf-8',
+	    'Content-Length': Buffer.byteLength(payload),
+	  },
+	}, res => {
+	  console.log(`IndexNow: ${res.statusCode} ${res.statusMessage}`);
+	});
+	req.on('error', e => console.error('IndexNow error:', e.message));
+	req.write(payload);
+	req.end();
