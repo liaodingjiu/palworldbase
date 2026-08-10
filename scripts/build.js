@@ -385,8 +385,8 @@ function renderPalPage(pal, tier) {
   <span class="current">${esc(pal.name.en)}</span>
 </nav>`;
 
-  const bodyHTML = `${breadcrumb}
-<div class="container container-narrow">
+  const bodyHTML = `<div class="container container-narrow">
+${breadcrumb}
 ${sections.join('\n')}
 </div>`;
 
