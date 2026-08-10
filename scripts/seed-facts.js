@@ -49,11 +49,13 @@ function extractFacts(pal, elementPeers, variant = 0) {
 
   // Ensure at least 2 facts
   while (facts.length < 2) {
-    // Fallback: generic descriptive fact
+    // Fallback: generic descriptive fact (now with more variety)
     const genericFacts = [
       `${pal.name.en} is a ${pal.classification.rarity} ${element} Pal with ${pal.skills ? pal.skills.length : 0} learnable skills.`,
       `${pal.name.en} can be found in Palworld as Paldeck #${pal.number} — a ${pal.classification.rarity.toLowerCase()} ${element}-type Pal.`,
       `Paldeck #${pal.number}: ${pal.name.en} is one of ${peers.length} ${element} Pals in Palworld.`,
+      `${pal.name.en} has a base stat total of ${pal.stats.hp + pal.stats.attack + pal.stats.defense + pal.stats.speed} (HP+ATK+DEF+SPD).`,
+      `${pal.name.en} (${pal.classification.elements.join('/')}) is Paldeck #${pal.number} — HP ${pal.stats.hp}, Speed ${pal.stats.speed}.`,
     ];
     const generic = genericFacts[variant % genericFacts.length];
     if (!facts.includes(generic)) facts.push(generic);
@@ -144,30 +146,61 @@ function extractBreedingFact(pal, variant) {
   const bp = pal.breeding && pal.breeding.breedingPower;
 
   if (!bp && bp !== 0) {
-    return `${pal.name.en} cannot be obtained through breeding — it must be captured in the wild or through special encounters.`;
+    const templates = [
+      `${pal.name.en} cannot be obtained through breeding — it must be captured in the wild or through special encounters.`,
+      `${pal.name.en} is not breedable. You'll need to find and capture it in Palworld directly.`,
+    ];
+    return templates[variant % templates.length];
   }
 
   if (bp <= 10) {
     const templates = [
       `${pal.name.en} has a breeding power of ${bp} — one of the hardest Pals to breed, requiring endgame-tier parents.`,
       `Breeding ${pal.name.en} (BP ${bp}) requires careful planning — its low breeding power demands late-game parent combinations.`,
+      `With a breeding power of just ${bp}, ${pal.name.en} is among the hardest to breed in Palworld.`,
     ];
     return templates[variant % templates.length];
   }
 
   if (bp >= 1000) {
-    return `${pal.name.en} has a high breeding power of ${bp}, making it one of the easiest Pals to breed — ideal for breeding chains.`;
+    const templates = [
+      `${pal.name.en} has a high breeding power of ${bp}, making it one of the easiest Pals to breed — ideal for breeding chains.`,
+      `BP ${bp} makes ${pal.name.en} trivial to breed — pair almost any two low-level Pals to get one.`,
+      `${pal.name.en} is very easy to breed (BP ${bp}) — a great starting point for breeding chains to rarer Pals.`,
+      `With a breeding power of ${bp}, ${pal.name.en} can be produced from nearly any parent combination.`,
+    ];
+    return templates[variant % templates.length];
   }
 
-  // Breeding bridge: check if it produces many different children
-  return `${pal.name.en} has a breeding power of ${bp} — a versatile breeding partner for producing a wide range of offspring.`;
+  // Medium-range breeding power
+  const templates = [
+    `${pal.name.en} has a breeding power of ${bp} — a versatile breeding partner for producing a wide range of offspring.`,
+    `Breeding Power ${bp}: ${pal.name.en} sits in the mid-range — not trivial to breed, but achievable with common parents.`,
+    `With BP ${bp}, ${pal.name.en} is a useful breeding bridge between common and rare Pals.`,
+    `${pal.name.en} (BP ${bp}) can both be bred easily and used to produce rarer species — a solid mid-tier breeder.`,
+  ];
+  return templates[variant % templates.length];
 }
 
 /**
- * Fact: Extra interesting trait (dual element, rideable, boss, etc.)
+ * Fact: Extra interesting trait (dual element, rideable, boss, partner skill, etc.)
  */
 function extractExtraFact(pal, variant) {
   const facts = [];
+
+  // Partner skill — unique per Pal, great for content diversity
+  if (pal.partnerSkill && pal.partnerSkill.name && pal.partnerSkill.descriptionEn) {
+    const desc = pal.partnerSkill.descriptionEn;
+    // Truncate long descriptions
+    const shortDesc = desc.length > 100 ? desc.substring(0, 100) + '...' : desc;
+    facts.push(
+      `${pal.name.en}'s Partner Skill is "${pal.partnerSkill.name}" — ${shortDesc}`
+    );
+  } else if (pal.partnerSkill && pal.partnerSkill.name) {
+    facts.push(
+      `${pal.name.en}'s Partner Skill is "${pal.partnerSkill.name}" — unlock it by crafting its harness in the Technology menu.`
+    );
+  }
 
   if (pal.classification.elements.length >= 2) {
     facts.push(
@@ -189,6 +222,16 @@ function extractExtraFact(pal, variant) {
     facts.push(
       `${pal.name.en} is encountered as a boss in Palworld — prepare for a challenging fight before attempting to capture it.`
     );
+  }
+
+  // Drops info
+  if (pal.drops && pal.drops.length > 0) {
+    const dropNames = pal.drops.map(d => d.itemId).filter(Boolean).slice(0, 3);
+    if (dropNames.length > 0) {
+      facts.push(
+        `${pal.name.en} drops ${dropNames.join(', ')} when defeated or captured.`
+      );
+    }
   }
 
   if (facts.length === 0) return null;

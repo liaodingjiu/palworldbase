@@ -64,11 +64,92 @@ for (const pal of allPals) palBySlug[pal.slug] = pal;
 const statsBySlug = {};
 for (const ps of palStats) statsBySlug[ps.slug] = ps;
 
+// Pre-compute stat distributions for percentile bars
+const STAT_KEYS = ['hp', 'attack', 'defense', 'speed', 'stamina'];
+const STAT_LABELS = { hp: 'HP', attack: 'Melee ATK', defense: 'Defense', speed: 'Speed', stamina: 'Stamina' };
+const statMaxes = {};
+const statAllValues = {};
+for (const key of STAT_KEYS) {
+  statMaxes[key] = 0;
+  statAllValues[key] = [];
+}
+for (const pal of allPals) {
+  for (const key of STAT_KEYS) {
+    const val = pal.stats[key] || 0;
+    if (val > statMaxes[key]) statMaxes[key] = val;
+    statAllValues[key].push(val);
+  }
+}
+for (const key of STAT_KEYS) {
+  statAllValues[key].sort((a, b) => a - b);
+}
+// Pre-compute all stat totals for percentile
+const statAllTotalValues = allPals.map(p => STAT_KEYS.reduce((s, k) => s + (p.stats[k] || 0), 0)).sort((a, b) => a - b);
+const statTotalMax = STAT_KEYS.reduce((s, k) => s + statMaxes[k], 0);
+
+function getStatPct(slug, key) {
+  const pal = palBySlug[slug];
+  if (!pal || !pal.stats) return 0;
+  const val = pal.stats[key] || 0;
+  const all = statAllValues[key];
+  let lower = 0;
+  for (let i = 0; i < all.length; i++) {
+    if (all[i] <= val) lower++;
+  }
+  return Math.round((lower / all.length) * 100);
+}
+
+function getStatBarClass(pct) {
+  if (pct >= 70) return 'high';
+  if (pct >= 30) return 'mid';
+  return 'low';
+}
+
+function renderStatBars(slug) {
+  const pal = palBySlug[slug];
+  if (!pal || !pal.stats) return '';
+  const statTotal = STAT_KEYS.reduce((s, k) => s + (pal.stats[k] || 0), 0);
+
+  // Stat Total: percentile among all Pals (not vs sum-of-maxes, which is skewed by mounts)
+  const allTotals = statAllTotalValues;
+  let totalLower = 0;
+  for (let i = 0; i < allTotals.length; i++) {
+    if (allTotals[i] <= statTotal) totalLower++;
+  }
+  const totalPct = Math.round((totalLower / allTotals.length) * 100);
+
+  const bars = STAT_KEYS.map(key => {
+    const val = pal.stats[key] || 0;
+    const pct = getStatPct(slug, key);
+    const cls = getStatBarClass(pct);
+    return `<div class="pal-stat-bar">
+      <span class="pal-stat-bar-label">${STAT_LABELS[key]}</span>
+      <span class="pal-stat-bar-value">${val}</span>
+      <div class="pal-stat-bar-track">
+        <div class="pal-stat-bar-fill ${cls}" style="width:${pct}%"></div>
+      </div>
+      <span class="pal-stat-bar-pct ${cls}">${pct}%</span>
+    </div>`;
+  }).join('\n');
+
+  return `<div class="pal-stat-bars">
+    ${bars}
+    <div class="pal-stat-total">
+      <span class="pal-stat-total-label">Total</span>
+      <span class="pal-stat-total-value">${statTotal}</span>
+      <div class="pal-stat-bar-track">
+        <div class="pal-stat-bar-fill ${getStatBarClass(totalPct)}" style="width:${totalPct}%"></div>
+      </div>
+      <span class="pal-stat-bar-pct ${getStatBarClass(totalPct)}">${totalPct}%</span>
+    </div>
+  </div>`;
+}
+
 // ---- Directory setup ----
 console.log('\nSetting up dist/...');
 const dirs = [
   'dist', 'dist/pals', 'dist/css', 'dist/images/pals',
-  'dist/breeding-calculator', 'dist/pal-finder', 'dist/guides',
+  'dist/breeding-calculator', 'dist/breeding-tree', 'dist/pal-finder', 'dist/guides',
   'dist/about', 'dist/privacy', 'dist/terms', 'dist/cookie-policy',
   'dist/assets', 'dist/data',
 ];
@@ -84,8 +165,10 @@ copyDir('assets', 'dist/assets');
 // Copy client-side data files
 fs.copyFileSync(path.join(DATA_DIR, 'calculator-data.json'), path.join(DIST_DIR, 'data', 'calculator-data.json'));
 fs.copyFileSync(path.join(DATA_DIR, 'pal-stats.json'), path.join(DIST_DIR, 'data', 'pal-stats.json'));
+fs.copyFileSync(path.join(DATA_DIR, 'reverse-breeding.json'), path.join(DIST_DIR, 'data', 'reverse-breeding.json'));
 console.log('  data/calculator-data.json → dist/data/');
 console.log('  data/pal-stats.json → dist/data/');
+console.log('  data/reverse-breeding.json → dist/data/');
 function copyDir(src, dest) {
   const srcPath = path.join(__dirname, '..', src);
   const destPath = path.join(__dirname, '..', dest);
@@ -127,7 +210,7 @@ ${cookieScript}
 function buildHeader(activeNav) {
   const items = NAV.map(item => {
     const key = item.label.toLowerCase().replace(/\s+/g, '-');
-    const navMap = { 'calculator': 'calculator', 'pal-finder': 'finder', 'all-pals': 'pals', 'guides': 'guides', 'about': 'about' };
+    const navMap = { 'breeding-calc': 'calculator', 'breeding-tree': 'tree', 'pal-finder': 'finder', 'all-pals': 'pals', 'guides': 'guides', 'about': 'about' };
     const isActive = navMap[key] === activeNav;
     return `<a href="${item.href}"${isActive ? ' class="active" aria-current="page"' : ''}>${item.label}</a>`;
   }).join('\n      ');
@@ -157,6 +240,7 @@ function buildFooter() {
       <div class="footer-menu">
         <div class="footer-menu-label">TOOLS</div>
         <a href="/breeding-calculator/">Breeding Calculator</a>
+        <a href="/breeding-tree/">Breeding Tree</a>
         <a href="/pal-finder/">Pal Finder</a>
         <a href="/pals/">All Pals</a>
         <a href="/guides/">Guides</a>
@@ -207,16 +291,20 @@ function countTier(t) {
  */
 function renderPalPage(pal, tier) {
   const element = pal.classification.elements[0];
-  const variant = (typeof pal.number === 'number' ? pal.number : parseInt(pal.number, 10) || 0) % 4;
+  // Use prime multipliers to spread variants — avoids clustering from similar Pal numbers
+  const seed = typeof pal.number === 'number' ? pal.number : parseInt(pal.number, 10) || 0;
+  const variant = seed % 4;          // 0-3: for sections with 3-4 variants
+  const variantWide = (seed * 7) % 10; // 0-9: for title/description with 8-10 variants
+  const variantAny = (seed * 13) % 12; // 0-11: for sections with many variants
   const peers = elementPeers[element] || [];
 
-  // Title & Description (with rotation)
+  // Title & Description (with rotation — variantWide gives 0-9 range for 8-10 templates)
   const title = tier === 'S' ? TITLE_TEMPLATES.palS(pal) :
                 tier === 'A' ? TITLE_TEMPLATES.palA(pal) :
-                TITLE_TEMPLATES.palB(pal);
+                TITLE_TEMPLATES.palB(pal, variantWide);
 
   const comboCount = (reverseIndex[pal.slug] || []).length;
-  const description = generateDescription(pal, tier, variant, peers, comboCount);
+  const description = generateDescription(pal, tier, variantWide, peers, comboCount);
 
   // Canonical URL
   const canonical = `${DOMAIN}/pals/${pal.slug}/`;
@@ -237,49 +325,53 @@ function renderPalPage(pal, tier) {
   sections.push(renderPalHero(pal, tier, variant, peers));
 
   // 2. Data-driven facts
-  const palFacts = extractFacts(pal, elementPeers, variant);
+  const palFacts = extractFacts(pal, elementPeers, variantAny);
   sections.push(renderFactsSection(pal, palFacts));
+
+  // 2.5 Partner Skill — unique per Pal, 91% have unique names
+  sections.push(renderPartnerSkill(pal));
 
   // 3. Stats comparison (S/A tier)
   if (tier !== 'B' && peers.length > 0) {
     const zResults = computeZScores(pal, peers);
     const rankResult = rankAmongPeers(pal, peers);
-    sections.push(renderComparison(pal, tier, zResults, rankResult, variant, peers));
+    sections.push(renderComparison(pal, tier, zResults, rankResult, variantAny, peers));
   }
 
-  // 4. Skill builds (S tier gets all 3, A gets 1-2)
-  const builds = computeAllBuilds(pal.skills, element);
+  // 4. Skill builds (all tiers — variantAny seed for text diversity)
+  const builds = computeAllBuilds(pal, variantAny);
   if (builds.length > 0) {
-    sections.push(renderSkillBuilds(pal, tier, builds, variant));
+    sections.push(renderSkillBuilds(pal, tier, builds, variantAny));
   }
+
+  // 4.5 Full active skills list — 59 unique skill set combinations across 323 Pals
+  sections.push(renderAllSkills(pal));
 
   // 5. How to Breed
-  sections.push(renderBreedingSection(pal, tier, variant));
+  sections.push(renderBreedingSection(pal, tier, variantAny));
 
   // 6. Work suitability
-  sections.push(renderWorkSection(pal, tier, variant));
+  sections.push(renderWorkSection(pal, tier, variantAny));
 
   // 7. Acquisition (B tier only — simpler location info)
   if (tier === 'B') {
-    sections.push(renderAcquisition(pal, variant));
+    sections.push(renderAcquisition(pal, variantAny));
   }
 
   // 8. Drops (all tiers)
   if (pal.drops && pal.drops.length > 0) {
-    sections.push(renderDrops(pal, tier, variant));
+    sections.push(renderDrops(pal, tier, variantAny));
   }
 
-  // 9. What's Next (S/A only)
-  if (tier !== 'B') {
-    const bp = pal.breeding && pal.breeding.breedingPower;
-    if (bp !== undefined) {
-      const whatsNext = findWhatsNext(pal.slug, calculatorData.bpSorted.map((s, i) => ({
-        slug: s,
-        bp: calculatorData.palBP[s] || 0
-      })), calculatorData.palBP, calculatorData.specialCombos, statsBySlug);
-      if (whatsNext.length > 0) {
-        sections.push(renderWhatsNext(pal, whatsNext, variant));
-      }
+  // 9. What's Next (all tiers)
+  const bp = pal.breeding && pal.breeding.breedingPower;
+  if (bp !== undefined) {
+    const whatsNext = findWhatsNext(pal.slug, calculatorData.bpSorted.map((s, i) => ({
+      slug: s,
+      bp: calculatorData.palBP[s] || 0
+    })), calculatorData.palBP, calculatorData.specialCombos, statsBySlug);
+    if (whatsNext.length > 0) {
+      sections.push(renderWhatsNext(pal, whatsNext, variantAny));
     }
   }
 
@@ -315,8 +407,6 @@ function renderPalHero(pal, tier, variant, peers) {
     ? `<p class="pal-hero-ranking">#${rankResult.rank} of ${rankResult.total} ${element} Pals by total stats</p>`
     : '';
 
-  const statTotal = pal.stats.hp + pal.stats.attack + pal.stats.defense + pal.stats.speed;
-
   return `<section class="pal-hero">
   <img src="/images/pals/${pal.slug}.webp"
        alt="${esc(altText)}"
@@ -333,12 +423,7 @@ function renderPalHero(pal, tier, variant, peers) {
     </div>
     <h1>${esc(pal.name.en)}</h1>
     ${rankingHTML}
-    <div class="pal-hero-stats-grid">
-      <div class="pal-hero-stat"><div class="pal-hero-stat-value">${pal.stats.hp}</div><div class="pal-hero-stat-label">HP</div></div>
-      <div class="pal-hero-stat"><div class="pal-hero-stat-value">${pal.stats.attack}</div><div class="pal-hero-stat-label">ATK</div></div>
-      <div class="pal-hero-stat"><div class="pal-hero-stat-value">${pal.stats.defense}</div><div class="pal-hero-stat-label">DEF</div></div>
-      <div class="pal-hero-stat"><div class="pal-hero-stat-value">${pal.stats.speed}</div><div class="pal-hero-stat-label">SPD</div></div>
-    </div>
+    ${renderStatBars(pal.slug)}
   </div>
 </section>`;
 }
@@ -350,6 +435,64 @@ function renderFactsSection(pal, facts) {
   <div class="glass-panel">
     ${facts.map(f => `<p>${esc(f)}</p>`).join('\n    ')}
   </div>
+</section>`;
+}
+
+function renderPartnerSkill(pal) {
+  const ps = pal.partnerSkill;
+  if (!ps || !ps.name) return '';
+
+  const hasDesc = ps.descriptionEn && ps.descriptionEn.length > 0;
+
+  // Only show if we have meaningful data
+  if (!hasDesc && ps.name.length < 2) return '';
+
+  const descHTML = hasDesc
+    ? `<p style="font-size:0.9375rem;color:var(--color-text);margin-bottom:12px">${esc(ps.descriptionEn)}</p>`
+    : '';
+
+  return `<section class="section">
+  <h2>Partner Skill — ${esc(ps.name)}</h2>
+  <div class="glass-panel">
+    ${descHTML}
+    <p style="font-size:0.8125rem;color:var(--color-text-muted)">
+      🔧 Unlock by crafting ${esc(pal.name.en)}'s harness in the Technology menu.
+    </p>
+  </div>
+</section>`;
+}
+
+function renderAllSkills(pal) {
+  const skills = pal.skills || [];
+  if (skills.length === 0) return '';
+
+  // Build a full skill table
+  const rows = skills.map((s, i) => {
+    const el = (s.element || 'Neutral').toLowerCase();
+    return `<tr>
+      <td class="num">${s.level || '?'}</td>
+      <td>${esc(s.name)}</td>
+      <td><span class="badge badge-element ${el}">${s.element || 'Neutral'}</span></td>
+      <td class="num">⚡${s.power || 0}</td>
+      <td class="num">⏱${s.cooldown || 0}s</td>
+    </tr>`;
+  }).join('\n');
+
+  return `<section class="section">
+  <h2>All ${esc(pal.name.en)}'s Skills</h2>
+  <div style="overflow-x:auto">
+  <table class="data-table">
+    <thead>
+      <tr><th class="num">Lv</th><th>Skill</th><th>Element</th><th class="num">Power</th><th class="num">Cooldown</th></tr>
+    </thead>
+    <tbody>
+      ${rows}
+    </tbody>
+  </table>
+  </div>
+  <p style="font-size:0.8125rem;color:var(--color-text-muted);margin-top:8px">
+    ${skills.length} skill${skills.length > 1 ? 's' : ''} total — see the Skill Builds section above for optimal loadouts.
+  </p>
 </section>`;
 }
 
@@ -411,6 +554,10 @@ function renderSkillBuilds(pal, tier, builds, variant) {
       </div>`;
     }).join('\n        ');
 
+    const insightHTML = build.insight
+      ? `<p class="skill-build-insight" style="font-size:0.75rem;color:var(--color-accent);margin-top:6px;padding-top:6px;border-top:1px solid var(--color-border);font-style:italic">💡 ${esc(build.insight)}</p>`
+      : '';
+
     return `<div class="skill-build">
       <div class="skill-build-header">${build.name}</div>
       <p style="font-size:0.8125rem;color:var(--color-text-secondary);margin-bottom:12px">${build.description}</p>
@@ -421,6 +568,7 @@ function renderSkillBuilds(pal, tier, builds, variant) {
         DPS: <strong>${build.dps}</strong>
       </div>
       <p style="font-size:0.75rem;color:var(--color-text-muted);margin-top:8px">${build.strategy}</p>
+      ${insightHTML}
     </div>`;
   }).join('\n      ');
 
@@ -463,9 +611,21 @@ function renderBreedingSection(pal, tier, variant) {
 
   const totalPairs = (reverseIndex[pal.slug] || []).length;
 
+  // Variant breeding intro — 6 phrasings rotated by variant
+  const breedingIntros = [
+    `${totalPairs} parent pairs can produce ${esc(pal.name.en)}. Here are the easiest combinations:`,
+    totalPairs > 5
+      ? `Want to breed ${esc(pal.name.en)}? Pick from ${totalPairs} possible parent combos — these are the simplest:`
+      : `Only ${totalPairs} pairs can breed ${esc(pal.name.en)} — here ${totalPairs === 1 ? 'it is' : 'they are'}:`,
+    `${esc(pal.name.en)} has ${totalPairs} breeding combinations. Start with these low-effort pairs:`,
+    `${totalPairs} ways to get ${esc(pal.name.en)} through breeding. The easiest paths:`,
+    `Breeding ${esc(pal.name.en)}: choose from ${totalPairs} parent pairs. These require the least setup:`,
+    `Looking for ${esc(pal.name.en)}? ${totalPairs} breeding combos exist — try these first:`,
+  ];
+
   return `<section class="section">
   <h2>${heading}</h2>
-  <p>${totalPairs} parent pairs can produce ${esc(pal.name.en)}. Here are the easiest combinations:</p>
+  <p>${breedingIntros[variant % breedingIntros.length]}</p>
   <div class="glass-panel">
     ${pairHTML}
   </div>
@@ -509,11 +669,31 @@ function renderWorkSection(pal, tier, variant) {
     </div>`;
   }).join('\n');
 
+  // Natural-language work summary — unique per Pal
+  const workTypes = works.map(([w, lv]) => `${WORK_LABELS[w] || w} (Lv ${lv})`);
+  const bestWork = workTypes[0];
+  const stageHint = (pal.decision && pal.decision.gameStage)
+    ? (pal.decision.gameStage.early ? 'early-game' : pal.decision.gameStage.mid ? 'mid-game' : pal.decision.gameStage.late ? 'late-game' : '')
+    : '';
+  const stageNote = stageHint ? ` Best used in ${stageHint} bases.` : '';
+
+  const workSummaryVariants = [
+    `${esc(pal.name.en)} handles ${workTypes.length} work type${workTypes.length > 1 ? 's' : ''}: ${workTypes.join(', ')}.${stageNote}`,
+    `Assign ${esc(pal.name.en)} to your base for ${bestWork}.${stageNote}`,
+    works.length >= 3
+      ? `${esc(pal.name.en)} is a versatile base Pal — covering ${workTypes.slice(0, 3).join(', ')}.${stageNote}`
+      : `${esc(pal.name.en)} specializes in ${bestWork}.${stageNote}`,
+    `${esc(pal.name.en)}'s best base role: ${bestWork}.${stageNote}`,
+  ];
+
+  const workSummary = `<p style="margin-top:12px;font-size:0.875rem;color:var(--color-text-secondary)">${workSummaryVariants[variant % workSummaryVariants.length]}</p>`;
+
   return `<section class="section">
   <h2>${heading}</h2>
   <div class="glass-panel">
     ${workHTML}
   </div>
+  ${workSummary}
 </section>`;
 }
 
@@ -523,14 +703,31 @@ function renderAcquisition(pal, variant) {
   const habitats = acq.habitats || [];
 
   let content = '';
-  if (habitats.length > 0) {
-    content += `<p>Found in: ${habitats.join(', ')}</p>`;
+
+  // Pretty-print habitat names
+  function formatHabitat(h) {
+    return h.replace(/_/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
   }
+
+  if (habitats.length > 0) {
+    const prettyHabs = habitats.map(formatHabitat);
+    const habIntroVariants = [
+      `Found in: ${prettyHabs.join(', ')}.`,
+      `Spawns in ${prettyHabs.slice(0, 3).join(', ')}${habitats.length > 3 ? ', and more' : ''}.`,
+      `Look for ${esc(pal.name.en)} in ${prettyHabs.join(', ')}.`,
+      `Habitat: ${prettyHabs.join(', ')}.`,
+    ];
+    content += `<p>${habIntroVariants[variant % habIntroVariants.length]}</p>`;
+  }
+
   if (acq.isBossEncounter) {
-    content += `<p>⚠️ Boss encounter — prepare for a challenging fight.</p>`;
+    content += `<p>⚠️ Boss encounter — prepare for a challenging fight before attempting to capture.</p>`;
   }
   if (acq.isNocturnal) {
     content += `<p>🌙 Nocturnal — only appears at night.</p>`;
+  }
+  if (!acq.isCatchable && acq.isBreedable) {
+    content += `<p>🔬 Not catchable in the wild — must be obtained through breeding.</p>`;
   }
   if (!content) {
     content = `<p>${esc(pal.name.en)} can be found in various locations across Palworld. Check your Paldeck for specific habitat markers.</p>`;
@@ -549,14 +746,24 @@ function renderDrops(pal, tier, variant) {
         : SECTION_HEADINGS.drops[tier])
     : 'Drops & Materials';
 
-  const dropList = (pal.drops || []).map(d =>
-    typeof d === 'string' ? d : d.name || d.item
+  const rawDrops = pal.drops || [];
+  const dropList = rawDrops.map(d =>
+    typeof d === 'string' ? d : d.name || d.itemId || d.item
   ).filter(Boolean);
 
   if (dropList.length === 0) return '';
 
+  // Natural-language drop intro — variant phrases
+  const dropIntros = [
+    `Defeating or capturing ${esc(pal.name.en)} yields:`,
+    `${esc(pal.name.en)} drops the following materials:`,
+    `You can farm these items from ${esc(pal.name.en)}:`,
+    `Loot from ${esc(pal.name.en)}:`,
+  ];
+
   return `<section class="section">
   <h2>${heading}</h2>
+  <p>${dropIntros[variant % dropIntros.length]}</p>
   <div class="glass-panel">
     <ul style="list-style:disc;padding-left:20px">
       ${dropList.map(d => `<li>${esc(d)}</li>`).join('\n      ')}
@@ -578,9 +785,17 @@ function renderWhatsNext(pal, children, variant) {
     </a>
   </div>`).join('\n');
 
+  // Variant intro text for "What's Next"
+  const whatsNextIntros = [
+    `After you have ${esc(pal.name.en)}, breed it to produce these valuable Pals:`,
+    `${esc(pal.name.en)} can be a stepping stone to stronger Pals. Breed it to get:`,
+    `Use ${esc(pal.name.en)} as a breeding bridge to unlock these targets:`,
+    `Got ${esc(pal.name.en)}? Pair it up to breed these higher-tier Pals:`,
+  ];
+
   return `<section class="section">
   <h2>${heading}</h2>
-  <p>After you have ${esc(pal.name.en)}, breed it to produce these valuable Pals:</p>
+  <p>${whatsNextIntros[variant % whatsNextIntros.length]}</p>
   <div class="pal-grid" style="grid-template-columns:repeat(3,1fr)">
     ${childCards}
   </div>
@@ -625,13 +840,20 @@ function generateDescription(pal, tier, variant, peers, comboCount) {
     return templates[variant % 4]();
   }
 
-  // B tier
-  const bTemplates = [
-    () => DESC_TEMPLATES.bDefault(pal),
+  // B tier — 10 diverse description templates
+  const bDescFns = [
+    () => DESC_TEMPLATES.bBreeding(pal, comboCount),
     () => DESC_TEMPLATES.bAcquisition(pal),
     () => DESC_TEMPLATES.bData(pal, comboCount),
+    () => DESC_TEMPLATES.bPartnerSkill(pal, comboCount),
+    () => DESC_TEMPLATES.bWork(pal, comboCount),
+    () => DESC_TEMPLATES.bMount(pal, comboCount),
+    () => DESC_TEMPLATES.bGameStage(pal, comboCount),
+    () => DESC_TEMPLATES.bDrops(pal, comboCount),
+    () => DESC_TEMPLATES.bSize(pal, comboCount),
+    () => DESC_TEMPLATES.bBreedingPower(pal, comboCount),
   ];
-  return bTemplates[variant % 3]();
+  return bDescFns[variant % bDescFns.length]();
 }
 
 // ---- Render Homepage ----
@@ -820,7 +1042,7 @@ function renderHomepage() {
       <a href="/guides/breeding-explained/" class="guide-card guide-card-accent" style="--guide-accent:var(--color-accent)">
         <div class="guide-card-icon">🧬</div>
         <h3>Breeding Explained</h3>
-        <p>How the breeding formula works, step-by-step — with examples and calculator.</p>
+        <p>BP formula, special combos, and how to plan chains with the Tree &amp; Calculator.</p>
       </a>
     </div>
   </div>
@@ -857,105 +1079,174 @@ console.log('  dist/pals/index.html');
 
 function renderPalsIndex() {
   const title = TITLE_TEMPLATES.palsIndex;
-  const description = 'Browse all Pals by element, work type, and rarity. Filterable index with tier badges and key stats.';
+  const description = `Browse all ${allPals.length} Pals with images, element colors, and tier badges. Search by name, filter by element, sort by stats.`.substring(0, 155);
   const canonical = DOMAIN + '/pals/';
-
   const headHTML = renderHead(config, { title, description, canonical });
 
-  // Group by element
-  const byElement = {};
-  for (const pal of allPals) {
-    const el = pal.classification.elements[0];
-    if (!byElement[el]) byElement[el] = [];
-    byElement[el].push(pal);
+  // Element counts for filter chips
+  const elIcons = { Fire:'🔥', Water:'💧', Grass:'🌿', Ground:'⛰', Electric:'⚡', Ice:'❄️', Dragon:'🐉', Dark:'🌑', Neutral:'⬜' };
+  const elOrder = ['Fire','Water','Grass','Ground','Electric','Ice','Dragon','Dark','Neutral'];
+  const elCounts = {};
+  for (const p of allPals) {
+    const el = p.classification.elements[0];
+    elCounts[el] = (elCounts[el] || 0) + 1;
   }
 
-  // Group by work type
-  const byWork = {};
-  for (const pal of allPals) {
-    for (const [work, level] of Object.entries(pal.workSuitability || {})) {
-      if (level >= 3) {
-        if (!byWork[work]) byWork[work] = [];
-        byWork[work].push({ pal, level });
-      }
-    }
-  }
-  // Sort each work group by level desc
-  for (const key of Object.keys(byWork)) {
-    byWork[key].sort((a, b) => b.level - a.level);
+  // Pre-compute stat totals for sorting
+  const statTotals = {};
+  for (const p of allPals) {
+    statTotals[p.slug] = p.stats.hp + p.stats.attack + p.stats.defense + p.stats.speed;
   }
 
-  // Group by rarity
-  const byRarity = {};
-  const rarityOrder = ['Legendary', 'Epic', 'Rare', 'Uncommon', 'Common'];
-  for (const r of rarityOrder) {
-    byRarity[r] = allPals.filter(p => p.classification.rarity === r);
-  }
-
-  function renderPalTable(pals) {
-    const rows = pals.map(p => {
-      const tier = palTiers[p.slug] || 'B';
-      const works = Object.entries(p.workSuitability || {})
-        .filter(([, lv]) => lv >= 3)
-        .map(([w, lv]) => `${WORK_LABELS[w]||w} Lv${lv}`)
-        .join(', ') || '-';
-      return `<tr>
-        <td>#${p.number}</td>
-        <td><a href="/pals/${p.slug}/">${esc(p.name.en)}</a></td>
-        <td><span class="badge badge-element ${(p.classification.elements[0] || 'neutral').toLowerCase()}">${p.classification.elements[0] || 'Unknown'}</span></td>
-        <td><span class="badge badge-tier-${tier.toLowerCase()}">${tier}</span></td>
-        <td>${works}</td>
-      </tr>`;
-    }).join('\n');
-
-    return `<table class="data-table">
-      <thead><tr><th>#</th><th>Name</th><th>Element</th><th>Tier</th><th>Key Work</th></tr></thead>
-      <tbody>${rows}</tbody>
-    </table>`;
-  }
-
-  const elementAccordions = Object.entries(byElement)
-    .sort(([a], [b]) => a.localeCompare(b))
-    .map(([el, pals]) => `<details class="pal-accordion">
-      <summary>${el} <span style="font-size:0.8125rem;color:var(--color-text-muted)">(${pals.length} Pals)</span></summary>
-      <div class="accordion-content">${renderPalTable(pals)}</div>
-    </details>`).join('\n');
-
-  const workAccordions = Object.entries(byWork)
-    .sort(([a], [b]) => a.localeCompare(b))
-    .map(([work, entries]) => `<details class="pal-accordion">
-      <summary>${WORK_LABELS[work] || work} <span style="font-size:0.8125rem;color:var(--color-text-muted)">(${entries.length} Pals)</span></summary>
-      <div class="accordion-content">${renderPalTable(entries.map(e => e.pal))}</div>
-    </details>`).join('\n');
-
-  const rarityAccordions = Object.entries(byRarity)
-    .filter(([, pals]) => pals.length > 0)
-    .map(([rarity, pals]) => `<details class="pal-accordion">
-      <summary>${rarity} <span style="font-size:0.8125rem;color:var(--color-text-muted)">(${pals.length} Pals)</span></summary>
-      <div class="accordion-content">${renderPalTable(pals)}</div>
-    </details>`).join('\n');
+  // Static cards (no-JS fallback — all Pals, sorted by number)
+  const staticCards = allPals.map(p => {
+    const el = (p.classification.elements[0] || 'Neutral').toLowerCase();
+    const tier = palTiers[p.slug] || 'B';
+    const bp = calculatorData.palBP[p.slug];
+    const bpDisplay = bp != null ? 'BP ' + bp : '';
+    const total = statTotals[p.slug];
+    return `<a href="/pals/${p.slug}/" class="pal-gallery-card ${el}" data-slug="${p.slug}"
+              data-name="${esc(p.name.en).replace(/"/g, '&quot;')}" data-number="${p.number}"
+              data-element="${el}" data-tier="${tier}" data-bp="${bp != null ? bp : ''}"
+              data-total="${total}">
+      <img src="/images/pals/${p.slug}.webp" alt="${esc(p.name.en)}" class="pal-gallery-card-img" loading="lazy"
+           onerror="this.src='/images/pals/${p.slug}.png';this.onerror=null;this.src='/images/pals/_placeholder.png'">
+      <span class="pal-gallery-card-name">${esc(p.name.en)}</span>
+      <span class="pal-gallery-card-meta">#${p.number} · ${p.classification.elements[0]}</span>
+      <span class="pal-gallery-card-badges">
+        <span class="badge badge-tier-${tier.toLowerCase()}">${tier}</span>
+        ${bpDisplay ? '<span class="pal-gallery-card-bp">' + bpDisplay + '</span>' : ''}
+      </span>
+    </a>`;
+  }).join('\n');
 
   const bodyHTML = `<div class="container">
   <div class="page-header">
-    <h1>All ${allPals.length} Pals</h1>
-    <p class="page-description">Browse by Element, Work Type, or Rarity. Click a Pal name to see full stats, skill builds, and breeding paths.</p>
+    <h1>📋 All ${allPals.length} Pals</h1>
+    <p class="page-description">Browse every Pal — click for detailed stats, skill builds, and breeding paths.</p>
   </div>
 
-  <section class="section">
-    <h2>By Element</h2>
-    ${elementAccordions}
-  </section>
+  <div class="pal-gallery-toolbar">
+    <div class="pal-gallery-search-wrap">
+      <input type="text" id="pal-gallery-search" class="pal-gallery-search-input"
+             placeholder="Search by name or number…" autocomplete="off">
+    </div>
+    <div class="pal-gallery-sort-wrap">
+      <label for="pal-gallery-sort" class="pal-gallery-sort-label">Sort:</label>
+      <select id="pal-gallery-sort" class="pal-gallery-sort-select">
+        <option value="number">Number</option>
+        <option value="name">Name</option>
+        <option value="total">Stat Total ↓</option>
+        <option value="bp">Breeding Power ↓</option>
+      </select>
+    </div>
+  </div>
 
-  <section class="section">
-    <h2>By Work Type (Lv 3+)</h2>
-    ${workAccordions}
-  </section>
+  <div class="pal-gallery-filters" id="pal-gallery-filters">
+    <button class="pal-gallery-filter-chip active" data-filter="all">All (${allPals.length})</button>
+    ${elOrder.map(el => {
+      const count = elCounts[el] || 0;
+      return '<button class="pal-gallery-filter-chip" data-filter="' + el.toLowerCase() + '">' + (elIcons[el] || '') + ' ' + el + ' (' + count + ')</button>';
+    }).join('\n    ')}
+  </div>
 
-  <section class="section">
-    <h2>By Rarity</h2>
-    ${rarityAccordions}
-  </section>
-</div>`;
+  <div class="pal-gallery-info" id="pal-gallery-info">
+    Showing <strong id="pal-gallery-count">${allPals.length}</strong> Pals
+  </div>
+
+  <div class="pal-gallery-grid" id="pal-gallery-grid">
+    ${staticCards}
+  </div>
+</div>
+
+<script>
+(function(){
+  var grid = document.getElementById('pal-gallery-grid');
+  var searchInput = document.getElementById('pal-gallery-search');
+  var sortSelect = document.getElementById('pal-gallery-sort');
+  var countEl = document.getElementById('pal-gallery-count');
+  var filterChips = document.querySelectorAll('.pal-gallery-filter-chip');
+  var activeFilter = 'all';
+
+  if (!grid || !searchInput) return;
+
+  // Get all cards
+  var cards = Array.from(grid.querySelectorAll('.pal-gallery-card'));
+
+  function filterAndSort() {
+    var query = searchInput.value.trim().toLowerCase();
+
+    cards.forEach(function(card) {
+      var name = (card.dataset.name || '').toLowerCase();
+      var number = card.dataset.number || '';
+      var slug = card.dataset.slug || '';
+      var el = card.dataset.element || '';
+
+      var matchSearch = !query || name.indexOf(query) !== -1 || number.indexOf(query) !== -1 || slug.indexOf(query) !== -1;
+      var matchFilter = activeFilter === 'all' || el === activeFilter;
+
+      if (matchSearch && matchFilter) {
+        card.style.display = '';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    // Sort visible cards
+    var sortBy = sortSelect.value;
+    var visible = cards.filter(function(c) { return c.style.display !== 'none'; });
+
+    if (sortBy === 'name') {
+      visible.sort(function(a, b) { return (a.dataset.name || '').localeCompare(b.dataset.name || ''); });
+    } else if (sortBy === 'number') {
+      visible.sort(function(a, b) { return parseInt(a.dataset.number) - parseInt(b.dataset.number); });
+    } else if (sortBy === 'total') {
+      visible.sort(function(a, b) { return parseInt(b.dataset.total) - parseInt(a.dataset.total); });
+    } else if (sortBy === 'bp') {
+      visible.sort(function(a, b) { return (parseInt(a.dataset.bp) || 9999) - (parseInt(b.dataset.bp) || 9999); });
+    }
+
+    // Reorder in DOM
+    visible.forEach(function(card) { grid.appendChild(card); });
+
+    // Update count
+    if (countEl) countEl.textContent = visible.length;
+
+    // Show/hide hidden cards at end
+    var hidden = cards.filter(function(c) { return c.style.display === 'none'; });
+    hidden.forEach(function(card) { grid.appendChild(card); });
+  }
+
+  // Search
+  searchInput.addEventListener('input', filterAndSort);
+
+  // Sort
+  if (sortSelect) {
+    sortSelect.addEventListener('change', function() {
+      // Update sort with arrows
+      filterAndSort();
+    });
+  }
+
+  // Filter chips
+  filterChips.forEach(function(chip) {
+    chip.addEventListener('click', function() {
+      filterChips.forEach(function(c) { c.classList.remove('active'); });
+      this.classList.add('active');
+      activeFilter = this.dataset.filter;
+      filterAndSort();
+    });
+  });
+
+  // Handle URL param ?element=fire
+  var params = new URLSearchParams(window.location.search);
+  var elParam = params.get('element');
+  if (elParam) {
+    var targetChip = document.querySelector('.pal-gallery-filter-chip[data-filter="' + elParam.toLowerCase() + '"]');
+    if (targetChip) targetChip.click();
+  }
+})();
+</script>`;
 
   return wrapPage(headHTML, bodyHTML);
 }
@@ -1021,6 +1312,21 @@ function renderBaseWorkersGuide() {
       <p class="page-description">Every work role ranked by level across all ${allPals.length} Pals. Data-driven, not opinion.</p>
     </div>
     <p>Efficient base management starts with assigning the right Pal to each job. Below, every work type is ranked by the highest-level Pals available — so you can build the most productive base in Palworld.</p>
+    <section class="section">
+      <h2>🌱 Early Game Picks</h2>
+      <p>Just starting out? These Pals are easy to catch in the starting areas and will carry you through the early game until you can upgrade to the top-tier options above:</p>
+      <table class="data-table">
+        <thead><tr><th>Role</th><th>Best Early Pick</th><th>Level</th><th>Where to Find</th></tr></thead>
+        <tbody>
+          <tr><td>🔥 Kindling</td><td><a href="/pals/foxparks/">Foxparks</a></td><td>Lv 1</td><td>Starting area, common spawn</td></tr>
+          <tr><td>💧 Watering</td><td><a href="/pals/pengullet/">Pengullet</a></td><td>Lv 1</td><td>Starting area, near water</td></tr>
+          <tr><td>🌿 Planting</td><td><a href="/pals/gumoss/">Gumoss</a></td><td>Lv 1</td><td>Starting area, common spawn</td></tr>
+          <tr><td>⛏️ Mining</td><td><a href="/pals/rushoar/">Rushoar</a></td><td>Lv 1</td><td>Starting area → upgrade to <a href="/pals/tombat/">Tombat</a> (Lv 2)</td></tr>
+          <tr><td>🔧 Handiwork</td><td><a href="/pals/cattiva/">Cattiva</a></td><td>Lv 1</td><td>Everywhere — first catch</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:0.875rem;color:var(--color-text-muted);margin-top:var(--space-2)">Once you unlock breeding, use the <a href="/breeding-tree/">Breeding Tree</a> to work toward the Lv 3–4 Pals in the rankings above.</p>
+    </section>
     ${workSections}
     <p style="margin-top:var(--space-8);font-size:0.875rem;color:var(--color-text-muted)">
       Rankings updated ${BUILD_DATE} · Based on game data from ${allPals.length} Pals.
@@ -1057,6 +1363,21 @@ function renderFlyingMountsGuide() {
       <p class="page-description">All ${flyers.length} flying mounts ranked by speed — with stamina comparison.</p>
     </div>
     <p>Flying mounts are essential for fast traversal in Palworld. Speed determines how fast you move, while stamina affects how long you can stay airborne. Pick a mount that balances both for your playstyle.</p>
+    <section class="section">
+      <h2>🌱 Early Game Picks</h2>
+      <p>Don't have Jetragon yet? Here's your upgrade path for flying mounts as you progress:</p>
+      <table class="data-table">
+        <thead><tr><th>Mount</th><th>Speed</th><th>Unlock Level</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td><a href="/pals/nitewing/">Nitewing</a></td><td>600</td><td>~Lv 15</td><td>Earliest flyer — catch one as soon as you can craft saddles</td></tr>
+          <tr><td><a href="/pals/vanwyrm/">Vanwyrm</a></td><td>700</td><td>~Lv 20</td><td>Good mid-game upgrade, also a solid Kindling worker</td></tr>
+          <tr><td><a href="/pals/beakon/">Beakon</a></td><td>1200</td><td>~Lv 30</td><td>Best pre-Jetragon flyer — doubles Nitewing's speed</td></tr>
+          <tr><td><a href="/pals/ragnahawk/">Ragnahawk</a></td><td>1300</td><td>~Lv 35</td><td>Slightly faster than Beakon, also strong in combat</td></tr>
+          <tr><td><a href="/pals/faleris/">Faleris</a></td><td>1400</td><td>~Lv 38</td><td>Top speed before Jetragon — can be bred early via <a href="/breeding-tree/?pal=faleris">breeding chain</a></td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:0.875rem;color:var(--color-text-muted);margin-top:var(--space-2)">💡 <strong>Tip</strong>: Faleris can be obtained much earlier than level 38 via breeding — check the <a href="/breeding-tree/?pal=faleris">Breeding Tree</a> for ⭐ Direct Catch pairs.</p>
+    </section>
     <table class="data-table">
       <thead><tr><th>#</th><th>Pal</th><th>Speed</th><th>Stamina</th><th>Element</th><th>Tier</th></tr></thead>
       <tbody>${rows}</tbody>
@@ -1156,19 +1477,181 @@ function renderBreedingGuide() {
     </section>
 
     <section class="section">
+      <h2>Parent Pair Difficulty</h2>
+      <p>Not all breeding pairs are equal. When looking at parents for your target Pal, they fall into three groups:</p>
+      <div style="display:flex;flex-direction:column;gap:var(--space-3);margin:var(--space-4) 0">
+        <div class="glass-panel" style="border-color:rgba(52,211,153,0.25);padding:var(--space-4)">
+          <strong style="color:#34d399">⭐ Direct Catch</strong>
+          <p style="margin:var(--space-1) 0 0;font-size:0.9375rem">Both parents are <strong>catch-only</strong> — they can't be produced through breeding. The simplest path: catch both, breed them together, done.</p>
+        </div>
+        <div class="glass-panel" style="border-color:rgba(240,192,64,0.2);padding:var(--space-4)">
+          <strong style="color:#f0c040">⚡ Short Chain</strong>
+          <p style="margin:var(--space-1) 0 0;font-size:0.9375rem">One parent must be <strong>bred first</strong>, the other can be caught directly. A two-step chain: breed the intermediate parent, then breed it with the caught parent for your target.</p>
+        </div>
+        <div class="glass-panel" style="border-color:rgba(144,152,168,0.15);padding:var(--space-4)">
+          <strong style="color:var(--color-text-secondary)">🔴 Full Chain</strong>
+          <p style="margin:var(--space-1) 0 0;font-size:0.9375rem">Both parents need breeding first. The longest path — but also the most options since each parent can be produced from multiple pairs.</p>
+        </div>
+      </div>
+      <p>The <a href="/breeding-tree/">Breeding Tree</a> automatically groups all pairs this way — just search for your target Pal to see every option.</p>
+    </section>
+
+    <section class="section">
       <h2>Planning Your Breeding Chain</h2>
-      <p>The easiest way to plan a breeding chain is:</p>
+      <p>Two tools to plan your chain — use whichever fits your workflow:</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:var(--space-4);margin:var(--space-4) 0">
+        <div class="glass-panel glass-panel-accent" style="padding:var(--space-5)">
+          <h3 style="font-size:1rem;margin-bottom:var(--space-2)">🧬 Calculator</h3>
+          <p style="font-size:0.875rem;margin-bottom:var(--space-3)">Pick two parents → instantly see the child. Or pick a target → see the shortest breeding path with estimated steps.</p>
+          <a href="/breeding-calculator/" class="cta-button" style="font-size:0.8125rem">Open Calculator →</a>
+        </div>
+        <div class="glass-panel glass-panel-accent" style="padding:var(--space-5)">
+          <h3 style="font-size:1rem;margin-bottom:var(--space-2)">🌳 Breeding Tree</h3>
+          <p style="font-size:0.875rem;margin-bottom:var(--space-3)">Search any target → see ALL parent pairs grouped by difficulty. Click 🔗 Trace to walk back the full chain.</p>
+          <a href="/breeding-tree/" class="cta-button cta-button-secondary" style="font-size:0.8125rem">Open Tree →</a>
+        </div>
+      </div>
+      <p>General strategy:</p>
       <ol style="list-style:decimal;padding-left:20px;margin-bottom:var(--space-4);color:var(--color-text-secondary)">
-        <li>Pick your target Pal in the <a href="/breeding-calculator/">Breeding Calculator</a></li>
-        <li>Check the easiest parent pairs (sorted by acquisition difficulty)</li>
-        <li>If you don't have those parents, repeat the process for each parent</li>
-        <li>Work backwards until you reach Pals you already own</li>
+        <li>Pick your target Pal in the <a href="/breeding-tree/">Breeding Tree</a></li>
+        <li>Start with ⭐ Direct Catch pairs if available — they require no chaining</li>
+        <li>For ⚡ Short Chain pairs, use 🔗 Trace to see the full path</li>
+        <li>Use the <a href="/breeding-calculator/">Calculator</a> to test specific parent combinations you're unsure about</li>
       </ol>
     </section>
 
+    <section class="section">
+      <h2>Frequently Asked Questions</h2>
+
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What does \"catch-only\" mean in the Breeding Tree?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A catch-only Pal is one that has zero breeding combinations that produce it — the only way to get it is to catch it in the wild. About 66 of the 323 Pals are catch-only. In the Breeding Tree, these show up as parents in ⭐ Direct Catch pairs (the easiest path)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I breed Legendary Pals like Frostallion or Jetragon?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, most Legendary Pals can be produced through breeding — but only from specific high-BP parents. For example, Frostallion (BP 260) can be bred from a wide range of parent combinations. However, these Legendary Pals are never \"catch-only\" parents themselves: they must be bred from other Pals first, so they always appear in 🔴 Full Chain pairs rather than ⭐ Direct Catch pairs."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why do some Pals show zero ⭐ Recommended pairs?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "⭐ Recommended pairs require both parents to be catch-only (no breeding required). If a target Pal has a very low or very high Breeding Power, it may not have any catch-only Pal pair that averages to its BP. This is common for Legendary and late-game Pals. Try the ⚡ Short Chain or 🔴 Full Chain tabs instead — these show pairs where one or both parents need breeding first."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How many breeding steps does it take to get a specific Pal?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It depends on the target Pal and which parent pair you choose. ⭐ Direct Catch pairs take 1 step (breed the two caught parents). ⚡ Short Chain pairs typically take 2 steps (breed one parent first, then breed that result with a caught Pal). 🔴 Full Chain pairs can take 3+ steps. Use the 🔗 Trace button in the Breeding Tree to see the exact chain for any pair — it walks back through every intermediate breeding step until all paths end at catch-only Pals."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What's the difference between the Calculator and the Breeding Tree?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Calculator answers two specific questions: \"What child do these two parents produce?\" and \"What's the shortest path to breed this target?\" The Breeding Tree answers a different question: \"Show me ALL possible parent pairs for this target, grouped by difficulty.\" Use the Tree to explore your options, then the Calculator to test specific combinations. Both tools share the same underlying data and respect special combos."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does the order of parents matter in breeding?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. The breeding formula is symmetric: (Parent A BP + Parent B BP) ÷ 2 gives the same result regardless of which Pal is Parent A or Parent B. Special combos also work in either order — Frostallion + Helzephyr produces the same child as Helzephyr + Frostallion."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does breeding take?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Default breeding time is 5 minutes per egg in a Breeding Farm, but this varies with world settings. A large egg takes the same time as a regular egg — the timer starts when both parents are assigned to the farm. On dedicated servers, breeding continues even when you're offline. The real time investment isn't the egg timer — it's catching the right parents and planning the chain."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I breed for specific passive skills?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! Passive skills are inherited randomly from parents during breeding. To pass down a desired passive, breed parents that have it — the more parents with the skill, the higher the chance. Pro tip: Lock in passives early in your chain. Start with catch-only parents that have the traits you want, then breed toward your target — this is much easier than trying to add passives at the last step."
+            }
+          }
+        ]
+      }
+      </script>
+
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary class="faq-question">What does "catch-only" mean in the Breeding Tree?</summary>
+          <div class="faq-answer">
+            <p>A <strong>catch-only</strong> Pal is one that has zero breeding combinations that produce it — the only way to get it is to catch it in the wild. About 66 of the 323 Pals are catch-only. In the Breeding Tree, these show up as parents in ⭐ Direct Catch pairs (the easiest path).</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Can I breed Legendary Pals like Frostallion or Jetragon?</summary>
+          <div class="faq-answer">
+            <p>Yes, most Legendary Pals can be produced through breeding — but only from specific high-BP parents. For example, Frostallion (BP 260) can be bred from a wide range of parent combinations. However, these Legendary Pals are never "catch-only" parents themselves: they must be bred from other Pals first, so they always appear in 🔴 Full Chain pairs rather than ⭐ Direct Catch pairs.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Why do some Pals show zero ⭐ Recommended pairs?</summary>
+          <div class="faq-answer">
+            <p>⭐ Recommended pairs require both parents to be catch-only (no breeding required). If a target Pal has a very low or very high Breeding Power, it may not have any catch-only Pal pair that averages to its BP. This is common for Legendary and late-game Pals. Try the <strong>⚡ Short Chain</strong> or <strong>🔴 Full Chain</strong> tabs instead — these show pairs where one or both parents need breeding first.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">How many breeding steps does it take to get a specific Pal?</summary>
+          <div class="faq-answer">
+            <p>It depends on the target Pal and which parent pair you choose. ⭐ Direct Catch pairs take <strong>1 step</strong> (breed the two caught parents). ⚡ Short Chain pairs typically take <strong>2 steps</strong> (breed one parent first, then breed that result with a caught Pal). 🔴 Full Chain pairs can take <strong>3+ steps</strong>. Use the 🔗 Trace button in the Breeding Tree to see the exact chain for any pair — it walks back through every intermediate breeding step until all paths end at catch-only Pals.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">What's the difference between the Calculator and the Breeding Tree?</summary>
+          <div class="faq-answer">
+            <p>The Calculator answers two specific questions: <em>"What child do these two parents produce?"</em> and <em>"What's the shortest path to breed this target?"</em> The Breeding Tree answers a different question: <em>"Show me ALL possible parent pairs for this target, grouped by difficulty."</em> Use the Tree to explore your options, then the Calculator to test specific combinations. Both tools share the same underlying data and respect special combos.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Does the order of parents matter in breeding?</summary>
+          <div class="faq-answer">
+            <p>No. The breeding formula is symmetric: (Parent A BP + Parent B BP) ÷ 2 gives the same result regardless of which Pal is Parent A or Parent B. Special combos also work in either order — Frostallion + Helzephyr produces the same child as Helzephyr + Frostallion.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">How long does breeding take?</summary>
+          <div class="faq-answer">
+            <p>Default breeding time is <strong>5 minutes</strong> per egg in a Breeding Farm, but this varies with world settings. A large egg takes the same time as a regular egg — the timer starts when both parents are assigned to the farm. On dedicated servers, breeding continues even when you're offline. The real time investment isn't the egg timer — it's catching the right parents and planning the chain.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Can I breed for specific passive skills?</summary>
+          <div class="faq-answer">
+            <p>Yes! Passive skills are inherited randomly from parents during breeding. To pass down a desired passive, breed parents that have it — the more parents with the skill, the higher the chance. <strong>Pro tip</strong>: Lock in passives early in your chain. Start with catch-only parents that have the traits you want, then breed toward your target — this is much easier than trying to add passives at the last step. The Calculator and Breeding Tree focus on which Pals to breed, not passives — check the Pal Finder to filter by stats and find ideal trait donors.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
     <section class="content-upgrade-cta">
-      <p>Ready to plan your breeding chain? Our Calculator checks all ${Object.keys(reverseIndex).length} breedable Pals instantly.</p>
-      <a href="/breeding-calculator/" class="cta-button cta-button-lg">Open Breeding Calculator →</a>
+      <p>Ready to plan your breeding chain? Explore all ${Object.keys(reverseIndex).length} breedable Pals with the Breeding Tree or Calculator.</p>
+      <a href="/breeding-tree/" class="cta-button cta-button-lg">🌳 Open Breeding Tree →</a>
+      <a href="/breeding-calculator/" class="cta-button cta-button-lg cta-button-secondary" style="margin-left:var(--space-2)">🧬 Open Calculator →</a>
     </section>
   </div>`;
   return wrapPage(headHTML, bodyHTML);
@@ -1281,12 +1764,13 @@ function renderCalculator() {
   const bodyHTML = '<div class="container">\n' +
     '    <div class="page-header calc-hero">\n' +
     '      <h1>🧬 Palworld Breeding Calculator <span class="calc-hero-amp">&amp;</span> Combinations</h1>\n' +
-    '      <p class="page-description calc-hero-sub">Breed any two Pals to see their offspring, or pick a target to trace every path to it.</p>\n' +
+    '      <p class="page-description calc-hero-sub">Breed any two Pals to see their offspring, or pick a target to trace every path to it. <a href="/breeding-tree/" style="color:var(--color-accent)">Explore full breeding chains →</a> Not sure which Pal you need? Try the <a href="/pal-finder/" style="color:var(--color-accent)">Pal Finder →</a></p>\n' +
     '      <div class="calc-hero-stats">\n' +
     '        <span class="calc-hero-stat">📚 323 Pals</span>\n' +
     '        <span class="calc-hero-stat">🔀 50K+ Combos</span>\n' +
     '        <span class="calc-hero-stat">⚡ Instant</span>\n' +
     '      </div>\n' +
+    '      <p class="calc-version-badge">✅ Updated ' + BUILD_DATE + ' — compatible with the latest Palworld version</p>\n' +
     '    </div>\n' +
     '\n' +
     '    <!-- EQUATION BAR: A + B = C -->\n' +
@@ -1505,6 +1989,108 @@ fs.writeFileSync(path.join(DIST_DIR, 'pal-finder', 'index.html'), finderHTML);
 SITEMAP_ENTRIES.push({ url: DOMAIN + '/pal-finder/', tier: 'S', lastmod: BUILD_DATE });
 console.log('  dist/pal-finder/index.html');
 
+// ---- Render Breeding Tree page ----
+console.log('Rendering Breeding Tree...');
+const treeHTML = renderBreedingTree();
+fs.mkdirSync(path.join(DIST_DIR, 'breeding-tree'), { recursive: true });
+fs.writeFileSync(path.join(DIST_DIR, 'breeding-tree', 'index.html'), treeHTML);
+SITEMAP_ENTRIES.push({ url: DOMAIN + '/breeding-tree/', tier: 'S', lastmod: BUILD_DATE });
+// Top 5 Breeding Tree variant URLs
+const topTreeSlugs = ['anubis', 'jormuntide_ignis', 'shadowbeak', 'frostallion', 'paladius'];
+for (const ts of topTreeSlugs) {
+  SITEMAP_ENTRIES.push({ url: `${DOMAIN}/breeding-tree/?pal=${ts}`, tier: 'A', lastmod: BUILD_DATE });
+}
+console.log(`  dist/breeding-tree/index.html (+ ${topTreeSlugs.length} sitemap variants)`);
+
+function renderBreedingTree() {
+  const title = TITLE_TEMPLATES.breedingTree;
+  const description = 'Find the easiest breeding path to any Pal. Pairs grouped by difficulty — catch-only parents first, then pairs that need chaining.'.substring(0, 155);
+  const headHTML = renderHead(config, { title, description, canonical: DOMAIN + '/breeding-tree/' });
+
+  const gridData = buildPalGridData();
+
+  // SEO fallback: show a few Anubis pairs for crawlers
+  const fallbackPal = 'anubis';
+  const fallbackPalData = palBySlug[fallbackPal];
+  const fallbackPairs = (reverseIndex[fallbackPal] || []).slice(0, 6);
+
+  const fallbackHTML = fallbackPalData ? `
+  <div class="tree-seo-fallback">
+    <h2>🌳 ${esc(fallbackPalData.name.en)} Breeding Tree</h2>
+    <p>${fallbackPairs.length} parent pairs that can produce <strong>${esc(fallbackPalData.name.en)}</strong>.</p>
+    <div class="tree-seo-grid">
+      ${fallbackPairs.map(pair => {
+        const p1 = palBySlug[pair.parent1];
+        const p2 = palBySlug[pair.parent2];
+        if (!p1 || !p2) return '';
+        return `<a href="/pals/${pair.parent1}/" class="tree-seo-pair">
+          <img src="/images/pals/${pair.parent1}.webp" alt="${esc(p1.name.en)}" loading="lazy" onerror="this.src='/images/pals/${pair.parent1}.png'">
+          <span>${esc(p1.name.en)}</span></a>
+          <span class="tree-seo-plus">+</span>
+          <a href="/pals/${pair.parent2}/" class="tree-seo-pair">
+          <img src="/images/pals/${pair.parent2}.webp" alt="${esc(p2.name.en)}" loading="lazy" onerror="this.src='/images/pals/${pair.parent2}.png'">
+          <span>${esc(p2.name.en)}</span></a>`;
+      }).join('')}
+    </div>
+    <p><a href="/breeding-calculator/?target=${fallbackPal}" class="cta-button">🧬 Open in Calculator →</a></p>
+  </div>` : '';
+
+  const bodyHTML = `<div class="container">
+  <div class="page-header">
+    <h1>🌳 Breeding Tree</h1>
+    <p class="page-description">Find the easiest way to breed any Pal. Parent pairs are grouped by how hard they are to obtain. <a href="/breeding-calculator/" style="color:var(--color-accent)">Try the Calculator →</a></p>
+  </div>
+
+  <div class="tree-toolbar" id="tree-toolbar">
+    <div class="tree-search-wrap">
+      <input type="text" id="tree-search" class="tree-search-input"
+             placeholder="Search Pal by name or number…" autocomplete="off">
+      <div class="tree-search-results" id="tree-search-results" style="display:none"></div>
+    </div>
+    <a href="/breeding-calculator/" class="tree-ctrl-btn" id="tree-btn-calculator" style="text-decoration:none">🧬 Calculator</a>
+  </div>
+
+  <div class="tree-empty-state" id="tree-empty">
+    <div class="tree-empty-icon">🌳</div>
+    <p class="tree-empty-text">Search for a Pal above to find the <strong>easiest breeding paths</strong>.</p>
+    <p class="tree-empty-hint">Every parent pair that can produce your target — sorted by how easy the parents are to get.</p>
+  </div>
+
+  <div class="tree-target-header" id="tree-target-header" style="display:none">
+    <div class="tree-target-card" id="tree-target-card"></div>
+    <div class="tree-sort-bar" id="tree-sort-bar">
+      <span class="tree-sort-label">Sort:</span>
+      <button class="tree-sort-pill active" data-sort="recommended">⭐ Recommended</button>
+      <button class="tree-sort-pill" data-sort="wild">🌿 Catch First</button>
+      <button class="tree-sort-pill" data-sort="bp">🔢 By BP</button>
+      <button class="tree-sort-pill" data-sort="steps">📶 Fewest Steps</button>
+    </div>
+  </div>
+
+  <div class="tree-pair-list" id="tree-pair-list"></div>
+
+  ${fallbackHTML}
+
+  <details class="tree-help">
+    <summary>📖 How to Use the Breeding Tree</summary>
+    <div>
+      <p><strong>🔍 Search</strong> — Pick a Pal you want to breed. Pairs appear grouped by difficulty.</p>
+      <p><strong>⭐ Direct Catch</strong> — Both parents must be caught (they can't be bred). Simplest path — no chain needed.</p>
+      <p><strong>⚡ Short Chain</strong> — One parent can be bred, one must be caught. Click <span style="color:var(--color-accent)">🔗 Trace</span> to see the chain.</p>
+      <p><strong>🔴 Full Chain</strong> — Both parents need breeding first. The longest path — but also the most options.</p>
+      <p><strong>🔗 Trace Chain</strong> — Click on any pair with a breedable parent to walk back through the full breeding chain.</p>
+      <p><strong>🧬 Calculator</strong> — Jump to the Breeding Calculator to test custom combinations.</p>
+    </div>
+  </details>
+</div>
+
+<script id="tree-grid-data" type="application/json">${JSON.stringify(gridData)}</script>
+<script id="tree-palbp-data" type="application/json">${JSON.stringify(calculatorData.palBP)}</script>
+<script src="/assets/breeding-tree.js" defer></script>`;
+
+  return wrapPage(headHTML, bodyHTML);
+}
+
 function renderPalFinder() {
   const title = TITLE_TEMPLATES.palFinder;
   const description = `Filter ${allPals.length} Pals by element, work type, rarity, and mount capability. Compare stats, find the right Pal for your team or base.`.substring(0, 155);
@@ -1549,7 +2135,7 @@ function renderPalFinder() {
   const bodyHTML = `<div class="container">
     <div class="page-header">
       <h1>🔍 Pal Finder</h1>
-      <p class="page-description">Filter <span id="finder-count">${allPals.length} Pals</span> by element, work type, rarity, and more.</p>
+      <p class="page-description">Filter <span id="finder-count">${allPals.length} Pals</span> by element, work type, rarity, and more. Want to breed one? Use the <a href="/breeding-calculator/" style="color:var(--color-accent)">Breeding Calculator →</a></p>
     </div>
 
     <div id="finder-filters" class="finder-filters glass-panel" style="padding:var(--space-4);margin-bottom:var(--space-6)">
@@ -1710,16 +2296,17 @@ const llmsLines = [
   `> Peer-ranked Pal stats, skill builds, and breeding paths for ${allPals.length} Pals.`,
   '',
   '## Core Pages',
-  '- [Home](${DOMAIN}/): Pal stats, mini Calculator, top Pal cards',
-  '- [Calculator](${DOMAIN}/breeding-calculator/): Find child from parents or parents from child',
-  '- [Pal Finder](${DOMAIN}/pal-finder/): Filter by element, work, rarity',
-  '- [All Pals](${DOMAIN}/pals/): Accordion index by element/work/rarity',
+  `- [Home](${DOMAIN}/): Pal stats, mini Calculator, top Pal cards`,
+  `- [Calculator](${DOMAIN}/breeding-calculator/): Find child from parents or parents from child`,
+  `- [Breeding Tree](${DOMAIN}/breeding-tree/): Explore chains that lead to any Pal`,
+  `- [Pal Finder](${DOMAIN}/pal-finder/): Filter by element, work, rarity`,
+  `- [All Pals](${DOMAIN}/pals/): Accordion index by element/work/rarity`,
   '',
   '## Guides',
-  '- [Best Base Workers](${DOMAIN}/guides/best-base-workers/): Work rankings',
-  '- [Fastest Flying Mounts](${DOMAIN}/guides/best-flying-mounts/): Speed ranking',
-  '- [Best Combat Pals](${DOMAIN}/guides/best-combat-pals/): Attack ranking',
-  '- [Breeding Explained](${DOMAIN}/guides/breeding-explained/): Formula + strategy',
+  `- [Best Base Workers](${DOMAIN}/guides/best-base-workers/): Work rankings`,
+  `- [Fastest Flying Mounts](${DOMAIN}/guides/best-flying-mounts/): Speed ranking`,
+  `- [Best Combat Pals](${DOMAIN}/guides/best-combat-pals/): Attack ranking`,
+  `- [Breeding Explained](${DOMAIN}/guides/breeding-explained/): Formula + strategy`,
   '',
   `## Pal Pages (${allPals.length} total)`,
 ];
@@ -1736,14 +2323,14 @@ console.log('  dist/llms.txt');
 const sCount = allPals.filter(p => palTiers[p.slug] === 'S').length;
 const aCount = allPals.filter(p => palTiers[p.slug] === 'A').length;
 const bCount = allPals.filter(p => palTiers[p.slug] === 'B').length;
-const totalPages = 1 + 1 + palPagesRendered + 4 + 1 + 1 + 1 + 4 + 1;
+const totalPages = 1 + 1 + palPagesRendered + 4 + 1 + 1 + 1 + 1 + 4 + 1;
 
 console.log(`\n═══ Build Complete ═══`);
 console.log(`Total pages:  ${totalPages}`);
 console.log(`  Homepage:   1`);
 console.log(`  Pal pages:  ${palPagesRendered} (S:${sCount} A:${aCount} B:${bCount})`);
 console.log(`  Guides:     5 (4 detail + 1 index)`);
-console.log(`  Tools:      2 (Calculator + Pal Finder)`);
+console.log(`  Tools:      3 (Calculator + Breeding Tree + Pal Finder)`);
 console.log(`  Static:     4 (About/Privacy/Terms/Cookies)`);
 console.log(`  Other:      1 (404)`);
 console.log(`Sitemap:      ${SITEMAP_ENTRIES.length} URLs`);
