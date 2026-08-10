@@ -2268,27 +2268,14 @@ fs.writeFileSync(path.join(DIST_DIR, 'sitemap.xml'), sitemapXML);
 console.log(`  dist/sitemap.xml (${SITEMAP_ENTRIES.length} URLs)`);
 
 // robots.txt
-const robotsTXT = `User-agent: *
+  const robotsTXT = `User-agent: *
 Allow: /
+
 Disallow: /cdn-cgi/
-
-# AI Crawlers -- allow AI search engines (GEO)
-User-agent: GPTBot
-Allow: /
-
-# Training-data crawlers -- keep blocked
-User-agent: CCBot
-Disallow: /
-
-User-agent: anthropic-ai
-Disallow: /
-
-User-agent: Google-Extended
-Allow: /
 
 Sitemap: ${DOMAIN}/sitemap.xml
 `;
-fs.writeFileSync(path.join(DIST_DIR, 'robots.txt'), robotsTXT);
+  fs.writeFileSync(path.join(DIST_DIR, 'robots.txt'), robotsTXT);
 console.log('  dist/robots.txt');
 
 // ── llms.txt (AI crawler directory) ──
