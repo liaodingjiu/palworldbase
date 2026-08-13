@@ -1260,6 +1260,8 @@ const guides = [
   { slug: 'ancient-bone', title: TITLE_TEMPLATES.guide5, icon: '🦴', render: renderAncientBoneGuide },
   { slug: 'legendary-merchants', title: TITLE_TEMPLATES.guide6, icon: '🛒', render: renderLegendaryMerchantsGuide },
   { slug: 'ancient-relic-recycler', title: TITLE_TEMPLATES.guide7, icon: '⚙️', render: renderAncientRelicRecyclerGuide },
+  { slug: 'chromite-location', title: TITLE_TEMPLATES.guide10, icon: '⛏️', render: renderChromiteGuide },
+  { slug: 'ancient-lava', title: TITLE_TEMPLATES.guide11, icon: '🌋', render: renderAncientLavaGuide },
 ];
 
 for (const guide of guides) {
@@ -2339,6 +2341,327 @@ function renderAncientRelicRecyclerGuide() {
   return wrapPage(headHTML, bodyHTML);
 }
 
+function renderChromiteGuide() {
+  const title = TITLE_TEMPLATES.guide10;
+  const description = `Where to find Chromite in Palworld 1.0 — Feybreak Island caves, Metal Detector & Smokie method, best farm spots, and Hexolite recipes.`.substring(0, 155);
+  const headHTML = renderHead(config, { title, description, canonical: DOMAIN + '/guides/chromite-location/', ogType: 'article' });
+
+  const bodyHTML = `<div class="container container-narrow">
+    <div class="page-header">
+      <h1>⛏️ Where to Find Chromite</h1>
+      <p class="page-description">Chromite is Palworld 1.0's hidden late-game ore — buried on Feybreak Island until you reveal it with a Metal Detector or Smokie.</p>
+    </div>
+
+    <section class="section">
+      <div class="glass-panel glass-panel-accent" style="padding:var(--space-5)">
+        <strong style="color:var(--color-accent);text-transform:uppercase;letter-spacing:0.05em;font-size:0.75rem">⚡ Quick Answer</strong>
+        <p style="margin:var(--space-2) 0 0;font-size:1rem">Chromite spawns almost exclusively in <strong>caves and tunnels on Feybreak Island</strong>. It's a <strong>hidden resource</strong> — it doesn't appear as normal rock. Reveal it with a <strong>Metal Detector</strong> (Tech ~Lv. 56–58) or <strong>Smokie's</strong> Partner Skill, then mine with a <strong>Plasma Multicutter</strong> (Lv. 54). Smelt it into <strong>Hexolite</strong> for late-game gear.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>What You Need First</h2>
+      <ul style="list-style:disc;padding-left:20px;margin-bottom:var(--space-4);color:var(--color-text-secondary)">
+        <li><strong>Metal Detector</strong> — unlock around Technology Level 56–58, keep it in your inventory to detect buried Chromite</li>
+        <li><strong>Smokie + Smokie's Harness</strong> (Lv. 58) — the "Dig, Smokie! Dig!" skill detects Chromite and can <strong>double your yield</strong> (up to +200% at higher ranks)</li>
+        <li><strong>Plasma Multicutter</strong> (Lv. 54) — the fastest mining tool for the job</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Best Chromite Farming Locations</h2>
+      <p>All the reliable spots are Feybreak Island caves, tunnels, and boss arenas. Coordinates listed below:</p>
+      <table class="data-table">
+        <thead><tr><th>Location</th><th>Coordinates</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Crystalized Tunnel</strong></td><td>-912, -1318</td><td>Best general spot — no boss, ~4 deposits</td></tr>
+          <tr><td><strong>Wild Lands Floodgate cave</strong></td><td>-913, -1317</td><td>1–4 nodes, fast repeatable route</td></tr>
+          <tr><td><strong>Shield Dragon Tunnel (Silvegis cave)</strong></td><td>-958, -984</td><td>Alpha Silvegis boss; 4 nodes after defeating it</td></tr>
+          <tr><td><strong>Dark Flame Tunnel</strong></td><td>-1038, -1196</td><td>~4 deposits, long dark tunnel</td></tr>
+          <tr><td>Western Feybreak cave</td><td>-1209, -1104</td><td>4 deposits</td></tr>
+          <tr><td>Southwestern Feybreak cave</td><td>-1203, -1386</td><td>4 deposits</td></tr>
+          <tr><td>Eastern Feybreak cave</td><td>-733, -1029</td><td>4 deposits</td></tr>
+          <tr><td>Scorched Hill area</td><td>-1195, -1253</td><td>Some outdoor Chromite possible</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section">
+      <h2>How to Farm Chromite</h2>
+      <ol style="list-style:decimal;padding-left:20px;margin-bottom:var(--space-4);color:var(--color-text-secondary)">
+        <li>Fast-travel to a Feybreak cave entrance (e.g. Wild Lands Floodgate, then enter the cave at <strong>-913, -1317</strong>)</li>
+        <li>Equip the <strong>Metal Detector</strong> and/or activate <strong>Smokie's skill</strong> while moving slowly through the cave</li>
+        <li>Reveal the hidden Chromite mounds, then summon <strong>Smokie before mining</strong> to get double drops</li>
+        <li>Mine with the <strong>Plasma Multicutter</strong> for the best yield per run</li>
+      </ol>
+      <p style="font-size:0.875rem;color:var(--color-text-muted)">At Technology Level 78 you can unlock the <strong>Ancient Material Synthesizer</strong> to produce Chromite passively at your base, removing the need for manual runs.</p>
+    </section>
+
+    <section class="section">
+      <h2>What Chromite Is Used For</h2>
+      <p>There is no "Chromite Ingot" — Chromite is smelted into <strong>Hexolite</strong> at the <strong>Gigantic Furnace</strong>:</p>
+      <div class="glass-panel" style="padding:var(--space-4);text-align:center">
+        <p style="margin:0;font-weight:700">1 Hexolite = 5 Chromite + 12 Hexolite Quartz + 20 Ore</p>
+      </div>
+      <p style="margin-top:var(--space-3)">Hexolite then crafts late-game gear, weapons, and facilities, including:</p>
+      <ul style="list-style:disc;padding-left:20px;margin-bottom:var(--space-4);color:var(--color-text-secondary)">
+        <li><strong>Beam Sword</strong> and <strong>Bastigor's Hammer</strong> (150 Chromite each)</li>
+        <li><strong>Charge Rifle</strong> (750 Chromite) and <strong>Laser Gatling Gun</strong> (500 Chromite)</li>
+        <li><strong>Hexolite Armor / Helmet</strong> (from 250 Chromite per piece)</li>
+        <li><strong>Triple Jump Boots</strong> (150 Chromite)</li>
+        <li><strong>Exotic Sphere</strong> (5 Chromite each)</li>
+        <li><strong>Advanced Sphere Assembly Line II</strong> (250 Chromite)</li>
+        <li><strong>Large Electric Egg Incubator</strong> (500 Chromite)</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Frequently Asked Questions</h2>
+
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Where do you find Chromite in Palworld?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Chromite is found almost exclusively in caves and tunnels on Feybreak Island. It's a hidden resource that stays buried until you reveal it with a Metal Detector or Smokie's Partner Skill."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do you reveal hidden Chromite?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Equip a Metal Detector (unlocked around Technology Level 56-58) or activate Smokie's Dig, Smokie! Dig! skill. Move slowly through Feybreak caves to reveal the buried Chromite mounds."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the best tool to mine Chromite?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The Plasma Multicutter (unlocked at Level 54) is the fastest, though regular pickaxes also work. Summon Smokie before mining to double your yield."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Chromite used for?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Chromite is smelted into Hexolite at the Gigantic Furnace (5 Chromite + 12 Hexolite Quartz + 20 Ore). Hexolite then crafts late-game gear like the Beam Sword, Charge Rifle, Hexolite Armor, and Advanced Sphere Assembly Line II."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you farm Chromite passively?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. At Technology Level 78 you can build the Ancient Material Synthesizer to produce Chromite passively at your base, removing the need for manual mining runs."
+            }
+          }
+        ]
+      }
+      </script>
+
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary class="faq-question">Where do you find Chromite in Palworld?</summary>
+          <div class="faq-answer">
+            <p>Almost exclusively in <strong>caves and tunnels on Feybreak Island</strong>. It's a hidden resource that stays buried until you reveal it with a <strong>Metal Detector</strong> or <strong>Smokie's</strong> Partner Skill.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">How do you reveal hidden Chromite?</summary>
+          <div class="faq-answer">
+            <p>Equip a <strong>Metal Detector</strong> (around Technology Level 56–58) or activate <strong>Smokie's "Dig, Smokie! Dig!"</strong> skill. Move slowly through Feybreak caves to reveal the buried Chromite mounds.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">What is the best tool to mine Chromite?</summary>
+          <div class="faq-answer">
+            <p>The <strong>Plasma Multicutter</strong> (Level 54) is fastest, though regular pickaxes also work. Summon <strong>Smokie before mining</strong> to double your yield.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">What is Chromite used for?</summary>
+          <div class="faq-answer">
+            <p>Chromite is smelted into <strong>Hexolite</strong> at the Gigantic Furnace (5 Chromite + 12 Hexolite Quartz + 20 Ore). Hexolite crafts late-game gear like the <strong>Beam Sword, Charge Rifle, Hexolite Armor</strong>, and the Advanced Sphere Assembly Line II.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Can you farm Chromite passively?</summary>
+          <div class="faq-answer">
+            <p>Yes. At <strong>Technology Level 78</strong> you can build the <strong>Ancient Material Synthesizer</strong> to produce Chromite passively at your base.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="content-upgrade-cta">
+      <p>Need other World Tree / late-game materials? Check these.</p>
+      <a href="/guides/ancient-lava/" class="cta-button cta-button-lg">🌋 Where to Find Ancient Lava →</a>
+      <a href="/guides/ancient-bone/" class="cta-button cta-button-lg cta-button-secondary" style="margin-left:var(--space-2)">🦴 Where to Find Ancient Bone →</a>
+    </section>
+  </div>`;
+  return wrapPage(headHTML, bodyHTML);
+}
+
+function renderAncientLavaGuide() {
+  const title = TITLE_TEMPLATES.guide11;
+  const description = `Where to find Ancient Lava in Palworld 1.0 — Wildlife Sanctuary No. 2 location, best farming route, patrol tips, and crafting uses.`.substring(0, 155);
+  const headHTML = renderHead(config, { title, description, canonical: DOMAIN + '/guides/ancient-lava/', ogType: 'article' });
+
+  const bodyHTML = `<div class="container container-narrow">
+    <div class="page-header">
+      <h1>🌋 Where to Find Ancient Lava</h1>
+      <p class="page-description">Ancient Lava is Palworld 1.0's volcanic late-game material, found in only one place — Wildlife Sanctuary No. 2.</p>
+    </div>
+
+    <section class="section">
+      <div class="glass-panel glass-panel-accent" style="padding:var(--space-5)">
+        <strong style="color:var(--color-accent);text-transform:uppercase;letter-spacing:0.05em;font-size:0.75rem">⚡ Quick Answer</strong>
+        <p style="margin:var(--space-2) 0 0;font-size:1rem">Ancient Lava is mined only at <strong>Wildlife Sanctuary No. 2</strong>, an island south of Sakurajima (around <strong>-672, -132</strong>). Look for large dark rocks with <strong>glowing blue/purple veins</strong>, mine them with a <strong>Plasma Multicutter</strong>, and dodge the Level 80 patrol drones.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Ancient Lava Location</h2>
+      <p>Ancient Lava appears <strong>only at Wildlife Sanctuary No. 2</strong> — south of Sakurajima Island, north of Mount Obsidian. It does not spawn in regular volcanic areas, from Pals, or from merchants.</p>
+      <ul style="list-style:disc;padding-left:20px;margin-bottom:var(--space-4);color:var(--color-text-secondary)">
+        <li><strong>Coordinates:</strong> around -672, -132</li>
+        <li><strong>Nearest fast travel:</strong> Isle of Silence or Ruined Fortress City — there's <strong>no fast travel inside the sanctuary</strong>, so bring a flying or swimming mount</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>What Ancient Lava Looks Like</h2>
+      <p>Don't confuse the <strong>decorative ground lava</strong> with the mineable nodes. Ancient Lava comes from <strong>large dark rocks with glowing blue/purple veins</strong> sticking out of the ground. Each node yields roughly <strong>30 Ancient Lava</strong> under standard settings.</p>
+    </section>
+
+    <section class="section">
+      <h2>Farming Route &amp; Tips</h2>
+      <ul style="list-style:disc;padding-left:20px;margin-bottom:var(--space-4);color:var(--color-text-secondary)">
+        <li><strong>Best tool:</strong> Plasma Multicutter (pickaxes also work)</li>
+        <li><strong>Dodge the patrols:</strong> Level 80 drones with searchlights guard the sanctuary — stay out of their spotlights or clear them</li>
+        <li><strong>Bring heat protection:</strong> the sanctuary is a hot volcanic biome</li>
+        <li><strong>Use a flying mount:</strong> scout patrol routes, land after a searchlight passes, mine, then remount</li>
+        <li><strong>Route:</strong> do a <strong>clockwise sweep</strong> — clear outer nodes first, then the central raised area</li>
+        <li><strong>Respawn:</strong> nodes come back after roughly <strong>30 minutes</strong> — leave and return for another run</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>What Ancient Lava Is Used For</h2>
+      <p>Ancient Lava crafts late-game accessories and gear, each needing roughly <strong>30 Ancient Lava</strong>:</p>
+      <ul style="list-style:disc;padding-left:20px;margin-bottom:var(--space-4);color:var(--color-text-secondary)">
+        <li><strong>Air Walker Mk II</strong> — jump/dash movement accessory</li>
+        <li><strong>Ring of Trust</strong> — accessory</li>
+        <li><strong>Warsect Terra's Belt</strong> — Pal accessory</li>
+        <li><strong>Wumpo Charm</strong> — accessory</li>
+        <li><strong>AI Core</strong> — advanced crafting component</li>
+      </ul>
+      <p style="font-size:0.875rem;color:var(--color-text-muted)">The <strong>Ancient Relic Recycler</strong> can randomly produce Ancient Lava from Ancient Relics, but the output isn't guaranteed — direct mining is better when you need a specific amount.</p>
+    </section>
+
+    <section class="section">
+      <h2>Frequently Asked Questions</h2>
+
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Where is Ancient Lava in Palworld?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ancient Lava is found only at Wildlife Sanctuary No. 2, an island south of Sakurajima around coordinates -672, -132. It does not spawn in regular volcanic areas, from Pals, or from merchants."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do you get to Wildlife Sanctuary No. 2?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Fast-travel to Isle of Silence or Ruined Fortress City, then fly or swim to the sanctuary. There is no fast travel point inside the sanctuary itself."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does Ancient Lava look like?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ancient Lava comes from large dark rocks with glowing blue or purple veins. Don't confuse them with decorative ground lava — only the veined rocks are mineable."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Ancient Lava used for?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ancient Lava crafts late-game accessories and gear, each needing about 30 Ancient Lava, including the Air Walker Mk II, Ring of Trust, Warsect Terra's Belt, Wumpo Charm, and AI Core."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do you farm Ancient Lava efficiently?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Use a Plasma Multicutter, dodge the Level 80 patrol drones, wear heat-resistant armor, and do a clockwise sweep of the island clearing outer nodes first. Nodes respawn after roughly 30 minutes."
+            }
+          }
+        ]
+      }
+      </script>
+
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary class="faq-question">Where is Ancient Lava in Palworld?</summary>
+          <div class="faq-answer">
+            <p>Only at <strong>Wildlife Sanctuary No. 2</strong>, an island south of Sakurajima (around <strong>-672, -132</strong>). It doesn't spawn in regular volcanic areas, from Pals, or from merchants.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">How do you get to Wildlife Sanctuary No. 2?</summary>
+          <div class="faq-answer">
+            <p>Fast-travel to <strong>Isle of Silence</strong> or <strong>Ruined Fortress City</strong>, then fly or swim to the sanctuary. There's no fast travel point inside it.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">What does Ancient Lava look like?</summary>
+          <div class="faq-answer">
+            <p>Large <strong>dark rocks with glowing blue/purple veins</strong>. Don't confuse them with decorative ground lava — only the veined rocks are mineable.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">What is Ancient Lava used for?</summary>
+          <div class="faq-answer">
+            <p>Late-game accessories and gear, each needing ~<strong>30 Ancient Lava</strong>: <strong>Air Walker Mk II, Ring of Trust, Warsect Terra's Belt, Wumpo Charm</strong>, and the <strong>AI Core</strong>.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">How do you farm Ancient Lava efficiently?</summary>
+          <div class="faq-answer">
+            <p>Use a <strong>Plasma Multicutter</strong>, dodge the Level 80 patrol drones, wear <strong>heat-resistant armor</strong>, and do a <strong>clockwise sweep</strong> clearing outer nodes first. Nodes respawn after ~<strong>30 minutes</strong>.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="content-upgrade-cta">
+      <p>Ancient Lava has two siblings you'll farm the same way.</p>
+      <a href="/guides/ancient-bone/" class="cta-button cta-button-lg">🦴 Where to Find Ancient Bone →</a>
+      <a href="/guides/chromite-location/" class="cta-button cta-button-lg cta-button-secondary" style="margin-left:var(--space-2)">⛏️ Where to Find Chromite →</a>
+    </section>
+  </div>`;
+  return wrapPage(headHTML, bodyHTML);
+}
+
 // Guides index page
 const guidesIndexHTML = renderGuidesIndex();
 fs.mkdirSync(path.join(DIST_DIR, 'guides'), { recursive: true });
@@ -2390,6 +2713,16 @@ function renderGuidesIndex() {
         <div class="guide-card-icon">⚙️</div>
         <h3>Ancient Relic Recycler</h3>
         <p>Unlock, build, and use the Recycler — 5 relic tiers, reward pool, and troubleshooting.</p>
+      </a>
+      <a href="/guides/chromite-location/" class="guide-card">
+        <div class="guide-card-icon">⛏️</div>
+        <h3>Where to Find Chromite</h3>
+        <p>Feybreak Island caves, Metal Detector &amp; Smokie method, best farm spots, Hexolite recipes.</p>
+      </a>
+      <a href="/guides/ancient-lava/" class="guide-card">
+        <div class="guide-card-icon">🌋</div>
+        <h3>Where to Find Ancient Lava</h3>
+        <p>Wildlife Sanctuary No. 2 location, farming route, patrol tips, and crafting uses.</p>
       </a>
     </div>
   </div>`;
@@ -3000,6 +3333,8 @@ console.log('  dist/robots.txt');
     `- [Where to Find Ancient Bone](${DOMAIN}/guides/ancient-bone/): Wildlife Sanctuary No. 3 location, route, farming loop, patrol tips`,
     `- [Legendary Merchants](${DOMAIN}/guides/legendary-merchants/): Six categories, spawn, reroll, and capture`,
     `- [Ancient Relic Recycler](${DOMAIN}/guides/ancient-relic-recycler/): Unlock Lv.74, build recipe, 5 relic tiers, rewards`,
+    `- [Where to Find Chromite](${DOMAIN}/guides/chromite-location/): Feybreak caves, Metal Detector + Smokie method, Hexolite recipes`,
+    `- [Where to Find Ancient Lava](${DOMAIN}/guides/ancient-lava/): Wildlife Sanctuary No. 2 location, farm route, uses`,
     '',
     '## Info',
     `- [About](${DOMAIN}/about/): Data sources and methodology`,

@@ -92,6 +92,8 @@ const TITLE_TEMPLATES = {
   guide7: `Ancient Relic Recycler — How to Get, Use & Best Rewards`,
   guide8: `God of Destruction Passive Skill — Effects & How to Get`,
   guide9: `World Tree Holy Water — How to Farm & What It's For`,
+  guide10: `Where to Find Chromite — Location, Farm & Uses Guide`,
+  guide11: `Where to Find Ancient Lava — Location, Farm & Uses Guide`,
   palS: (pal) => {
     const name = pal.name.en;
     const el = pal.classification.elements[0];
