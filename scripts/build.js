@@ -1690,11 +1690,8 @@ function renderAncientBoneGuide() {
     <section class="section">
       <h2>🗺️ Ancient Bone Location — Wildlife Sanctuary No. 3</h2>
       <figure style="margin:var(--space-4) 0">
-        <!-- TODO: add annotated map screenshot — Wildlife Sanctuary No. 3 with route from Deep Sand Dunes + coordinates -->
-        <div class="glass-panel" style="text-align:center;padding:var(--space-8)">
-          <span style="font-size:2rem">🗺️</span>
-          <p style="margin:var(--space-2) 0 0;color:var(--color-text-muted);font-size:0.875rem">Map screenshot — add annotated image here</p>
-        </div>
+        <img src="/images/guides/ancient-bone-map.webp" alt="Palworld wildlife sanctuary map — Ancient Bone is mined at No. 3 Wildlife Sanctuary in the northeast" style="width:100%;height:auto;border-radius:8px" loading="lazy" onerror="this.src='/images/guides/ancient-bone-map.png'">
+        <figcaption style="font-size:0.8125rem;color:var(--color-text-muted);margin-top:var(--space-2);text-align:center">Wildlife Sanctuary map — Ancient Bone nodes are at No. 3 (northeast).</figcaption>
       </figure>
       <table class="data-table">
         <thead><tr><th>Detail</th><th>Answer</th></tr></thead>
@@ -1729,11 +1726,8 @@ function renderAncientBoneGuide() {
         <li>Skeleton-shaped resource nodes</li>
       </ul>
       <figure style="margin:var(--space-4) 0">
-        <!-- TODO: add node screenshot — fossilized skeleton / ribcage node close-up -->
-        <div class="glass-panel" style="text-align:center;padding:var(--space-8)">
-          <span style="font-size:2rem">📷</span>
-          <p style="margin:var(--space-2) 0 0;color:var(--color-text-muted);font-size:0.875rem">Node screenshot — add annotated image here</p>
-        </div>
+        <img src="/images/guides/ancient-bone-icon.png" alt="Ancient Bone material icon" style="max-width:96px;width:100%;height:auto" loading="lazy">
+        <figcaption style="font-size:0.8125rem;color:var(--color-text-muted);margin-top:var(--space-2)">Ancient Bone — material icon. In the wild, look for the large ribcage-shaped skeleton nodes described above.</figcaption>
       </figure>
     </section>
 
