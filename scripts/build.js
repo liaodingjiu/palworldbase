@@ -1258,6 +1258,7 @@ const guides = [
   { slug: 'best-combat-pals', title: TITLE_TEMPLATES.guide3, icon: '⚔️', render: renderCombatGuide },
   { slug: 'breeding-explained', title: TITLE_TEMPLATES.guide4, icon: '🧬', render: renderBreedingGuide },
   { slug: 'ancient-bone', title: TITLE_TEMPLATES.guide5, icon: '🦴', render: renderAncientBoneGuide },
+  { slug: 'legendary-merchants', title: TITLE_TEMPLATES.guide6, icon: '🛒', render: renderLegendaryMerchantsGuide },
 ];
 
 for (const guide of guides) {
@@ -1852,6 +1853,223 @@ function renderAncientBoneGuide() {
   return wrapPage(headHTML, bodyHTML);
 }
 
+function renderLegendaryMerchantsGuide() {
+  const title = TITLE_TEMPLATES.guide6;
+  const description = `How Palworld 1.0's 18 specialized visiting merchants work — all six categories, what they sell, how to spawn and reroll them, and how to capture one.`.substring(0, 155);
+  const headHTML = renderHead(config, { title, description, canonical: DOMAIN + '/guides/legendary-merchants/', ogType: 'article' });
+
+  const bodyHTML = `<div class="container container-narrow">
+    <div class="page-header">
+      <h1>🛒 Palworld Legendary Merchants</h1>
+      <p class="page-description">All six specialized visiting-merchant categories — how to spawn, reroll, and capture the one you want.</p>
+    </div>
+
+    <section class="section">
+      <div class="glass-panel glass-panel-accent" style="padding:var(--space-5)">
+        <strong style="color:var(--color-accent);text-transform:uppercase;letter-spacing:0.05em;font-size:0.75rem">⚡ Quick Answer</strong>
+        <p style="margin:var(--space-2) 0 0;font-size:1rem">Palworld 1.0 added <strong>18 specialized visiting merchants</strong> across six categories — <strong>meat, vegetables, ammo, medicine, food, and Pal materials</strong>. They arrive at your base through visitor events, and you can reroll or capture the one you want.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>🔁 How Legendary Merchants Work</h2>
+      <p>These are <strong>visitor NPCs</strong>, not the fixed settlement merchants you find on the map. The flow looks like this:</p>
+      <ol style="list-style:decimal;padding-left:20px;margin-bottom:var(--space-4);color:var(--color-text-secondary)">
+        <li>Build a base with a <strong>Palbox</strong></li>
+        <li>Wait for a <strong>visitor event</strong></li>
+        <li>The merchant appears at your base</li>
+        <li>Identify the merchant type</li>
+        <li>Keep it, reroll it, or capture it</li>
+      </ol>
+      <p>Which merchants can appear depends on your <strong>base level</strong> — higher-level bases unlock more specialized (and rarer) merchant types.</p>
+    </section>
+
+    <section class="section">
+      <h2>📋 The Six Merchant Categories</h2>
+      <p>The 18 specialized visiting merchants fall into six categories. Rather than memorizing individual names, match the category to what you need:</p>
+      <table class="data-table">
+        <thead><tr><th>Category</th><th>What They Sell</th><th>Best For</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Meat</strong></td><td>Meat and hunting supplies</td><td>Meat-based cooking recipes</td></tr>
+          <tr><td><strong>Vegetables</strong></td><td>Vegetables and crop seeds</td><td>Farming and recipe ingredients</td></tr>
+          <tr><td><strong>Ammo</strong></td><td>Ammunition and ranged-weapon supplies</td><td>Keeping guns and bows stocked</td></tr>
+          <tr><td><strong>Medicine</strong></td><td>Medical supplies and healing items</td><td>Recovering from fights and status effects</td></tr>
+          <tr><td><strong>Food</strong></td><td>Prepared food and cooking ingredients</td><td>Ready-made meals without the cooking step</td></tr>
+          <tr><td><strong>Pal Materials</strong></td><td>Pal crafting materials (Paldium, bones, organs)</td><td>Crafting gear and base upgrades</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section">
+      <h2>🏗️ How to Spawn &amp; Reroll Legendary Merchants</h2>
+      <p>You don't find these merchants at a fixed spot — you make them come to you:</p>
+      <ul style="list-style:disc;padding-left:20px;margin-bottom:var(--space-4);color:var(--color-text-secondary)">
+        <li><strong>Build a Palbox</strong> in an open area (a dedicated spawn base works best)</li>
+        <li><strong>Raise your base level</strong> to unlock more specialized merchant types</li>
+        <li><strong>Wait for a visitor event</strong> to bring a merchant to the base</li>
+        <li><strong>Reroll if needed</strong>: dismantle the Palbox and rebuild it to force a new visitor event, repeating until the merchant type you want appears</li>
+      </ul>
+      <p style="font-size:0.875rem;color:var(--color-text-muted)">Don't confuse these visiting merchants with <strong>wandering merchants</strong> or <strong>fixed settlement merchants</strong> — the latter are map NPCs, while legendary merchants are visitor events at your own base.</p>
+    </section>
+
+    <section class="section">
+      <h2>🎯 How to Capture a Legendary Merchant</h2>
+      <p>The merchant arriving is only half the battle — capturing one takes preparation:</p>
+      <ul style="list-style:disc;padding-left:20px;margin-bottom:var(--space-4);color:var(--color-text-secondary)">
+        <li>Bring <strong>high-level Spheres</strong> — these merchants have high capture resistance</li>
+        <li>Clear or control the merchant's <strong>high-level guards</strong> first</li>
+        <li>Watch for a <strong>Wanted level</strong> — the attempt can alert PIDF</li>
+        <li>Avoid letting your whole base's Pals join the fight</li>
+        <li>Once captured, the merchant can serve as a <strong>permanent merchant</strong> in your base</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>✅ Which Merchant Should You Get?</h2>
+      <p>There's no single best merchant — it depends on what you're short on:</p>
+      <ul style="list-style:disc;padding-left:20px;margin-bottom:var(--space-4);color:var(--color-text-secondary)">
+        <li><strong>Best for ammo</strong> → Ammo merchants</li>
+        <li><strong>Best for food</strong> → Food merchants</li>
+        <li><strong>Best for materials</strong> → Pal Material merchants</li>
+        <li><strong>Best for meat</strong> → Meat merchants</li>
+        <li><strong>Best for medicine</strong> → Medicine merchants</li>
+        <li><strong>Best for farming</strong> → Vegetable merchants</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>🔎 Legendary Merchant Finder</h2>
+      <p>Tell us what you need and we'll point you to the right merchant category.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:var(--space-2);margin:var(--space-3) 0">
+        <button type="button" class="finder-btn" data-cat="Ammo" style="padding:var(--space-2) var(--space-4);border:1px solid var(--color-accent);border-radius:999px;background:transparent;color:var(--color-accent);cursor:pointer;font-size:0.875rem">Ammo</button>
+        <button type="button" class="finder-btn" data-cat="Food" style="padding:var(--space-2) var(--space-4);border:1px solid var(--color-accent);border-radius:999px;background:transparent;color:var(--color-accent);cursor:pointer;font-size:0.875rem">Food</button>
+        <button type="button" class="finder-btn" data-cat="Materials" style="padding:var(--space-2) var(--space-4);border:1px solid var(--color-accent);border-radius:999px;background:transparent;color:var(--color-accent);cursor:pointer;font-size:0.875rem">Materials</button>
+        <button type="button" class="finder-btn" data-cat="Medicine" style="padding:var(--space-2) var(--space-4);border:1px solid var(--color-accent);border-radius:999px;background:transparent;color:var(--color-accent);cursor:pointer;font-size:0.875rem">Medicine</button>
+        <button type="button" class="finder-btn" data-cat="Vegetables" style="padding:var(--space-2) var(--space-4);border:1px solid var(--color-accent);border-radius:999px;background:transparent;color:var(--color-accent);cursor:pointer;font-size:0.875rem">Vegetables</button>
+        <button type="button" class="finder-btn" data-cat="Meat" style="padding:var(--space-2) var(--space-4);border:1px solid var(--color-accent);border-radius:999px;background:transparent;color:var(--color-accent);cursor:pointer;font-size:0.875rem">Meat</button>
+      </div>
+      <div id="finder-result" class="glass-panel" style="padding:var(--space-4)">
+        <p style="margin:0;color:var(--color-text-muted)">Select a need above to see the matching merchant category.</p>
+      </div>
+      <script>
+      (function () {
+        var data = {
+          Ammo: { sell: 'ammunition and ranged-weapon supplies', use: 'keeping guns and bows stocked' },
+          Food: { sell: 'prepared food and cooking ingredients', use: 'ready-made meals without the cooking step' },
+          Materials: { sell: 'Pal crafting materials like Paldium, bones, and organs', use: 'crafting gear and base upgrades' },
+          Medicine: { sell: 'medical supplies and healing items', use: 'recovering from fights and status effects' },
+          Vegetables: { sell: 'vegetables and crop seeds', use: 'farming and recipe ingredients' },
+          Meat: { sell: 'meat and hunting supplies', use: 'meat-based cooking recipes' }
+        };
+        var result = document.getElementById('finder-result');
+        document.querySelectorAll('.finder-btn').forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            var cat = btn.getAttribute('data-cat');
+            var d = data[cat];
+            result.innerHTML = '<p style="margin:0"><strong>' + cat + ' merchants</strong> sell ' + d.sell + '.</p>' +
+              '<p style="margin:var(--space-2) 0 0;color:var(--color-text-secondary)">Best for ' + d.use + '.</p>' +
+              '<p style="margin:var(--space-2) 0 0;color:var(--color-text-secondary)">Spawn them by raising your base level, waiting for a visitor event at your Palbox, and rerolling until the right merchant appears.</p>';
+          });
+        });
+      })();
+      </script>
+    </section>
+
+    <section class="section">
+      <h2>Frequently Asked Questions</h2>
+
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do you get Legendary Merchants in Palworld?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "They appear as visitor events at your base's Palbox. Raise your base level to unlock more specialized merchant types, then wait for a visiting merchant to arrive. If it's not the one you want, reroll by dismantling and rebuilding the Palbox."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do Legendary Merchants have fixed locations?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Legendary (specialized visiting) merchants are visitor NPCs, not fixed settlement merchants. They arrive at your base through visitor events rather than spawning at fixed map locations."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you capture Legendary Merchants?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, but be prepared: they arrive with high-level guards, and attempting a capture can trigger a Wanted level with PIDF. Bring high-level Spheres and clear or control the guards first."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do you reroll Legendary Merchant spawns?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The common method is the temporary Palbox strategy — dismantle your Palbox and rebuild it to force a new visitor event, repeating until the merchant type you want appears."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which Legendary Merchant is best?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "There's no single best — it depends on what you need. Ammo merchants are best for keeping weapons stocked, food merchants for ready meals, and Pal material merchants for crafting supplies."
+            }
+          }
+        ]
+      }
+      </script>
+
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary class="faq-question">How do you get Legendary Merchants in Palworld?</summary>
+          <div class="faq-answer">
+            <p>They appear as <strong>visitor events</strong> at your base's Palbox. Raise your base level to unlock more specialized merchant types, then wait for a visiting merchant to arrive. If it's not the one you want, reroll by dismantling and rebuilding the Palbox.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Do Legendary Merchants have fixed locations?</summary>
+          <div class="faq-answer">
+            <p>No. Legendary (specialized visiting) merchants are <strong>visitor NPCs</strong>, not fixed settlement merchants. They arrive at your base through visitor events rather than spawning at fixed map locations.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Can you capture Legendary Merchants?</summary>
+          <div class="faq-answer">
+            <p>Yes, but be prepared: they arrive with <strong>high-level guards</strong>, and attempting a capture can trigger a <strong>Wanted level</strong> with PIDF. Bring high-level Spheres and clear or control the guards first.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">How do you reroll Legendary Merchant spawns?</summary>
+          <div class="faq-answer">
+            <p>The common method is the <strong>temporary Palbox strategy</strong> — dismantle your Palbox and rebuild it to force a new visitor event, repeating until the merchant type you want appears.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Which Legendary Merchant is best?</summary>
+          <div class="faq-answer">
+            <p>There's no single best — it depends on what you need. Ammo merchants are best for keeping weapons stocked, food merchants for ready meals, and Pal material merchants for crafting supplies.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="content-upgrade-cta">
+      <p>Capturing merchants means building a solid base first. See the ranked base-worker guide.</p>
+      <a href="/guides/best-base-workers/" class="cta-button cta-button-lg">🏭 Open Base Workers Guide →</a>
+      <a href="/guides/" class="cta-button cta-button-lg cta-button-secondary" style="margin-left:var(--space-2)">📖 All Guides →</a>
+    </section>
+  </div>`;
+  return wrapPage(headHTML, bodyHTML);
+}
+
 // Guides index page
 const guidesIndexHTML = renderGuidesIndex();
 fs.mkdirSync(path.join(DIST_DIR, 'guides'), { recursive: true });
@@ -1893,6 +2111,11 @@ function renderGuidesIndex() {
         <div class="guide-card-icon">🦴</div>
         <h3>Where to Find Ancient Bone</h3>
         <p>Wildlife Sanctuary No. 3 location, fastest route, farming loop, and patrol tips.</p>
+      </a>
+      <a href="/guides/legendary-merchants/" class="guide-card">
+        <div class="guide-card-icon">🛒</div>
+        <h3>Legendary Merchants</h3>
+        <p>All six specialized visiting-merchant categories — how to spawn, reroll, and capture.</p>
       </a>
     </div>
   </div>`;
@@ -2501,6 +2724,7 @@ console.log('  dist/robots.txt');
     `- [Best Combat Pals](${DOMAIN}/guides/best-combat-pals/): Top 20 by attack, with element breakdowns`,
     `- [Breeding Explained](${DOMAIN}/guides/breeding-explained/): Formula, BP system, special combos, difficulty groups, FAQ`,
     `- [Where to Find Ancient Bone](${DOMAIN}/guides/ancient-bone/): Wildlife Sanctuary No. 3 location, route, farming loop, patrol tips`,
+    `- [Legendary Merchants](${DOMAIN}/guides/legendary-merchants/): Six categories, spawn, reroll, and capture`,
     '',
     '## Info',
     `- [About](${DOMAIN}/about/): Data sources and methodology`,
