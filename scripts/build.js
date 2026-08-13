@@ -1256,6 +1256,7 @@ const guides = [
   { slug: 'best-flying-mounts', title: TITLE_TEMPLATES.guide2, icon: '🦅', render: renderFlyingMountsGuide },
   { slug: 'best-combat-pals', title: TITLE_TEMPLATES.guide3, icon: '⚔️', render: renderCombatGuide },
   { slug: 'breeding-explained', title: TITLE_TEMPLATES.guide4, icon: '🧬', render: renderBreedingGuide },
+  { slug: 'ancient-bone', title: TITLE_TEMPLATES.guide5, icon: '🦴', render: renderAncientBoneGuide },
 ];
 
 for (const guide of guides) {
@@ -1655,6 +1656,207 @@ function renderBreedingGuide() {
   return wrapPage(headHTML, bodyHTML);
 }
 
+function renderAncientBoneGuide() {
+  const title = TITLE_TEMPLATES.guide5;
+  const description = `Where to get Ancient Bone in Palworld — Wildlife Sanctuary No. 3 location, coordinates, fastest route, farming loop, and patrol tips.`.substring(0, 155);
+  const headHTML = renderHead(config, { title, description, canonical: DOMAIN + '/guides/ancient-bone/', ogType: 'article' });
+
+  const bodyHTML = `<div class="container container-narrow">
+    <div class="page-header">
+      <h1>🦴 Where to Find Ancient Bone</h1>
+      <p class="page-description">Location, route, and farm guide — everything you need to gather Ancient Bone fast.</p>
+    </div>
+
+    <section class="section">
+      <div class="glass-panel glass-panel-accent" style="padding:var(--space-5)">
+        <strong style="color:var(--color-accent);text-transform:uppercase;letter-spacing:0.05em;font-size:0.75rem">⚡ Quick Answer</strong>
+        <p style="margin:var(--space-2) 0 0;font-size:1rem">Ancient Bone is mined from <strong>fossilized skeleton nodes</strong> at <strong>Wildlife Sanctuary No. 3</strong> in the northeast of the map. Fast-travel to <strong>Deep Sand Dunes</strong>, fly northeast to the sanctuary, and mine the large ribcage-shaped formations.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="glass-panel glass-panel-accent" style="padding:var(--space-5)">
+        <h2 style="font-size:1.05rem;margin:0 0 var(--space-1)">📍 Ancient Bone Location Finder</h2>
+        <p style="font-size:0.875rem;color:var(--color-text-secondary);margin:0 0 var(--space-3)">Everything you need in one place:</p>
+        <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:var(--space-2)">
+          <li>✓ <strong>Wildlife Sanctuary No. 3</strong></li>
+          <li>✓ Resource node markers — fossilized skeleton / ribcage</li>
+          <li>✓ Coordinates ≈ <strong>652, 626</strong></li>
+          <li>✓ Fast-travel starting point — <strong>Deep Sand Dunes</strong></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>🗺️ Ancient Bone Location — Wildlife Sanctuary No. 3</h2>
+      <figure style="margin:var(--space-4) 0">
+        <!-- TODO: add annotated map screenshot — Wildlife Sanctuary No. 3 with route from Deep Sand Dunes + coordinates -->
+        <div class="glass-panel" style="text-align:center;padding:var(--space-8)">
+          <span style="font-size:2rem">🗺️</span>
+          <p style="margin:var(--space-2) 0 0;color:var(--color-text-muted);font-size:0.875rem">Map screenshot — add annotated image here</p>
+        </div>
+      </figure>
+      <table class="data-table">
+        <thead><tr><th>Detail</th><th>Answer</th></tr></thead>
+        <tbody>
+          <tr><td>Main location</td><td><strong>Wildlife Sanctuary No. 3</strong></td></tr>
+          <tr><td>Region</td><td>Northeast</td></tr>
+          <!-- ⚠️ VERIFY: coordinates below — confirm against current game version before publish -->
+          <tr><td>Approx. coordinates</td><td><strong>652, 626</strong></td></tr>
+          <tr><td>Starting point</td><td>Deep Sand Dunes</td></tr>
+          <tr><td>Node appearance</td><td>Large fossilized skeleton / ribcage</td></tr>
+        </tbody>
+      </table>
+      <p style="margin-top:var(--space-3)">Note: there is <strong>no fast-travel point inside Wildlife Sanctuary No. 3</strong> — you must fly in from a nearby point such as Deep Sand Dunes.</p>
+    </section>
+
+    <section class="section">
+      <h2>🛣️ How to Reach Ancient Bone — Fastest Route</h2>
+      <ol style="list-style:decimal;padding-left:20px;margin-bottom:var(--space-4);color:var(--color-text-secondary)">
+        <li>Fast-travel to <strong>Deep Sand Dunes</strong></li>
+        <li>Fly <strong>northeast</strong></li>
+        <li>Land at <strong>Wildlife Sanctuary No. 3</strong></li>
+        <li>Find the fossil nodes along the outer edge and central area</li>
+      </ol>
+    </section>
+
+    <section class="section">
+      <h2>🦴 What Ancient Bone Looks Like</h2>
+      <p>Ancient Bone is <strong>not ordinary ore</strong> — look for large skeleton-shaped resource nodes:</p>
+      <ul style="list-style:disc;padding-left:20px;margin-bottom:var(--space-4);color:var(--color-text-secondary)">
+        <li>Giant ribcages</li>
+        <li>Large fossilized bones</li>
+        <li>Skeleton-shaped resource nodes</li>
+      </ul>
+      <figure style="margin:var(--space-4) 0">
+        <!-- TODO: add node screenshot — fossilized skeleton / ribcage node close-up -->
+        <div class="glass-panel" style="text-align:center;padding:var(--space-8)">
+          <span style="font-size:2rem">📷</span>
+          <p style="margin:var(--space-2) 0 0;color:var(--color-text-muted);font-size:0.875rem">Node screenshot — add annotated image here</p>
+        </div>
+      </figure>
+    </section>
+
+    <section class="section">
+      <h2>⛏️ How to Farm Ancient Bone</h2>
+      <p><strong>Recommended setup:</strong></p>
+      <ul style="list-style:disc;padding-left:20px;margin-bottom:var(--space-4);color:var(--color-text-secondary)">
+        <li>A fast flying mount — see the <a href="/guides/best-flying-mounts/">Fastest Flying Mounts</a> guide</li>
+        <li>Pickaxe or Plasma Multicutter</li>
+        <li>Empty inventory space</li>
+      </ul>
+      <p><strong>Farming route:</strong></p>
+      <ol style="list-style:decimal;padding-left:20px;margin-bottom:var(--space-4);color:var(--color-text-secondary)">
+        <li>Enter the sanctuary</li>
+        <li>Follow the outer area</li>
+        <li>Mine the visible skeleton nodes</li>
+        <li>Move toward the central area</li>
+        <li>Leave and repeat</li>
+      </ol>
+    </section>
+
+    <section class="section">
+      <h2>🚨 How to Avoid the Sanctuary Patrols</h2>
+      <ul style="list-style:disc;padding-left:20px;margin-bottom:var(--space-4);color:var(--color-text-secondary)">
+        <li>Watch for the red spotlights</li>
+        <li>Stay airborne when practical</li>
+        <li>Mine after a patrol passes</li>
+        <li>Leave instead of fighting unnecessary enemies</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>🔧 What Is Ancient Bone Used For?</h2>
+      <!-- ⚠️ VERIFY: recipe item names & quantities below — confirm against current game data before publish -->
+      <table class="data-table">
+        <thead><tr><th>Item</th><th>Ancient Bone Needed</th></tr></thead>
+        <tbody>
+          <tr><td>Air Walker EX</td><td>60</td></tr>
+          <tr><td>Air Walker Mk III</td><td>30</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section">
+      <h2>Frequently Asked Questions</h2>
+
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Where can I find Ancient Bone in Palworld?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ancient Bone is found at Wildlife Sanctuary No. 3 in the northeast of the map. Fast-travel to Deep Sand Dunes and fly northeast to reach the sanctuary, then mine the large fossilized skeleton nodes — approximate coordinates 652, 626."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What Wildlife Sanctuary has Ancient Bone?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Wildlife Sanctuary No. 3 is the sanctuary with Ancient Bone. It sits in the northeast region of the map, reached by flying from a nearby northern fast-travel point such as Deep Sand Dunes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can Pals drop Ancient Bone?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ancient Bone is primarily gathered from fossilized skeleton resource nodes rather than dropped by specific Pals. The sanctuary nodes are the reliable source for farming the material."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you buy Ancient Bone?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ancient Bone is primarily a node-gathered material rather than a purchasable item. Head to Wildlife Sanctuary No. 3 and mine the fossilized skeleton nodes to farm it."
+            }
+          }
+        ]
+      }
+      </script>
+
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary class="faq-question">Where can I find Ancient Bone in Palworld?</summary>
+          <div class="faq-answer">
+            <p>Ancient Bone is found at <strong>Wildlife Sanctuary No. 3</strong> in the northeast of the map. Fast-travel to Deep Sand Dunes and fly northeast to reach the sanctuary, then mine the large fossilized skeleton nodes — approximate coordinates <strong>652, 626</strong>.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">What Wildlife Sanctuary has Ancient Bone?</summary>
+          <div class="faq-answer">
+            <p><strong>Wildlife Sanctuary No. 3</strong> is the sanctuary with Ancient Bone. It sits in the northeast region of the map, reached by flying from a nearby northern fast-travel point such as Deep Sand Dunes.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Can Pals drop Ancient Bone?</summary>
+          <div class="faq-answer">
+            <p>Ancient Bone is primarily gathered from <strong>fossilized skeleton resource nodes</strong> rather than dropped by specific Pals. The sanctuary nodes are the reliable source for farming the material.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Can you buy Ancient Bone?</summary>
+          <div class="faq-answer">
+            <p>Ancient Bone is primarily a node-gathered material rather than a purchasable item. Head to Wildlife Sanctuary No. 3 and mine the fossilized skeleton nodes to farm it.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="content-upgrade-cta">
+      <p>Farming Ancient Bone is far faster with a good flying mount. See the full speed ranking.</p>
+      <a href="/guides/best-flying-mounts/" class="cta-button cta-button-lg">🦅 Open Flying Mounts Guide →</a>
+    </section>
+  </div>`;
+  return wrapPage(headHTML, bodyHTML);
+}
+
 // Guides index page
 const guidesIndexHTML = renderGuidesIndex();
 fs.mkdirSync(path.join(DIST_DIR, 'guides'), { recursive: true });
@@ -1691,6 +1893,11 @@ function renderGuidesIndex() {
         <div class="guide-card-icon">🧬</div>
         <h3>Breeding Explained</h3>
         <p>How the breeding formula works, special combos, and how to build efficient breeding chains.</p>
+      </a>
+      <a href="/guides/ancient-bone/" class="guide-card">
+        <div class="guide-card-icon">🦴</div>
+        <h3>Where to Find Ancient Bone</h3>
+        <p>Wildlife Sanctuary No. 3 location, fastest route, farming loop, and patrol tips.</p>
       </a>
     </div>
   </div>`;
@@ -2298,6 +2505,7 @@ console.log('  dist/robots.txt');
     `- [Fastest Flying Mounts](${DOMAIN}/guides/best-flying-mounts/): All flying mounts ranked by speed + early game picks`,
     `- [Best Combat Pals](${DOMAIN}/guides/best-combat-pals/): Top 20 by attack, with element breakdowns`,
     `- [Breeding Explained](${DOMAIN}/guides/breeding-explained/): Formula, BP system, special combos, difficulty groups, FAQ`,
+    `- [Where to Find Ancient Bone](${DOMAIN}/guides/ancient-bone/): Wildlife Sanctuary No. 3 location, route, farming loop, patrol tips`,
     '',
     '## Info',
     `- [About](${DOMAIN}/about/): Data sources and methodology`,

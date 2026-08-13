@@ -87,6 +87,7 @@ const TITLE_TEMPLATES = {
   guide2: `Fastest Flying Mounts — Speed Ranking for All Ridable Pals`,
   guide3: `Best Combat Pals — DPS Ranking by Element`,
   guide4: `Palworld Breeding Explained — Formula, Paths & Calculator`,
+  guide5: `Where to Find Ancient Bone — Location, Route & Farm Guide`,
   palS: (pal) => {
     const name = pal.name.en;
     const el = pal.classification.elements[0];
