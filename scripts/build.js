@@ -210,9 +210,10 @@ ${cookieScript}
 function buildHeader(activeNav) {
   const items = NAV.map(item => {
     const key = item.label.toLowerCase().replace(/\s+/g, '-');
-    const navMap = { 'breeding-calc': 'calculator', 'breeding-tree': 'tree', 'pal-finder': 'finder', 'all-pals': 'pals', 'guides': 'guides', 'about': 'about' };
+    const navMap = { 'breeding-calculator': 'calculator', 'breeding-tree': 'tree', 'pal-finder': 'finder', 'all-pals': 'pals', 'guides': 'guides', 'about': 'about' };
     const isActive = navMap[key] === activeNav;
-    return `<a href="${item.href}"${isActive ? ' class="active" aria-current="page"' : ''}>${item.label}</a>`;
+    const strongStyle = item.strong ? ' style="font-weight:700"' : '';
+    return `<a href="${item.href}"${isActive ? ' class="active" aria-current="page"' : ''}${strongStyle}>${item.label}</a>`;
   }).join('\n      ');
 
   return `<header class="site-header">
