@@ -1262,6 +1262,8 @@ const guides = [
   { slug: 'ancient-relic-recycler', title: TITLE_TEMPLATES.guide7, icon: '⚙️', render: renderAncientRelicRecyclerGuide },
   { slug: 'chromite-location', title: TITLE_TEMPLATES.guide10, icon: '⛏️', render: renderChromiteGuide },
   { slug: 'ancient-lava', title: TITLE_TEMPLATES.guide11, icon: '🌋', render: renderAncientLavaGuide },
+  { slug: 'god-of-destruction', title: TITLE_TEMPLATES.guide8, icon: '💀', render: renderGodOfDestructionGuide },
+  { slug: 'world-tree-holy-water', title: TITLE_TEMPLATES.guide9, icon: '💧', render: renderHolyWaterGuide },
 ];
 
 for (const guide of guides) {
@@ -2662,6 +2664,300 @@ function renderAncientLavaGuide() {
   return wrapPage(headHTML, bodyHTML);
 }
 
+function renderGodOfDestructionGuide() {
+  const title = TITLE_TEMPLATES.guide8;
+  const description = `God of Destruction passive skill in Palworld — effects (Attack +40%, Defense +20%, HP -50%), how to get the implant, and whether it's worth it.`.substring(0, 155);
+  const headHTML = renderHead(config, { title, description, canonical: DOMAIN + '/guides/god-of-destruction/', ogType: 'article' });
+
+  const bodyHTML = `<div class="container container-narrow">
+    <div class="page-header">
+      <h1>💀 God of Destruction Passive Skill</h1>
+      <p class="page-description">God of Destruction is a World Tree-tier Passive Skill in Palworld 1.0 — the strongest Attack passive in the game, at a steep HP cost.</p>
+    </div>
+
+    <section class="section">
+      <div class="glass-panel glass-panel-accent" style="padding:var(--space-5)">
+        <strong style="color:var(--color-accent);text-transform:uppercase;letter-spacing:0.05em;font-size:0.75rem">⚡ Quick Answer</strong>
+        <p style="margin:var(--space-2) 0 0;font-size:1rem">God of Destruction is a <strong>World Tree-tier Passive Skill</strong>, not a Pal or Boss. It grants <strong>Attack +40%</strong> and <strong>Defense +20%</strong>, and stops World Tree resources from vanishing — but costs <strong>-50% Max HP</strong>. You get it from <strong>Ancient Relic Recycler implants</strong>, glowing World Tree Pals, or breeding inheritance.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>God of Destruction Effects</h2>
+      <table class="data-table">
+        <thead><tr><th>Effect</th><th>Value</th></tr></thead>
+        <tbody>
+          <tr><td>Attack</td><td><strong style="color:var(--color-positive)">+40%</strong> (highest Attack boost of all combat passives)</td></tr>
+          <tr><td>Defense</td><td><strong style="color:var(--color-positive)">+20%</strong></td></tr>
+          <tr><td>World Tree resources</td><td>Will not vanish when you approach</td></tr>
+          <tr><td>Max Health</td><td><strong style="color:var(--color-negative)">-50%</strong></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section">
+      <h2>How to Get God of Destruction</h2>
+      <p>There are three ways to obtain this passive skill:</p>
+      <ol style="list-style:decimal;padding-left:20px;margin-bottom:var(--space-4);color:var(--color-text-secondary)">
+        <li><strong>Ancient Relic Recycler implants</strong> — processing Ancient Relics can drop a single-use implant containing a World Tree passive, including God of Destruction</li>
+        <li><strong>Blue glowing Pals at the World Tree</strong> — after unlocking the World Tree, glowing Pals there can occasionally carry a World Tree passive</li>
+        <li><strong>Breeding inheritance</strong> — offspring have a random chance to inherit passives from their parents</li>
+      </ol>
+    </section>
+
+    <section class="section">
+      <h2>The Disposable Implant Item</h2>
+      <p>There's also a matching consumable: <strong>Disposable Implant: God of Destruction</strong> — a Legendary, Rank 4 item used at a <strong>Pal Surgery Table</strong> to change a Pal's passive skill to God of Destruction.</p>
+    </section>
+
+    <section class="section">
+      <h2>Is God of Destruction Worth It?</h2>
+      <p>It offers the <strong>highest Attack boost of all combat passives</strong>, but the <strong>-50% Max HP penalty</strong> makes it risky. The tradeoff works best when you:</p>
+      <ul style="list-style:disc;padding-left:20px;margin-bottom:var(--space-4);color:var(--color-text-secondary)">
+        <li>Compensate with high Defense stats or another defensive passive</li>
+        <li>Pair it with the <strong>Immortality</strong> passive to offset the HP loss</li>
+        <li>Use it on glass-cannon DPS Pals where raw Attack matters most</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Frequently Asked Questions</h2>
+
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is God of Destruction in Palworld?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "God of Destruction is a World Tree-tier Passive Skill added in Palworld 1.0. It is not a Pal or a Boss — it's a passive that can be applied to Pals."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does the God of Destruction passive skill do?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It grants Attack +40% and Defense +20%, and stops World Tree resources from vanishing when approached. The tradeoff is a -50% Max Health penalty."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do you get God of Destruction?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Three ways: random implant drops from the Ancient Relic Recycler, blue glowing Pals at the World Tree after unlocking it, or breeding inheritance from parents."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is God of Destruction worth the HP penalty?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It offers the highest Attack boost of all combat passives, but the -50% Max HP is risky. It works best on glass-cannon DPS Pals, compensated with high Defense or the Immortality passive."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can God of Destruction be inherited through breeding?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Offspring have a random chance to inherit passive skills from their parents, including God of Destruction."
+            }
+          }
+        ]
+      }
+      </script>
+
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary class="faq-question">What is God of Destruction in Palworld?</summary>
+          <div class="faq-answer">
+            <p><strong>God of Destruction</strong> is a World Tree-tier Passive Skill added in 1.0. It's <strong>not a Pal or Boss</strong> — it's a passive applied to Pals.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">What does the God of Destruction passive skill do?</summary>
+          <div class="faq-answer">
+            <p><strong>Attack +40%</strong>, <strong>Defense +20%</strong>, and World Tree resources won't vanish when approached. The tradeoff is a <strong>-50% Max Health</strong> penalty.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">How do you get God of Destruction?</summary>
+          <div class="faq-answer">
+            <p>Three ways: <strong>Ancient Relic Recycler implant drops</strong>, <strong>blue glowing Pals at the World Tree</strong>, or <strong>breeding inheritance</strong> from parents.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Is God of Destruction worth the HP penalty?</summary>
+          <div class="faq-answer">
+            <p>It's the <strong>highest Attack boost</strong> of all combat passives, but <strong>-50% HP</strong> is risky. Best on glass-cannon DPS Pals, offset with high Defense or the <strong>Immortality</strong> passive.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Can God of Destruction be inherited through breeding?</summary>
+          <div class="faq-answer">
+            <p>Yes. Offspring have a <strong>random chance</strong> to inherit passive skills from parents, including God of Destruction.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="content-upgrade-cta">
+      <p>God of Destruction most often comes from the Recycler's implants.</p>
+      <a href="/guides/ancient-relic-recycler/" class="cta-button cta-button-lg">⚙️ Ancient Relic Recycler →</a>
+      <a href="/guides/world-tree-holy-water/" class="cta-button cta-button-lg cta-button-secondary" style="margin-left:var(--space-2)">💧 World Tree Holy Water →</a>
+    </section>
+  </div>`;
+  return wrapPage(headHTML, bodyHTML);
+}
+
+function renderHolyWaterGuide() {
+  const title = TITLE_TEMPLATES.guide9;
+  const description = `World Tree Holy Water in Palworld 1.0 — what it does, how to farm it, crafting uses, and its 1.5x Ancient Relic Recycler speed boost.`.substring(0, 155);
+  const headHTML = renderHead(config, { title, description, canonical: DOMAIN + '/guides/world-tree-holy-water/', ogType: 'article' });
+
+  const bodyHTML = `<div class="container container-narrow">
+    <div class="page-header">
+      <h1>💧 World Tree Holy Water</h1>
+      <p class="page-description">World Tree Holy Water is Palworld 1.0's rare late-game consumable — it keeps World Tree resources from vanishing and powers several endgame recipes.</p>
+    </div>
+
+    <section class="section">
+      <div class="glass-panel glass-panel-accent" style="padding:var(--space-5)">
+        <strong style="color:var(--color-accent);text-transform:uppercase;letter-spacing:0.05em;font-size:0.75rem">⚡ Quick Answer</strong>
+        <p style="margin:var(--space-2) 0 0;font-size:1rem">World Tree Holy Water is a <strong>Rare consumable</strong> you can't craft or buy. Drinking it stops <strong>World Tree resources (Paloxite ore, Mythical Wood)</strong> from vanishing when you approach. It's also a key crafting ingredient and boosts the Ancient Relic Recycler to <strong>1.5× speed</strong>.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>What World Tree Holy Water Does</h2>
+      <p>Using it creates a <strong>temporary buff</strong> that prevents World Tree resources — like <strong>Paloxite ore</strong> and <strong>Mythical Wood</strong> — from disappearing before you can gather them. Without this effect, those resources vanish as you approach.</p>
+    </section>
+
+    <section class="section">
+      <h2>How to Get World Tree Holy Water</h2>
+      <p>It <strong>cannot be crafted or bought</strong>. You obtain it from:</p>
+      <ul style="list-style:disc;padding-left:20px;margin-bottom:var(--space-4);color:var(--color-text-secondary)">
+        <li>High-level (<strong>Level 70+</strong>) Pals in the World Tree</li>
+        <li><strong>Teafant Springs</strong></li>
+        <li><strong>Treasure boxes</strong></li>
+        <li><strong>World Tree expeditions</strong></li>
+        <li><strong>Fishing</strong></li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>What It's Used For</h2>
+      <p>World Tree Holy Water is a key late-game crafting material, used in recipes including:</p>
+      <ul style="list-style:disc;padding-left:20px;margin-bottom:var(--space-4);color:var(--color-text-secondary)">
+        <li><strong>Awakening Crystals</strong> (all elements)</li>
+        <li><strong>Paloxite Ingot</strong></li>
+        <li><strong>Drone Launcher</strong> weapon variants</li>
+        <li>Ancient structures — <strong>Ancient Farm, Ancient Clinic, Ancient Hot Spring, Ancient Pal Bed</strong></li>
+        <li><strong>Nutrient Tonic</strong></li>
+      </ul>
+      <p>It also has a second use: add it to the <strong>Ancient Relic Recycler</strong> for a <strong>1.5× processing speed</strong> boost (one bottle lasts about five minutes of continuous recycling).</p>
+    </section>
+
+    <section class="section">
+      <h2>Frequently Asked Questions</h2>
+
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is World Tree Holy Water in Palworld?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "World Tree Holy Water is a rare consumable added in Palworld 1.0. It creates a temporary buff that prevents World Tree resources like Paloxite ore and Mythical Wood from vanishing when approached."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do you get World Tree Holy Water?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It cannot be crafted or bought. You obtain it from Level 70+ Pals in the World Tree, Teafant Springs, treasure boxes, World Tree expeditions, and fishing."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does World Tree Holy Water do?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It prevents World Tree resources from vanishing as you approach them, so you can gather Paloxite ore and Mythical Wood. It also boosts the Ancient Relic Recycler to 1.5x speed."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is World Tree Holy Water used for?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It's a crafting ingredient for Awakening Crystals, Paloxite Ingots, Drone Launcher variants, Ancient structures, and Nutrient Tonic, and it speeds up the Ancient Relic Recycler."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you craft or buy World Tree Holy Water?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. It cannot be crafted or bought — it must be farmed from World Tree Pals, Teafant Springs, treasure boxes, expeditions, or fishing."
+            }
+          }
+        ]
+      }
+      </script>
+
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary class="faq-question">What is World Tree Holy Water in Palworld?</summary>
+          <div class="faq-answer">
+            <p>A <strong>rare consumable</strong> added in 1.0. It creates a temporary buff preventing World Tree resources (Paloxite ore, Mythical Wood) from vanishing when approached.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">How do you get World Tree Holy Water?</summary>
+          <div class="faq-answer">
+            <p>It <strong>cannot be crafted or bought</strong>. Farm it from <strong>Level 70+ Pals in the World Tree, Teafant Springs, treasure boxes, World Tree expeditions</strong>, and <strong>fishing</strong>.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">What does World Tree Holy Water do?</summary>
+          <div class="faq-answer">
+            <p>It stops World Tree resources from vanishing as you approach, so you can gather <strong>Paloxite ore</strong> and <strong>Mythical Wood</strong>. It also boosts the <strong>Ancient Relic Recycler to 1.5× speed</strong>.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">What is World Tree Holy Water used for?</summary>
+          <div class="faq-answer">
+            <p>Crafting ingredient for <strong>Awakening Crystals, Paloxite Ingots, Drone Launcher variants, Ancient structures</strong>, and <strong>Nutrient Tonic</strong>, plus Recycler speed boost.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Can you craft or buy World Tree Holy Water?</summary>
+          <div class="faq-answer">
+            <p><strong>No.</strong> It must be farmed — it can't be crafted or purchased from merchants.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="content-upgrade-cta">
+      <p>Holy Water's biggest use is speeding up the Recycler.</p>
+      <a href="/guides/ancient-relic-recycler/" class="cta-button cta-button-lg">⚙️ Ancient Relic Recycler →</a>
+      <a href="/guides/god-of-destruction/" class="cta-button cta-button-lg cta-button-secondary" style="margin-left:var(--space-2)">💀 God of Destruction Passive →</a>
+    </section>
+  </div>`;
+  return wrapPage(headHTML, bodyHTML);
+}
+
 // Guides index page
 const guidesIndexHTML = renderGuidesIndex();
 fs.mkdirSync(path.join(DIST_DIR, 'guides'), { recursive: true });
@@ -2723,6 +3019,16 @@ function renderGuidesIndex() {
         <div class="guide-card-icon">🌋</div>
         <h3>Where to Find Ancient Lava</h3>
         <p>Wildlife Sanctuary No. 2 location, farming route, patrol tips, and crafting uses.</p>
+      </a>
+      <a href="/guides/god-of-destruction/" class="guide-card">
+        <div class="guide-card-icon">💀</div>
+        <h3>God of Destruction Passive</h3>
+        <p>Attack +40%, Defense +20%, HP -50% — how to get the implant and whether it's worth it.</p>
+      </a>
+      <a href="/guides/world-tree-holy-water/" class="guide-card">
+        <div class="guide-card-icon">💧</div>
+        <h3>World Tree Holy Water</h3>
+        <p>What it does, how to farm it, crafting uses, and the Recycler speed boost.</p>
       </a>
     </div>
   </div>`;
@@ -3335,6 +3641,8 @@ console.log('  dist/robots.txt');
     `- [Ancient Relic Recycler](${DOMAIN}/guides/ancient-relic-recycler/): Unlock Lv.74, build recipe, 5 relic tiers, rewards`,
     `- [Where to Find Chromite](${DOMAIN}/guides/chromite-location/): Feybreak caves, Metal Detector + Smokie method, Hexolite recipes`,
     `- [Where to Find Ancient Lava](${DOMAIN}/guides/ancient-lava/): Wildlife Sanctuary No. 2 location, farm route, uses`,
+    `- [God of Destruction Passive](${DOMAIN}/guides/god-of-destruction/): World Tree passive, Atk+40%/Def+20%/HP-50%, how to get`,
+    `- [World Tree Holy Water](${DOMAIN}/guides/world-tree-holy-water/): What it does, farm sources, crafting uses`,
     '',
     '## Info',
     `- [About](${DOMAIN}/about/): Data sources and methodology`,
