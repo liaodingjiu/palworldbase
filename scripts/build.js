@@ -1259,6 +1259,7 @@ const guides = [
   { slug: 'breeding-explained', title: TITLE_TEMPLATES.guide4, icon: '🧬', render: renderBreedingGuide },
   { slug: 'ancient-bone', title: TITLE_TEMPLATES.guide5, icon: '🦴', render: renderAncientBoneGuide },
   { slug: 'legendary-merchants', title: TITLE_TEMPLATES.guide6, icon: '🛒', render: renderLegendaryMerchantsGuide },
+  { slug: 'ancient-relic-recycler', title: TITLE_TEMPLATES.guide7, icon: '⚙️', render: renderAncientRelicRecyclerGuide },
 ];
 
 for (const guide of guides) {
@@ -2070,6 +2071,274 @@ function renderLegendaryMerchantsGuide() {
   return wrapPage(headHTML, bodyHTML);
 }
 
+function renderAncientRelicRecyclerGuide() {
+  const title = TITLE_TEMPLATES.guide7;
+  const description = `How to unlock and use the Ancient Relic Recycler in Palworld 1.0 — build recipe, the 5 relic tiers, reward pool, and troubleshooting.`.substring(0, 155);
+  const headHTML = renderHead(config, { title, description, canonical: DOMAIN + '/guides/ancient-relic-recycler/', ogType: 'article' });
+
+  const bodyHTML = `<div class="container container-narrow">
+    <div class="page-header">
+      <h1>⚙️ Ancient Relic Recycler Palworld</h1>
+      <p class="page-description">The Ancient Relic Recycler is a late-game production machine that converts World Tree Ancient Relics into a randomized pool of valuable endgame rewards.</p>
+    </div>
+
+    <section class="section">
+      <div class="glass-panel glass-panel-accent" style="padding:var(--space-5)">
+        <strong style="color:var(--color-accent);text-transform:uppercase;letter-spacing:0.05em;font-size:0.75rem">⚡ Quick Answer</strong>
+        <p style="margin:var(--space-2) 0 0;font-size:1rem">The Ancient Relic Recycler unlocks at <strong>Technology Level 74</strong> (Production, 3 Tech Points). It needs <strong>electricity</strong> and a <strong>Handiwork Pal</strong> to run. You feed it <strong>Ancient Relics</strong> (5 tiers), and it returns a randomized pool of rewards — <strong>Ancient Civilization Cores, Paloxite, Mythical Wood, Radiant Gems, Skill Fruits, implants, manuals, and schematics</strong>. Optional <strong>World Tree Holy Water</strong> speeds it up 1.5×.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Ancient Relic Recycler Overview</h2>
+      <table class="data-table">
+        <thead><tr><th>Property</th><th>Value</th></tr></thead>
+        <tbody>
+          <tr><td>Type</td><td>Production</td></tr>
+          <tr><td>Technology</td><td>Lv. 74</td></tr>
+          <tr><td>Tech Points</td><td>3</td></tr>
+          <tr><td>Power</td><td>Electricity required</td></tr>
+          <tr><td>Work Suitability</td><td>Handiwork required</td></tr>
+          <tr><td>Paloxite Ingot</td><td>×50</td></tr>
+          <tr><td>Mythical Wood</td><td>×50</td></tr>
+          <tr><td>Ancient Civilization Parts</td><td>×30</td></tr>
+          <tr><td>Ancient Civilization Core</td><td>×20</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:0.875rem;color:var(--color-text-muted)">The Recycler is <strong>not a normal crafting bench</strong> — it needs a power source and won't run without an active Electricity Pal at a Power Generator.</p>
+    </section>
+
+    <section class="section">
+      <h2>How to Unlock and Build It</h2>
+      <ol style="list-style:decimal;padding-left:20px;margin-bottom:var(--space-4);color:var(--color-text-secondary)">
+        <li>Reach <strong>Technology Level 74</strong></li>
+        <li>Spend <strong>3 Technology Points</strong> (Production category)</li>
+        <li>Gather the <strong>four build materials</strong> (ingot, wood, parts, core)</li>
+        <li>Build the Recycler inside an active base with a <strong>Handiwork Pal</strong></li>
+      </ol>
+      <p>The hardest materials are <strong>Paloxite Ingots</strong> and <strong>Mythical Wood</strong> — both come from the World Tree and need World Tree Holy Water to gather.</p>
+    </section>
+
+    <section class="section">
+      <h2>How the Ancient Relic Recycler Works</h2>
+      <p>The Recycler is a <strong>conversion system</strong>, not a deterministic crafting recipe:</p>
+      <div class="glass-panel" style="padding:var(--space-4);text-align:center">
+        <p style="margin:0;font-weight:700">Ancient Relic + World Tree Holy Water (optional) → Recycler → Random Reward Pool</p>
+      </div>
+      <ul style="list-style:disc;padding-left:20px;margin:var(--space-4) 0;color:var(--color-text-secondary)">
+        <li>Place <strong>Ancient Relics</strong> in the upper input slots (you can mix tiers)</li>
+        <li>Optionally add <strong>World Tree Holy Water</strong> to the lower slot for 1.5× speed</li>
+        <li>Assign a <strong>Handiwork Pal</strong>, ensure electricity is on, and toggle the power switch to <strong>On</strong></li>
+        <li>When finished, use <strong>Acquire</strong> on the machine to manually collect rewards</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Which Ancient Relics Can You Recycle?</h2>
+      <p>There are five Ancient Relic tiers, from lowest to highest quality:</p>
+      <table class="data-table">
+        <thead><tr><th>Relic</th><th>Tier</th><th>Recyclable?</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Decayed Ancient Relic</strong></td><td>Low</td><td>Yes</td><td>Common input</td></tr>
+          <tr><td><strong>Dormant Ancient Relic</strong></td><td>Standard</td><td>Yes</td><td>Common input</td></tr>
+          <tr><td><strong>Gorgeous Ancient Relic</strong></td><td>Mid</td><td>Yes</td><td>Higher tier</td></tr>
+          <tr><td><strong>Glowing Ancient Relic</strong></td><td>High</td><td>Yes</td><td>Higher tier</td></tr>
+          <tr><td><strong>Glistening Ancient Relic</strong></td><td>Highest</td><td>Yes</td><td>Save / compare before processing</td></tr>
+        </tbody>
+      </table>
+      <p style="font-size:0.875rem;color:var(--color-text-muted)">Higher tiers return better rewards, but the exact output is <strong>randomized</strong> — no tier guarantees a specific drop.</p>
+    </section>
+
+    <section class="section">
+      <h2>What Rewards Can You Get?</h2>
+      <p>The reward pool is randomized. Reported output categories include:</p>
+      <table class="data-table">
+        <thead><tr><th>Reward Category</th><th>Example</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Materials</strong></td><td>Paloxite, Mythical Wood</td></tr>
+          <tr><td><strong>Cores</strong></td><td>Ancient Civilization Core</td></tr>
+          <tr><td><strong>Implants</strong></td><td>Disposable / World Tree implants (incl. God of Destruction)</td></tr>
+          <tr><td><strong>Skill Fruits</strong></td><td>Skill Fruits, Star Fruits</td></tr>
+          <tr><td><strong>Schematics</strong></td><td>Ancient technology schematics</td></tr>
+          <tr><td><strong>Manuals</strong></td><td>Technical Manuals, Training Manuals, Applied Handbooks</td></tr>
+          <tr><td><strong>Other</strong></td><td>Radiant Gems, Pal Reversers, Training Crystals</td></tr>
+        </tbody>
+      </table>
+      <p>The <strong>Ancient Civilization Core</strong> is a primary value target — reported drop odds scale from roughly <strong>20%</strong> on Decayed relics up to ~<strong>41%</strong> on Glistening relics.</p>
+    </section>
+
+    <section class="section">
+      <h2>Which Relics Should You Recycle?</h2>
+      <ul style="list-style:disc;padding-left:20px;margin-bottom:var(--space-4);color:var(--color-text-secondary)">
+        <li><strong>Need Cores fast?</strong> → Recycle surplus relics you don't need elsewhere</li>
+        <li><strong>Chasing rare implants?</strong> → Prefer higher-value relics where reported odds are better</li>
+        <li><strong>Still building endgame gear?</strong> → Don't blindly recycle materials you still need</li>
+        <li><strong>Sitting on thousands of relics?</strong> → Prioritize throughput and collection</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Ancient Relic Recycler Not Working?</h2>
+      <p>If the Recycler isn't producing output, check these in order:</p>
+      <ol style="list-style:decimal;padding-left:20px;margin-bottom:var(--space-4);color:var(--color-text-secondary)">
+        <li><strong>Input</strong> — Did you place Ancient Relics in the upper slot?</li>
+        <li><strong>Worker</strong> — Is a Handiwork Pal assigned?</li>
+        <li><strong>Power</strong> — Is electricity on (Power Generator + Electricity Pal)?</li>
+        <li><strong>Production state</strong> — Is the power switch toggled <strong>On</strong>?</li>
+        <li><strong>Output</strong> — Did you use <strong>Acquire</strong> on the machine to collect? (It doesn't auto-deposit.)</li>
+      </ol>
+    </section>
+
+    <section class="section">
+      <h2>How to Get More Ancient Relics</h2>
+      <p>Need more inputs? Ancient Relics come from <strong>World Tree enemies, chests, and expeditions</strong>. Gather them while farming World Tree Holy Water for the Recycler's speed boost.</p>
+      <a href="/guides/world-tree-holy-water/" class="cta-button">💧 Farm World Tree Holy Water →</a>
+    </section>
+
+    <section class="section">
+      <h2>Recycler Reward Planner</h2>
+      <p>Estimate your expected reward tier and quality. Rewards are randomized — this is a planner, not a guaranteed outcome.</p>
+      <div style="display:flex;flex-wrap:wrap;gap:var(--space-3);align-items:flex-end;margin:var(--space-3) 0">
+        <div>
+          <label for="planner-count" style="display:block;font-size:0.875rem;color:var(--color-text-secondary);margin-bottom:var(--space-1)">Ancient Relics</label>
+          <input id="planner-count" type="number" min="1" value="100" style="padding:var(--space-2);border:1px solid var(--color-border);border-radius:8px;background:transparent;color:var(--color-text);width:120px">
+        </div>
+        <div>
+          <label for="planner-type" style="display:block;font-size:0.875rem;color:var(--color-text-secondary);margin-bottom:var(--space-1)">Relic Type</label>
+          <select id="planner-type" style="padding:var(--space-2);border:1px solid var(--color-border);border-radius:8px;background:transparent;color:var(--color-text)">
+            <option value="glistening">Glistening (Highest)</option>
+            <option value="glowing">Glowing (High)</option>
+            <option value="gorgeous">Gorgeous (Mid)</option>
+            <option value="dormant">Dormant (Standard)</option>
+            <option value="decayed">Decayed (Low)</option>
+          </select>
+        </div>
+        <button id="planner-go" type="button" class="cta-button" style="padding:var(--space-2) var(--space-4)">Estimate Rewards</button>
+      </div>
+      <div id="recycler-planner-result" class="glass-panel" style="padding:var(--space-4)">
+        <p style="margin:0;color:var(--color-text-muted)">Pick a relic type and count, then estimate.</p>
+      </div>
+      <script>
+      (function () {
+        var tiers = {
+          decayed: { label: 'Decayed Ancient Relic', quality: 'Low', core: '~20% reported', tip: 'Common input — recycle surplus freely.' },
+          dormant: { label: 'Dormant Ancient Relic', quality: 'Standard', core: 'Better than Decayed', tip: 'A solid mid-tier input.' },
+          gorgeous: { label: 'Gorgeous Ancient Relic', quality: 'Mid', core: 'Better odds', tip: 'A higher tier — decent reward expectations.' },
+          glowing: { label: 'Glowing Ancient Relic', quality: 'High', core: 'Better odds', tip: 'Save for when you want premium output.' },
+          glistening: { label: 'Glistening Ancient Relic', quality: 'Highest', core: '~41% reported', tip: 'Rarest tier — compare before you process.' }
+        };
+        var result = document.getElementById('recycler-planner-result');
+        document.getElementById('planner-go').addEventListener('click', function () {
+          var count = parseInt(document.getElementById('planner-count').value, 10) || 0;
+          var key = document.getElementById('planner-type').value;
+          var t = tiers[key];
+          result.innerHTML =
+            '<p style="margin:0"><strong>' + count + ' × ' + t.label + '</strong> (' + t.quality + ' tier)</p>' +
+            '<p style="margin:var(--space-2) 0 0;color:var(--color-text-secondary)">Reward pool: Paloxite, Mythical Wood, Ancient Civilization Cores, Radiant Gems, Skill Fruits, Implants, Manuals, Schematics.</p>' +
+            '<p style="margin:var(--space-2) 0 0;color:var(--color-text-secondary)">Reported Ancient Civilization Core drop chance: <strong>' + t.core + '</strong>.</p>' +
+            '<p style="margin:var(--space-2) 0 0;color:var(--color-text-secondary)">Tip: ' + t.tip + '</p>' +
+            '<p style="margin:var(--space-2) 0 0;color:var(--color-text-muted)">Rewards are randomized — this is an estimator, not a guarantee. Add World Tree Holy Water for 1.5× speed (≈1 bottle per 5 min).</p>';
+        });
+      })();
+      </script>
+    </section>
+
+    <section class="section">
+      <h2>Frequently Asked Questions</h2>
+
+      <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the Ancient Relic Recycler in Palworld?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It's a late-game production machine added in the 1.0 update that converts World Tree Ancient Relics into a randomized pool of endgame rewards like Ancient Civilization Cores, Paloxite, Mythical Wood, implants, manuals, and schematics."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What level unlocks the Ancient Relic Recycler?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Technology Level 74, in the Production category, costing 3 Technology Points."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What relics can you put into the Recycler?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Five Ancient Relic tiers: Decayed, Dormant, Gorgeous, Glowing, and Glistening. Higher tiers return better rewards, but the exact output is randomized."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does the Ancient Relic Recycler give you?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A randomized reward pool that can include Ancient Civilization Cores, Paloxite, Mythical Wood, Radiant Gems, Skill Fruits, disposable and World Tree implants, technical manuals, and schematics."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is my Ancient Relic Recycler not working?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Check the four requirements in order: relics in the input slot, a Handiwork Pal assigned, electricity on via a Power Generator, and the power switch toggled On. When finished, use Acquire on the machine to manually collect output."
+            }
+          }
+        ]
+      }
+      </script>
+
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary class="faq-question">What is the Ancient Relic Recycler in Palworld?</summary>
+          <div class="faq-answer">
+            <p>It's a <strong>late-game production machine</strong> added in the 1.0 update that converts World Tree Ancient Relics into a randomized pool of endgame rewards — Ancient Civilization Cores, Paloxite, Mythical Wood, implants, manuals, and schematics.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">What level unlocks the Ancient Relic Recycler?</summary>
+          <div class="faq-answer">
+            <p><strong>Technology Level 74</strong>, in the Production category, costing <strong>3 Technology Points</strong>.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">What relics can you put into the Recycler?</summary>
+          <div class="faq-answer">
+            <p>Five Ancient Relic tiers: <strong>Decayed, Dormant, Gorgeous, Glowing, and Glistening</strong>. Higher tiers return better rewards, but the exact output is randomized.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">What does the Ancient Relic Recycler give you?</summary>
+          <div class="faq-answer">
+            <p>A randomized reward pool that can include <strong>Ancient Civilization Cores, Paloxite, Mythical Wood, Radiant Gems, Skill Fruits, implants, technical manuals, and schematics</strong>.</p>
+          </div>
+        </details>
+        <details class="faq-item">
+          <summary class="faq-question">Why is my Ancient Relic Recycler not working?</summary>
+          <div class="faq-answer">
+            <p>Check the requirements in order: <strong>relics in the input slot</strong>, a <strong>Handiwork Pal</strong> assigned, <strong>electricity on</strong> via a Power Generator, and the <strong>power switch toggled On</strong>. When finished, use <strong>Acquire</strong> on the machine to manually collect output.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="content-upgrade-cta">
+      <p>Don't confuse these materials: the Recycler outputs <strong>Ancient Civilization Cores</strong>, not <strong>Ancient Bone</strong>.</p>
+      <a href="/guides/ancient-bone/" class="cta-button cta-button-lg">🦴 Where to Find Ancient Bone →</a>
+      <a href="/guides/god-of-destruction/" class="cta-button cta-button-lg" style="margin-left:var(--space-2)">💀 God of Destruction Implant →</a>
+      <a href="/guides/world-tree-holy-water/" class="cta-button cta-button-lg cta-button-secondary" style="margin-left:var(--space-2)">💧 World Tree Holy Water →</a>
+    </section>
+  </div>`;
+  return wrapPage(headHTML, bodyHTML);
+}
+
 // Guides index page
 const guidesIndexHTML = renderGuidesIndex();
 fs.mkdirSync(path.join(DIST_DIR, 'guides'), { recursive: true });
@@ -2116,6 +2385,11 @@ function renderGuidesIndex() {
         <div class="guide-card-icon">🛒</div>
         <h3>Legendary Merchants</h3>
         <p>All six specialized visiting-merchant categories — how to spawn, reroll, and capture.</p>
+      </a>
+      <a href="/guides/ancient-relic-recycler/" class="guide-card">
+        <div class="guide-card-icon">⚙️</div>
+        <h3>Ancient Relic Recycler</h3>
+        <p>Unlock, build, and use the Recycler — 5 relic tiers, reward pool, and troubleshooting.</p>
       </a>
     </div>
   </div>`;
@@ -2725,6 +2999,7 @@ console.log('  dist/robots.txt');
     `- [Breeding Explained](${DOMAIN}/guides/breeding-explained/): Formula, BP system, special combos, difficulty groups, FAQ`,
     `- [Where to Find Ancient Bone](${DOMAIN}/guides/ancient-bone/): Wildlife Sanctuary No. 3 location, route, farming loop, patrol tips`,
     `- [Legendary Merchants](${DOMAIN}/guides/legendary-merchants/): Six categories, spawn, reroll, and capture`,
+    `- [Ancient Relic Recycler](${DOMAIN}/guides/ancient-relic-recycler/): Unlock Lv.74, build recipe, 5 relic tiers, rewards`,
     '',
     '## Info',
     `- [About](${DOMAIN}/about/): Data sources and methodology`,

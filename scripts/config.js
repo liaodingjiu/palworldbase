@@ -89,6 +89,9 @@ const TITLE_TEMPLATES = {
   guide4: `Palworld Breeding Explained — Formula, Paths & Calculator`,
   guide5: `Where to Find Ancient Bone — Location, Route & Farm Guide`,
   guide6: `Palworld Legendary Merchants — Spawn, Find & Capture Guide`,
+  guide7: `Ancient Relic Recycler — How to Get, Use & Best Rewards`,
+  guide8: `God of Destruction Passive Skill — Effects & How to Get`,
+  guide9: `World Tree Holy Water — How to Farm & What It's For`,
   palS: (pal) => {
     const name = pal.name.en;
     const el = pal.classification.elements[0];
